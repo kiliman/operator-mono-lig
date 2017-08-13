@@ -1,0 +1,17 @@
+{
+  "name": "operator-mono-lig",
+  "version": "1.0.0",
+  "description": "Patch Operator Mono font to include ligatures",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "kiliman@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "xml-formatter": "^1.0.1",
+    "xmldom": "^0.1.27",
+    "xpath": "0.0.24"
+  }
+}
