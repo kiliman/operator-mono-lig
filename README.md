@@ -3,10 +3,9 @@
 This project will generate new OpenType fonts for *Operator Mono* that includes ligatures similar to
 those found in the popular Fira Code font.
 
-![Ligature Sample](image/sample.js.png)
+<img src="./images/sample.js.png" />
 
-![Ligature Sample](image/sample.html.png)
-
+<img src="./images/sample.html.png" />
 
 NOTE: Because *Operator Mono* is not a free font, you must have the original font files. This utility 
 will merge the ligature definitions into a copy of the original font. The new font family is named *Operator Mono Lig* so you can install it side-by-side with the original font.
