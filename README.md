@@ -40,7 +40,30 @@ build
 
 This will generate the new font files in the `build` folder. You can now install these fonts on your system.
 
+---
 
+<img src="./images/OperatorMonoAllTheThings.png" />
 
+## GitHub
+Add *Operator Mono* to GitHub code blocks using the [Stylish Extension](https://chrome.google.com/webstore/detail/stylish-custom-themes-for/fjnbnpbmkenffdnngjfgmeleoegfcffe?hl=en).
 
+Create a style and enter the following:
 
+```css
+.blob-code-inner, .blob-num, .highlight pre { font-family: "Operator Mono Lig" !important; font-size: 16px !important; }
+.pl-c, .pl-e { font-style: italic; }
+.pl-c { color: #4CAF50; }
+```
+<img src="./images/github-operatormono.png" />
+
+## Visual Studio
+
+You can have Visual Studio display the nice *Operator Mono* italic font for comments, using the [CommentsPlus Extension](https://marketplace.visualstudio.com/items?itemName=mhoumann.CommentsPlus).
+
+<img src="./images/vsoperatormono.png" />
+
+## Hyper shell
+
+Add *Operator Mono* to [Hyper](https://hyper.is/) a JS/CSS/HTML Terminal.
+
+<img src="./images/hyper terminal.png" />
