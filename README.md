@@ -3,6 +3,9 @@
 This project will generate new OpenType fonts for [Operator Mono](https://www.typography.com/fonts/operator/styles/) that includes ligatures similar to
 those found in the popular [Fira Code](https://github.com/tonsky/FiraCode) font.
 
+These ligatures were custom created using [FontForge](http://fontforge.github.io/en-US/). 
+There are even italic versions of the ligatures. 
+
 <img src="./images/sample.js.png" />
 
 <img src="./images/sample.html.png" />
