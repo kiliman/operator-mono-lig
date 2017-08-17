@@ -34,8 +34,16 @@ Copy your *Operator Mono* OpenType files into the `original` folder.
 
 From the command line, run:
 
+### Windows
+
 ```
 build
+```
+
+### Linux/Mac
+
+```
+build.sh
 ```
 
 This will generate the new font files in the `build` folder. You can now install these fonts on your system.
