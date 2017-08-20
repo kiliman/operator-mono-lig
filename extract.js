@@ -35,7 +35,7 @@ async function extractAndWrite(name, func, dom) {
   const newDom = func(dom);
   console.log('Finished extracting ' + name);
 
-  const fileName = `./ligature/${fontName}_${name}.xml`;
+  const fileName = `./ligature/${fontName}/${name}.xml`;
   await fs.writeFileAsync(fileName, format(serialize(newDom)));
   console.log('Finished writing ' + name);
 }

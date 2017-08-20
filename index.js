@@ -37,7 +37,7 @@ async function main() {
 }
 
 async function loadConfigAsync(name) {
-  const fileName = `./ligature/${ligFontName}_${name}.xml`;
+  const fileName = `./ligature/${ligFontName}/${name}.xml`;
   const xml = await fs.readFileAsync(fileName, 'utf-8');
   return new DOMParser().parseFromString(xml);
 }
