@@ -54,6 +54,18 @@ async function patchNames(dom) {
   const names = xpath.select('/name/namerecord', configDom);
   const targetName = xpath.select('/ttFont/name', dom, true);
 
+  // get font and family name
+  const familyName = getTextNode(configDom, '/name/namerecord[@nameID="1" and @platformID="1"]');
+  const fullName = getTextNode(configDom, '/name/namerecord[@nameID="4" and @platformID="1"]');
+
+  // patch CFFFont
+  const cffFont = xpath.select('/ttFont/CFF/CFFFont', dom, true);
+  
+  cffFont.setAttribute('name', ligFontName);
+  setAttribute(cffFont, 'FullName', 'value', fullName);
+  setAttribute(cffFont, 'FamilyName', 'value', familyName);
+  
+  // update existing names with new names
   names.forEach(node => {
     const nameId = node.getAttribute('nameID');
     const platformId = node.getAttribute('platformID');
