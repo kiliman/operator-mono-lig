@@ -1,0 +1,166 @@
+<CharStrings>
+    <CharString name="ampersand_ampersand.liga">
+        107 -12 67 501 76 hstemhm
+110 77 -4 80 232 70 -53.99825 76.99825 -4 80 232 70 hintmask 11100001
+275 284 rmoveto
+55.38696 -64.47878 rlineto
+19.62886 -22.699 21.53769 -24.97949 23.44649 -27.84271 -39 -61 -43 -28 -42 0 -55 0 -29 39 0 53 rrcurveto
+0 47 29 48 59 42 rrcurveto
+400 1 rmoveto
+53.1084 -61.69434 rlineto
+21.00433 -24.20332 23.14662 -26.72282 24.74065 -29.37952 -39 -61 -44 -27 -42 0 rrcurveto
+hintmask 11000101
+-55 -29 39 53 hvcurveto
+0 47 28 49 59 42 rrcurveto
+291 111 rmoveto
+-70 8 rlineto
+-14 -68 -21 -65 -23 -54 rrcurveto
+hintmask 11000011
+-119 136 -55 59 0 52 0 54 42 46 163 -8 rrcurveto
+-5 76 rlineto
+-213 4 -67 -91 0 -86 0 -43 19 -40 40 -52 rrcurveto
+hintmask 11000101
+-87.68262 -55.79785 -43.99254 -62.74825 -0.32309 -74.64368 -11.41241 13.28877 -11.0006 12.7079 -10.58875 12.1931 rrcurveto
+hintmask 11011001
+33 59 32 78 22 89 rrcurveto
+-70 10 rlineto
+-14 -68 -21 -66 -23 -54 -119 136 -55 59 0 52 0 54 42 46 163 -8 rrcurveto
+-7 76 rlineto
+-213 4 -65 -91 0 -86 0 -43 20 -39 40 -52 rrcurveto
+hintmask 11100011
+-88 -56 -45 -64 0 -75 0 -80 49 -62 95 0 64 0 64 34 51 77 23.62546 -28.68806 74.37454 -59.31194 79 -18 14 -3 15 -2 16 0 64 0 64 34 51 77 rrcurveto
+28 -34 31 -37 32 -41 rrcurveto
+65 51 rlineto
+-41 50 -37 43 -33 38 33 59 32 79 22 89 rrcurveto
+endchar
+    </CharString>
+    <CharString name="bar_bar.liga">
+        107 362 75 225 75 vstem
+662 704 rmoveto
+-886 75 892 vlineto
+-375 -6 rmoveto
+-886 75 892 vlineto
+endchar
+    </CharString>
+    <CharString name="equal_equal.liga">
+        107 151 69 153 69 hstem
+1022 442 rmoveto
+-944 -69 943 hlineto
+1 -153 rmoveto
+-944 -69 943 hlineto
+endchar
+    </CharString>
+    <CharString name="equal_equal_equal.liga">
+        657 61 69 153 69 153 69 hstem
+cntrmask 11100000
+1572 574 rmoveto
+-1494 -69 1493 hlineto
+-1493 -222 rmoveto
+1493 0 1 69 -1494 0 rlineto
+1494 -222 rmoveto
+-1494 -69 1493 hlineto
+endchar
+    </CharString>
+    <CharString name="equal_equal_greater.liga">
+        657 -1 -21 173 69 153 69 hstem
+1232 -22 rmoveto
+333 280 0 69 -327 275 -47 -58 123.88672 -102 -1236.88672 0 0 -69 1320.69238 0 92.30762 -76 0 -10 -80.8252 -67 -1332.1748 0 0 -69 1248.93652 0 -139.93652 -116 rlineto
+endchar
+    </CharString>
+    <CharString name="equal_greater.liga">
+        107 -1 -21 173 69 153 69 hstem
+682 -22 rmoveto
+333 280 0 69 -327 275 -47 -58 123.88664 -102 -686.88664 0 0 -69 770.6923 0 92.3077 -76 0 -10 -80.8254 -67 -782.1746 0 0 -69 698.93651 0 -139.93651 -116 rlineto
+endchar
+    </CharString>
+    <CharString name="exclam_equal.liga">
+        107 151 69 153 69 hstem
+1022 220 rmoveto
+-466.54134 0 80.22537 153 385.31596 0 1 69 -350.1359 0 132.1359 252 -69 32 -149.05193 -284 -507.94807 0 0 -69 471.73476 0 -80.2991 -153 -391.43567 0 0 -69 355.22235 0 rlineto
+-163.22235 -311 71 -29 178.2786 340 501.7214 0 rlineto
+endchar
+    </CharString>
+    <CharString name="exclam_equal_equal.liga">
+        657 -148 -21 230 69 153 69 153 69 hstem
+1572 574 rmoveto
+-565.40883 0 73.40883 140 -69 32 -90.27087 -172 -842.72913 0 0 -69 806.51581 0 -80.2991 -153 -726.2167 0 0 -69 690.00339 0 -80.2991 -153 -609.70428 0 0 -69 573.49097 0 rlineto
+-105.49097 -201 71 -29 120.60022 230 833.39978 0 1 69 -798.21971 0 80.22537 153 716.99434 0 1 69 -681.81427 0 80.22537 153 600.5889 0 rlineto
+endchar
+    </CharString>
+    <CharString name="greater_equal.liga">
+        107 845 285 rmoveto
+-573 -314 34 -51 541 304 rlineto
+-545 -153 rmoveto
+540 280 0 69 -534 275 -47 -58 507 -247 0 -10 -511 -252 rlineto
+endchar
+    </CharString>
+    <CharString name="hyphen_greater.liga">
+        107 -1 -21 280 69 hstem
+682 -22 rmoveto
+333 280 0 69 -327 275 -47 -58 263.56276 -217 -826.56276 0 0 -69 828.01587 0 -269.01587 -223 rlineto
+endchar
+    </CharString>
+    <CharString name="hyphen_hyphen.liga">
+        107 258 69 hstem
+919 327 rmoveto
+-317 -69 311 hlineto
+-414 69 rmoveto
+-317 -69 311 hlineto
+endchar
+    </CharString>
+    <CharString name="hyphen_hyphen_greater.liga">
+        657 -1 -21 280 69 hstem
+1232 -22 rmoveto
+333 280 0 69 -327 275 -47 -58 263.5625 -217 -1376.5625 0 0 -69 1378.01562 0 -269.01562 -223 rlineto
+endchar
+    </CharString>
+    <CharString name="less_equal.liga">
+        107 257 285 rmoveto
+-2 -61 541 -304 34 51 rlineto
+-30 100 rmoveto
+45 57 -511 252 0 10 507 247 -47 58 -534 -275 0 -69 rlineto
+endchar
+    </CharString>
+    <CharString name="less_equal_equal.liga">
+        657 -1 -21 173 69 153 69 hstem
+415 603 rmoveto
+-329 -277 0 -69 332 -279 46 57 -139.4762 116 1246.4762 0 1 69 -1330.44048 0 -80.55952 67 0 10 91.62903 76 1318.37097 0 1 69 -1236.18146 0 124.18146 103 rlineto
+endchar
+    </CharString>
+    <CharString name="less_exclam_hyphen_x2.liga">
+        1207 -1 -21 22 110 148 69 hstem
+705 113 vstem
+819.09091 40 rmoveto
+0.95454 35 0.95454 35 -114 0 -2 -110 113 0 rlineto
+-4.43837 498.65297 rmoveto
+5.23251 74.60542 7.20586 102.74161 -103 0 rlineto
+2 -91 17 -264 0 -87 rrcurveto
+53 hlineto
+1327 93 rmoveto
+-1223 -69 1217 hlineto
+-1701 345 rmoveto
+-329 -277 0 -69 332 -279 46 57 -268.13095 223 454.13095 0 6 69 -458.83064 0 262.83064 218 rlineto
+endchar
+    </CharString>
+    <CharString name="less_hyphen.liga">
+        107 -1 -21 280 69 hstem
+415 603 rmoveto
+-329 -277 0 -69 332 -279 46 57 -268.13095 223 820.13095 0 6 69 -824.83064 0 262.83064 218 rlineto
+endchar
+    </CharString>
+    <CharString name="less_hyphen_hyphen.liga">
+        657 -1 -21 280 69 hstem
+415 603 rmoveto
+-329 -277 0 -69 332 -279 46 57 -268.13095 223 1370.13095 0 6 69 -1374.83064 0 262.83064 218 rlineto
+endchar
+    </CharString>
+    <CharString name="plus_plus.liga">
+        107 259 68 hstem
+301 73 353 73 vstem
+976 259 rmoveto
+1 68 -177 0 0 187 -73 0 0 -187 -176 0 -2 0 -175 0 0 187 -73 0 0 -187 -178 0 0 -68 178 0 0 -187 rlineto
+73 187 175 hlineto
+1 0 177 0 0 -187 73 0 0 187 rlineto
+endchar
+    </CharString>
+</CharStrings>
