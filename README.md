@@ -18,7 +18,7 @@ will merge the ligature definitions into a copy of the original font. The new fo
 * Install *fonttools* from https://github.com/fonttools/fonttools
   * Install Python
   * Run: `pip install fonttools`
-* Node.js
+* Node.js (**version 7.6+ for async/await support**)
 
 ## How to Install
 
