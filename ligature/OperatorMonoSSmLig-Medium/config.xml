@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ttFont>
+	<head>
+        <xMin value="-395"/>
+        <yMin value="-326"/>
+        <xMax value="2413"/>
+        <yMax value="1276"/>
+	</head>
+	<hhea>
+		<advanceWidthMax value="2500"/>
+		<xMaxExtent value="2413"/>
+	</hhea>
+	<CFF>
+		<CFFFont>
+			<FontBBox value="-395 -326 2413 1276"/>
+			<Private>
+				<nominalWidthX value="1357"/>
+			</Private>
+		</CFFFont>
+	</CFF>
+</ttFont>

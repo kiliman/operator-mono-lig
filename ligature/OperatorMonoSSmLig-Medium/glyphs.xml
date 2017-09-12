@@ -1,0 +1,22 @@
+<GlyphOrder>
+    <GlyphID id="369" name="hyphen_hyphen.liga"/>
+    <GlyphID id="370" name="hyphen_hyphen_greater.liga"/>
+    <GlyphID id="371" name="hyphen_greater.liga"/>
+    <GlyphID id="372" name="exclam_equal.liga"/>
+    <GlyphID id="373" name="exclam_equal_equal.liga"/>
+    <GlyphID id="419" name="ampersand_ampersand.liga"/>
+    <GlyphID id="420" name="bar_bar.liga"/>
+    <GlyphID id="421" name="bar_greater.liga"/>
+    <GlyphID id="422" name="plus_plus.liga"/>
+    <GlyphID id="423" name="equal_equal.liga"/>
+    <GlyphID id="424" name="equal_equal_equal.liga"/>
+    <GlyphID id="425" name="equal_equal_greater.liga"/>
+    <GlyphID id="426" name="equal_greater.liga"/>
+    <GlyphID id="427" name="greater_equal.liga"/>
+    <GlyphID id="428" name="less_exclam_hyphen_x2.liga"/>
+    <GlyphID id="429" name="less_hyphen.liga"/>
+    <GlyphID id="430" name="less_hyphen_hyphen.liga"/>
+    <GlyphID id="431" name="less_bar.liga"/>
+    <GlyphID id="432" name="less_equal.liga"/>
+    <GlyphID id="433" name="less_equal_equal.liga"/>
+</GlyphOrder>

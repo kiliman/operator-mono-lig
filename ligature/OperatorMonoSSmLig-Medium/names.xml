@@ -1,0 +1,29 @@
+<name>
+  <namerecord nameID="1" platformID="1" platEncID="0" langID="0x0" unicode="True">
+    Operator Mono SSm Lig
+  </namerecord>
+  <namerecord nameID="3" platformID="1" platEncID="0" langID="0x0" unicode="True">
+    1.002;H&amp;Co;OperatorMonoSSmLig-Medium
+  </namerecord>
+  <namerecord nameID="4" platformID="1" platEncID="0" langID="0x0" unicode="True">
+    Operator Mono SSm Lig Medium
+  </namerecord>
+  <namerecord nameID="6" platformID="1" platEncID="0" langID="0x0" unicode="True">
+    OperatorMonoSSmLig-Medium
+  </namerecord>
+  <namerecord nameID="1" platformID="3" platEncID="1" langID="0x409">
+    Operator Mono SSm Lig Medium
+  </namerecord>
+  <namerecord nameID="3" platformID="3" platEncID="1" langID="0x409">
+    1.002;H&amp;Co;OperatorMonoSSmLig-Medium
+  </namerecord>
+  <namerecord nameID="4" platformID="3" platEncID="1" langID="0x409">
+    Operator Mono SSm Lig Medium
+  </namerecord>
+  <namerecord nameID="6" platformID="3" platEncID="1" langID="0x409">
+    OperatorMonoSSmLig-Medium
+  </namerecord>
+  <namerecord nameID="16" platformID="3" platEncID="1" langID="0x409">
+    Operator Mono Lig SSm
+  </namerecord>
+</name>

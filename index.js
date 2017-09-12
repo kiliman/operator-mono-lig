@@ -14,7 +14,7 @@ const NodeType = {};
 NodeType.TEXT_NODE = 3;
 
 async function main() {
-  fontName = process.argv[2] || 'OperatorMono-MediumItalic';
+  fontName = process.argv[2] || 'OperatorMonoSSm-Medium';
   ligFontName = fontName.split('-').join('Lig-');
 
   const srcFileName = `./original/${fontName}.ttx`;
@@ -25,10 +25,10 @@ async function main() {
 
   await processPatch('names', patchNames, dom);
   await processPatch('glyphs', patchGlyphs, dom);
-  await processPatch('cmap', patchCmap, dom);
-  await processPatch('classdef', patchClassDef, dom);
+  //await processPatch('cmap', patchCmap, dom);
+  //await processPatch('classdef', patchClassDef, dom);
   await processPatch('hmtx', patchHmtx, dom);
-  await processPatch('lookup', patchLookup, dom);
+  //await processPatch('lookup', patchLookup, dom);
   await processPatch('charstrings', patchCharStrings, dom);
 
   //return;
@@ -38,7 +38,7 @@ async function main() {
 }
 
 async function loadConfigAsync(name) {
-  const fileName = `./ligature/${ligFontName}_${name}.xml`;
+  const fileName = `./ligature/${ligFontName}/${name}.xml`;
   const xml = await fs.readFileAsync(fileName, 'utf-8');
   return new DOMParser().parseFromString(xml);
 }
@@ -243,7 +243,6 @@ async function patchCharStrings(dom) {
   const nameDom = await loadConfigAsync('names');
 
   const cffFont = xpath.select('/ttFont/CFF/CFFFont', dom, true);
-
   cffFont.setAttribute('name', ligFontName);
   // get names from name config
   const fullName = nameDom.documentElement.getAttribute('fullName');
@@ -251,11 +250,73 @@ async function patchCharStrings(dom) {
   setAttribute(cffFont, 'FullName', 'value', fullName);
   setAttribute(cffFont, 'FamilyName', 'value', familyName);
 
+  const charStrings = xpath.select('/CharStrings/CharString', configDom);
   const targetCharStrings = xpath.select('CharStrings', cffFont, true);
 
-  const charStrings = xpath.select('/CharStrings/CharString', configDom);
-  charStrings.forEach(node => targetCharStrings.appendChild(node));
+  const subrs = {
+    map: [],
+    source: await loadConfigAsync('subrs'),
+    target: xpath.select('/ttFont/CFF/CFFFont/Private/Subrs', dom, true)
+  };
+  const gsubrs = {
+    map: [],
+    source: await loadConfigAsync('gsubrs'),
+    target: xpath.select('/ttFont/CFF/GlobalSubrs', dom, true)
+  };
+
+  charStrings.forEach(node => {
+    patchCharStringSubrs(node, subrs, gsubrs);
+    targetCharStrings.appendChild(node);
+  });
 }
+
+const patchCharStringSubrs = (node, subrs, gsubrs) => {
+  // check for callsubr/callgsubr
+  const lines = node.childNodes[0].textContent.split('\n');
+  const newLines = [];
+  let patched = false;
+  lines.forEach(line => {
+    const matches = line.match(/(.*?)(-?\d+) (callsubr|callgsubr)$/);
+    if (matches != null) {
+      const { map, source, target } = matches[3] === 'callsubr' ? subrs : gsubrs;
+      const index = matches[2];
+      let newIndex = 0;
+      if (!map[index]) {
+        // find subr in source dom and copy to target dom
+        const srcIndex = parseInt(index) + 107;
+        const srcSubr = xpath.select(
+          `//CharString[@index="${srcIndex}"]`,
+          source,
+          true
+        );
+
+        // patch up source in case it also has any callsubrs
+        patchCharStringSubrs(srcSubr, subrs, gsubrs);
+
+        // append subr to target dom and get new index
+        newIndex = xpath.select('count(CharString)', target, true);
+        srcSubr.setAttribute('index', newIndex);
+        target.appendChild(srcSubr);
+
+        // add new index to map and rewrite call
+        newIndex = newIndex - 107;
+        map[index] = newIndex;
+      } else {
+        newIndex = map[index];
+      }
+
+      // rewrite line with new subr index
+      console.log(line);
+      line = `${matches[1]}${newIndex} ${matches[3]}`;
+      console.log(line);
+      patched = true;
+    }
+    newLines.push(line);
+  });
+  if (patched) {
+    node.childNodes[0].textContent = newLines.join('\n');
+  }
+};
 
 const setAttribute = (parent, path, name, value) => {
   var node = xpath.select(path, parent, true);

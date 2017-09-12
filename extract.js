@@ -22,12 +22,14 @@ async function main() {
   const dom = new DOMParser().parseFromString(xml);
 
   await extractAndWrite('glyphs', extractGlyphs, dom);
-  await extractAndWrite('cmap', extractCmap, dom);
-  await extractAndWrite('classdef', extractClassDef, dom);
+  //await extractAndWrite('cmap', extractCmap, dom);
+  //await extractAndWrite('classdef', extractClassDef, dom);
   await extractAndWrite('hmtx', extractHmtx, dom);
-  await extractAndWrite('lookup', extractLookup, dom);
+  //await extractAndWrite('lookup', extractLookup, dom);
   await extractAndWrite('charstrings', extractCharStrings, dom);
-
+  await extractAndWrite('subrs', extractSubrs, dom);
+  await extractAndWrite('gsubrs', extractGlobalSubrs, dom);
+  
   console.log('Done');
 }
 
@@ -35,7 +37,11 @@ async function extractAndWrite(name, func, dom) {
   const newDom = func(dom);
   console.log('Finished extracting ' + name);
 
-  const fileName = `./ligature/${fontName}_${name}.xml`;
+  const folder = `./ligature/${fontName}`;
+  const fileName = `./${folder}/${name}.xml`;
+  if (!fs.existsSync(folder)) {
+    fs.mkdirSync(folder);
+  }
   await fs.writeFileAsync(fileName, format(serialize(newDom)));
   console.log('Finished writing ' + name);
 }
@@ -131,6 +137,26 @@ const extractCharStrings = dom => {
     .forEach(node => newDom.documentElement.appendChild(node));
 
   return newDom;
+};
+
+const extractSubrs = dom => {
+  const subrs = xpath.select(
+    '/ttFont/CFF/CFFFont/Private/Subrs',
+    dom,
+    true
+  );
+
+  return subrs;
+};
+
+const extractGlobalSubrs = dom => {
+  const subrs = xpath.select(
+    '/ttFont/CFF/GlobalSubrs',
+    dom,
+    true
+  );
+
+  return subrs;
 };
 
 main();
