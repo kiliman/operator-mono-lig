@@ -1,0 +1,20 @@
+<GlyphClassDef>
+    <ClassDef glyph="ampersand_ampersand.liga" class="2"/>
+    <ClassDef glyph="bar_bar.liga" class="2"/>
+    <ClassDef glyph="equal_equal.liga" class="1"/>
+    <ClassDef glyph="equal_equal_equal.liga" class="2"/>
+    <ClassDef glyph="equal_equal_greater.liga" class="2"/>
+    <ClassDef glyph="equal_greater.liga" class="2"/>
+    <ClassDef glyph="exclam_equal.liga" class="1"/>
+    <ClassDef glyph="exclam_equal_equal.liga" class="2"/>
+    <ClassDef glyph="greater_equal.liga" class="2"/>
+    <ClassDef glyph="hyphen_greater.liga" class="2"/>
+    <ClassDef glyph="hyphen_hyphen.liga" class="2"/>
+    <ClassDef glyph="hyphen_hyphen_greater.liga" class="2"/>
+    <ClassDef glyph="less_equal.liga" class="2"/>
+    <ClassDef glyph="less_equal_equal.liga" class="2"/>
+    <ClassDef glyph="less_exclam_hyphen_x2.liga" class="1"/>
+    <ClassDef glyph="less_hyphen.liga" class="2"/>
+    <ClassDef glyph="less_hyphen_hyphen.liga" class="2"/>
+    <ClassDef glyph="plus_plus.liga" class="2"/>
+</GlyphClassDef>
