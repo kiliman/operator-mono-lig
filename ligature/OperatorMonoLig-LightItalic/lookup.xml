@@ -25,13 +25,13 @@
             </LigatureSet>
             <LigatureSet glyph="hyphen">
                 <Ligature components="hyphen,greater" glyph="hyphen_hyphen_greater.liga"/>
-                <Ligature components="greater" glyph="hyphen_greater.liga"/>
                 <Ligature components="hyphen" glyph="hyphen_hyphen.liga"/>
+                <Ligature components="greater" glyph="hyphen_greater.liga"/>
             </LigatureSet>
             <LigatureSet glyph="less">
                 <Ligature components="exclam,hyphen,hyphen" glyph="less_exclam_hyphen_x2.liga"/>
-                <Ligature components="equal,equal" glyph="less_equal_equal.liga"/>
                 <Ligature components="hyphen,hyphen" glyph="less_hyphen_hyphen.liga"/>
+                <Ligature components="equal,equal" glyph="less_equal_equal.liga"/>
                 <Ligature components="hyphen" glyph="less_hyphen.liga"/>
                 <Ligature components="equal" glyph="less_equal.liga"/>
             </LigatureSet>
