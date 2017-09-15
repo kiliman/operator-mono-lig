@@ -14,7 +14,7 @@ const NodeType = {};
 NodeType.TEXT_NODE = 3;
 
 async function main() {
-  fontName = process.argv[2] || 'OperatorMono-MediumItalic';
+  fontName = process.argv[2];
   ligFontName = fontName.split('-').join('Lig-');
 
   const srcFileName = `./original/${fontName}.ttx`;
@@ -31,14 +31,13 @@ async function main() {
   await processPatch('lookup', patchLookup, dom);
   await processPatch('charstrings', patchCharStrings, dom);
 
-  //return;
   console.log(`Writing ligature font file ${dstFileName}`);
   await fs.writeFileAsync(dstFileName, format(serialize(dom)));
   console.log('Done');
 }
 
 async function loadConfigAsync(name) {
-  const fileName = `./ligature/${ligFontName}_${name}.xml`;
+  const fileName = `./ligature/${ligFontName}/${name}.xml`;
   const xml = await fs.readFileAsync(fileName, 'utf-8');
   return new DOMParser().parseFromString(xml);
 }
