@@ -14,7 +14,7 @@ const NodeType = {};
 NodeType.TEXT_NODE = 3;
 
 async function main() {
-  fontName = process.argv[2] || 'OperatorMonoSSm-Medium';
+  fontName = process.argv[2];
   ligFontName = fontName.split('-').join('Lig-');
 
   const srcFileName = `./original/${fontName}.ttx`;
@@ -28,7 +28,7 @@ async function main() {
   //await processPatch('cmap', patchCmap, dom);
   //await processPatch('classdef', patchClassDef, dom);
   await processPatch('hmtx', patchHmtx, dom);
-  //await processPatch('lookup', patchLookup, dom);
+  await processPatch('lookup', patchLookup, dom);
   await processPatch('charstrings', patchCharStrings, dom);
 
   //return;
@@ -55,16 +55,22 @@ async function patchNames(dom) {
   const targetName = xpath.select('/ttFont/name', dom, true);
 
   // get font and family name
-  const familyName = getTextNode(configDom, '/name/namerecord[@nameID="1" and @platformID="1"]');
-  const fullName = getTextNode(configDom, '/name/namerecord[@nameID="4" and @platformID="1"]');
+  const familyName = getTextNode(
+    configDom,
+    '/name/namerecord[@nameID="1" and @platformID="1"]'
+  );
+  const fullName = getTextNode(
+    configDom,
+    '/name/namerecord[@nameID="4" and @platformID="1"]'
+  );
 
   // patch CFFFont
   const cffFont = xpath.select('/ttFont/CFF/CFFFont', dom, true);
-  
+
   cffFont.setAttribute('name', ligFontName);
   setAttribute(cffFont, 'FullName', 'value', fullName);
   setAttribute(cffFont, 'FamilyName', 'value', familyName);
-  
+
   // update existing names with new names
   names.forEach(node => {
     const nameId = node.getAttribute('nameID');
@@ -85,7 +91,7 @@ async function patchNames(dom) {
 }
 
 async function patchGlyphs(dom) {
-  const configDom = await loadConfigAsync('glyphs');
+  const configDom = await loadConfigAsync('../glyphs');
   // get number of glyphs in target dom
   const targetGlyphs = xpath.select('/ttFont/GlyphOrder', dom, true);
   const glyphsCount = xpath.select('count(GlyphID)', targetGlyphs, true);
@@ -159,7 +165,7 @@ async function patchHmtx(dom) {
 }
 
 async function patchLookup(dom) {
-  const configDom = await loadConfigAsync('lookup');
+  const configDom = await loadConfigAsync('../lookup');
   const featureList = xpath.select('/ttFont/GSUB/FeatureList', dom, true);
 
   // look for feature with FeatureTag liga
@@ -290,7 +296,8 @@ const patchCharStringSubrs = (node, subrs, gsubrs) => {
   lines.forEach(line => {
     const matches = line.match(/(.*?)(-?\d+) (callsubr|callgsubr)$/);
     if (matches != null) {
-      const { map, source, target } = matches[3] === 'callsubr' ? subrs : gsubrs;
+      const { map, source, target } =
+        matches[3] === 'callsubr' ? subrs : gsubrs;
       const index = matches[2];
       let newIndex = 0;
       if (!map[index]) {
@@ -318,9 +325,7 @@ const patchCharStringSubrs = (node, subrs, gsubrs) => {
       }
 
       // rewrite line with new subr index
-      console.log(line);
       line = `${matches[1]}${newIndex} ${matches[3]}`;
-      console.log(line);
       patched = true;
     }
     newLines.push(line);
@@ -338,6 +343,13 @@ const setAttribute = (parent, path, name, value) => {
 const copyConfigAttribute = (dom, configDom, path, name) => {
   const value = xpath.select(path, configDom, true).getAttribute(name);
   setAttribute(dom, path, name, value);
+};
+
+const getTextNode = (dom, path) => {
+  var node = xpath.select(path, dom, true);
+  return node && node.childNodes.length
+    ? node.childNodes[0].nodeValue.trim()
+    : '';
 };
 
 const serialize = dom =>
