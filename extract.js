@@ -21,15 +21,12 @@ async function main() {
   const xml = await fs.readFileAsync(srcFileName, 'utf-8');
   const dom = new DOMParser().parseFromString(xml);
 
-  await extractAndWrite('glyphs', extractGlyphs, dom);
-  //await extractAndWrite('cmap', extractCmap, dom);
-  //await extractAndWrite('classdef', extractClassDef, dom);
-  await extractAndWrite('hmtx', extractHmtx, dom);
-  //await extractAndWrite('lookup', extractLookup, dom);
   await extractAndWrite('charstrings', extractCharStrings, dom);
+  await extractAndWrite('config', extractConfig, dom);
+  await extractAndWrite('hmtx', extractHmtx, dom);
   await extractAndWrite('subrs', extractSubrs, dom);
   await extractAndWrite('gsubrs', extractGlobalSubrs, dom);
-  
+
   console.log('Done');
 }
 
@@ -61,15 +58,36 @@ const serialize = dom =>
     return node;
   });
 
-const extractGlyphs = dom => {
-  const newDom = new DOMParser().parseFromString('<GlyphOrder/>');
-  const glyphIds = xpath.select('/ttFont/GlyphOrder/GlyphID', dom);
+const extractConfig = dom => {
+  const newDom = new DOMParser().parseFromString('<ttFont/>');
+  const head = xpath.select('/ttFont/head', dom, true);
+  const hhea = xpath.select('/ttFont/hhea', dom, true);
 
-  glyphIds
-    .filter(node => regEx.test(node.getAttribute('name')))
-    .forEach(node => newDom.documentElement.appendChild(node));
-
+  const bbox = extractFromPath('/ttFont/CFF/CFFFont/FontBBox', dom);
+  const widthX = extractFromPath(
+    '/ttFont/CFF/CFFFont/Private/nominalWidthX',
+    dom
+  );
+  newDom.documentElement.appendChild(head);
+  newDom.documentElement.appendChild(hhea);
+  newDom.documentElement.appendChild(bbox);
+  newDom.documentElement.appendChild(widthX);
   return newDom;
+};
+
+const extractFromPath = (path, dom) => {
+  const parentPath = path.substring(0, path.lastIndexOf('/'));
+  const childPath = parentPath.substring(path.indexOf('/', 1));
+  const elements = parentPath.split('/').slice(2);
+  let xml = '';
+  elements.forEach(e => (xml += `<${e}>`));
+  elements.reverse().forEach(e => (xml += `</${e}>`));
+
+  const newDom = new DOMParser().parseFromString(xml);
+  const node = xpath.select(path, dom, true);
+  const parentNode = xpath.select(childPath, newDom, true);
+  parentNode.appendChild(node);
+  return newDom.documentElement;
 };
 
 const extractCmap = dom => {
@@ -140,21 +158,13 @@ const extractCharStrings = dom => {
 };
 
 const extractSubrs = dom => {
-  const subrs = xpath.select(
-    '/ttFont/CFF/CFFFont/Private/Subrs',
-    dom,
-    true
-  );
+  const subrs = xpath.select('/ttFont/CFF/CFFFont/Private/Subrs', dom, true);
 
   return subrs;
 };
 
 const extractGlobalSubrs = dom => {
-  const subrs = xpath.select(
-    '/ttFont/CFF/GlobalSubrs',
-    dom,
-    true
-  );
+  const subrs = xpath.select('/ttFont/CFF/GlobalSubrs', dom, true);
 
   return subrs;
 };
