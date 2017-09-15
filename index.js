@@ -25,8 +25,8 @@ async function main() {
 
   await processPatch('names', patchNames, dom);
   await processPatch('glyphs', patchGlyphs, dom);
-  await processPatch('cmap', patchCmap, dom);
-  await processPatch('classdef', patchClassDef, dom);
+  //await processPatch('cmap', patchCmap, dom);
+  //await processPatch('classdef', patchClassDef, dom);
   await processPatch('hmtx', patchHmtx, dom);
   await processPatch('lookup', patchLookup, dom);
   await processPatch('charstrings', patchCharStrings, dom);
@@ -53,6 +53,24 @@ async function patchNames(dom) {
   const names = xpath.select('/name/namerecord', configDom);
   const targetName = xpath.select('/ttFont/name', dom, true);
 
+  // get font and family name
+  const familyName = getTextNode(
+    configDom,
+    '/name/namerecord[@nameID="1" and @platformID="1"]'
+  );
+  const fullName = getTextNode(
+    configDom,
+    '/name/namerecord[@nameID="4" and @platformID="1"]'
+  );
+
+  // patch CFFFont
+  const cffFont = xpath.select('/ttFont/CFF/CFFFont', dom, true);
+
+  cffFont.setAttribute('name', ligFontName);
+  setAttribute(cffFont, 'FullName', 'value', fullName);
+  setAttribute(cffFont, 'FamilyName', 'value', familyName);
+
+  // update existing names with new names
   names.forEach(node => {
     const nameId = node.getAttribute('nameID');
     const platformId = node.getAttribute('platformID');
@@ -72,7 +90,7 @@ async function patchNames(dom) {
 }
 
 async function patchGlyphs(dom) {
-  const configDom = await loadConfigAsync('glyphs');
+  const configDom = await loadConfigAsync('../glyphs');
   // get number of glyphs in target dom
   const targetGlyphs = xpath.select('/ttFont/GlyphOrder', dom, true);
   const glyphsCount = xpath.select('count(GlyphID)', targetGlyphs, true);
@@ -146,7 +164,7 @@ async function patchHmtx(dom) {
 }
 
 async function patchLookup(dom) {
-  const configDom = await loadConfigAsync('lookup');
+  const configDom = await loadConfigAsync('../lookup');
   const featureList = xpath.select('/ttFont/GSUB/FeatureList', dom, true);
 
   // look for feature with FeatureTag liga
@@ -242,7 +260,6 @@ async function patchCharStrings(dom) {
   const nameDom = await loadConfigAsync('names');
 
   const cffFont = xpath.select('/ttFont/CFF/CFFFont', dom, true);
-
   cffFont.setAttribute('name', ligFontName);
   // get names from name config
   const fullName = nameDom.documentElement.getAttribute('fullName');
@@ -250,11 +267,72 @@ async function patchCharStrings(dom) {
   setAttribute(cffFont, 'FullName', 'value', fullName);
   setAttribute(cffFont, 'FamilyName', 'value', familyName);
 
+  const charStrings = xpath.select('/CharStrings/CharString', configDom);
   const targetCharStrings = xpath.select('CharStrings', cffFont, true);
 
-  const charStrings = xpath.select('/CharStrings/CharString', configDom);
-  charStrings.forEach(node => targetCharStrings.appendChild(node));
+  const subrs = {
+    map: [],
+    source: await loadConfigAsync('subrs'),
+    target: xpath.select('/ttFont/CFF/CFFFont/Private/Subrs', dom, true)
+  };
+  const gsubrs = {
+    map: [],
+    source: await loadConfigAsync('gsubrs'),
+    target: xpath.select('/ttFont/CFF/GlobalSubrs', dom, true)
+  };
+
+  charStrings.forEach(node => {
+    patchCharStringSubrs(node, subrs, gsubrs);
+    targetCharStrings.appendChild(node);
+  });
 }
+
+const patchCharStringSubrs = (node, subrs, gsubrs) => {
+  // check for callsubr/callgsubr
+  const lines = node.childNodes[0].textContent.split('\n');
+  const newLines = [];
+  let patched = false;
+  lines.forEach(line => {
+    const matches = line.match(/(.*?)(-?\d+) (callsubr|callgsubr)$/);
+    if (matches != null) {
+      const { map, source, target } =
+        matches[3] === 'callsubr' ? subrs : gsubrs;
+      const index = matches[2];
+      let newIndex = 0;
+      if (!map[index]) {
+        // find subr in source dom and copy to target dom
+        const srcIndex = parseInt(index) + 107;
+        const srcSubr = xpath.select(
+          `//CharString[@index="${srcIndex}"]`,
+          source,
+          true
+        );
+
+        // patch up source in case it also has any callsubrs
+        patchCharStringSubrs(srcSubr, subrs, gsubrs);
+
+        // append subr to target dom and get new index
+        newIndex = xpath.select('count(CharString)', target, true);
+        srcSubr.setAttribute('index', newIndex);
+        target.appendChild(srcSubr);
+
+        // add new index to map and rewrite call
+        newIndex = newIndex - 107;
+        map[index] = newIndex;
+      } else {
+        newIndex = map[index];
+      }
+
+      // rewrite line with new subr index
+      line = `${matches[1]}${newIndex} ${matches[3]}`;
+      patched = true;
+    }
+    newLines.push(line);
+  });
+  if (patched) {
+    node.childNodes[0].textContent = newLines.join('\n');
+  }
+};
 
 const setAttribute = (parent, path, name, value) => {
   var node = xpath.select(path, parent, true);
@@ -264,6 +342,13 @@ const setAttribute = (parent, path, name, value) => {
 const copyConfigAttribute = (dom, configDom, path, name) => {
   const value = xpath.select(path, configDom, true).getAttribute(name);
   setAttribute(dom, path, name, value);
+};
+
+const getTextNode = (dom, path) => {
+  var node = xpath.select(path, dom, true);
+  return node && node.childNodes.length
+    ? node.childNodes[0].nodeValue.trim()
+    : '';
 };
 
 const serialize = dom =>

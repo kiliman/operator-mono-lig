@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<name>
+  <namerecord nameID="1" platformID="1" platEncID="0" langID="0x0" unicode="True">
+    Operator Mono Lig
+  </namerecord>
+  <namerecord nameID="2" platformID="1" platEncID="0" langID="0x0" unicode="True">
+    Book
+  </namerecord>
+  <namerecord nameID="3" platformID="1" platEncID="0" langID="0x0" unicode="True">
+    H&amp;Co: Operator Mono Lig Book: 1.200
+  </namerecord>
+  <namerecord nameID="4" platformID="1" platEncID="0" langID="0x0" unicode="True">
+    Operator Mono Lig Book
+  </namerecord>
+  <namerecord nameID="6" platformID="1" platEncID="0" langID="0x0" unicode="True">
+    OperatorMonoLig-Book
+  </namerecord>
+  <namerecord nameID="16" platformID="1" platEncID="0" langID="0x0" unicode="True">
+    Operator Mono Lig
+  </namerecord>
+  <namerecord nameID="17" platformID="1" platEncID="0" langID="0x0" unicode="True">
+    Book
+  </namerecord>
+  <namerecord nameID="1" platformID="3" platEncID="1" langID="0x409">
+    Operator Mono Lig Book
+  </namerecord>
+  <namerecord nameID="2" platformID="3" platEncID="1" langID="0x409">
+		Regular
+	</namerecord>
+  <namerecord nameID="3" platformID="3" platEncID="1" langID="0x409">
+    H&amp;Co: Operator Mono Lig Book: 1.200
+  </namerecord>
+  <namerecord nameID="4" platformID="3" platEncID="1" langID="0x409">
+    Operator Mono Lig Book
+  </namerecord>
+  <namerecord nameID="6" platformID="3" platEncID="1" langID="0x409">
+    OperatorMonoLig-Book
+  </namerecord>
+  <namerecord nameID="16" platformID="3" platEncID="1" langID="0x409">
+    Operator Mono Lig
+  </namerecord>
+  <namerecord nameID="17" platformID="3" platEncID="1" langID="0x409">
+    Book
+  </namerecord>
+</name>
