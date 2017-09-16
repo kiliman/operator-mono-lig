@@ -167,48 +167,25 @@ async function patchLookup(dom) {
   const configDom = await loadConfigAsync('../lookup');
   const featureList = xpath.select('/ttFont/GSUB/FeatureList', dom, true);
 
-  // look for feature with FeatureTag liga
-  let featureRecord;
-  let featureTag;
-  let feature;
-  let featureTags = xpath.select(
-    '/ttFont/GSUB/FeatureList/FeatureRecord/FeatureTag[@value="liga"]',
-    dom
-  );
-
-  if (featureTags.length) {
-    featureTag = featureTags[0];
-    featureRecord = featureTag.parentNode;
-    feature = xpath.select('Feature', featureRecord, true);
-  } else {
-    // need to add feature to FeatureList
-    const featuresCount = xpath.select(
-      'count(/ttFont/GSUB/FeatureList/FeatureRecord)',
-      dom,
-      true
-    );
-
-    featureRecord = dom.createElement('FeatureRecord');
-    featureRecord.setAttribute('index', featuresCount);
-    featureTag = dom.createElement('FeatureTag');
-    featureTag.setAttribute('value', 'liga');
-    feature = dom.createElement('Feature');
-    featureRecord.appendChild(featureTag);
-    featureRecord.appendChild(feature);
-    featureList.appendChild(featureRecord);
-  }
-  let lookupListIndex = xpath.select(
-    'LookupListIndex[@value="20"]',
-    feature,
+  const featuresCount = xpath.select(
+    'count(/ttFont/GSUB/FeatureList/FeatureRecord)',
+    dom,
     true
   );
-  if (!lookupListIndex) {
-    const count = xpath.select('count(LookupListIndex)', feature, true);
-    lookupListIndex = dom.createElement('LookupListIndex');
-    lookupListIndex.setAttribute('index', count);
-    lookupListIndex.setAttribute('value', '20');
-    feature.appendChild(lookupListIndex);
-  }
+  const featureRecord = dom.createElement('FeatureRecord');
+  featureRecord.setAttribute('index', featuresCount);
+  const featureTag = dom.createElement('FeatureTag');
+  featureTag.setAttribute('value', 'liga');
+  const feature = dom.createElement('Feature');
+  featureRecord.appendChild(featureTag);
+  featureRecord.appendChild(feature);
+  featureList.appendChild(featureRecord);
+
+  const lookupCount = xpath.select('count(/ttFont/GSUB/LookupList/Lookup)', dom, true);
+  const lookupListIndex = dom.createElement('LookupListIndex');
+  lookupListIndex.setAttribute('index', '0');
+  lookupListIndex.setAttribute('value', lookupCount);
+  feature.appendChild(lookupListIndex);
 
   // helper function for adding feature to ScriptRecord
   const addFeature = (scriptRecord, featureRecord, lang) => {
@@ -223,7 +200,7 @@ async function patchLookup(dom) {
     lang.appendChild(featureIndex);
   };
 
-  // nead to add feature  to ScriptList
+  // nead to add feature to ScriptList
   const scriptList = xpath.select('/ttFont/GSUB/ScriptList', dom, true);
   const scriptRecords = xpath.select('ScriptRecord', scriptList);
   scriptRecords.forEach(node => {
@@ -239,20 +216,11 @@ async function patchLookup(dom) {
       .forEach(lang => addFeature(node, featureRecord, lang));
   });
 
-  // finally add LigatureSubst to Lookup index=20
+  // finally add LigatureSubst to Lookup 
   const lookupList = xpath.select('/ttFont/GSUB/LookupList', dom, true);
   const newLookup = xpath.select('/LookupList/Lookup', configDom, true);
-
-  let lookup = xpath.select(
-    '/ttFont/GSUB/LookupList/Lookup[@index="20"]',
-    dom,
-    true
-  );
-  if (!lookup) {
-    lookupList.appendChild(newLookup);
-  } else {
-    lookupList.replaceChild(newLookup, lookup);
-  }
+  newLookup.setAttribute('index', lookupCount);
+  lookupList.appendChild(newLookup);
 }
 
 async function patchCharStrings(dom) {
