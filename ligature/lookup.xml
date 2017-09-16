@@ -12,30 +12,30 @@
                 <Ligature components="greater" glyph="bar_greater.liga"/>
             </LigatureSet>
             <LigatureSet glyph="equal">
-                <Ligature components="equal" glyph="equal_equal.liga"/>
                 <Ligature components="equal,equal" glyph="equal_equal_equal.liga"/>
                 <Ligature components="equal,greater" glyph="equal_equal_greater.liga"/>
+                <Ligature components="equal" glyph="equal_equal.liga"/>
                 <Ligature components="greater" glyph="equal_greater.liga"/>
             </LigatureSet>
             <LigatureSet glyph="exclam">
-                <Ligature components="equal" glyph="exclam_equal.liga"/>
                 <Ligature components="equal,equal" glyph="exclam_equal_equal.liga"/>
+                <Ligature components="equal" glyph="exclam_equal.liga"/>
             </LigatureSet>
             <LigatureSet glyph="greater">
                 <Ligature components="equal" glyph="greater_equal.liga"/>
             </LigatureSet>
             <LigatureSet glyph="hyphen">
+                <Ligature components="hyphen,greater" glyph="hyphen_hyphen_greater.liga"/>
                 <Ligature components="greater" glyph="hyphen_greater.liga"/>
                 <Ligature components="hyphen" glyph="hyphen_hyphen.liga"/>
-                <Ligature components="hyphen,greater" glyph="hyphen_hyphen_greater.liga"/>
             </LigatureSet>
             <LigatureSet glyph="less">
+                <Ligature components="exclam,hyphen,hyphen" glyph="less_exclam_hyphen_x2.liga"/>
+                <Ligature components="equal,equal" glyph="less_equal_equal.liga"/>
+                <Ligature components="hyphen,hyphen" glyph="less_hyphen_hyphen.liga"/>
                 <Ligature components="bar" glyph="less_bar.liga"/>
                 <Ligature components="equal" glyph="less_equal.liga"/>
-                <Ligature components="equal,equal" glyph="less_equal_equal.liga"/>
-                <Ligature components="exclam,hyphen,hyphen" glyph="less_exclam_hyphen_x2.liga"/>
                 <Ligature components="hyphen" glyph="less_hyphen.liga"/>
-                <Ligature components="hyphen,hyphen" glyph="less_hyphen_hyphen.liga"/>
             </LigatureSet>
             <LigatureSet glyph="plus">
                 <Ligature components="plus" glyph="plus_plus.liga"/>
