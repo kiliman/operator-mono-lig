@@ -16,8 +16,6 @@ const func = (a, b, c, d, e, f, s, n) => {
   // italic ligatures
   // != == >= <= -> => ==>
   // === !== && || ++ --
-  
-  
-  
-  
+  // a <- b <-- c <== d
+  // a <| b |> c -> d ==> e 
   
