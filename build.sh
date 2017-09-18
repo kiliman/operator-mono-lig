@@ -1,28 +1,33 @@
 #!/bin/bash
 
-rm -rf original/*.ttx
-
-ttx original/OperatorMono-Medium.otf
-ttx original/OperatorMono-MediumItalic.otf
-ttx original/OperatorMonoSSm-Book.otf
-ttx original/OperatorMonoSSm-BookItalic.otf
-ttx original/OperatorMonoSSm-Medium.otf
-#ttx original/OperatorMonoSSm-MediumItalic.otf
-
 mkdir -p build
 
-node index.js OperatorMono-Medium
-node index.js OperatorMono-MediumItalic
-node index.js OperatorMonoSSm-Book
-node index.js OperatorMonoSSM-BookItalic
-node index.js OperatorMonoSSm-Medium
-#node index.js OperatorMonoSSm-MediumItalic
+build_font() {
+    lig="$1"
+    otf=${lig/Lig/}
 
-rm -rf build/*.otf
+    if [ ! -e "./original/$otf.otf" ] 
+    then 
+        return 
+    fi
+    if [ ! -e "./ligature/$lig/charstrings.xml" ] 
+    then 
+        return 
+    fi
+    
+    echo Building $1
+    ttx -f "./original/$otf.otf"
+    node index.js $otf
+    ttx -f ./build/$1.ttx
+}
 
-ttx build/OperatorMonoLig-Medium.ttx
-ttx build/OperatorMonoLig-MediumItalic.ttx
-ttx build/OperatorMonoSSmLig-Book.ttx
-ttx build/OperatorMonoSSmLig-BookItalic.ttx
-ttx build/OperatorMonoSSmLig-Medium.ttx
-#ttx build/OperatorMonoSSmLig-MediumItalic.ttx
+if [ -n "$1" ]
+then
+    # build specified font
+    build_font $1
+else
+    # build all available fonts
+    for d in ./ligature/*/ ; do
+        build_font $(basename $d)
+    done
+fi
