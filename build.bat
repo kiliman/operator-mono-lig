@@ -1,4 +1,4 @@
-rem @echo off
+@echo off
 setlocal
 
 if not exist .\build\* mkdir build
@@ -15,7 +15,6 @@ exit /b
 	
 
 :build_font
-@echo Building %1
 set lig=%1
 set otf=%lig:Lig=%
 
