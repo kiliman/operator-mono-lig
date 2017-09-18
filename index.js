@@ -1,5 +1,9 @@
 const Promise = require('bluebird');
 const fs = Promise.promisifyAll(require('fs'));
+const os = require('os');
+if (!os.EOL) {
+  os.EOL = (process.platform === 'win32' ? '\r\n' : '\n');
+}
 
 const xpath = require('xpath');
 const { DOMParser, XMLSerializer } = require('xmldom');
@@ -260,7 +264,8 @@ async function patchCharStrings(dom) {
 
 const patchCharStringSubrs = (node, subrs, gsubrs) => {
   // check for callsubr/callgsubr
-  const lines = node.childNodes[0].textContent.split('\n');
+
+  const lines = node.childNodes[0].textContent.split(os.EOL);
   const newLines = [];
   let patched = false;
   lines.forEach(line => {
@@ -301,7 +306,7 @@ const patchCharStringSubrs = (node, subrs, gsubrs) => {
     newLines.push(line);
   });
   if (patched) {
-    node.childNodes[0].textContent = newLines.join('\n');
+    node.childNodes[0].textContent = newLines.join(os.EOL);
   }
 };
 
