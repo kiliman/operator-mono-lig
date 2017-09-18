@@ -23,6 +23,8 @@ async function main() {
 
   await extractAndWrite('charstrings', extractCharStrings, dom);
   await extractAndWrite('config', extractConfig, dom);
+  await extractAndWrite('gpos', extractGpos, dom);
+  await extractAndWrite('gsub', extractGsub, dom);
   await extractAndWrite('hmtx', extractHmtx, dom);
   await extractAndWrite('subrs', extractSubrs, dom);
   await extractAndWrite('gsubrs', extractGlobalSubrs, dom);
@@ -90,33 +92,14 @@ const extractFromPath = (path, dom) => {
   return newDom.documentElement;
 };
 
-const extractCmap = dom => {
-  const newDom = new DOMParser().parseFromString('<cmap/>');
-  const cmap = xpath.select('/ttFont/cmap/cmap_format_4', dom);
-
-  cmap.forEach(node => {
-    // for each cmap_format_4 node, need to copy map elements
-    // create and append cmap_format_4 node
-    const cmap4 = node.cloneNode(false);
-    newDom.documentElement.appendChild(cmap4);
-
-    xpath
-      .select('map', node)
-      .filter(child => regEx.test(child.getAttribute('name')))
-      .forEach(child => cmap4.appendChild(child));
-  });
-  return newDom;
+const extractGpos = dom => {
+  const gpos = xpath.select('/ttFont/GPOS', dom, true);
+  return gpos;
 };
 
-const extractClassDef = dom => {
-  const newDom = new DOMParser().parseFromString('<GlyphClassDef/>');
-  const classDefs = xpath.select('/ttFont/GDEF/GlyphClassDef/ClassDef', dom);
-
-  classDefs
-    .filter(node => regEx.test(node.getAttribute('glyph')))
-    .forEach(node => newDom.documentElement.appendChild(node));
-
-  return newDom;
+const extractGsub = dom => {
+  const gsub = xpath.select('/ttFont/GSUB', dom, true);
+  return gsub;
 };
 
 const extractHmtx = dom => {
@@ -126,19 +109,6 @@ const extractHmtx = dom => {
   mtx
     .filter(node => regEx.test(node.getAttribute('name')))
     .forEach(node => newDom.documentElement.appendChild(node));
-
-  return newDom;
-};
-
-const extractLookup = dom => {
-  const newDom = new DOMParser().parseFromString('<LookupList/>');
-  const lookup = xpath.select(
-    '/ttFont/GSUB/LookupList/Lookup[@index="20"]',
-    dom,
-    true
-  );
-
-  newDom.documentElement.appendChild(lookup);
 
   return newDom;
 };
@@ -159,13 +129,11 @@ const extractCharStrings = dom => {
 
 const extractSubrs = dom => {
   const subrs = xpath.select('/ttFont/CFF/CFFFont/Private/Subrs', dom, true);
-
   return subrs;
 };
 
 const extractGlobalSubrs = dom => {
   const subrs = xpath.select('/ttFont/CFF/GlobalSubrs', dom, true);
-
   return subrs;
 };
 
