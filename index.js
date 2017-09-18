@@ -227,14 +227,17 @@ async function patchCharStrings(dom) {
   const configDom = await loadConfigAsync('charstrings');
   const nameDom = await loadConfigAsync('names');
 
-  const cffFont = xpath.select('/ttFont/CFF/CFFFont', dom, true);
-  cffFont.setAttribute('name', ligFontName);
-  // get names from name config
-  const fullName = nameDom.documentElement.getAttribute('fullName');
-  const familyName = nameDom.documentElement.getAttribute('familyName');
-  setAttribute(cffFont, 'FullName', 'value', fullName);
-  setAttribute(cffFont, 'FamilyName', 'value', familyName);
-
+  // get font and family name 
+  const familyName = getTextNode(nameDom, '/name/namerecord[@nameID="1" and @platformID="1"]'); 
+  const fullName = getTextNode(nameDom, '/name/namerecord[@nameID="4" and @platformID="1"]'); 
+ 
+  // patch CFFFont 
+  const cffFont = xpath.select('/ttFont/CFF/CFFFont', dom, true); 
+   
+  cffFont.setAttribute('name', ligFontName); 
+  setAttribute(cffFont, 'FullName', 'value', fullName); 
+  setAttribute(cffFont, 'FamilyName', 'value', familyName); 
+  
   const charStrings = xpath.select('/CharStrings/CharString', configDom);
   const targetCharStrings = xpath.select('CharStrings', cffFont, true);
 
