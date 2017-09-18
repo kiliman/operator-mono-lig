@@ -1,17 +1,14 @@
 @echo off
+setlocal
 
-del /q .\ligature_source\*.ttx
+rem extract all fonts
+for %%d in (.\ligature_source\*.otf) do call :extract_font %%~nd
+exit /b
 
-ttx .\ligature_source\OperatorMonoLig-Medium.otf
-ttx .\ligature_source\OperatorMonoLig-MediumItalic.otf
-ttx .\ligature_source\OperatorMonoSSmLig-Book.otf
-ttx .\ligature_source\OperatorMonoSSmLig-BookItalic.otf
-ttx .\ligature_source\OperatorMonoSSmLig-Medium.otf
-#ttx .\ligature_source\OperatorMonoSSmLig-MediumItalic.otf
+:extract_font
+set lig=%1
+set otf=%lig:Lig=%
 
-node extract.js OperatorMonoLig-Medium
-node extract.js OperatorMonoLig-MediumItalic
-node extract.js OperatorMonoSSmLig-Book
-node extract.js OperatorMonoSSmLig-BookItalic
-node extract.js OperatorMonoSSmLig-Medium
-#node extract.js OperatorMonoSSmLig-MediumItalic
+ttx -f .\ligature_source\%lig%.otf
+node extract.js %lig%
+exit /b
