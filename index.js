@@ -2,7 +2,7 @@ const Promise = require('bluebird');
 const fs = Promise.promisifyAll(require('fs'));
 const os = require('os');
 if (!os.EOL) {
-  os.EOL = (process.platform === 'win32' ? '\r\n' : '\n');
+  os.EOL = process.platform === 'win32' ? '\r\n' : '\n';
 }
 
 const xpath = require('xpath');
@@ -27,13 +27,17 @@ async function main() {
   const xml = await fs.readFileAsync(srcFileName, 'utf-8');
   const dom = new DOMParser().parseFromString(xml);
 
-  await processPatch('names', patchNames, dom);
-  await processPatch('glyphs', patchGlyphs, dom);
-  await processPatch('gpos', patchGpos, dom);
-  await processPatch('gsub', patchGsub, dom);
-  await processPatch('hmtx', patchHmtx, dom);
-  await processPatch('lookup', patchLookup, dom);
-  await processPatch('charstrings', patchCharStrings, dom);
+  try {
+    await processPatch('names', patchNames, dom);
+    await processPatch('glyphs', patchGlyphs, dom);
+    await processPatch('gpos', patchGpos, dom);
+    await processPatch('gsub', patchGsub, dom);
+    await processPatch('hmtx', patchHmtx, dom);
+    //await processPatch('lookup', patchLookup, dom);
+    await processPatch('charstrings', patchCharStrings, dom);
+  } catch (err) {
+    console.log(err);
+  }
 
   console.log(`Writing ligature font file ${dstFileName}`);
   await fs.writeFileAsync(dstFileName, format(serialize(dom)));
@@ -123,7 +127,7 @@ async function patchGsub(dom) {
   // loop through Substituion/Ligature nodes and remap chars
   remap(newGsub, dom, '//Substitution', 'out');
   remap(newGsub, dom, '//Ligature', 'glyph');
-  
+
   const oldGsub = xpath.select('/ttFont/GSUB', dom, true);
   dom.documentElement.replaceChild(newGsub, oldGsub);
 }
@@ -138,15 +142,18 @@ const remap = (patchDom, cmapDom, path, attr) => {
       const code = '0x' + out.replace(/uni0*/g, '').toLowerCase();
       let name = cmap[code];
       if (!name) {
-        const map = xpath.select(`/ttFont/cmap/cmap_format_4/map[@code="${code}"]`, cmapDom, true);
+        const map = xpath.select(
+          `/ttFont/cmap/cmap_format_4/map[@code="${code}"]`,
+          cmapDom,
+          true
+        );
         name = map == null ? out : map.getAttribute('name');
         cmap[code] = name;
       }
       n.setAttribute(attr, name);
     }
-  }); 
-}
-
+  });
+};
 
 async function patchHmtx(dom) {
   const hmtxDom = await loadConfigAsync('hmtx');
@@ -192,7 +199,11 @@ async function patchLookup(dom) {
   featureRecord.appendChild(feature);
   featureList.appendChild(featureRecord);
 
-  const lookupCount = xpath.select('count(/ttFont/GSUB/LookupList/Lookup)', dom, true);
+  const lookupCount = xpath.select(
+    'count(/ttFont/GSUB/LookupList/Lookup)',
+    dom,
+    true
+  );
   const lookupListIndex = dom.createElement('LookupListIndex');
   lookupListIndex.setAttribute('index', '0');
   lookupListIndex.setAttribute('value', lookupCount);
@@ -227,7 +238,7 @@ async function patchLookup(dom) {
       .forEach(lang => addFeature(node, featureRecord, lang));
   });
 
-  // finally add LigatureSubst to Lookup 
+  // finally add LigatureSubst to Lookup
   const lookupList = xpath.select('/ttFont/GSUB/LookupList', dom, true);
   const newLookup = xpath.select('/LookupList/Lookup', configDom, true);
   newLookup.setAttribute('index', lookupCount);
@@ -238,17 +249,23 @@ async function patchCharStrings(dom) {
   const configDom = await loadConfigAsync('charstrings');
   const nameDom = await loadConfigAsync('names');
 
-  // get font and family name 
-  const familyName = getTextNode(nameDom, '/name/namerecord[@nameID="1" and @platformID="1"]'); 
-  const fullName = getTextNode(nameDom, '/name/namerecord[@nameID="4" and @platformID="1"]'); 
- 
-  // patch CFFFont 
-  const cffFont = xpath.select('/ttFont/CFF/CFFFont', dom, true); 
-   
-  cffFont.setAttribute('name', ligFontName); 
-  setAttribute(cffFont, 'FullName', 'value', fullName); 
-  setAttribute(cffFont, 'FamilyName', 'value', familyName); 
-  
+  // get font and family name
+  const familyName = getTextNode(
+    nameDom,
+    '/name/namerecord[@nameID="1" and @platformID="1"]'
+  );
+  const fullName = getTextNode(
+    nameDom,
+    '/name/namerecord[@nameID="4" and @platformID="1"]'
+  );
+
+  // patch CFFFont
+  const cffFont = xpath.select('/ttFont/CFF/CFFFont', dom, true);
+
+  cffFont.setAttribute('name', ligFontName);
+  setAttribute(cffFont, 'FullName', 'value', fullName);
+  setAttribute(cffFont, 'FamilyName', 'value', familyName);
+
   const charStrings = xpath.select('/CharStrings/CharString', configDom);
   const targetCharStrings = xpath.select('CharStrings', cffFont, true);
 
