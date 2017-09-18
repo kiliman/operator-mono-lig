@@ -29,8 +29,8 @@ async function main() {
 
   await processPatch('names', patchNames, dom);
   await processPatch('glyphs', patchGlyphs, dom);
-  //await processPatch('cmap', patchCmap, dom);
-  //await processPatch('classdef', patchClassDef, dom);
+  await processPatch('gpos', patchGpos, dom);
+  await processPatch('gsub', patchGsub, dom);
   await processPatch('hmtx', patchHmtx, dom);
   await processPatch('lookup', patchLookup, dom);
   await processPatch('charstrings', patchCharStrings, dom);
@@ -111,35 +111,42 @@ async function patchGlyphs(dom) {
   setAttribute(dom, '/ttFont/maxp/numGlyphs', 'value', n);
 }
 
-async function patchCmap(dom) {
-  const configDom = await loadConfigAsync('cmap');
-  const cmaps = xpath.select('/cmap/cmap_format_4', configDom);
+async function patchGpos(dom) {
+  const newGpos = await loadConfigAsync('gpos');
+  const oldGpos = xpath.select('/ttFont/GPOS', dom, true);
+  dom.documentElement.replaceChild(newGpos, oldGpos);
+}
 
-  cmaps.forEach(node => {
-    const platformId = node.getAttribute('platformID');
-    const platEncId = node.getAttribute('platEncID');
+async function patchGsub(dom) {
+  const newGsub = await loadConfigAsync('gsub');
 
-    // search for cmap_format_4 in target dom
-    const target = xpath.select(
-      `/ttFont/cmap/cmap_format_4[@platformID="${platformId}" and @platEncID="${platEncId}"]`,
-      dom,
-      true
-    );
-    if (target) {
-      // append all map elements to target cmap_format_4
-      const maps = xpath.select('map', node);
-      maps.forEach(child => target.appendChild(child));
+  // loop through Substituion/Ligature nodes and remap chars
+  remap(newGsub, dom, '//Substitution', 'out');
+  remap(newGsub, dom, '//Ligature', 'glyph');
+  
+  const oldGsub = xpath.select('/ttFont/GSUB', dom, true);
+  dom.documentElement.replaceChild(newGsub, oldGsub);
+}
+
+const remap = (patchDom, cmapDom, path, attr) => {
+  const cmap = [];
+  let nodes = xpath.select(path, patchDom);
+  nodes.forEach(n => {
+    const out = n.getAttribute(attr);
+    if (out.startsWith('uni')) {
+      // get cmap entry
+      const code = '0x' + out.replace(/uni0*/g, '').toLowerCase();
+      let name = cmap[code];
+      if (!name) {
+        const map = xpath.select(`/ttFont/cmap/cmap_format_4/map[@code="${code}"]`, cmapDom, true);
+        name = map == null ? out : map.getAttribute('name');
+        cmap[code] = name;
+      }
+      n.setAttribute(attr, name);
     }
-  });
+  }); 
 }
 
-async function patchClassDef(dom) {
-  const configDom = await loadConfigAsync('classdef');
-  const glyphClassDef = xpath.select('/ttFont/GDEF/GlyphClassDef', dom, true);
-
-  const classDefs = xpath.select('/GlyphClassDef/ClassDefs', configDom);
-  classDefs.forEach(node => glyphClassDef.appendChild(node));
-}
 
 async function patchHmtx(dom) {
   const hmtxDom = await loadConfigAsync('hmtx');
