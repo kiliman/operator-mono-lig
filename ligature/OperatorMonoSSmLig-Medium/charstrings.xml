@@ -241,7 +241,7 @@
           endchar
         
     </CharString>
-    <CharString name="less_exclam_hyphen_x2.liga">
+    <CharString name="less_exclam_hyphen_hyphen.liga">
         1143 0 145 hstemhm
           878 159.5 -114.5 83 hintmask 00000000
           hintmask 10100000

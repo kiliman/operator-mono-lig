@@ -1,0 +1,164 @@
+<GPOS>
+    <Version value="0x00010000"/>
+    <ScriptList>
+        <!-- ScriptCount=2 -->
+        <ScriptRecord index="0">
+            <ScriptTag value="DFLT"/>
+            <Script>
+                <DefaultLangSys>
+                    <ReqFeatureIndex value="65535"/>
+                    <!-- FeatureCount=1 -->
+                    <FeatureIndex index="0" value="0"/>
+                </DefaultLangSys>
+                <!-- LangSysCount=0 -->
+            </Script>
+        </ScriptRecord>
+        <ScriptRecord index="1">
+            <ScriptTag value="latn"/>
+            <Script>
+                <DefaultLangSys>
+                    <ReqFeatureIndex value="65535"/>
+                    <!-- FeatureCount=1 -->
+                    <FeatureIndex index="0" value="1"/>
+                </DefaultLangSys>
+                <!-- LangSysCount=3 -->
+                <LangSysRecord index="0">
+                    <LangSysTag value="CAT "/>
+                    <LangSys>
+                        <ReqFeatureIndex value="65535"/>
+                        <!-- FeatureCount=1 -->
+                        <FeatureIndex index="0" value="2"/>
+                    </LangSys>
+                </LangSysRecord>
+                <LangSysRecord index="1">
+                    <LangSysTag value="MOL "/>
+                    <LangSys>
+                        <ReqFeatureIndex value="65535"/>
+                        <!-- FeatureCount=1 -->
+                        <FeatureIndex index="0" value="3"/>
+                    </LangSys>
+                </LangSysRecord>
+                <LangSysRecord index="2">
+                    <LangSysTag value="ROM "/>
+                    <LangSys>
+                        <ReqFeatureIndex value="65535"/>
+                        <!-- FeatureCount=1 -->
+                        <FeatureIndex index="0" value="4"/>
+                    </LangSys>
+                </LangSysRecord>
+            </Script>
+        </ScriptRecord>
+    </ScriptList>
+    <FeatureList>
+        <!-- FeatureCount=5 -->
+        <FeatureRecord index="0">
+            <FeatureTag value="kern"/>
+            <Feature>
+                <!-- LookupCount=1 -->
+                <LookupListIndex index="0" value="0"/>
+            </Feature>
+        </FeatureRecord>
+        <FeatureRecord index="1">
+            <FeatureTag value="kern"/>
+            <Feature>
+                <!-- LookupCount=1 -->
+                <LookupListIndex index="0" value="0"/>
+            </Feature>
+        </FeatureRecord>
+        <FeatureRecord index="2">
+            <FeatureTag value="kern"/>
+            <Feature>
+                <!-- LookupCount=1 -->
+                <LookupListIndex index="0" value="0"/>
+            </Feature>
+        </FeatureRecord>
+        <FeatureRecord index="3">
+            <FeatureTag value="kern"/>
+            <Feature>
+                <!-- LookupCount=1 -->
+                <LookupListIndex index="0" value="0"/>
+            </Feature>
+        </FeatureRecord>
+        <FeatureRecord index="4">
+            <FeatureTag value="kern"/>
+            <Feature>
+                <!-- LookupCount=1 -->
+                <LookupListIndex index="0" value="0"/>
+            </Feature>
+        </FeatureRecord>
+    </FeatureList>
+    <LookupList>
+        <!-- LookupCount=1 -->
+        <Lookup index="0">
+            <LookupType value="2"/>
+            <LookupFlag value="0"/>
+            <!-- SubTableCount=1 -->
+            <PairPos index="0" Format="2">
+                <Coverage Format="2">
+                    <Glyph value="zero.num"/>
+                    <Glyph value="one.num"/>
+                    <Glyph value="two.num"/>
+                    <Glyph value="three.num"/>
+                    <Glyph value="four.num"/>
+                    <Glyph value="five.num"/>
+                    <Glyph value="six.num"/>
+                    <Glyph value="seven.num"/>
+                    <Glyph value="eight.num"/>
+                    <Glyph value="nine.num"/>
+                    <Glyph value="fraction.afrc"/>
+                </Coverage>
+                <ValueFormat1 value="4"/>
+                <ValueFormat2 value="0"/>
+                <ClassDef1 Format="2">
+                    <ClassDef glyph="eight.num" class="1"/>
+                    <ClassDef glyph="five.num" class="1"/>
+                    <ClassDef glyph="four.num" class="1"/>
+                    <ClassDef glyph="nine.num" class="1"/>
+                    <ClassDef glyph="one.num" class="1"/>
+                    <ClassDef glyph="seven.num" class="1"/>
+                    <ClassDef glyph="six.num" class="1"/>
+                    <ClassDef glyph="three.num" class="1"/>
+                    <ClassDef glyph="two.num" class="1"/>
+                    <ClassDef glyph="zero.num" class="1"/>
+                </ClassDef1>
+                <ClassDef2 Format="2">
+                    <ClassDef glyph="eight.den" class="1"/>
+                    <ClassDef glyph="five.den" class="1"/>
+                    <ClassDef glyph="four.den" class="1"/>
+                    <ClassDef glyph="fraction.afrc" class="2"/>
+                    <ClassDef glyph="nine.den" class="1"/>
+                    <ClassDef glyph="one.den" class="1"/>
+                    <ClassDef glyph="seven.den" class="1"/>
+                    <ClassDef glyph="six.den" class="1"/>
+                    <ClassDef glyph="three.den" class="1"/>
+                    <ClassDef glyph="two.den" class="1"/>
+                    <ClassDef glyph="zero.den" class="1"/>
+                </ClassDef2>
+                <!-- Class1Count=2 -->
+                <!-- Class2Count=3 -->
+                <Class1Record index="0">
+                    <Class2Record index="0">
+                        <Value1 XAdvance="0"/>
+                    </Class2Record>
+                    <Class2Record index="1">
+                        <Value1 XAdvance="-550"/>
+                    </Class2Record>
+                    <Class2Record index="2">
+                        <Value1 XAdvance="0"/>
+                    </Class2Record>
+                </Class1Record>
+                <Class1Record index="1">
+                    <Class2Record index="0">
+                        <Value1 XAdvance="0"/>
+                    </Class2Record>
+                    <Class2Record index="1">
+                        <Value1 XAdvance="0"/>
+                    </Class2Record>
+                    <Class2Record index="2">
+                        <Value1 XAdvance="-550"/>
+                    </Class2Record>
+                </Class1Record>
+            </PairPos>
+        </Lookup>
+    </LookupList>
+</GPOS>

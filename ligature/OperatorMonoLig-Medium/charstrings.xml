@@ -222,7 +222,7 @@
           endchar
         
     </CharString>
-    <CharString name="less_exclam_hyphen_x2.liga">
+    <CharString name="less_exclam_hyphen_hyphen.liga">
         993 0 131 119 95 hstemhm
           689.5 8 callgsubr
           hintmask 11001000

@@ -1,0 +1,616 @@
+<GSUB>
+    <Version value="0x00010000"/>
+    <ScriptList>
+        <!-- ScriptCount=2 -->
+        <ScriptRecord index="0">
+            <ScriptTag value="DFLT"/>
+            <Script>
+                <DefaultLangSys>
+                    <ReqFeatureIndex value="65535"/>
+                    <!-- FeatureCount=3 -->
+                    <FeatureIndex index="0" value="0"/>
+                    <FeatureIndex index="1" value="3"/>
+                    <FeatureIndex index="2" value="6"/>
+                </DefaultLangSys>
+                <!-- LangSysCount=0 -->
+            </Script>
+        </ScriptRecord>
+        <ScriptRecord index="1">
+            <ScriptTag value="latn"/>
+            <Script>
+                <DefaultLangSys>
+                    <ReqFeatureIndex value="65535"/>
+                    <!-- FeatureCount=3 -->
+                    <FeatureIndex index="0" value="1"/>
+                    <FeatureIndex index="1" value="4"/>
+                    <FeatureIndex index="2" value="7"/>
+                </DefaultLangSys>
+                <!-- LangSysCount=1 -->
+                <LangSysRecord index="0">
+                    <LangSysTag value="CAT "/>
+                    <LangSys>
+                        <ReqFeatureIndex value="65535"/>
+                        <!-- FeatureCount=4 -->
+                        <FeatureIndex index="0" value="2"/>
+                        <FeatureIndex index="1" value="5"/>
+                        <FeatureIndex index="2" value="8"/>
+                        <FeatureIndex index="3" value="9"/>
+                    </LangSys>
+                </LangSysRecord>
+            </Script>
+        </ScriptRecord>
+    </ScriptList>
+    <FeatureList>
+        <!-- FeatureCount=10 -->
+        <FeatureRecord index="0">
+            <FeatureTag value="dlig"/>
+            <Feature>
+                <!-- LookupCount=1 -->
+                <LookupListIndex index="0" value="3"/>
+            </Feature>
+        </FeatureRecord>
+        <FeatureRecord index="1">
+            <FeatureTag value="dlig"/>
+            <Feature>
+                <!-- LookupCount=1 -->
+                <LookupListIndex index="0" value="3"/>
+            </Feature>
+        </FeatureRecord>
+        <FeatureRecord index="2">
+            <FeatureTag value="dlig"/>
+            <Feature>
+                <!-- LookupCount=1 -->
+                <LookupListIndex index="0" value="3"/>
+            </Feature>
+        </FeatureRecord>
+        <FeatureRecord index="3">
+            <FeatureTag value="frac"/>
+            <Feature>
+                <!-- LookupCount=2 -->
+                <LookupListIndex index="0" value="1"/>
+                <LookupListIndex index="1" value="2"/>
+            </Feature>
+        </FeatureRecord>
+        <FeatureRecord index="4">
+            <FeatureTag value="frac"/>
+            <Feature>
+                <!-- LookupCount=2 -->
+                <LookupListIndex index="0" value="1"/>
+                <LookupListIndex index="1" value="2"/>
+            </Feature>
+        </FeatureRecord>
+        <FeatureRecord index="5">
+            <FeatureTag value="frac"/>
+            <Feature>
+                <!-- LookupCount=2 -->
+                <LookupListIndex index="0" value="1"/>
+                <LookupListIndex index="1" value="2"/>
+            </Feature>
+        </FeatureRecord>
+        <FeatureRecord index="6">
+            <FeatureTag value="liga"/>
+            <Feature>
+                <!-- LookupCount=1 -->
+                <LookupListIndex index="0" value="4"/>
+            </Feature>
+        </FeatureRecord>
+        <FeatureRecord index="7">
+            <FeatureTag value="liga"/>
+            <Feature>
+                <!-- LookupCount=1 -->
+                <LookupListIndex index="0" value="4"/>
+            </Feature>
+        </FeatureRecord>
+        <FeatureRecord index="8">
+            <FeatureTag value="liga"/>
+            <Feature>
+                <!-- LookupCount=1 -->
+                <LookupListIndex index="0" value="4"/>
+            </Feature>
+        </FeatureRecord>
+        <FeatureRecord index="9">
+            <FeatureTag value="locl"/>
+            <Feature>
+                <!-- LookupCount=1 -->
+                <LookupListIndex index="0" value="0"/>
+            </Feature>
+        </FeatureRecord>
+    </FeatureList>
+    <LookupList>
+        <!-- LookupCount=8 -->
+        <Lookup index="0">
+            <LookupType value="6"/>
+            <LookupFlag value="0"/>
+            <!-- SubTableCount=2 -->
+            <ChainContextSubst index="0" Format="3">
+                <!-- BacktrackGlyphCount=0 -->
+                <!-- InputGlyphCount=2 -->
+                <InputCoverage index="0" Format="1">
+                    <Glyph value="l"/>
+                </InputCoverage>
+                <InputCoverage index="1" Format="1">
+                    <Glyph value="periodcentered"/>
+                </InputCoverage>
+                <!-- LookAheadGlyphCount=1 -->
+                <LookAheadCoverage index="0" Format="1">
+                    <Glyph value="l"/>
+                </LookAheadCoverage>
+                <!-- SubstCount=1 -->
+                <SubstLookupRecord index="0">
+                    <SequenceIndex value="0"/>
+                    <LookupListIndex value="5"/>
+                </SubstLookupRecord>
+            </ChainContextSubst>
+            <ChainContextSubst index="1" Format="3">
+                <!-- BacktrackGlyphCount=0 -->
+                <!-- InputGlyphCount=2 -->
+                <InputCoverage index="0" Format="1">
+                    <Glyph value="L"/>
+                </InputCoverage>
+                <InputCoverage index="1" Format="1">
+                    <Glyph value="periodcentered"/>
+                </InputCoverage>
+                <!-- LookAheadGlyphCount=1 -->
+                <LookAheadCoverage index="0" Format="1">
+                    <Glyph value="L"/>
+                </LookAheadCoverage>
+                <!-- SubstCount=1 -->
+                <SubstLookupRecord index="0">
+                    <SequenceIndex value="0"/>
+                    <LookupListIndex value="5"/>
+                </SubstLookupRecord>
+            </ChainContextSubst>
+        </Lookup>
+        <Lookup index="1">
+            <LookupType value="6"/>
+            <LookupFlag value="0"/>
+            <!-- SubTableCount=6 -->
+            <ChainContextSubst index="0" Format="3">
+                <!-- BacktrackGlyphCount=1 -->
+                <BacktrackCoverage index="0" Format="2">
+                    <Glyph value="zero"/>
+                    <Glyph value="one"/>
+                    <Glyph value="two"/>
+                    <Glyph value="three"/>
+                    <Glyph value="four"/>
+                    <Glyph value="five"/>
+                    <Glyph value="six"/>
+                    <Glyph value="seven"/>
+                    <Glyph value="eight"/>
+                    <Glyph value="nine"/>
+                </BacktrackCoverage>
+                <!-- InputGlyphCount=1 -->
+                <InputCoverage index="0" Format="1">
+                    <Glyph value="slash"/>
+                </InputCoverage>
+                <!-- LookAheadGlyphCount=1 -->
+                <LookAheadCoverage index="0" Format="2">
+                    <Glyph value="zero"/>
+                    <Glyph value="one"/>
+                    <Glyph value="two"/>
+                    <Glyph value="three"/>
+                    <Glyph value="four"/>
+                    <Glyph value="five"/>
+                    <Glyph value="six"/>
+                    <Glyph value="seven"/>
+                    <Glyph value="eight"/>
+                    <Glyph value="nine"/>
+                </LookAheadCoverage>
+                <!-- SubstCount=1 -->
+                <SubstLookupRecord index="0">
+                    <SequenceIndex value="0"/>
+                    <LookupListIndex value="6"/>
+                </SubstLookupRecord>
+            </ChainContextSubst>
+            <ChainContextSubst index="1" Format="3">
+                <!-- BacktrackGlyphCount=2 -->
+                <BacktrackCoverage index="0" Format="2">
+                    <Glyph value="zero"/>
+                    <Glyph value="one"/>
+                    <Glyph value="two"/>
+                    <Glyph value="three"/>
+                    <Glyph value="four"/>
+                    <Glyph value="five"/>
+                    <Glyph value="six"/>
+                    <Glyph value="seven"/>
+                    <Glyph value="eight"/>
+                    <Glyph value="nine"/>
+                    <Glyph value="zero.den"/>
+                    <Glyph value="one.den"/>
+                    <Glyph value="two.den"/>
+                    <Glyph value="three.den"/>
+                    <Glyph value="four.den"/>
+                    <Glyph value="five.den"/>
+                    <Glyph value="six.den"/>
+                    <Glyph value="seven.den"/>
+                    <Glyph value="eight.den"/>
+                    <Glyph value="nine.den"/>
+                    <Glyph value="zero.num"/>
+                    <Glyph value="one.num"/>
+                    <Glyph value="two.num"/>
+                    <Glyph value="three.num"/>
+                    <Glyph value="four.num"/>
+                    <Glyph value="five.num"/>
+                    <Glyph value="six.num"/>
+                    <Glyph value="seven.num"/>
+                    <Glyph value="eight.num"/>
+                    <Glyph value="nine.num"/>
+                </BacktrackCoverage>
+                <BacktrackCoverage index="1" Format="2">
+                    <Glyph value="zero"/>
+                    <Glyph value="one"/>
+                    <Glyph value="two"/>
+                    <Glyph value="three"/>
+                    <Glyph value="four"/>
+                    <Glyph value="five"/>
+                    <Glyph value="six"/>
+                    <Glyph value="seven"/>
+                    <Glyph value="eight"/>
+                    <Glyph value="nine"/>
+                    <Glyph value="zero.den"/>
+                    <Glyph value="one.den"/>
+                    <Glyph value="two.den"/>
+                    <Glyph value="three.den"/>
+                    <Glyph value="four.den"/>
+                    <Glyph value="five.den"/>
+                    <Glyph value="six.den"/>
+                    <Glyph value="seven.den"/>
+                    <Glyph value="eight.den"/>
+                    <Glyph value="nine.den"/>
+                    <Glyph value="zero.num"/>
+                    <Glyph value="one.num"/>
+                    <Glyph value="two.num"/>
+                    <Glyph value="three.num"/>
+                    <Glyph value="four.num"/>
+                    <Glyph value="five.num"/>
+                    <Glyph value="six.num"/>
+                    <Glyph value="seven.num"/>
+                    <Glyph value="eight.num"/>
+                    <Glyph value="nine.num"/>
+                </BacktrackCoverage>
+                <!-- InputGlyphCount=1 -->
+                <InputCoverage index="0" Format="1">
+                    <Glyph value="fraction"/>
+                </InputCoverage>
+                <!-- LookAheadGlyphCount=0 -->
+                <!-- SubstCount=0 -->
+            </ChainContextSubst>
+            <ChainContextSubst index="2" Format="3">
+                <!-- BacktrackGlyphCount=0 -->
+                <!-- InputGlyphCount=1 -->
+                <InputCoverage index="0" Format="1">
+                    <Glyph value="fraction"/>
+                </InputCoverage>
+                <!-- LookAheadGlyphCount=2 -->
+                <LookAheadCoverage index="0" Format="2">
+                    <Glyph value="zero"/>
+                    <Glyph value="one"/>
+                    <Glyph value="two"/>
+                    <Glyph value="three"/>
+                    <Glyph value="four"/>
+                    <Glyph value="five"/>
+                    <Glyph value="six"/>
+                    <Glyph value="seven"/>
+                    <Glyph value="eight"/>
+                    <Glyph value="nine"/>
+                    <Glyph value="zero.den"/>
+                    <Glyph value="one.den"/>
+                    <Glyph value="two.den"/>
+                    <Glyph value="three.den"/>
+                    <Glyph value="four.den"/>
+                    <Glyph value="five.den"/>
+                    <Glyph value="six.den"/>
+                    <Glyph value="seven.den"/>
+                    <Glyph value="eight.den"/>
+                    <Glyph value="nine.den"/>
+                    <Glyph value="zero.num"/>
+                    <Glyph value="one.num"/>
+                    <Glyph value="two.num"/>
+                    <Glyph value="three.num"/>
+                    <Glyph value="four.num"/>
+                    <Glyph value="five.num"/>
+                    <Glyph value="six.num"/>
+                    <Glyph value="seven.num"/>
+                    <Glyph value="eight.num"/>
+                    <Glyph value="nine.num"/>
+                </LookAheadCoverage>
+                <LookAheadCoverage index="1" Format="2">
+                    <Glyph value="zero"/>
+                    <Glyph value="one"/>
+                    <Glyph value="two"/>
+                    <Glyph value="three"/>
+                    <Glyph value="four"/>
+                    <Glyph value="five"/>
+                    <Glyph value="six"/>
+                    <Glyph value="seven"/>
+                    <Glyph value="eight"/>
+                    <Glyph value="nine"/>
+                    <Glyph value="zero.den"/>
+                    <Glyph value="one.den"/>
+                    <Glyph value="two.den"/>
+                    <Glyph value="three.den"/>
+                    <Glyph value="four.den"/>
+                    <Glyph value="five.den"/>
+                    <Glyph value="six.den"/>
+                    <Glyph value="seven.den"/>
+                    <Glyph value="eight.den"/>
+                    <Glyph value="nine.den"/>
+                    <Glyph value="zero.num"/>
+                    <Glyph value="one.num"/>
+                    <Glyph value="two.num"/>
+                    <Glyph value="three.num"/>
+                    <Glyph value="four.num"/>
+                    <Glyph value="five.num"/>
+                    <Glyph value="six.num"/>
+                    <Glyph value="seven.num"/>
+                    <Glyph value="eight.num"/>
+                    <Glyph value="nine.num"/>
+                </LookAheadCoverage>
+                <!-- SubstCount=0 -->
+            </ChainContextSubst>
+            <ChainContextSubst index="3" Format="3">
+                <!-- BacktrackGlyphCount=1 -->
+                <BacktrackCoverage index="0" Format="2">
+                    <Glyph value="zero"/>
+                    <Glyph value="one"/>
+                    <Glyph value="two"/>
+                    <Glyph value="three"/>
+                    <Glyph value="four"/>
+                    <Glyph value="five"/>
+                    <Glyph value="six"/>
+                    <Glyph value="seven"/>
+                    <Glyph value="eight"/>
+                    <Glyph value="nine"/>
+                    <Glyph value="zero.den"/>
+                    <Glyph value="one.den"/>
+                    <Glyph value="two.den"/>
+                    <Glyph value="three.den"/>
+                    <Glyph value="four.den"/>
+                    <Glyph value="five.den"/>
+                    <Glyph value="six.den"/>
+                    <Glyph value="seven.den"/>
+                    <Glyph value="eight.den"/>
+                    <Glyph value="nine.den"/>
+                    <Glyph value="zero.num"/>
+                    <Glyph value="one.num"/>
+                    <Glyph value="two.num"/>
+                    <Glyph value="three.num"/>
+                    <Glyph value="four.num"/>
+                    <Glyph value="five.num"/>
+                    <Glyph value="six.num"/>
+                    <Glyph value="seven.num"/>
+                    <Glyph value="eight.num"/>
+                    <Glyph value="nine.num"/>
+                </BacktrackCoverage>
+                <!-- InputGlyphCount=1 -->
+                <InputCoverage index="0" Format="1">
+                    <Glyph value="fraction"/>
+                </InputCoverage>
+                <!-- LookAheadGlyphCount=1 -->
+                <LookAheadCoverage index="0" Format="2">
+                    <Glyph value="zero"/>
+                    <Glyph value="one"/>
+                    <Glyph value="two"/>
+                    <Glyph value="three"/>
+                    <Glyph value="four"/>
+                    <Glyph value="five"/>
+                    <Glyph value="six"/>
+                    <Glyph value="seven"/>
+                    <Glyph value="eight"/>
+                    <Glyph value="nine"/>
+                    <Glyph value="zero.den"/>
+                    <Glyph value="one.den"/>
+                    <Glyph value="two.den"/>
+                    <Glyph value="three.den"/>
+                    <Glyph value="four.den"/>
+                    <Glyph value="five.den"/>
+                    <Glyph value="six.den"/>
+                    <Glyph value="seven.den"/>
+                    <Glyph value="eight.den"/>
+                    <Glyph value="nine.den"/>
+                    <Glyph value="zero.num"/>
+                    <Glyph value="one.num"/>
+                    <Glyph value="two.num"/>
+                    <Glyph value="three.num"/>
+                    <Glyph value="four.num"/>
+                    <Glyph value="five.num"/>
+                    <Glyph value="six.num"/>
+                    <Glyph value="seven.num"/>
+                    <Glyph value="eight.num"/>
+                    <Glyph value="nine.num"/>
+                </LookAheadCoverage>
+                <!-- SubstCount=1 -->
+                <SubstLookupRecord index="0">
+                    <SequenceIndex value="0"/>
+                    <LookupListIndex value="6"/>
+                </SubstLookupRecord>
+            </ChainContextSubst>
+            <ChainContextSubst index="4" Format="3">
+                <!-- BacktrackGlyphCount=0 -->
+                <!-- InputGlyphCount=1 -->
+                <InputCoverage index="0" Format="2">
+                    <Glyph value="zero"/>
+                    <Glyph value="one"/>
+                    <Glyph value="two"/>
+                    <Glyph value="three"/>
+                    <Glyph value="four"/>
+                    <Glyph value="five"/>
+                    <Glyph value="six"/>
+                    <Glyph value="seven"/>
+                    <Glyph value="eight"/>
+                    <Glyph value="nine"/>
+                </InputCoverage>
+                <!-- LookAheadGlyphCount=1 -->
+                <LookAheadCoverage index="0" Format="1">
+                    <Glyph value="fraction.afrc"/>
+                </LookAheadCoverage>
+                <!-- SubstCount=1 -->
+                <SubstLookupRecord index="0">
+                    <SequenceIndex value="0"/>
+                    <LookupListIndex value="6"/>
+                </SubstLookupRecord>
+            </ChainContextSubst>
+            <ChainContextSubst index="5" Format="3">
+                <!-- BacktrackGlyphCount=1 -->
+                <BacktrackCoverage index="0" Format="1">
+                    <Glyph value="fraction.afrc"/>
+                </BacktrackCoverage>
+                <!-- InputGlyphCount=1 -->
+                <InputCoverage index="0" Format="2">
+                    <Glyph value="zero"/>
+                    <Glyph value="one"/>
+                    <Glyph value="two"/>
+                    <Glyph value="three"/>
+                    <Glyph value="four"/>
+                    <Glyph value="five"/>
+                    <Glyph value="six"/>
+                    <Glyph value="seven"/>
+                    <Glyph value="eight"/>
+                    <Glyph value="nine"/>
+                </InputCoverage>
+                <!-- LookAheadGlyphCount=0 -->
+                <!-- SubstCount=1 -->
+                <SubstLookupRecord index="0">
+                    <SequenceIndex value="0"/>
+                    <LookupListIndex value="7"/>
+                </SubstLookupRecord>
+            </ChainContextSubst>
+        </Lookup>
+        <Lookup index="2">
+            <LookupType value="4"/>
+            <LookupFlag value="0"/>
+            <!-- SubTableCount=1 -->
+            <LigatureSubst index="0" Format="1">
+                <LigatureSet glyph="five.num">
+                    <Ligature components="fraction.afrc,six.den" glyph="uni215A"/>
+                    <Ligature components="fraction.afrc,eight.den" glyph="fiveeighths"/>
+                </LigatureSet>
+                <LigatureSet glyph="four.num">
+                    <Ligature components="fraction.afrc,five.den" glyph="uni2158"/>
+                </LigatureSet>
+                <LigatureSet glyph="one.num">
+                    <Ligature components="fraction.afrc,two.den" glyph="onehalf"/>
+                    <Ligature components="fraction.afrc,three.den" glyph="uni2153"/>
+                    <Ligature components="fraction.afrc,four.den" glyph="onequarter"/>
+                    <Ligature components="fraction.afrc,five.den" glyph="uni2155"/>
+                    <Ligature components="fraction.afrc,six.den" glyph="uni2159"/>
+                    <Ligature components="fraction.afrc,eight.den" glyph="oneeighth"/>
+                </LigatureSet>
+                <LigatureSet glyph="seven.num">
+                    <Ligature components="fraction.afrc,eight.den" glyph="seveneighths"/>
+                </LigatureSet>
+                <LigatureSet glyph="three.num">
+                    <Ligature components="fraction.afrc,four.den" glyph="threequarters"/>
+                    <Ligature components="fraction.afrc,five.den" glyph="uni2157"/>
+                    <Ligature components="fraction.afrc,eight.den" glyph="threeeighths"/>
+                </LigatureSet>
+                <LigatureSet glyph="two.num">
+                    <Ligature components="fraction.afrc,three.den" glyph="uni2154"/>
+                    <Ligature components="fraction.afrc,five.den" glyph="uni2156"/>
+                </LigatureSet>
+            </LigatureSubst>
+        </Lookup>
+        <Lookup index="3">
+            <LookupType value="4"/>
+            <LookupFlag value="0"/>
+            <!-- SubTableCount=1 -->
+            <LigatureSubst index="0" Format="1">
+                <LigatureSet glyph="R">
+                    <Ligature components="p" glyph="R_p"/>
+                </LigatureSet>
+            </LigatureSubst>
+        </Lookup>
+        <Lookup index="4">
+            <LookupType value="4"/>
+            <LookupFlag value="0"/>
+            <!-- SubTableCount=1 -->
+            <LigatureSubst index="0" Format="1">
+                <LigatureSet glyph="ampersand">
+                    <Ligature components="ampersand" glyph="ampersand_ampersand.liga"/>
+                </LigatureSet>
+                <LigatureSet glyph="bar">
+                    <Ligature components="greater" glyph="bar_greater.liga"/>
+                    <Ligature components="bar" glyph="bar_bar.liga"/>
+                </LigatureSet>
+                <LigatureSet glyph="equal">
+                    <Ligature components="equal,equal" glyph="equal_equal_equal.liga"/>
+                    <Ligature components="equal,greater" glyph="equal_equal_greater.liga"/>
+                    <Ligature components="equal" glyph="equal_equal.liga"/>
+                    <Ligature components="greater" glyph="equal_greater.liga"/>
+                </LigatureSet>
+                <LigatureSet glyph="exclam">
+                    <Ligature components="equal,equal" glyph="exclam_equal_equal.liga"/>
+                    <Ligature components="equal" glyph="exclam_equal.liga"/>
+                </LigatureSet>
+                <LigatureSet glyph="greater">
+                    <Ligature components="equal" glyph="greater_equal.liga"/>
+                </LigatureSet>
+                <LigatureSet glyph="hyphen">
+                    <Ligature components="hyphen,greater" glyph="hyphen_hyphen_greater.liga"/>
+                    <Ligature components="hyphen" glyph="hyphen_hyphen.liga"/>
+                    <Ligature components="greater" glyph="hyphen_greater.liga"/>
+                </LigatureSet>
+                <LigatureSet glyph="less">
+                    <Ligature components="exclam,hyphen,hyphen" glyph="less_exclam_hyphen_hyphen.liga"/>
+                    <Ligature components="hyphen,hyphen" glyph="less_hyphen_hyphen.liga"/>
+                    <Ligature components="equal,equal" glyph="less_equal_equal.liga"/>
+                    <Ligature components="hyphen" glyph="less_hyphen.liga"/>
+                    <Ligature components="equal" glyph="less_equal.liga"/>
+                    <Ligature components="bar" glyph="less_bar.liga"/>
+                </LigatureSet>
+                <LigatureSet glyph="plus">
+                    <Ligature components="plus" glyph="plus_plus.liga"/>
+                </LigatureSet>
+            </LigatureSubst>
+        </Lookup>
+        <Lookup index="5">
+            <LookupType value="4"/>
+            <LookupFlag value="0"/>
+            <!-- SubTableCount=1 -->
+            <LigatureSubst index="0" Format="1">
+                <LigatureSet glyph="L">
+                    <Ligature components="periodcentered" glyph="Ldot"/>
+                </LigatureSet>
+                <LigatureSet glyph="l">
+                    <Ligature components="periodcentered" glyph="ldot"/>
+                </LigatureSet>
+            </LigatureSubst>
+        </Lookup>
+        <Lookup index="6">
+            <LookupType value="1"/>
+            <LookupFlag value="0"/>
+            <!-- SubTableCount=1 -->
+            <SingleSubst index="0" Format="2">
+                <Substitution in="eight" out="eight.num"/>
+                <Substitution in="five" out="five.num"/>
+                <Substitution in="four" out="four.num"/>
+                <Substitution in="fraction" out="fraction.afrc"/>
+                <Substitution in="nine" out="nine.num"/>
+                <Substitution in="one" out="one.num"/>
+                <Substitution in="seven" out="seven.num"/>
+                <Substitution in="six" out="six.num"/>
+                <Substitution in="slash" out="fraction"/>
+                <Substitution in="three" out="three.num"/>
+                <Substitution in="two" out="two.num"/>
+                <Substitution in="zero" out="zero.num"/>
+            </SingleSubst>
+        </Lookup>
+        <Lookup index="7">
+            <LookupType value="1"/>
+            <LookupFlag value="0"/>
+            <!-- SubTableCount=1 -->
+            <SingleSubst index="0" Format="1">
+                <Substitution in="eight" out="eight.den"/>
+                <Substitution in="five" out="five.den"/>
+                <Substitution in="four" out="four.den"/>
+                <Substitution in="nine" out="nine.den"/>
+                <Substitution in="one" out="one.den"/>
+                <Substitution in="seven" out="seven.den"/>
+                <Substitution in="six" out="six.den"/>
+                <Substitution in="three" out="three.den"/>
+                <Substitution in="two" out="two.den"/>
+                <Substitution in="zero" out="zero.den"/>
+            </SingleSubst>
+        </Lookup>
+    </LookupList>
+</GSUB>

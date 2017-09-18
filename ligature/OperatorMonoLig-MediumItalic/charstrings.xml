@@ -232,7 +232,7 @@
           endchar
         
     </CharString>
-    <CharString name="less_exclam_hyphen_x2.liga">
+    <CharString name="less_exclam_hyphen_hyphen.liga">
         993 0 131 120 93 hstem
           81 2038 vstem
           729 -36 callgsubr
