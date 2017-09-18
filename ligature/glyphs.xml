@@ -16,7 +16,7 @@
     <GlyphID id="15" name="less_hyphen.liga"/>
     <GlyphID id="16" name="less_hyphen_hyphen.liga"/>
     <GlyphID id="17" name="less_equal_equal.liga"/>
-    <GlyphID id="18" name="less_exclam_hyphen_x2.liga"/>
+    <GlyphID id="18" name="less_exclam_hyphen_hyphen.liga"/>
     <GlyphID id="19" name="less_bar.liga"/>
     <GlyphID id="20" name="bar_greater.liga"/>
 </GlyphOrder>

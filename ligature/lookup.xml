@@ -30,7 +30,7 @@
                 <Ligature components="hyphen" glyph="hyphen_hyphen.liga"/>
             </LigatureSet>
             <LigatureSet glyph="less">
-                <Ligature components="exclam,hyphen,hyphen" glyph="less_exclam_hyphen_x2.liga"/>
+                <Ligature components="exclam,hyphen,hyphen" glyph="less_exclam_hyphen_hyphen.liga"/>
                 <Ligature components="equal,equal" glyph="less_equal_equal.liga"/>
                 <Ligature components="hyphen,hyphen" glyph="less_hyphen_hyphen.liga"/>
                 <Ligature components="bar" glyph="less_bar.liga"/>
