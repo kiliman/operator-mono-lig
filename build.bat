@@ -1,24 +1,28 @@
-@echo off
+rem @echo off
+setlocal
 
-del /q .\original\*.ttx
+if not exist .\build\* mkdir build
 
-ttx .\original\OperatorMono-Medium.otf
-ttx .\original\OperatorMono-MediumItalic.otf
-ttx .\original\OperatorMonoSSm-Book.otf
-ttx .\original\OperatorMonoSSm-BookItalic.otf
-ttx .\original\OperatorMonoSSm-Medium.otf
-#ttx .\original\OperatorMonoSSm-MediumItalic.otf
+rem only build passed in font
+if not "%1%"=="" (
+	call :build_font %1
+	exit /b
+)
 
-if not exist build\* mkdir build
+rem build all fonts
+for /d %%d in (.\ligature\*) do call :build_font %%~nd
+exit /b	
+	
 
-node index.js OperatorMono-Medium
-node index.js OperatorMono-MediumItalic
-node index.js OperatorMonoSSm-Book
-node index.js OperatorMonoSSM-BookItalic
-node index.js OperatorMonoSSm-Medium
-#node index.js OperatorMonoSSm-MediumItalic
+:build_font
+@echo Building %1
+set lig=%1
+set otf=%lig:Lig=%
 
-del /q .\build\*.otf
+if not exist .\original\%otf%.otf exit /b
 
-ttx .\build\OperatorMonoLig-Medium.ttx
-ttx .\build\OperatorMonoLig-MediumItalic.ttx
+@echo Building %lig%
+ttx -f .\original\%otf%.otf
+node index.js %otf%
+ttx -f .\build\%lig%.ttx
+exit /b
