@@ -19,12 +19,15 @@ I have updated the following fonts:
 * Operator Mono Medium Italic
 
 **Operator Mono SSm Book**
+
 <img src="./images/operator-mono-ssm-book.png" />
 
 **Operator Mono SSm Medium**
-<img src="./images/operator-mono-ssm-book.png" />
+
+<img src="./images/operator-mono-ssm-medium.png" />
 
 **Creating ligatures using Glyphs**
+
 <img src="./images/glyphs-screenshot.png" />
 
 >NOTE: Because *Operator Mono* is not a free font, you must have the original font files. This utility 
