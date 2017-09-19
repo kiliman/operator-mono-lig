@@ -3,12 +3,29 @@
 This project will generate new OpenType fonts for [Operator Mono](https://www.typography.com/fonts/operator/styles/) that includes ligatures similar to
 those found in the popular [Fira Code](https://github.com/tonsky/FiraCode) font.
 
-These ligatures were custom created using [FontForge](http://fontforge.github.io/en-US/). 
+These ligatures were custom created using [Glyphs](https://glyphsapp.com/). 
 There are even italic versions of the ligatures. 
 
-<img src="./images/sample.js.png" />
+I have updated the following fonts:
 
-<img src="./images/sample.html.png" />
+## ScreenSmart versions
+* Operator Mono SSm Book
+* Operator Mono SSm Book Italic
+* Operator Mono SSm Medium
+* Operator Mono SSm Medium Italic
+
+## Regular versions
+* Operator Mono Medium
+* Operator Mono Medium Italic
+
+**Operator Mono SSm Book**
+<img src="./images/operator-mono-ssm-book.png" />
+
+**Operator Mono SSm Medium**
+<img src="./images/operator-mono-ssm-book.png" />
+
+**Creating ligatures using Glyphs**
+<img src="./images/glyphs-screenshot.png" />
 
 >NOTE: Because *Operator Mono* is not a free font, you must have the original font files. This utility 
 will merge the ligature definitions into a copy of the original font. The new font family is named *Operator Mono Lig* so you can install it side-by-side with the original font.
