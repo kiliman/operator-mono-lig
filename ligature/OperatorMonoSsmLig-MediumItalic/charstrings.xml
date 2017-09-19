@@ -1,0 +1,278 @@
+<CharStrings>
+    <CharString name="ampersand_ampersand.liga">
+        -107 -10 107 613 -20 hstem
+          112 116 380 116 vstem
+          1076 -22 rmoveto
+          100 73 -46 51 -39 48 -33 47 rlinecurve
+          -69 callsubr
+          -145 -118 -67 -113 -2 -100 -16 20 -16 21 -14 20 -69 callsubr
+          -147 -119 -67 -115 -101 vvcurveto
+          -86 47 -56 90 71 77 38 77 81 vhcurveto
+          -59 58 69 -56 140 hhcurveto
+          71 77 38 77 81 hvcurveto
+          30 -43 34 -42 38 -42 rrcurveto
+          -790 119 rmoveto
+          -46 callgsubr
+          496 hmoveto
+          -46 callgsubr
+          endchar
+        
+    </CharString>
+    <CharString name="bar_bar.liga">
+        -107 -202 993 hstem
+          303 677 vstem
+          611 791 -14 callgsubr
+          563 993 -14 callgsubr
+          endchar
+        
+    </CharString>
+    <CharString name="bar_greater.liga">
+        -107 -202 993 hstem
+          270 813 vstem
+          270 -202 rmoveto
+          114 hlineto
+          681 456 18 102 -505 435 -115 -3 rlineto
+          -50 -843 rmoveto
+          140 717 412 -340 -2 -12 rlineto
+          endchar
+        
+    </CharString>
+    <CharString name="equal_equal.liga">
+        -107 -25 callgsubr
+          67 1137 vstem
+          1184 405 rmoveto
+          20 102 rlineto
+          -1068 4 callsubr
+          1021 -245 rmoveto
+          21 103 rlineto
+          -1069 -1 callgsubr
+          endchar
+        
+    </CharString>
+    <CharString name="equal_equal_equal.liga">
+        8 callgsubr
+          135 492 rmoveto
+          1692 -2 callsubr
+          -1691 hlineto
+          -63 -306 rmoveto
+          1692 -2 callsubr
+          -1691 hlineto
+          -62 -307 rmoveto
+          1692 13 callgsubr
+          -1692 hlineto
+          endchar
+        
+    </CharString>
+    <CharString name="equal_equal_greater.liga">
+        518 -25 callgsubr
+          67 1732 vstem
+          1366 -24 rmoveto
+          -42 callgsubr
+          91 -91 rlineto
+          -1360 4 callsubr
+          1483 hlineto
+          83 -83 -2 -12 -71 -47 rlineto
+          -1520 -1 callgsubr
+          1384 hlineto
+          -135 -89 rlineto
+          endchar
+        
+    </CharString>
+    <CharString name="equal_greater.liga">
+        -107 -25 callgsubr
+          67 1107 vstem
+          741 -24 rmoveto
+          -42 callgsubr
+          91 -91 rlineto
+          -735 4 callsubr
+          858 hlineto
+          83 -83 -2 -12 -71 -47 rlineto
+          -895 -1 callgsubr
+          759 hlineto
+          -135 -89 rlineto
+          endchar
+        
+    </CharString>
+    <CharString name="exclam_equal.liga">
+        -107 -25 callgsubr
+          67 1137 vstem
+          354 -209 rmoveto
+          251 369 rlineto
+          531 13 callgsubr
+          -482 hlineto
+          97 142 rlineto
+          412 -2 callsubr
+          -363 hlineto
+          176 259 -100 40 -204 -299 rlineto
+          -577 4 callsubr
+          529 hlineto
+          -97 -142 rlineto
+          -459 -1 callgsubr
+          410 hlineto
+          -230 -338 rlineto
+          endchar
+        
+    </CharString>
+    <CharString name="exclam_equal_equal.liga">
+        8 callgsubr
+          724 -209 rmoveto
+          199 292 rlineto
+          821 13 callgsubr
+          -772 hlineto
+          69 102 rlineto
+          723 -2 callsubr
+          -674 hlineto
+          70 102 rlineto
+          626 -2 callsubr
+          -577 hlineto
+          117 172 -100 40 -144 -212 rlineto
+          -987 4 callsubr
+          938 hlineto
+          -69 -102 rlineto
+          -890 4 callsubr
+          841 hlineto
+          -69 -102 rlineto
+          -792 -1 callgsubr
+          743 hlineto
+          -178 -261 rlineto
+          endchar
+        
+    </CharString>
+    <CharString name="greater_equal.liga">
+        -107 -164 -21 hstem
+          250 743 vstem
+          300 15 rmoveto
+          675 313 18 102 -571 300 -61 -81 493 -253 -2 -12 -602 -274 rlineto
+          50 -295 rmoveto
+          638 295 20 122 -708 -322 rlineto
+          endchar
+        
+    </CharString>
+    <CharString name="hyphen_greater.liga">
+        -107 278 105 hstem
+          90 1084 vstem
+          741 -24 rmoveto
+          -42 callgsubr
+          215 -215 rlineto
+          -884 hlineto
+          -21 -105 rlineto
+          915 hlineto
+          -314 -207 rlineto
+          endchar
+        
+    </CharString>
+    <CharString name="hyphen_hyphen.liga">
+        -107 278 105 hstem
+          202 818 vstem
+          537 278 rmoveto
+          3 callsubr
+          798 hmoveto
+          3 callsubr
+          endchar
+        
+    </CharString>
+    <CharString name="hyphen_hyphen_greater.liga">
+        518 278 105 hstem
+          90 1709 vstem
+          1366 -24 rmoveto
+          -42 callgsubr
+          215 -215 rlineto
+          -1509 hlineto
+          -21 -105 rlineto
+          1540 hlineto
+          -314 -207 rlineto
+          endchar
+        
+    </CharString>
+    <CharString name="less_bar.liga">
+        -107 -202 993 hstem
+          257 709 vstem
+          658 -202 rmoveto
+          114 hlineto
+          194 993 -115 -3 -576 -387 -18 -102 rlineto
+          430 -353 rmoveto
+          -313 387 3 12 445 295 rlineto
+          endchar
+        
+    </CharString>
+    <CharString name="less_equal.liga">
+        -107 -171 901 hstem
+          305 734 vstem
+          1039 635 rmoveto
+          -51 95 -633 -300 -18 -102 568 -299 83 81 -487 252 3 12 rlineto
+          -180 -120 rmoveto
+          -19 -109 600 -316 83 81 rlineto
+          endchar
+        
+    </CharString>
+    <CharString name="less_equal_equal.liga">
+        518 -25 callgsubr
+          96 1733 22 callsubr
+          -103 103 rlineto
+          1374 13 callgsubr
+          -1499 hlineto
+          -70 70 3 12 91 60 rlineto
+          1502 -2 callsubr
+          -1367 hlineto
+          117 77 -23 callgsubr
+          rlineto
+          endchar
+        
+    </CharString>
+    <CharString name="less_exclam_hyphen_hyphen.liga">
+        1143 0 146 132 105 hstem
+          96 2334 vstem
+          947 -21 callgsubr
+          -368 312 rmoveto
+          -23 callgsubr
+          311 -323 83 81 -222 221 rlineto
+          539 hlineto
+          20 105 rlineto
+          -553 hlineto
+          935 hmoveto
+          -21 -105 rlineto
+          1222 hlineto
+          20 105 rlineto
+          -1576 -383 16 callgsubr
+        
+    </CharString>
+    <CharString name="less_hyphen.liga">
+        -107 278 105 hstem
+          96 1084 22 callsubr
+          -222 221 rlineto
+          892 hlineto
+          20 105 rlineto
+          -906 hlineto
+          305 201 -23 callgsubr
+          rlineto
+          endchar
+        
+    </CharString>
+    <CharString name="less_hyphen_hyphen.liga">
+        518 278 105 hstem
+          96 1709 22 callsubr
+          -222 221 rlineto
+          1517 hlineto
+          20 105 rlineto
+          -1531 hlineto
+          305 201 -23 callgsubr
+          rlineto
+          endchar
+        
+    </CharString>
+    <CharString name="plus_plus.liga">
+        -107 279 103 hstem
+          148 1001 vstem
+          148 279 rmoveto
+          191 10 callgsubr
+          39 198 rlineto
+          380 10 callgsubr
+          39 198 rlineto
+          189 13 callgsubr
+          -190 -14 callsubr
+          -380 -14 callsubr
+          -190 hlineto
+          endchar
+        
+    </CharString>
+</CharStrings>
