@@ -1,17 +1,20 @@
 #!/bin/bash
 
-rm -rf ./ligature_source/*.ttx
+extract_font() {
+    lig="$1"
 
-ttx ./ligature_source/OperatorMonoLig-Medium.otf
-ttx ./ligature_source/OperatorMonoLig-MediumItalic.otf
-ttx ./ligature_source/OperatorMonoSSmLig-Book.otf
-ttx ./ligature_source/OperatorMonoSSmLig-BookItalic.otf
-ttx ./ligature_source/OperatorMonoSSmLig-Medium.otf
-#ttx ./ligature_source/OperatorMonoSSmLig-MediumItalic.otf
+    echo Extracting $1
+    ttx -f "./ligature_source/$lig.otf"
+    node extract.js $lig
+}
 
-node extract.js OperatorMonoLig-Medium
-node extract.js OperatorMonoLig-MediumItalic
-node extract.js OperatorMonoSSmLig-Book
-node extract.js OperatorMonoSSmLig-BookItalic
-node extract.js OperatorMonoSSmLig-Medium
-#node extract.js OperatorMonoSSmLig-MediumItalic
+if [ -n "$1" ]
+then
+    # extract specified font
+    extract_font $1
+else
+    # build all available fonts
+    for f in ./ligature_source/*.otf ; do
+        extract_font $(basename $f)
+    done
+fi
