@@ -30,6 +30,8 @@ I have updated the following fonts:
 
 <img src="./images/glyphs-screenshot.png" />
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ttI3W5Dh54E?rel=0" frameborder="0" allowfullscreen></iframe>
+
 >NOTE: Because *Operator Mono* is not a free font, you must have the original font files. This utility 
 will merge the ligature definitions into a copy of the original font. The new font family is named *Operator Mono Lig* so you can install it side-by-side with the original font.
 
