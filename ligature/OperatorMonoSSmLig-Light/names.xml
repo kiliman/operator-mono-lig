@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<name>
+  <namerecord nameID="1" platformID="1" platEncID="0" langID="0x0" unicode="True">
+    Operator Mono SSm Lig
+  </namerecord>
+  <namerecord nameID="2" platformID="1" platEncID="0" langID="0x0" unicode="True">
+    Light
+  </namerecord>
+  <namerecord nameID="3" platformID="1" platEncID="0" langID="0x0" unicode="True">
+    H&amp;Co: Operator Mono SSm Lig Light: 1.200
+  </namerecord>
+  <namerecord nameID="4" platformID="1" platEncID="0" langID="0x0" unicode="True">
+    Operator Mono SSm Lig Light
+  </namerecord>
+  <namerecord nameID="6" platformID="1" platEncID="0" langID="0x0" unicode="True">
+    OperatorMonoSSmLig-Light
+  </namerecord>
+  <namerecord nameID="16" platformID="1" platEncID="0" langID="0x0" unicode="True">
+    Operator Mono SSm Lig
+  </namerecord>
+  <namerecord nameID="17" platformID="1" platEncID="0" langID="0x0" unicode="True">
+    Light
+  </namerecord>
+  <namerecord nameID="1" platformID="3" platEncID="1" langID="0x409">
+    Operator Mono SSm Lig Light
+  </namerecord>
+  <namerecord nameID="2" platformID="3" platEncID="1" langID="0x409">
+		Regular
+	</namerecord>
+  <namerecord nameID="3" platformID="3" platEncID="1" langID="0x409">
+    H&amp;Co: Operator Mono SSm Lig Light: 1.200
+  </namerecord>
+  <namerecord nameID="4" platformID="3" platEncID="1" langID="0x409">
+    Operator Mono SSm Lig Light
+  </namerecord>
+  <namerecord nameID="6" platformID="3" platEncID="1" langID="0x409">
+    OperatorMonoSSmLig-Light
+  </namerecord>
+  <namerecord nameID="16" platformID="3" platEncID="1" langID="0x409">
+    Operator Mono SSm Lig
+  </namerecord>
+  <namerecord nameID="17" platformID="3" platEncID="1" langID="0x409">
+    Light
+  </namerecord>
+</name>
