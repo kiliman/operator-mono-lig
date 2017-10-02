@@ -13,6 +13,8 @@ I have updated the following fonts:
 * Operator Mono SSm Book Italic
 * Operator Mono SSm Medium
 * Operator Mono SSm Medium Italic
+* Operator Mono SSm Light
+* Operator Mono SSm Light Italic (**coming soon**)
 
 ## Regular versions
 * Operator Mono Medium
