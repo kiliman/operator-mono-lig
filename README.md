@@ -17,6 +17,8 @@ I have updated the following fonts:
 * Operator Mono SSm Light Italic (**coming soon**)
 
 ## Regular versions
+* Operator Mono Book
+* Operator Mono Book Italic (**coming soon**)
 * Operator Mono Medium
 * Operator Mono Medium Italic
 

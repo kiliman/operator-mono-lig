@@ -1,0 +1,22 @@
+<hmtx>
+    <mtx name="ampersand_ampersand.liga" width="1100" lsb="108"/>
+    <mtx name="bar_bar.liga" width="1100" lsb="312"/>
+    <mtx name="bar_greater.liga" width="1100" lsb="287"/>
+    <mtx name="equal_equal.liga" width="1100" lsb="78"/>
+    <mtx name="equal_equal_equal.liga" width="1650" lsb="78"/>
+    <mtx name="equal_equal_greater.liga" width="1650" lsb="78"/>
+    <mtx name="equal_greater.liga" width="1100" lsb="78"/>
+    <mtx name="exclam_equal.liga" width="1100" lsb="78"/>
+    <mtx name="exclam_equal_equal.liga" width="1650" lsb="78"/>
+    <mtx name="greater_equal.liga" width="1100" lsb="187"/>
+    <mtx name="hyphen_greater.liga" width="1100" lsb="78"/>
+    <mtx name="hyphen_hyphen.liga" width="1100" lsb="181"/>
+    <mtx name="hyphen_hyphen_greater.liga" width="1650" lsb="78"/>
+    <mtx name="less_bar.liga" width="1100" lsb="216"/>
+    <mtx name="less_equal.liga" width="1100" lsb="245"/>
+    <mtx name="less_equal_equal.liga" width="1650" lsb="78"/>
+    <mtx name="less_exclam_hyphen_hyphen.liga" width="2200" lsb="78"/>
+    <mtx name="less_hyphen.liga" width="1100" lsb="78"/>
+    <mtx name="less_hyphen_hyphen.liga" width="1650" lsb="78"/>
+    <mtx name="plus_plus.liga" width="1100" lsb="123"/>
+</hmtx>

@@ -1,0 +1,53 @@
+<ttFont>
+    <head>
+        <!-- Most of this table will be recalculated by the compiler -->
+        <tableVersion value="1.0"/>
+        <fontRevision value="1.002"/>
+        <checkSumAdjustment value="0x1cc640f7"/>
+        <magicNumber value="0x5f0f3cf5"/>
+        <flags value="00000000 00000011"/>
+        <unitsPerEm value="1000"/>
+        <created value="Mon Oct 16 12:43:41 2017"/>
+        <modified value="Mon Oct 16 12:43:41 2017"/>
+        <xMin value="-339"/>
+        <yMin value="-288"/>
+        <xMax value="2122"/>
+        <yMax value="1144"/>
+        <macStyle value="00000000 00000000"/>
+        <lowestRecPPEM value="3"/>
+        <fontDirectionHint value="2"/>
+        <indexToLocFormat value="0"/>
+        <glyphDataFormat value="0"/>
+    </head>
+    <hhea>
+        <tableVersion value="0x00010000"/>
+        <ascent value="960"/>
+        <descent value="-240"/>
+        <lineGap value="0"/>
+        <advanceWidthMax value="2200"/>
+        <minLeftSideBearing value="-339"/>
+        <minRightSideBearing value="-80"/>
+        <xMaxExtent value="2122"/>
+        <caretSlopeRise value="1"/>
+        <caretSlopeRun value="0"/>
+        <caretOffset value="0"/>
+        <reserved0 value="0"/>
+        <reserved1 value="0"/>
+        <reserved2 value="0"/>
+        <reserved3 value="0"/>
+        <metricDataFormat value="0"/>
+        <numberOfHMetrics value="454"/>
+    </hhea>
+    <CFF>
+        <CFFFont>
+            <FontBBox value="-339 -288 2122 1144"/>
+        </CFFFont>
+    </CFF>
+    <CFF>
+        <CFFFont>
+            <Private>
+                <nominalWidthX value="1207"/>
+            </Private>
+        </CFFFont>
+    </CFF>
+</ttFont>
