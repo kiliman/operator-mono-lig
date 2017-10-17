@@ -22,10 +22,10 @@
     Book Italic
   </namerecord>
   <namerecord nameID="1" platformID="3" platEncID="1" langID="0x409">
-    Operator Mono Lig Book Italic
+    Operator Mono Lig Book
   </namerecord>
   <namerecord nameID="2" platformID="3" platEncID="1" langID="0x409">
-	Regular
+	Italic
   </namerecord>
   <namerecord nameID="3" platformID="3" platEncID="1" langID="0x409">
     H&amp;Co: Operator Mono Lig Book Italic: 1.200
