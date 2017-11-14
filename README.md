@@ -45,7 +45,7 @@ will merge the ligature definitions into a copy of the original font. The new fo
 * The original *Operator Mono* font... of course.
 * Install *fonttools* from https://github.com/fonttools/fonttools
   * Install Python
-  * Run: `pip install fonttools`
+  * Run: `pip install fonttools` (for Mac users it's better run `pip3 install fonttools` - [info](https://stackoverflow.com/a/33416270/3191011))
 * Node.js (**version 7.6+ for async/await support**)
 
 ## How to Install
