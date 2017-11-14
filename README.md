@@ -71,7 +71,7 @@ build
 ### Linux/Mac
 
 ```
-build.sh
+./build.sh
 ```
 
 This will generate the new font files in the `build` folder. You can now install these fonts on your system.
