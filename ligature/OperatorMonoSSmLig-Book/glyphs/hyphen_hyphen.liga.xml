@@ -1,0 +1,24 @@
+<Glyph name="hyphen_hyphen.liga" lsb="-440" width="625">
+    <CharString>
+        286 78 hstem
+        -440 352 176 352 vstem
+        -94 286 rmoveto
+        {6661d53b} callgsubr
+        874 hmoveto
+        {6661d53b} callgsubr
+        endchar
+    </CharString>
+    <Subrs/>
+    <GlobalSubrs>
+        <CharString index="0" fingerprint="6661d53b">
+            6 78 rlineto
+            -352 -78 hlineto
+            return
+        </CharString>
+        <CharString index="1" fingerprint="6661d53b">
+            6 78 rlineto
+            -352 -78 hlineto
+            return
+        </CharString>
+    </GlobalSubrs>
+</Glyph>

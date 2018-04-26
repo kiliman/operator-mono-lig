@@ -1,0 +1,72 @@
+<Glyph name="exclam_equal_equal.liga" lsb="-1197" width="625">
+    <CharString>
+        -202 999 -752 77 169 {613b027f} callgsubr
+        -702 752 hintmask 00011000
+        586 537 {5a624417} callsubr
+        -657 hlineto
+        105 151 {34e2f07c} callgsubr
+        -72 32 rlineto
+        hintmask 00011000
+        -127 -183 rlineto
+        -937 {b8250a8b} callsubr
+        898 hlineto
+        hintmask 00101000
+        -118 -169 rlineto
+        -813 {b8250a8b} callsubr
+        775 hlineto
+        hintmask 01001000
+        -118 -169 rlineto
+        -690 {b8250a8b} callsubr
+        652 hlineto
+        -157 -225 {34e2f07c} callgsubr
+        80 -22 rlineto
+        hintmask 01001000
+        172 247 rlineto
+        940 hlineto
+        {6b453ae7} callgsubr
+        -903 hlineto
+        hintmask 00101000
+        118 169 rlineto
+        817 hlineto
+        {6b453ae7} callgsubr
+        -780 hlineto
+        hintmask 00011000
+        118 169 rlineto
+        endchar
+    </CharString>
+    <Subrs>
+        <CharString index="0" fingerprint="5a624417">
+            rmoveto
+            {6b453ae7} callgsubr
+            return
+        </CharString>
+        <CharString index="1" fingerprint="b8250a8b">
+            hlineto
+            -15 -77 rlineto
+            return
+        </CharString>
+    </Subrs>
+    <GlobalSubrs>
+        <CharString index="0" fingerprint="613b027f">
+            {677e3848} callgsubr
+            hstemhm
+            return
+        </CharString>
+        <CharString index="1" fingerprint="677e3848">
+            77 {c2e9bcd5} callgsubr
+            return
+        </CharString>
+        <CharString index="2" fingerprint="c2e9bcd5">
+            169 77 return
+        </CharString>
+        <CharString index="3" fingerprint="6b453ae7">
+            16 77 rlineto
+            return
+        </CharString>
+        <CharString index="4" fingerprint="34e2f07c">
+            rlineto
+            hintmask 10001000
+            return
+        </CharString>
+    </GlobalSubrs>
+</Glyph>
