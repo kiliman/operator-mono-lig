@@ -15,6 +15,6 @@ then
 else
     # build all available fonts
     for f in ./ligature_source/*.otf ; do
-        extract_font $(basename $f)
+        extract_font `basename "${f%.*}"`
     done
 fi
