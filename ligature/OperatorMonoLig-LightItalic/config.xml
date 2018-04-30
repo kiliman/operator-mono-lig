@@ -1,0 +1,127 @@
+<ttFont>
+    <head>
+        
+    
+        <!-- Most of this table will be recalculated by the compiler -->
+        
+    
+        <tableVersion value="1.0"/>
+        
+    
+        <fontRevision value="1.002"/>
+        
+    
+        <checkSumAdjustment value="0x7d28ec7a"/>
+        
+    
+        <magicNumber value="0x5f0f3cf5"/>
+        
+    
+        <flags value="00000000 00000011"/>
+        
+    
+        <unitsPerEm value="1000"/>
+        
+    
+        <created value="Mon Apr 30 12:56:41 2018"/>
+        
+    
+        <modified value="Mon Apr 30 12:56:41 2018"/>
+        
+    
+        <xMin value="-487"/>
+        
+    
+        <yMin value="-375"/>
+        
+    
+        <xMax value="703"/>
+        
+    
+        <yMax value="1125"/>
+        
+    
+        <macStyle value="00000000 00000010"/>
+        
+    
+        <lowestRecPPEM value="3"/>
+        
+    
+        <fontDirectionHint value="2"/>
+        
+    
+        <indexToLocFormat value="0"/>
+        
+    
+        <glyphDataFormat value="0"/>
+        
+  
+    </head>
+    <hhea>
+        
+    
+        <tableVersion value="0x00010000"/>
+        
+    
+        <ascent value="960"/>
+        
+    
+        <descent value="-240"/>
+        
+    
+        <lineGap value="0"/>
+        
+    
+        <advanceWidthMax value="550"/>
+        
+    
+        <minLeftSideBearing value="-487"/>
+        
+    
+        <minRightSideBearing value="-153"/>
+        
+    
+        <xMaxExtent value="703"/>
+        
+    
+        <caretSlopeRise value="1000"/>
+        
+    
+        <caretSlopeRun value="194"/>
+        
+    
+        <caretOffset value="0"/>
+        
+    
+        <reserved0 value="0"/>
+        
+    
+        <reserved1 value="0"/>
+        
+    
+        <reserved2 value="0"/>
+        
+    
+        <reserved3 value="0"/>
+        
+    
+        <metricDataFormat value="0"/>
+        
+    
+        <numberOfHMetrics value="435"/>
+        
+  
+    </hhea>
+    <CFF>
+        <CFFFont>
+            <FontBBox value="-487 -375 703 1125"/>
+        </CFFFont>
+    </CFF>
+    <CFF>
+        <CFFFont>
+            <Private>
+                <nominalWidthX value="107"/>
+            </Private>
+        </CFFFont>
+    </CFF>
+</ttFont>

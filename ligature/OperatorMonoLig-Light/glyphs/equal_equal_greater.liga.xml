@@ -1,0 +1,57 @@
+<Glyph name="equal_equal_greater.liga" lsb="-1018" width="550">
+    <CharString>
+        {0bfe7e46} callgsubr
+        -1018 1478 -57 {076e1c46} callsubr
+        -1259 -52 1320 {ce96b479} callsubr
+        -1329 -52 1267 {3bf8a3e7} callgsubr
+    </CharString>
+    <Subrs>
+        <CharString index="0" fingerprint="a926ac67">
+            156 52 171 52 return
+        </CharString>
+        <CharString index="1" fingerprint="076e1c46">
+            57 hintmask 11100000
+            {ea3a6f68} callsubr
+            144 -121 rlineto
+            return
+        </CharString>
+        <CharString index="2" fingerprint="ea3a6f68">
+            133 595 rmoveto
+            -36 -43 return
+        </CharString>
+        <CharString index="3" fingerprint="ce96b479">
+            hlineto
+            hintmask 11010000
+            101 -85 rlineto
+            -8 vlineto
+            -92 -78 {bf847d0e} callgsubr
+            return
+        </CharString>
+    </Subrs>
+    <GlobalSubrs>
+        <CharString index="0" fingerprint="0bfe7e46">
+            {a926ac67} callsubr
+            hstemhm
+            return
+        </CharString>
+        <CharString index="1" fingerprint="bf847d0e">
+            rlineto
+            hintmask 11100000
+            return
+        </CharString>
+        <CharString index="2" fingerprint="3bf8a3e7">
+            hlineto
+            -158 -134 {c7af96e2} callgsubr
+            endchar
+        </CharString>
+        <CharString index="3" fingerprint="c7af96e2">
+            35 -42 {fe9ab107} callgsubr
+            54 vlineto
+            return
+        </CharString>
+        <CharString index="4" fingerprint="fe9ab107">
+            334 283 rlineto
+            return
+        </CharString>
+    </GlobalSubrs>
+</Glyph>
