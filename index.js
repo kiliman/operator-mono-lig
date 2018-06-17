@@ -184,16 +184,26 @@ const patchNames = (dom, ligatures, profile) => {
   );
 
   const [name, style] = names.fontName.split('-');
+  var [familyStyle, fullNameStyleTry] = names.fontStyle.split(' ');
+
+  let fullNameStyle
+  if (fullNameStyleTry) {
+    fullNameStyle = fullNameStyleTry;
+  } else {
+    fullNameStyle = "";
+  }
+
   const fontName = `${name}${profile.suffixWithLeadingHyphen}-${style}`;
-  const familyName = `${names.familyName}${profile.suffixWithLeadingSpace}`;
-  const fullName = `${familyName} ${names.fontStyle}`;
+  const familyNamePlat = `${ names.familyName }${ profile.suffixWithLeadingSpace }`;
+  const familyName = `${ familyNamePlat } ${ familyStyle }`;
+  const fullName = `${ familyName } ${ fullNameStyle }`;
   const uniqueId = `${names.foundry}: ${fullName}: ${names.version}`;
   // patch CFFFont
   const cffFont = xpath.select('/ttFont/CFF/CFFFont', dom, true);
 
   cffFont.setAttribute('name', ligFontName);
   setAttribute(cffFont, 'FullName', 'value', fullName);
-  setAttribute(cffFont, 'FamilyName', 'value', familyName);
+  setAttribute(cffFont, 'FamilyName', 'value', familyNamePlat);
 
   // update existing names with new names
   updateName(PlatformId.mac, NameId.familyName, familyName);
@@ -201,7 +211,7 @@ const patchNames = (dom, ligatures, profile) => {
   updateName(PlatformId.mac, NameId.uniqueId, uniqueId);
   updateName(PlatformId.mac, NameId.fullName, fullName);
   updateName(PlatformId.mac, NameId.postscriptName, fontName);
-  updateName(PlatformId.mac, NameId.windowsFamilyName, familyName);
+  updateName(PlatformId.mac, NameId.windowsFamilyName, familyNamePlat);
   updateName(PlatformId.mac, NameId.fontStyleName, names.fontStyle);
 
   updateName(PlatformId.win, NameId.familyName, familyName);
@@ -209,7 +219,7 @@ const patchNames = (dom, ligatures, profile) => {
   updateName(PlatformId.win, NameId.uniqueId, uniqueId);
   updateName(PlatformId.win, NameId.fullName, fullName);
   updateName(PlatformId.win, NameId.postscriptName, fontName);
-  updateName(PlatformId.win, NameId.windowsFamilyName, familyName);
+  updateName(PlatformId.win, NameId.windowsFamilyName, familyNamePlat);
   updateName(PlatformId.win, NameId.fontStyleName, names.fontStyle);
 };
 
