@@ -184,15 +184,16 @@ const patchNames = (dom, ligatures, profile) => {
   );
 
   const [name, style] = names.fontName.split('-');
-  var [familyStyle, fullNameStyleTry] = names.fontStyle.split(' ');
+  const [familyStyle, fullNameStyleTry] = names.fontStyle.split(' ');
 
-  let fullNameStyle
+  let fullNameStyleTemp
   if (fullNameStyleTry) {
-    fullNameStyle = fullNameStyleTry;
+    fullNameStyleTemp = fullNameStyleTry;
   } else {
-    fullNameStyle = "";
+    fullNameStyleTemp = "";
   }
-
+  
+  const fullNameStyle = fullNameStyleTemp;
   const fontName = `${name}${profile.suffixWithLeadingHyphen}-${style}`;
   const familyNamePlat = `${names.familyName}${profile.suffixWithLeadingSpace}`;
   const familyName = `${familyNamePlat} ${familyStyle}`;
