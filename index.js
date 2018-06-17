@@ -194,9 +194,9 @@ const patchNames = (dom, ligatures, profile) => {
   }
 
   const fontName = `${name}${profile.suffixWithLeadingHyphen}-${style}`;
-  const familyNamePlat = `${ names.familyName }${ profile.suffixWithLeadingSpace }`;
-  const familyName = `${ familyNamePlat } ${ familyStyle }`;
-  const fullName = `${ familyName } ${ fullNameStyle }`;
+  const familyNamePlat = `${names.familyName}${profile.suffixWithLeadingSpace}`;
+  const familyName = `${familyNamePlat} ${familyStyle}`;
+  const fullName = `${familyName} ${fullNameStyle}`;
   const uniqueId = `${names.foundry}: ${fullName}: ${names.version}`;
   // patch CFFFont
   const cffFont = xpath.select('/ttFont/CFF/CFFFont', dom, true);
