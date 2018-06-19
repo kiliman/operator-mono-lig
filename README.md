@@ -61,17 +61,18 @@ will merge the ligature definitions into a copy of the original font. The new fo
 
 ## How to Install
 
-Once all the prerequisites have been installed, clone this repo.
+1. Once all the prerequisites have been installed, clone this repo.
 
-From the command line, run:
+2. From the command line, run:
 
 ```
 npm install
 ```
 
-Copy your *Operator Mono* OpenType files into the `original` folder.
+3. Copy your *Operator Mono* OpenType files into the `original` folder.
+- **NOTE**: File names must strictly be of the form `OperatorMono-[Book/BookItalic/Medium/MediumItalic].otf`.
 
-From the command line, run:
+4. From the command line, run:
 
 ### Windows
 
