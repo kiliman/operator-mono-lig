@@ -93,7 +93,7 @@ This will generate the new font files in the `build` folder. You can now install
 <img src="./images/OperatorMonoAllTheThings.png" />
 
 ## GitHub
-Add *Operator Mono* to GitHub code blocks using the [Stylish Extension](https://chrome.google.com/webstore/detail/stylish-custom-themes-for/fjnbnpbmkenffdnngjfgmeleoegfcffe?hl=en).
+Add *Operator Mono* to GitHub code blocks using the [Stylus Extension](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne).
 
 Create a style and enter the following:
 
