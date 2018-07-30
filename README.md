@@ -70,7 +70,7 @@ npm install
 ```
 
 3. Copy your *Operator Mono* OpenType files into the `original` folder.
-- **NOTE**: File names must strictly be of the form `OperatorMono-[Book/BookItalic/Medium/MediumItalic].otf`.
+- **NOTE**: File names must strictly be of the form `OperatorMonoSSm-[Book/BookItalic/Medium/MediumItalic].otf`.
 
 4. From the command line, run:
 
