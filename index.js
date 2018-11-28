@@ -289,7 +289,7 @@ async function patchCharStrings(dom) {
 const patchCharStringSubrs = (node, subrs, gsubrs) => {
   // check for callsubr/callgsubr
 
-  const lines = node.childNodes[0].textContent.split(os.EOL);
+  const lines = node.childNodes[0].textContent.split(/\r|\r\n|\n/g);
   const newLines = [];
   let patched = false;
   lines.forEach(line => {
@@ -356,10 +356,10 @@ const serialize = dom =>
     if (node.nodeType === NodeType.TEXT_NODE) {
       if (regExWhitespace.test(node.data)) return null;
       const data = node.data
-        .split('\r\n')
+        .split(/\r|\r\n|\n/g)
         .filter(s => /\S+/.test(s))
         .map(s => s.replace(/^\s+/g, ''))
-        .join('\n');
+        .join(os.EOL);
 
       return node.ownerDocument.createTextNode(data);
     }
