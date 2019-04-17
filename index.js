@@ -46,14 +46,15 @@ const buildFont = profile => {
   const ligatures = sortLigatures(
     fs
       .readdirSync(`./ligature/${ligFontName}/glyphs`)
-      .filter(file => file != 'LIG.xml')
-      .map(file => file.replace('.liga.xml', ''))
+      .filter(file => /\.xml$/.test(file))
+      .map(file => file.replace('.xml', ''))
   )
-    .filter(name => !/\d+$/.test(name)) // skip alternates (ends with .#)
+    .filter(name => !/\d+\.liga$/.test(name)) // skip alternates (ends with .#)
     .filter(name => filterLigatures(name, profile.ligatures))
     .map(name => mapLigatures(name, profile.ligatures));
 
-  const ligaturesWithLIG = [...ligatures, { name: 'LIG', glyph: 'LIG' }];
+  const ligaturesWithLIG = ligatures;
+  //[...ligatures, { name: 'LIG', glyph: 'LIG' }];
 
   processPatch('names', patchNames, dom, ligatures, profile);
   processPatch('glyphs', patchGlyphs, dom, ligaturesWithLIG);
@@ -118,7 +119,7 @@ const filterLigatures = (name, ligatures) => {
 
 const mapLigatures = (name, ligatures) => {
   // return { ligature, glyph }
-  let entry = { name, glyph: name + '.liga' };
+  let entry = { name, glyph: name };
   ligatures.forEach(ligature => {
     const n = ligature.indexOf('=');
     if (n > 0 && ligature.substr(0, n) === name) {
@@ -186,13 +187,13 @@ const patchNames = (dom, ligatures, profile) => {
   const [name, style] = names.fontName.split('-');
   const [familyStyle, fullNameStyleTry] = names.fontStyle.split(' ');
 
-  let fullNameStyleTemp
+  let fullNameStyleTemp;
   if (fullNameStyleTry) {
     fullNameStyleTemp = fullNameStyleTry;
   } else {
-    fullNameStyleTemp = "";
+    fullNameStyleTemp = '';
   }
-  
+
   const fullNameStyle = fullNameStyleTemp;
   const fontName = `${name}${profile.suffixWithLeadingHyphen}-${style}`;
   const familyNamePlat = `${names.familyName}${profile.suffixWithLeadingSpace}`;
@@ -254,10 +255,12 @@ const patchGlyphs = (dom, ligatures) => {
 };
 
 const patchGsub = (dom, ligatures) => {
-  ligatures.forEach(ligature => {
-    // build gsub tables
-    gsub.buildGsubTables(dom, ligature);
-  });
+  ligatures
+    .filter(ligature => /_/.test(ligature.glyph))
+    .forEach(ligature => {
+      // build gsub tables
+      gsub.buildGsubTables(dom, ligature);
+    });
   gsub.finalizeGsubTables();
 };
 
@@ -285,7 +288,7 @@ const patchCharStrings = (dom, ligatures) => {
   // patch CFFFont
   const cffFont = xpath.select('/ttFont/CFF/CFFFont', dom, true);
   const targetHmtx = xpath.select('/ttFont/hmtx', dom, true);
-
+  const targetCmaps = xpath.select('/ttFont/cmap/cmap_format_4', dom);
   const targetCharStrings = xpath.select('CharStrings', cffFont, true);
   const targetSubrs = xpath.select(
     '/ttFont/CFF/CFFFont/Private/Subrs',
@@ -297,9 +300,7 @@ const patchCharStrings = (dom, ligatures) => {
   ligatures.forEach(ligature => {
     console.log(
       `* ${ligature.name}${
-        ligature.name + '.liga' === ligature.glyph || ligature.name === 'LIG'
-          ? ''
-          : ' => ' + ligature.glyph
+        ligature.name === ligature.glyph ? '' : ' => ' + ligature.glyph
       }`
     );
     const glyphDom = loadXml(`glyphs/${ligature.glyph}`).documentElement;
@@ -325,6 +326,17 @@ const patchCharStrings = (dom, ligatures) => {
         lsb: glyphDom.getAttribute('lsb')
       })
     );
+    const code = glyphDom.getAttribute('code');
+    if (code) {
+      Array.from(targetCmaps).forEach(node => {
+        node.appendChild(
+          createElementWithAttributes('map', {
+            code,
+            name: ligature.glyph
+          })
+        );
+      });
+    }
   });
 };
 

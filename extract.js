@@ -10,7 +10,7 @@ const hash = require('hash.js');
 
 let fontName;
 
-const regEx = /^LIG$|\.liga$/;
+const regEx = /^LIG$|uni(E0A0|E0B0|E0B2)|\.liga$/;
 const NodeType = {};
 NodeType.TEXT_NODE = 3;
 
@@ -87,6 +87,7 @@ const extractFromPath = (path, dom) => {
 };
 
 const extractCharStrings = dom => {
+  const cmap = xpath.select('/ttfont/cmap/cmap_format_4', dom);
   const charStrings = xpath.select(
     '/ttFont/CFF/CFFFont/CharStrings/CharString',
     dom
@@ -94,14 +95,20 @@ const extractCharStrings = dom => {
 
   charStrings
     .filter(node => regEx.test(node.getAttribute('name')))
-    .forEach(node => writeGlyphData(dom, node));
+    .forEach(node => writeGlyphData(dom, node, cmap));
   console.log('Finished writing charstrings');
 };
 
-const writeGlyphData = (dom, node) => {
+const writeGlyphData = (dom, node, cmap) => {
   const newDom = new DOMParser().parseFromString('<Glyph/>').documentElement;
   const name = node.getAttribute('name');
   newDom.setAttribute('name', name);
+
+  // get map and set code
+  const map = xpath.select(`/ttFont/cmap/cmap_format_4/map[@name="${name}"]`, dom, true);
+  if (map) {
+    newDom.setAttribute('code', map.getAttribute('code'));
+  }
 
   // get mtx
   const mtx = xpath.select(`/ttFont/hmtx/mtx[@name="${name}"]`, dom, true);

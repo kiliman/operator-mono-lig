@@ -15,7 +15,7 @@ let chainIndex = 0;
 const substLookupMap = {};
 
 const buildGsubTables = (_dom, ligature) => {
-  const glyphs = ligature.name.split('_');
+  const glyphs = ligature.name.replace(/\.liga$/, '').split('_');
 
   dom = _dom;
   gsubDom = xpath.select('ttFont/GSUB', dom, true);
