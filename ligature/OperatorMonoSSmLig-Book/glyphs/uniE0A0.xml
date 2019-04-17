@@ -1,0 +1,64 @@
+<Glyph name="uniE0A0" code="0xe0a0" lsb="0" width="625">
+    <CharString>
+        -136 63 193 127 320 64 64 64 hstemhm
+        0 64 0 128 0 64 128 64 0 128 0 64 hintmask 1111010101000000
+        512 631 rmoveto
+        -71 -57 -57 -71 hvcurveto
+        hintmask 1111010010000000
+        -47 26 -41 38 -22 vhcurveto
+        -18 vlineto
+        -64 -64 -64 -64 -53 -42 -11 -18 -33 vhcurveto
+        303 vlineto
+        hintmask 1111101101000000
+        {6b0561fb} callsubr
+        -71 -57 -57 -71 vhcurveto
+        hintmask 1111010101000000
+        -47 26 -41 38 -22 vhcurveto
+        -419 vlineto
+        hintmask 1111101010000000
+        -38 -22 -26 -41 -47 vvcurveto
+        -71 57 -57 71 71 57 57 71 34 -13 30 -21 23 vhcurveto
+        23 19 30 18 49 hhcurveto
+        128 128 128 128 hvcurveto
+        18 vlineto
+        hintmask 1111010101000000
+        {6b0561fb} callsubr
+        vhcurveto
+        hintmask 1111101101000000
+        -384 63 rmoveto
+        {30fa4c08} callgsubr
+        {0f5e6060} callsubr
+        hvcurveto
+        384 -256 {729746cc} callgsubr
+        -384 -512 {729746cc} callgsubr
+        endchar
+    </CharString>
+    <Subrs>
+        <CharString index="0" fingerprint="6b0561fb">
+            38 22 26 41 47 vvcurveto
+            71 -57 57 -71 return
+        </CharString>
+        <CharString index="1" fingerprint="6b0561fb">
+            38 22 26 41 47 vvcurveto
+            71 -57 57 -71 return
+        </CharString>
+        <CharString index="2" fingerprint="0f5e6060">
+            -35 -29 29 35 35 29 29 35 return
+        </CharString>
+    </Subrs>
+    <GlobalSubrs>
+        <CharString index="0" fingerprint="30fa4c08">
+            35 29 -29 -35 -35 -29 -29 -35 return
+        </CharString>
+        <CharString index="1" fingerprint="729746cc">
+            rmoveto
+            {0f5e6060} callsubr
+            {30fa4c08} callgsubr
+            hvcurveto
+            return
+        </CharString>
+        <CharString index="2" fingerprint="30fa4c08">
+            35 29 -29 -35 -35 -29 -29 -35 return
+        </CharString>
+    </GlobalSubrs>
+</Glyph>
