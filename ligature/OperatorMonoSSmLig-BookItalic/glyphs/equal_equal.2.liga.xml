@@ -1,6 +1,6 @@
 <Glyph name="equal_equal.2.liga" lsb="-548" width="625">
     <CharString>
-        168 82 167 73 hstem
+        168 82 hstem
         -552 1086 vstem
         -8 413 {28eb467f} callgsubr
         -126 -246 {28eb467f} callgsubr

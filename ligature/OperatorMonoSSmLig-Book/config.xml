@@ -11,7 +11,7 @@
         <fontRevision value="1.002"/>
         
     
-        <checkSumAdjustment value="0x433b5a36"/>
+        <checkSumAdjustment value="0xfa6956ba"/>
         
     
         <magicNumber value="0x5f0f3cf5"/>
@@ -23,10 +23,10 @@
         <unitsPerEm value="1000"/>
         
     
-        <created value="Tue Mar  6 09:39:01 2018"/>
+        <created value="Wed Apr 17 14:51:05 2019"/>
         
     
-        <modified value="Tue Mar  6 09:39:01 2018"/>
+        <modified value="Wed Apr 17 14:51:05 2019"/>
         
     
         <xMin value="-1773"/>
@@ -108,7 +108,7 @@
         <metricDataFormat value="0"/>
         
     
-        <numberOfHMetrics value="475"/>
+        <numberOfHMetrics value="477"/>
         
   
     </hhea>

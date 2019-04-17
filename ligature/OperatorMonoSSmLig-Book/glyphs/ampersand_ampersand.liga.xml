@@ -3,13 +3,13 @@
         -13 75 555 84 hstem
         -495 88 340 79 380 79 vstem
         374 188 rmoveto
-        {931fd17c} callsubr
+        {942f298c} callgsubr
         -13 vlineto
-        -17 20 -16 19 -16 18 {931fd17c} callsubr
-        -88 56 -69 105 {a2bf9d92} callgsubr
+        -17 20 -16 19 -16 18 {942f298c} callgsubr
+        -88 56 -69 105 {a2bf9d92} callsubr
         vhcurveto
         -37 31 68 -85 161 hhcurveto
-        {a2bf9d92} callgsubr
+        {a2bf9d92} callsubr
         hvcurveto
         31 -37 33 -41 36 -46 73 58 rcurveline
         -45 55 -41 48 -37 42 rrcurveto
@@ -20,8 +20,16 @@
         endchar
     </CharString>
     <Subrs>
-        <CharString index="0" fingerprint="931fd17c">
-            {b458bdd3} callsubr
+        <CharString index="0" fingerprint="a2bf9d92">
+            70 71 37 85 58 return
+        </CharString>
+        <CharString index="1" fingerprint="a2bf9d92">
+            70 71 37 85 58 return
+        </CharString>
+    </Subrs>
+    <GlobalSubrs>
+        <CharString index="0" fingerprint="942f298c">
+            {b458bdd3} callgsubr
             {71ca5f9e} callgsubr
             -98 -62 -51 -71 -83 vvcurveto
             return
@@ -31,34 +39,21 @@
             -16 -75 -22 -73 -26 -59 rrcurveto
             return
         </CharString>
-        <CharString index="2" fingerprint="931fd17c">
-            {b458bdd3} callsubr
+        <CharString index="2" fingerprint="71ca5f9e">
+            -132 151 -60 64 58 vvcurveto
+            60 46 50 180 -8 vhcurveto
+            -6 84 rlineto
+            -236 4 -74 -100 -96 vvcurveto
+            -47 23 -44 44 -58 vhcurveto
+            return
+        </CharString>
+        <CharString index="3" fingerprint="942f298c">
+            {b458bdd3} callgsubr
             {71ca5f9e} callgsubr
             -98 -62 -51 -71 -83 vvcurveto
             return
         </CharString>
-    </Subrs>
-    <GlobalSubrs>
-        <CharString index="0" fingerprint="71ca5f9e">
-            -132 151 -60 64 58 vvcurveto
-            60 46 50 180 -8 vhcurveto
-            -6 84 rlineto
-            -236 4 -74 -100 -96 vvcurveto
-            -47 23 -44 44 -58 vhcurveto
-            return
-        </CharString>
-        <CharString index="1" fingerprint="71ca5f9e">
-            -132 151 -60 64 58 vvcurveto
-            60 46 50 180 -8 vhcurveto
-            -6 84 rlineto
-            -236 4 -74 -100 -96 vvcurveto
-            -47 23 -44 44 -58 vhcurveto
-            return
-        </CharString>
-        <CharString index="2" fingerprint="a2bf9d92">
-            70 71 37 85 58 return
-        </CharString>
-        <CharString index="3" fingerprint="5dab1f06">
+        <CharString index="4" fingerprint="5dab1f06">
             -61 -31 43 58 52 31 54 64 47 hvcurveto
             134 -156 rlineto
             -67 -43 -47 -31 -47 hhcurveto

@@ -1,42 +1,46 @@
 <Glyph name="hyphen_greater.liga" lsb="-486" width="625">
     <CharString>
-        {154ae3c8} callgsubr
-        -885 -78 886 {71386fba} callsubr
+        {70ed6034} callsubr
+        -885 -78 886 {ae402dd3} callgsubr
     </CharString>
     <Subrs>
-        <CharString index="0" fingerprint="71386fba">
-            hlineto
-            -297 -247 rlineto
-            hintmask 10100000
-            {1cfc9353} callgsubr
-            endchar
-        </CharString>
-    </Subrs>
-    <GlobalSubrs>
-        <CharString index="0" fingerprint="154ae3c8">
+        <CharString index="0" fingerprint="70ed6034">
             -25 694 -383 78 hstemhm
             440 84 hintmask 10100000
-            {da55b18f} callgsubr
+            {5fc6f736} callgsubr
             hintmask 01100000
             291 -240 rlineto
             return
         </CharString>
-        <CharString index="1" fingerprint="da55b18f">
-            160 669 rmoveto
+        <CharString index="1" fingerprint="bb2a322c">
+            51 -64 {17aabf5c} callgsubr
+            return
+        </CharString>
+        <CharString index="2" fingerprint="7d1d3dc1">
+            370 311 rlineto
+            return
+        </CharString>
+    </Subrs>
+    <GlobalSubrs>
+        <CharString index="0" fingerprint="5fc6f736">
+            160 {69d40705} callgsubr
             -52 -65 rlineto
             return
         </CharString>
-        <CharString index="2" fingerprint="1cfc9353">
-            51 -64 {f3dcc1ee} callgsubr
+        <CharString index="1" fingerprint="69d40705">
+            669 rmoveto
             return
         </CharString>
-        <CharString index="3" fingerprint="f3dcc1ee">
-            {7d1d3dc1} callgsubr
+        <CharString index="2" fingerprint="ae402dd3">
+            hlineto
+            -297 -247 rlineto
+            hintmask 10100000
+            {bb2a322c} callsubr
+            endchar
+        </CharString>
+        <CharString index="3" fingerprint="17aabf5c">
+            {7d1d3dc1} callsubr
             77 vlineto
-            return
-        </CharString>
-        <CharString index="4" fingerprint="7d1d3dc1">
-            370 311 rlineto
             return
         </CharString>
     </GlobalSubrs>

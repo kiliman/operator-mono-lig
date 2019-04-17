@@ -1,74 +1,78 @@
 <Glyph name="equal_equal_greater.liga" lsb="-1157" width="625">
     <CharString>
-        {5099fb0d} callgsubr
+        {41315bea} callsubr
         -1402 -77 1495 {d08059f3} callsubr
-        -1508 -77 1415 {5c721735} callgsubr
+        -1508 -77 1415 {c6a0f725} callsubr
     </CharString>
     <Subrs>
-        <CharString index="0" fingerprint="7fc1da15">
-            -25 694 {9636ae51} callsubr
+        <CharString index="0" fingerprint="41315bea">
+            {8a029985} callgsubr
+            440 84 hintmask 10010000
+            {5fc6f736} callgsubr
+            hintmask 01110000
+            {6fed55c0} callgsubr
             return
         </CharString>
-        <CharString index="1" fingerprint="9636ae51">
-            -501 {a6898cde} callgsubr
-            return
-        </CharString>
-        <CharString index="2" fingerprint="5e5f0c6d">
-            77 169 77 return
-        </CharString>
-        <CharString index="3" fingerprint="6fed55c0">
-            137 -113 rlineto
-            return
-        </CharString>
-        <CharString index="4" fingerprint="d08059f3">
+        <CharString index="1" fingerprint="d08059f3">
             hlineto
             102 -84 rlineto
             -11 vlineto
             -89 -74 rlineto
             return
         </CharString>
-        <CharString index="5" fingerprint="81b66a3d">
-            hlineto
-            -155 -129 rlineto
+        <CharString index="2" fingerprint="c6a0f725">
+            {81b66a3d} callgsubr
+            hintmask 10010000
+            {bb2a322c} callsubr
+            endchar
+        </CharString>
+        <CharString index="3" fingerprint="bb2a322c">
+            51 -64 {17aabf5c} callgsubr
+            return
+        </CharString>
+        <CharString index="4" fingerprint="7d1d3dc1">
+            370 311 rlineto
             return
         </CharString>
     </Subrs>
     <GlobalSubrs>
-        <CharString index="0" fingerprint="5099fb0d">
-            {7fc1da15} callsubr
-            440 84 hintmask 10010000
-            {da55b18f} callgsubr
-            hintmask 01110000
-            {6fed55c0} callsubr
+        <CharString index="0" fingerprint="8a029985">
+            -25 694 {95e8401a} callgsubr
             return
         </CharString>
-        <CharString index="1" fingerprint="a6898cde">
-            {5e5f0c6d} callsubr
+        <CharString index="1" fingerprint="95e8401a">
+            -501 {2104c6cb} callgsubr
+            return
+        </CharString>
+        <CharString index="2" fingerprint="2104c6cb">
+            {5e5f0c6d} callgsubr
             hstemhm
             return
         </CharString>
-        <CharString index="2" fingerprint="da55b18f">
-            160 669 rmoveto
+        <CharString index="3" fingerprint="5e5f0c6d">
+            77 169 77 return
+        </CharString>
+        <CharString index="4" fingerprint="5fc6f736">
+            160 {69d40705} callgsubr
             -52 -65 rlineto
             return
         </CharString>
-        <CharString index="3" fingerprint="5c721735">
-            {81b66a3d} callsubr
-            hintmask 10010000
-            {1cfc9353} callgsubr
-            endchar
-        </CharString>
-        <CharString index="4" fingerprint="1cfc9353">
-            51 -64 {f3dcc1ee} callgsubr
+        <CharString index="5" fingerprint="69d40705">
+            669 rmoveto
             return
         </CharString>
-        <CharString index="5" fingerprint="f3dcc1ee">
-            {7d1d3dc1} callgsubr
+        <CharString index="6" fingerprint="6fed55c0">
+            137 -113 rlineto
+            return
+        </CharString>
+        <CharString index="7" fingerprint="81b66a3d">
+            hlineto
+            -155 -129 rlineto
+            return
+        </CharString>
+        <CharString index="8" fingerprint="17aabf5c">
+            {7d1d3dc1} callsubr
             77 vlineto
-            return
-        </CharString>
-        <CharString index="6" fingerprint="7d1d3dc1">
-            370 311 rlineto
             return
         </CharString>
     </GlobalSubrs>

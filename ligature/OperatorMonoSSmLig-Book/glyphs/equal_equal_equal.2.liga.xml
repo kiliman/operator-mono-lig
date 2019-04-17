@@ -1,14 +1,35 @@
 <Glyph name="equal_equal_equal.2.liga" lsb="-1157" width="625">
     <CharString>
-        {5fbf6524} callgsubr
+        {d1b28ebe} callsubr
         -1158 1688 vstem
-        -647 414 {f5b66a62} callgsubr
-        -667 -246 {f5b66a62} callgsubr
+        -647 414 {997865fc} callsubr
+        -667 -246 {997865fc} callsubr
         endchar
     </CharString>
     <Subrs>
-        <CharString index="0" fingerprint="f6894b04">
-            {5e5f0c6d} callsubr
+        <CharString index="0" fingerprint="d1b28ebe">
+            168 {cb9b10c3} callgsubr
+            return
+        </CharString>
+        <CharString index="1" fingerprint="997865fc">
+            {40e3a81d} callgsubr
+            -511 -77 hlineto
+            1099 hmoveto
+            {ab181b74} callsubr
+            -512 -77 hlineto
+            1099 hmoveto
+            {ab181b74} callsubr
+            -511 -77 hlineto
+            return
+        </CharString>
+        <CharString index="2" fingerprint="ab181b74">
+            1 77 rlineto
+            return
+        </CharString>
+    </Subrs>
+    <GlobalSubrs>
+        <CharString index="0" fingerprint="cb9b10c3">
+            {5e5f0c6d} callgsubr
             hstem
             return
         </CharString>
@@ -18,27 +39,6 @@
         <CharString index="2" fingerprint="40e3a81d">
             rmoveto
             {ab181b74} callsubr
-            return
-        </CharString>
-        <CharString index="3" fingerprint="ab181b74">
-            1 77 rlineto
-            return
-        </CharString>
-    </Subrs>
-    <GlobalSubrs>
-        <CharString index="0" fingerprint="5fbf6524">
-            168 {f6894b04} callsubr
-            return
-        </CharString>
-        <CharString index="1" fingerprint="f5b66a62">
-            {40e3a81d} callsubr
-            -511 -77 hlineto
-            1099 hmoveto
-            {ab181b74} callsubr
-            -512 -77 hlineto
-            1099 hmoveto
-            {ab181b74} callsubr
-            -511 -77 hlineto
             return
         </CharString>
     </GlobalSubrs>

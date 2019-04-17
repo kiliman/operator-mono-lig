@@ -1,18 +1,24 @@
 <Glyph name="equal_equal_equal.liga" lsb="-1157" width="625">
     <CharString>
-        45 77 169 {f6894b04} callsubr
+        45 77 169 {cb9b10c3} callgsubr
         -1157 1688 cntrmask 11100000
-        530 537 {40e3a81d} callsubr
+        530 537 {40e3a81d} callgsubr
         -1688 -77 hlineto
-        1687 {3a85dd50} callgsubr
+        1687 {f24d66ee} callgsubr
         -1688 -77 hlineto
-        1687 {3a85dd50} callgsubr
+        1687 {f24d66ee} callgsubr
         -1688 -77 hlineto
         endchar
     </CharString>
     <Subrs>
-        <CharString index="0" fingerprint="f6894b04">
-            {5e5f0c6d} callsubr
+        <CharString index="0" fingerprint="ab181b74">
+            1 77 rlineto
+            return
+        </CharString>
+    </Subrs>
+    <GlobalSubrs>
+        <CharString index="0" fingerprint="cb9b10c3">
+            {5e5f0c6d} callgsubr
             hstem
             return
         </CharString>
@@ -24,18 +30,8 @@
             {ab181b74} callsubr
             return
         </CharString>
-        <CharString index="3" fingerprint="ab181b74">
-            1 77 rlineto
-            return
-        </CharString>
-    </Subrs>
-    <GlobalSubrs>
-        <CharString index="0" fingerprint="3a85dd50">
-            -246 {40e3a81d} callsubr
-            return
-        </CharString>
-        <CharString index="1" fingerprint="3a85dd50">
-            -246 {40e3a81d} callsubr
+        <CharString index="3" fingerprint="f24d66ee">
+            -246 {40e3a81d} callgsubr
             return
         </CharString>
     </GlobalSubrs>
