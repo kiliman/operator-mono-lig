@@ -10,13 +10,13 @@ const hash = require('hash.js');
 
 let fontName;
 
-const regEx = /^LIG$|uni(E0A0|E0B0|E0B2)|\.liga$/;
 const NodeType = {};
 NodeType.TEXT_NODE = 3;
 
 function main() {
   fontName = process.argv[2];
 
+  const glyphsRegEx = getGlyphsRegEx('./ligature_source/glyphs');
   const srcFileName = `./ligature_source/${fontName}.ttx`;
 
   const folder = `./ligature/${fontName}`;
@@ -31,12 +31,31 @@ function main() {
 
   extractAndWrite('config', extractConfig, dom);
 
-  extractCharStrings(dom);
+  extractCharStrings(dom, glyphsRegEx);
 
   extractAndWrite('subrs', extractSubrs, dom);
   extractAndWrite('gsubrs', extractGlobalSubrs, dom);
 
   console.log('Done');
+}
+
+function getGlyphsRegEx(path) {
+  const glyphs = fs.readFileSync(path, 'utf-8');
+  const patterns = ['LIG'];
+
+  glyphs
+    .split(os.EOL)
+    .filter(line => line.length > 0)
+    .forEach(line => {
+      const pattern = line
+        .replace(/\s*#.*/, '')
+        .replace(/[.]/g, '\\.')
+        .replace(/[*]/g, '.*');
+      if (pattern.length) {
+        patterns.push(pattern);
+      }
+    });
+  return new RegExp(`^(${patterns.join('|')})$`);
 }
 
 function extractAndWrite(name, func, dom) {
@@ -86,26 +105,29 @@ const extractFromPath = (path, dom) => {
   return newDom.documentElement;
 };
 
-const extractCharStrings = dom => {
-  const cmap = xpath.select('/ttfont/cmap/cmap_format_4', dom);
+const extractCharStrings = (dom, glyphsRegEx) => {
   const charStrings = xpath.select(
     '/ttFont/CFF/CFFFont/CharStrings/CharString',
     dom
   );
 
   charStrings
-    .filter(node => regEx.test(node.getAttribute('name')))
-    .forEach(node => writeGlyphData(dom, node, cmap));
+    .filter(node => glyphsRegEx.test(node.getAttribute('name')))
+    .forEach(node => writeGlyphData(dom, node));
   console.log('Finished writing charstrings');
 };
 
-const writeGlyphData = (dom, node, cmap) => {
+const writeGlyphData = (dom, node) => {
   const newDom = new DOMParser().parseFromString('<Glyph/>').documentElement;
   const name = node.getAttribute('name');
   newDom.setAttribute('name', name);
 
   // get map and set code
-  const map = xpath.select(`/ttFont/cmap/cmap_format_4/map[@name="${name}"]`, dom, true);
+  const map = xpath.select(
+    `/ttFont/cmap/cmap_format_4/map[@name="${name}"]`,
+    dom,
+    true
+  );
   if (map) {
     newDom.setAttribute('code', map.getAttribute('code'));
   }
