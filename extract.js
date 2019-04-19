@@ -78,6 +78,12 @@ const extractConfig = dom => {
   const head = xpath.select('/ttFont/head', dom, true);
   const hhea = xpath.select('/ttFont/hhea', dom, true);
 
+  // remove elements that change after each save
+  // but we don't care about
+  head.removeChild(xpath.select('checkSumAdjustment', head, true));
+  head.removeChild(xpath.select('created', head, true));
+  head.removeChild(xpath.select('modified', head, true));
+
   const bbox = extractFromPath('/ttFont/CFF/CFFFont/FontBBox', dom);
   const widthX = extractFromPath(
     '/ttFont/CFF/CFFFont/Private/nominalWidthX',

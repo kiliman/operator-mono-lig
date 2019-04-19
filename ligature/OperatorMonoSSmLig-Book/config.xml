@@ -11,8 +11,6 @@
         <fontRevision value="1.002"/>
         
     
-        <checkSumAdjustment value="0xfa6956ba"/>
-        
     
         <magicNumber value="0x5f0f3cf5"/>
         
@@ -23,11 +21,7 @@
         <unitsPerEm value="1000"/>
         
     
-        <created value="Wed Apr 17 14:51:05 2019"/>
-        
     
-        <modified value="Wed Apr 17 14:51:05 2019"/>
-        
     
         <xMin value="-1773"/>
         
