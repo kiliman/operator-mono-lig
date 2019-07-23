@@ -51,7 +51,8 @@ const buildFont = profile => {
   )
     .filter(name => !/\d+\.liga$/.test(name)) // skip alternates (ends with .#)
     .filter(name => filterLigatures(name, profile.ligatures))
-    .map(name => mapLigatures(name, profile.ligatures));
+    .map(name => mapLigatures(name, profile.ligatures))
+    .filter(entry => filterGlyphsExists(entry));
 
   const ligaturesWithLIG = ligatures;
   //[...ligatures, { name: 'LIG', glyph: 'LIG' }];
@@ -128,6 +129,11 @@ const mapLigatures = (name, ligatures) => {
     }
   });
   return entry;
+};
+
+const filterGlyphsExists = ({ glyph }) => {
+  const exists = fs.existsSync(`./ligature/${ligFontName}/glyphs/${glyph}.xml`);
+  return exists;
 };
 
 const sortLigatures = ligatures => {
@@ -256,6 +262,9 @@ const patchGlyphs = (dom, ligatures) => {
 };
 
 const patchGsub = (dom, ligatures) => {
+  // don't patch if no ligatures other than LIG
+  if (ligatures.length <= 1) return;
+
   ligatures
     .filter(ligature => /_/.test(ligature.glyph))
     .forEach(ligature => {
