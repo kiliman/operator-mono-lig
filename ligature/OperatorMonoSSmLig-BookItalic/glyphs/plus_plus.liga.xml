@@ -4,7 +4,7 @@
         -476 498 vstem
         296 363 rmoveto
         {95276fad} callsubr
-        -394 {071c5e1e} callsubr
+        -394 {a91dde68} callsubr
         40 208 rlineto
         394 hlineto
         -40 -208 rlineto
@@ -21,10 +21,10 @@
             -40 -207 rlineto
             return
         </CharString>
-        <CharString index="1" fingerprint="071c5e1e">
+        <CharString index="1" fingerprint="a91dde68">
             hlineto
             {95276fad} callsubr
-            -201 {62d12451} callgsubr
+            -201 {62d12451} callsubr
             201 hlineto
             -40 -208 rlineto
             81 hlineto
@@ -36,12 +36,11 @@
             -40 -207 rlineto
             return
         </CharString>
-    </Subrs>
-    <GlobalSubrs>
-        <CharString index="0" fingerprint="62d12451">
+        <CharString index="3" fingerprint="62d12451">
             hlineto
             -15 -76 rlineto
             return
         </CharString>
-    </GlobalSubrs>
+    </Subrs>
+    <GlobalSubrs/>
 </Glyph>

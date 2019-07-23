@@ -1,32 +1,21 @@
 <Glyph name="equal_equal_equal.2.liga" lsb="-1172" width="625">
     <CharString>
-        169 {677e3848} callsubr
+        169 {788f8d15} callsubr
         hstem
         -1176 1702 vstem
-        -614 414 {a94de908} callgsubr
-        -715 -246 {a94de908} callgsubr
+        -614 414 {a94de908} callsubr
+        -715 -246 {a94de908} callsubr
         endchar
     </CharString>
     <Subrs>
-        <CharString index="0" fingerprint="677e3848">
-            77 {c2e9bcd5} callgsubr
+        <CharString index="0" fingerprint="788f8d15">
+            77 {c2e9bcd5} callsubr
             return
         </CharString>
-        <CharString index="1" fingerprint="6b453ae7">
-            16 77 rlineto
-            return
-        </CharString>
-        <CharString index="2" fingerprint="b8250a8b">
-            hlineto
-            -15 -77 rlineto
-            return
-        </CharString>
-    </Subrs>
-    <GlobalSubrs>
-        <CharString index="0" fingerprint="c2e9bcd5">
+        <CharString index="1" fingerprint="c2e9bcd5">
             169 77 return
         </CharString>
-        <CharString index="1" fingerprint="a94de908">
+        <CharString index="2" fingerprint="a94de908">
             rmoveto
             {a1178d26} callgsubr
             1099 hmoveto
@@ -36,7 +25,23 @@
             {a1178d26} callgsubr
             return
         </CharString>
-        <CharString index="2" fingerprint="a1178d26">
+        <CharString index="3" fingerprint="6b453ae7">
+            16 77 rlineto
+            return
+        </CharString>
+        <CharString index="4" fingerprint="b8250a8b">
+            hlineto
+            -15 -77 rlineto
+            return
+        </CharString>
+    </Subrs>
+    <GlobalSubrs>
+        <CharString index="0" fingerprint="a1178d26">
+            {6b453ae7} callsubr
+            -511 {b8250a8b} callsubr
+            return
+        </CharString>
+        <CharString index="1" fingerprint="a1178d26">
             {6b453ae7} callsubr
             -511 {b8250a8b} callsubr
             return

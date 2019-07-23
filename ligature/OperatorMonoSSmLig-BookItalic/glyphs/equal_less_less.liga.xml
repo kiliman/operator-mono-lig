@@ -1,6 +1,6 @@
 <Glyph name="equal_less_less.liga" lsb="-1191" width="625">
     <CharString>
-        {402b0d4d} callsubr
+        {57d1d4d8} callsubr
         -246 472 -122 472 hintmask 01001000
         -155 334 rmoveto
         hintmask 01010000
@@ -14,7 +14,7 @@
         -982 {b8250a8b} callsubr
         1072 hlineto
         hintmask 10010000
-        {dd8cf1f6} callsubr
+        {dd8cf1f6} callgsubr
         352 10 rmoveto
         hintmask 10001000
         381 262 {588d100c} callsubr
@@ -22,26 +22,25 @@
         endchar
     </CharString>
     <Subrs>
-        <CharString index="0" fingerprint="402b0d4d">
-            -21 687 -498 {5b0bcb2b} callgsubr
+        <CharString index="0" fingerprint="57d1d4d8">
+            -21 687 -498 {46395396} callgsubr
             return
         </CharString>
-        <CharString index="1" fingerprint="677e3848">
-            77 {c2e9bcd5} callgsubr
+        <CharString index="1" fingerprint="788f8d15">
+            77 {c2e9bcd5} callsubr
             return
         </CharString>
-        <CharString index="2" fingerprint="b8250a8b">
+        <CharString index="2" fingerprint="c2e9bcd5">
+            169 77 return
+        </CharString>
+        <CharString index="3" fingerprint="b8250a8b">
             hlineto
             -15 -77 rlineto
             return
         </CharString>
-        <CharString index="3" fingerprint="c3f2272f">
+        <CharString index="4" fingerprint="c3f2272f">
             hlineto
             -56 -39 -14 -76 52 -54 rlineto
-            return
-        </CharString>
-        <CharString index="4" fingerprint="dd8cf1f6">
-            183 -189 62 60 -283 285 rlineto
             return
         </CharString>
         <CharString index="5" fingerprint="588d100c">
@@ -49,13 +48,14 @@
         </CharString>
     </Subrs>
     <GlobalSubrs>
-        <CharString index="0" fingerprint="5b0bcb2b">
-            {677e3848} callsubr
+        <CharString index="0" fingerprint="46395396">
+            {788f8d15} callsubr
             hstemhm
             return
         </CharString>
-        <CharString index="1" fingerprint="c2e9bcd5">
-            169 77 return
+        <CharString index="1" fingerprint="dd8cf1f6">
+            183 -189 62 60 -283 285 rlineto
+            return
         </CharString>
     </GlobalSubrs>
 </Glyph>
