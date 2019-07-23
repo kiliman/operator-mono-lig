@@ -11,7 +11,7 @@
         21 78 rlineto
         -531 hlineto
         873 hmoveto
-        {f185d220} callsubr
+        {f185d220} callgsubr
         1246 hlineto
         21 78 rlineto
         -1551 -364 {e4f1ffe8} callsubr
@@ -34,11 +34,7 @@
         <CharString index="2" fingerprint="588d100c">
             -39 70 -419 -291 -14 -76 310 -320 62 60 return
         </CharString>
-        <CharString index="3" fingerprint="f185d220">
-            -15 -78 rlineto
-            return
-        </CharString>
-        <CharString index="4" fingerprint="e4f1ffe8">
+        <CharString index="3" fingerprint="e4f1ffe8">
             rmoveto
             122 hlineto
             25 124 rlineto
@@ -46,5 +42,10 @@
             endchar
         </CharString>
     </Subrs>
-    <GlobalSubrs/>
+    <GlobalSubrs>
+        <CharString index="0" fingerprint="f185d220">
+            -15 -78 rlineto
+            return
+        </CharString>
+    </GlobalSubrs>
 </Glyph>

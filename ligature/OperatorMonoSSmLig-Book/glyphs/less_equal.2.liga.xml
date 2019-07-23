@@ -1,10 +1,9 @@
-<Glyph name="less_equal.liga" lsb="-429" width="625">
+<Glyph name="less_equal.2.liga" lsb="-429" width="625">
     <CharString>
-        375 805 {daa6477e} callsubr
-        770 -311 rlineto
-        31 -128 rmoveto
-        -31 -72 -770 311 rlineto
-        87 vlineto
+        -161 536 {daa6477e} callsubr
+        801 -324 rlineto
+        3 -129 rmoveto
+        73 -804 -73 vlineto
         endchar
     </CharString>
     <Subrs>

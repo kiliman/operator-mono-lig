@@ -1,8 +1,8 @@
 <Glyph name="exclam_equal.liga" lsb="-547" width="625">
     <CharString>
-        -202 999 -629 {613b027f} callgsubr
+        -202 999 -629 {5b0bcb2b} callgsubr
         -532 1063 -900 752 hintmask 01110000
-        563 414 {5a624417} callsubr
+        563 414 {fdb5f349} callgsubr
         -386 hlineto
         hintmask 01101000
         190 274 {34e2f07c} callgsubr
@@ -19,42 +19,42 @@
         hintmask 01001000
         257 370 rlineto
         547 hlineto
-        {6b453ae7} callgsubr
+        {6b453ae7} callsubr
         -509 hlineto
         hintmask 01101000
         117 169 rlineto
         endchar
     </CharString>
     <Subrs>
-        <CharString index="0" fingerprint="5a624417">
-            rmoveto
-            {6b453ae7} callgsubr
+        <CharString index="0" fingerprint="677e3848">
+            77 {c2e9bcd5} callgsubr
             return
         </CharString>
-        <CharString index="1" fingerprint="b8250a8b">
+        <CharString index="1" fingerprint="6b453ae7">
+            16 77 rlineto
+            return
+        </CharString>
+        <CharString index="2" fingerprint="b8250a8b">
             hlineto
             -15 -77 rlineto
             return
         </CharString>
     </Subrs>
     <GlobalSubrs>
-        <CharString index="0" fingerprint="613b027f">
-            {677e3848} callgsubr
+        <CharString index="0" fingerprint="5b0bcb2b">
+            {677e3848} callsubr
             hstemhm
             return
         </CharString>
-        <CharString index="1" fingerprint="677e3848">
-            77 {c2e9bcd5} callgsubr
-            return
-        </CharString>
-        <CharString index="2" fingerprint="c2e9bcd5">
+        <CharString index="1" fingerprint="c2e9bcd5">
             169 77 return
         </CharString>
-        <CharString index="3" fingerprint="6b453ae7">
-            16 77 rlineto
+        <CharString index="2" fingerprint="fdb5f349">
+            rmoveto
+            {6b453ae7} callsubr
             return
         </CharString>
-        <CharString index="4" fingerprint="34e2f07c">
+        <CharString index="3" fingerprint="34e2f07c">
             rlineto
             hintmask 10001000
             return

@@ -1,20 +1,15 @@
 <Glyph name="less_hyphen.liga" lsb="-521" width="625">
     <CharString>
         {ce331721} callgsubr
-        -521 {67e00e75} callgsubr
-        -875 {1427aa54} callsubr
+        -521 {67e00e75} callsubr
+        -875 {1427aa54} callgsubr
         862 hlineto
         endchar
     </CharString>
     <Subrs>
-        <CharString index="0" fingerprint="1427aa54">
-            hlineto
-            337 232 rlineto
-            hintmask 10100000
-            {588d100c} callsubr
-            rlineto
-            hintmask 01100000
-            -245 247 rlineto
+        <CharString index="0" fingerprint="67e00e75">
+            472 hintmask 01100000
+            489 364 rmoveto
             return
         </CharString>
         <CharString index="1" fingerprint="588d100c">
@@ -26,9 +21,14 @@
             -21 687 -380 78 hstemhm
             return
         </CharString>
-        <CharString index="1" fingerprint="67e00e75">
-            472 hintmask 01100000
-            489 364 rmoveto
+        <CharString index="1" fingerprint="1427aa54">
+            hlineto
+            337 232 rlineto
+            hintmask 10100000
+            {588d100c} callsubr
+            rlineto
+            hintmask 01100000
+            -245 247 rlineto
             return
         </CharString>
     </GlobalSubrs>
