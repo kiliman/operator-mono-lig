@@ -1,0 +1,11 @@
+<Glyph name="underscore_underscore.liga" lsb="-629" width="625">
+    <CharString>
+        -129 73 hstem
+        -629 1258 vstem
+        629 -56 rmoveto
+        -1258 -73 1258 hlineto
+        endchar
+    </CharString>
+    <Subrs/>
+    <GlobalSubrs/>
+</Glyph>

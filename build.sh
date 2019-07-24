@@ -6,15 +6,15 @@ build_font() {
     lig="$1"
     otf=${lig/Lig/}
 
-    if [ ! -e "./original/$otf.otf" ] 
-    then 
-        return 
+    if [ ! -e "./original/$otf.otf" ]
+    then
+        return
     fi
-    if [ ! -e "./ligature/$lig/charstrings.xml" ] 
-    then 
-        return 
+    if [ ! -e "./ligature/$lig/glyphs" ]
+    then
+        return
     fi
-    
+
     echo Building $1
     ttx -f "./original/$otf.otf"
     node index.js $otf
