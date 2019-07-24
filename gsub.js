@@ -1,6 +1,4 @@
 const xpath = require('xpath');
-//const { XMLSerializer } = require('xmldom');
-//const format = require('xml-formatter');
 const NodeType = {};
 NodeType.TEXT_NODE = 3;
 
@@ -15,9 +13,23 @@ let chainIndex = 0;
 const substLookupMap = {};
 
 const buildGsubTables = (_dom, ligature) => {
-  const glyphs = ligature.name.replace(/\.liga$/, '').split('_');
-
   dom = _dom;
+
+  if (/_/.test(ligature.glyph) === false) {
+    // not a ligature, so see if glyph exists in font (as substitute)
+    const glyphNode = xpath.select(
+      `ttFont/GlyphOrder/GlyphID[@name="${ligature.name}"]`,
+      dom,
+      true
+    );
+    if (!glyphNode) {
+      return;
+    }
+  }
+
+  const glyphs = ligature.name.replace(/\.liga$/, '').split('_');
+  const isSingleGlyph = glyphs.length == 1;
+
   gsubDom = xpath.select('ttFont/GSUB', dom, true);
 
   // look for 'calt' feature
@@ -62,11 +74,9 @@ const buildGsubTables = (_dom, ligature) => {
   });
   appendChildren(
     lookupDom,
-    createElementWithAttributes('LookupType', { value: 6 }),
+    createElementWithAttributes('LookupType', { value: isSingleGlyph ? 1 : 6 }),
     createElementWithAttributes('LookupFlag', { value: 0 })
   );
-
-  lookupListDom.appendChild(lookupDom);
 
   // add contextual lookup to feature
   const featureLookupCount = xpath.select(
@@ -81,15 +91,22 @@ const buildGsubTables = (_dom, ligature) => {
     })
   );
 
-  lookupDom.appendChild(buildBacktrackFirst(glyphs));
-  lookupDom.appendChild(buildLookAheadLast(glyphs));
-  lookupDom.appendChild(buildLigatureSubst(glyphs, ligature.glyph));
-  // remaining context
-  for (let n = glyphs.length - 2; n >= 0; n--) {
+  if (isSingleGlyph) {
     lookupDom.appendChild(
-      buildChainContext(getLIGs(n), [glyphs[n]], glyphs.slice(n + 1), 'LIG')
+      getSubstLookup(ligature.name, ligature.glyph, lookupDom)
     );
+  } else {
+    lookupDom.appendChild(buildBacktrackFirst(glyphs));
+    lookupDom.appendChild(buildLookAheadLast(glyphs));
+    lookupDom.appendChild(buildLigatureSubst(glyphs, ligature.glyph));
+    // remaining context
+    for (let n = glyphs.length - 2; n >= 0; n--) {
+      lookupDom.appendChild(
+        buildChainContext(getLIGs(n), [glyphs[n]], glyphs.slice(n + 1), 'LIG')
+      );
+    }
   }
+  lookupListDom.appendChild(lookupDom);
 };
 
 const finalizeGsubTables = () => {
@@ -97,9 +114,8 @@ const finalizeGsubTables = () => {
   let newIndex = xpath.select('count(Lookup)', lookupListDom, true);
 
   // append added lookups
-  Object.entries(substLookupMap).forEach(lookupEntry => {
+  Object.entries(substLookupMap).forEach(([key, lookup]) => {
     // fixup existing lookups with new index
-    const lookup = lookupEntry[1];
     const oldIndex = lookup.getAttribute('index');
     const substLookups = xpath.select(
       `//ChainContextSubst/SubstLookupRecord/LookupListIndex[@value="${oldIndex}"]`,
@@ -212,8 +228,10 @@ const buildCoverage = (chainDom, tagName, coverage) => {
   }
 };
 
-const getSubstLookup = (input, output) => {
-  let lookupDom = substLookupMap[output];
+const getSubstLookup = (input, output, lookupDom) => {
+  if (!lookupDom) {
+    lookupDom = substLookupMap[output];
+  }
 
   if (!lookupDom) {
     lookupDom = createElementWithAttributes('Lookup', {
@@ -225,12 +243,18 @@ const getSubstLookup = (input, output) => {
     lookupDom.appendChild(
       createElementWithAttributes('LookupFlag', { value: 0 })
     );
-    lookupDom.appendChild(
-      createElementWithAttributes('SingleSubst', { index: 0, Format: 2 })
-    );
     substLookupMap[output] = lookupDom;
   }
-  const singleSubstDom = xpath.select('SingleSubst', lookupDom, true);
+
+  let singleSubstDom = xpath.select('SingleSubst', lookupDom, true);
+
+  if (!singleSubstDom) {
+    singleSubstDom = createElementWithAttributes('SingleSubst', {
+      index: 0,
+      Format: 2
+    });
+    lookupDom.appendChild(singleSubstDom);
+  }
 
   // look for input subst
   const substitionDom = xpath.select(

@@ -58,9 +58,9 @@ const buildFont = profile => {
   //[...ligatures, { name: 'LIG', glyph: 'LIG' }];
 
   processPatch('names', patchNames, dom, ligatures, profile);
-  processPatch('glyphs', patchGlyphs, dom, ligaturesWithLIG);
   processPatch('gsub', patchGsub, dom, ligatures);
   processPatch('charstrings', patchCharStrings, dom, ligaturesWithLIG);
+  processPatch('glyphs', patchGlyphs, dom, ligaturesWithLIG);
   processPatch('hmtx', patchHmtx, dom);
 
   console.log(`Writing ligature font file ${dstFileName}`);
@@ -103,7 +103,6 @@ const getProfiles = () => {
         profiles.push(profile);
       } else {
         if (!profile) {
-          console.log(`Found ${ch} instead of [`);
           throw new Error('You must profile a profile name in []');
         }
         profile.ligatures.push(line);
@@ -113,22 +112,24 @@ const getProfiles = () => {
   return profiles;
 };
 
-const filterLigatures = (name, ligatures) => {
-  // loop through ligatures and return if name applies or not
+const filterLigatures = (name, mappings) => {
+  // loop through mappings and return if name applies or not
   // skip if setting is !name
-  return ligatures.filter(ligature => ligature === '!' + name).length === 0;
+  return mappings.filter(entry => entry === '!' + name).length === 0;
 };
 
-const mapLigatures = (name, ligatures) => {
-  // return { ligature, glyph }
-  let entry = { name, glyph: name };
-  ligatures.forEach(ligature => {
-    const n = ligature.indexOf('=');
-    if (n > 0 && ligature.substr(0, n) === name) {
-      entry.glyph = ligature.substr(n + 1);
+const mapLigatures = (name, mappings) => {
+  let mapping = { name, glyph: name };
+  mappings.forEach(entry => {
+    const [val1, val2] = entry.split('=');
+    // handle lig=altliga
+    if (val1 === name) {
+      mapping.glyph = val2;
+    } else if (val2 === name) {
+      mapping.name = val1;
     }
   });
-  return entry;
+  return mapping;
 };
 
 const filterGlyphsExists = ({ glyph }) => {
@@ -266,7 +267,7 @@ const patchGsub = (dom, ligatures) => {
   if (ligatures.length <= 1) return;
 
   ligatures
-    .filter(ligature => /_/.test(ligature.glyph))
+    //.filter(ligature => /_/.test(ligature.glyph))
     .forEach(ligature => {
       // build gsub tables
       gsub.buildGsubTables(dom, ligature);
