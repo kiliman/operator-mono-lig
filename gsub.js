@@ -114,7 +114,7 @@ const finalizeGsubTables = () => {
   let newIndex = xpath.select('count(Lookup)', lookupListDom, true);
 
   // append added lookups
-  Object.entries(substLookupMap).forEach(([key, lookup]) => {
+  Object.entries(substLookupMap).forEach(([, lookup]) => {
     // fixup existing lookups with new index
     const oldIndex = lookup.getAttribute('index');
     const substLookups = xpath.select(
