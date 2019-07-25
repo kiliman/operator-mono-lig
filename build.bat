@@ -11,12 +11,12 @@ if not "%1%"=="" (
 
 rem build all fonts
 for /d %%d in (.\ligature\*) do call :build_font %%~nd
-exit /b	
-	
+exit /b
+
 
 :build_font
 set lig=%1
-set otf=%lig:Lig=%
+set otf=%lig:Lig-=-%
 
 if not exist .\original\%otf%.otf exit /b
 if not exist .\ligature\%lig%\charstrings.xml exit /b
