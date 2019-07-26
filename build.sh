@@ -10,7 +10,7 @@ build_font() {
     then
         return
     fi
-    if [ ! -e "./ligature/$lig/charstrings.xml" ]
+    if [ ! -e "./ligature/$lig/glyphs" ]
     then
         return
     fi

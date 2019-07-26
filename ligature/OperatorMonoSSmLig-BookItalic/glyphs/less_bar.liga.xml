@@ -1,0 +1,14 @@
+<Glyph name="less_bar.liga" lsb="-421" width="625">
+    <CharString>
+        102 84 vstem
+        256 781 rmoveto
+        -662 -418 -15 -77 486 -488 rlineto
+        85 hlineto
+        193 991 rlineto
+        -257 -884 rmoveto
+        -417 414 2 11 566 351 rlineto
+        endchar
+    </CharString>
+    <Subrs/>
+    <GlobalSubrs/>
+</Glyph>

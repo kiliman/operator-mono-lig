@@ -1,0 +1,69 @@
+<Glyph name="greater_greater_equal.liga" lsb="-1147" width="625">
+    <CharString>
+        {73b4eeb5} callsubr
+        -1147 1679 -1342 84 260 84 hintmask 01001100
+        -726 363 rmoveto
+        hintmask 10001100
+        -364 306 {518377e0} callsubr
+        hintmask 10001100
+        {7d1d3dc1} callsubr
+        344 hmoveto
+        77 vlineto
+        hintmask 01101100
+        -61 51 rlineto
+        973 {2baa6024} callgsubr
+        -1065 hlineto
+        hintmask 10001100
+        -212 178 {51c2609d} callgsubr
+        -337 -280 51 -64 rlineto
+        hintmask 01001100
+        230 193 rlineto
+        1052 {2baa6024} callgsubr
+        -962 hlineto
+        endchar
+    </CharString>
+    <Subrs>
+        <CharString index="0" fingerprint="73b4eeb5">
+            -25 694 {95e8401a} callsubr
+            return
+        </CharString>
+        <CharString index="1" fingerprint="95e8401a">
+            -501 {2104c6cb} callgsubr
+            return
+        </CharString>
+        <CharString index="2" fingerprint="518377e0">
+            {51c2609d} callgsubr
+            hintmask 10010000
+            -337 -280 51 -64 rlineto
+            return
+        </CharString>
+        <CharString index="3" fingerprint="7d1d3dc1">
+            370 311 rlineto
+            return
+        </CharString>
+    </Subrs>
+    <GlobalSubrs>
+        <CharString index="0" fingerprint="2104c6cb">
+            {5e5f0c6d} callgsubr
+            hstemhm
+            return
+        </CharString>
+        <CharString index="1" fingerprint="5e5f0c6d">
+            77 169 77 return
+        </CharString>
+        <CharString index="2" fingerprint="51c2609d">
+            -52 -65 332 -274 rlineto
+            -11 vlineto
+            return
+        </CharString>
+        <CharString index="3" fingerprint="2baa6024">
+            hlineto
+            {ab181b74} callgsubr
+            return
+        </CharString>
+        <CharString index="4" fingerprint="ab181b74">
+            1 77 rlineto
+            return
+        </CharString>
+    </GlobalSubrs>
+</Glyph>

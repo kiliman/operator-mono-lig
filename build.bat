@@ -19,7 +19,7 @@ set lig=%1
 set otf=%lig:Lig-=-%
 
 if not exist .\original\%otf%.otf exit /b
-if not exist .\ligature\%lig%\charstrings.xml exit /b
+if not exist .\ligature\%lig%\glyphs\* exit /b
 
 @echo Building %lig%
 ttx -f .\original\%otf%.otf

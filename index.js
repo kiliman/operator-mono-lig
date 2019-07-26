@@ -1,9 +1,10 @@
-const Promise = require('bluebird');
-const fs = Promise.promisifyAll(require('fs'));
+const fs = require('fs');
 const os = require('os');
 if (!os.EOL) {
   os.EOL = process.platform === 'win32' ? '\r\n' : '\n';
 }
+
+const gsub = require('./gsub');
 
 const xpath = require('xpath');
 const { DOMParser, XMLSerializer } = require('xmldom');
@@ -11,161 +12,272 @@ const format = require('xml-formatter');
 let fontName;
 let ligFontName;
 
-const regEx = /\.liga$/;
-const regExBlankLines = /^(?=\n)$|^\s*/gm;
 const regExWhitespace = /^\s+$/;
 const NodeType = {};
 NodeType.TEXT_NODE = 3;
 
-async function main() {
+let dom;
+function main() {
   fontName = process.argv[2];
   ligFontName = fontName.split('-').join('Lig-');
 
   const srcFileName = `./original/${fontName}.ttx`;
-  const dstFileName = `./build/${ligFontName}.ttx`;
   console.log(`Reading original font file ${srcFileName}`);
-  const xml = await fs.readFileAsync(srcFileName, 'utf-8');
-  const dom = new DOMParser().parseFromString(xml);
+  const xml = fs.readFileSync(srcFileName, 'utf-8');
+  dom = new DOMParser().parseFromString(xml);
 
-  try {
-    await processPatch('names', patchNames, dom);
-    await processPatch('glyphs', patchGlyphs, dom);
-    await processPatch('gpos', patchGpos, dom);
-    await processPatch('gsub', patchGsub, dom);
-    await processPatch('hmtx', patchHmtx, dom);
-    //await processPatch('lookup', patchLookup, dom);
-    await processPatch('charstrings', patchCharStrings, dom);
-  } catch (err) {
-    console.log(err);
-  }
+  const profiles = getProfiles();
 
-  console.log(`Writing ligature font file ${dstFileName}`);
-  await fs.writeFileAsync(dstFileName, format(serialize(dom)));
+  // process settings (there may be more than one font to build)
+  profiles.forEach(profile => buildFont(profile));
+
   console.log('Done');
 }
 
-async function loadConfigAsync(name) {
+const buildFont = profile => {
+  // add suffix to dstFileName if present
+  const dstFileName = `./build/${ligFontName}${
+    profile.suffixWithLeadingHyphen
+  }.ttx`;
+  console.log(
+    `Building ligature font file ${dstFileName} name = ${profile.name}`
+  );
+
+  const ligatures = sortLigatures(
+    fs
+      .readdirSync(`./ligature/${ligFontName}/glyphs`)
+      .filter(file => /\.xml$/.test(file))
+      .map(file => file.replace('.xml', ''))
+  )
+    .filter(name => !/\d+\.liga$/.test(name)) // skip alternates (ends with .#)
+    .filter(name => filterLigatures(name, profile.ligatures))
+    .map(name => mapLigatures(name, profile.ligatures))
+    .filter(entry => filterGlyphsExists(entry));
+
+  const ligaturesWithLIG = ligatures;
+  //[...ligatures, { name: 'LIG', glyph: 'LIG' }];
+
+  processPatch('names', patchNames, dom, ligatures, profile);
+  processPatch('gsub', patchGsub, dom, ligatures);
+  processPatch('charstrings', patchCharStrings, dom, ligaturesWithLIG);
+  processPatch('glyphs', patchGlyphs, dom, ligaturesWithLIG);
+  processPatch('hmtx', patchHmtx, dom);
+
+  console.log(`Writing ligature font file ${dstFileName}`);
+  fs.writeFileSync(dstFileName, format(serialize(dom)));
+};
+
+const getProfiles = () => {
+  const profilePath = './original/profiles.ini';
+  // return default profiles if profile doesn't exist
+  if (!fs.existsSync(profilePath)) {
+    return [
+      {
+        name: 'default',
+        suffix: '',
+        suffixWithLeadingSpace: '',
+        suffixWithLeadingHyphen: '',
+        ligatures: []
+      }
+    ];
+  }
+
+  const profiles = [];
+  let profile = null;
+
+  const content = fs.readFileSync(profilePath, 'utf-8');
+  content
+    .split(os.EOL)
+    .filter(line => /^[#]/.test(line) === false && line.length > 0)
+    .forEach(line => {
+      const ch = line.trim()[0];
+      if (ch === '[') {
+        let name = line.substr(1, line.indexOf(']') - 1);
+        profile = {
+          name,
+          suffix: name === 'default' ? '' : name,
+          suffixWithLeadingSpace: name === 'default' ? '' : ' ' + name,
+          suffixWithLeadingHyphen: name === 'default' ? '' : '-' + name,
+          ligatures: []
+        };
+        profiles.push(profile);
+      } else {
+        if (!profile) {
+          throw new Error('You must profile a profile name in []');
+        }
+        profile.ligatures.push(line);
+      }
+    });
+
+  return profiles;
+};
+
+const filterLigatures = (name, mappings) => {
+  // loop through mappings and return if name applies or not
+  // skip if setting is !name
+  return mappings.filter(entry => entry === '!' + name).length === 0;
+};
+
+const mapLigatures = (name, mappings) => {
+  let mapping = { name, glyph: name };
+  mappings.forEach(entry => {
+    const [val1, val2] = entry.split('=');
+    // handle lig=altliga
+    if (val1 === name) {
+      mapping.glyph = val2;
+    } else if (val2 === name) {
+      mapping.name = val1;
+    }
+  });
+  return mapping;
+};
+
+const filterGlyphsExists = ({ glyph }) => {
+  const exists = fs.existsSync(`./ligature/${ligFontName}/glyphs/${glyph}.xml`);
+  return exists;
+};
+
+const sortLigatures = ligatures => {
+  // sort by most glyphs then alphabetically
+  const sorted = ligatures
+    .map(ligature => {
+      return { count: ligature.split('_').length + 1, ligature: ligature };
+    })
+    .sort(
+      (a, b) =>
+        -compareProperty(a.count, b.count) || // sort by count descending
+        compareProperty(a.ligature, b.ligature) // then by ligature alphabetically
+    )
+    .map(entry => entry.ligature);
+  return sorted;
+};
+
+const compareProperty = (a, b) => {
+  if (typeof a === 'number') {
+    return a || b ? (!a ? -1 : !b ? 1 : a === b ? 0 : a < b ? -1 : 1) : 0;
+  } else {
+    return a || b ? (!a ? -1 : !b ? 1 : a.localeCompare(b)) : 0;
+  }
+};
+
+const loadXml = name => {
   const fileName = `./ligature/${ligFontName}/${name}.xml`;
-  const xml = await fs.readFileAsync(fileName, 'utf-8');
+  const xml = fs.readFileSync(fileName, 'utf-8');
   return new DOMParser().parseFromString(xml);
-}
+};
 
-async function processPatch(name, patchFunc, dom) {
+const processPatch = (name, patchFunc, dom, ligatures, profile) => {
   console.log(`Patching ${name}`);
-  await patchFunc(dom);
-}
+  patchFunc(dom, ligatures, profile);
+};
 
-async function patchNames(dom) {
-  const configDom = await loadConfigAsync('names');
+const PlatformId = {
+  mac: 1,
+  win: 3
+};
 
-  const names = xpath.select('/name/namerecord', configDom);
-  const targetName = xpath.select('/ttFont/name', dom, true);
+const NameId = {
+  familyName: 1,
+  fontStyle: 2,
+  uniqueId: 3,
+  fullName: 4,
+  version: 5,
+  postscriptName: 6,
+  windowsFamilyName: 16,
+  fontStyleName: 17
+};
 
-  // get font and family name
-  const familyName = getTextNode(
-    configDom,
-    '/name/namerecord[@nameID="1" and @platformID="1"]'
+const patchNames = (dom, ligatures, profile) => {
+  const names = JSON.parse(
+    fs.readFileSync(`./ligature/${ligFontName}/names.json`)
   );
-  const fullName = getTextNode(
-    configDom,
-    '/name/namerecord[@nameID="4" and @platformID="1"]'
-  );
 
+  const [name, style] = names.fontName.split('-');
+  const [familyStyle, fullNameStyleTry] = names.fontStyle.split(' ');
+
+  let fullNameStyleTemp;
+  if (fullNameStyleTry) {
+    fullNameStyleTemp = fullNameStyleTry;
+  } else {
+    fullNameStyleTemp = '';
+  }
+
+  const fullNameStyle = fullNameStyleTemp;
+  const fontName = `${name}${profile.suffixWithLeadingHyphen}-${style}`;
+  const familyNamePlat = `${names.familyName}${profile.suffixWithLeadingSpace}`;
+  const familyName = `${familyNamePlat} ${familyStyle}`;
+  const fullName = `${familyName} ${fullNameStyle}`;
+  const uniqueId = `${names.foundry}: ${fullName}: ${names.version}`;
   // patch CFFFont
   const cffFont = xpath.select('/ttFont/CFF/CFFFont', dom, true);
 
   cffFont.setAttribute('name', ligFontName);
   setAttribute(cffFont, 'FullName', 'value', fullName);
-  setAttribute(cffFont, 'FamilyName', 'value', familyName);
+  setAttribute(cffFont, 'FamilyName', 'value', familyNamePlat);
 
   // update existing names with new names
-  names.forEach(node => {
-    const nameId = node.getAttribute('nameID');
-    const platformId = node.getAttribute('platformID');
+  updateName(PlatformId.mac, NameId.familyName, familyName);
+  updateName(PlatformId.mac, NameId.fontStyle, names.fontStyle);
+  updateName(PlatformId.mac, NameId.uniqueId, uniqueId);
+  updateName(PlatformId.mac, NameId.fullName, fullName);
+  updateName(PlatformId.mac, NameId.postscriptName, fontName);
+  updateName(PlatformId.mac, NameId.windowsFamilyName, familyNamePlat);
+  updateName(PlatformId.mac, NameId.fontStyleName, names.fontStyle);
 
-    // search for namerecord in target dom and replace with this one or append node
-    const target = xpath.select(
-      `/ttFont/name/namerecord[@nameID="${nameId}" and @platformID="${platformId}"]`,
-      dom,
-      true
-    );
-    if (target) {
-      target.parentNode.replaceChild(node, target);
-    } else {
-      targetName.appendChild(node);
-    }
-  });
-}
+  updateName(PlatformId.win, NameId.familyName, familyName);
+  updateName(PlatformId.win, NameId.fontStyle, names.windowsFontStyle);
+  updateName(PlatformId.win, NameId.uniqueId, uniqueId);
+  updateName(PlatformId.win, NameId.fullName, fullName);
+  updateName(PlatformId.win, NameId.postscriptName, fontName);
+  updateName(PlatformId.win, NameId.windowsFamilyName, familyNamePlat);
+  updateName(PlatformId.win, NameId.fontStyleName, names.fontStyle);
+};
 
-async function patchGlyphs(dom) {
-  const configDom = await loadConfigAsync('../glyphs');
+const updateName = (platformId, nameId, value) => {
+  // search for namerecord in target dom and replace with this one or append node
+  const target = xpath.select(
+    `/ttFont/name/namerecord[@nameID="${nameId}" and @platformID="${platformId}"]`,
+    dom,
+    true
+  );
+  if (target) {
+    target.childNodes[0].textContent = value;
+  }
+};
+
+const patchGlyphs = (dom, ligatures) => {
   // get number of glyphs in target dom
   const targetGlyphs = xpath.select('/ttFont/GlyphOrder', dom, true);
   const glyphsCount = xpath.select('count(GlyphID)', targetGlyphs, true);
 
+  // only import glyphs specified
   let n = glyphsCount;
   // get ligature glyphs
-  const glyphs = xpath.select('/GlyphOrder/GlyphID', configDom);
-  glyphs.forEach(node => {
-    node.setAttribute('id', n++);
-    targetGlyphs.appendChild(node);
+  ligatures.forEach(ligature => {
+    targetGlyphs.appendChild(
+      createElementWithAttributes('GlyphID', { id: n++, name: ligature.glyph })
+    );
   });
-
   // update glyph count
   setAttribute(dom, '/ttFont/maxp/numGlyphs', 'value', n);
-}
-
-async function patchGpos(dom) {
-  const newGpos = await loadConfigAsync('gpos');
-  const oldGpos = xpath.select('/ttFont/GPOS', dom, true);
-  dom.documentElement.replaceChild(newGpos, oldGpos);
-}
-
-async function patchGsub(dom) {
-  const newGsub = await loadConfigAsync('gsub');
-
-  // loop through Substituion/Ligature nodes and remap chars
-  remap(newGsub, dom, '//Substitution', 'out');
-  remap(newGsub, dom, '//Ligature', 'glyph');
-
-  const oldGsub = xpath.select('/ttFont/GSUB', dom, true);
-  dom.documentElement.replaceChild(newGsub, oldGsub);
-}
-
-const remap = (patchDom, cmapDom, path, attr) => {
-  const cmap = [];
-  let nodes = xpath.select(path, patchDom);
-  nodes.forEach(n => {
-    const out = n.getAttribute(attr);
-    if (out.startsWith('uni')) {
-      // get cmap entry
-      const code = '0x' + out.replace(/uni0*/g, '').toLowerCase();
-      let name = cmap[code];
-      if (!name) {
-        const map = xpath.select(
-          `/ttFont/cmap/cmap_format_4/map[@code="${code}"]`,
-          cmapDom,
-          true
-        );
-        name = map == null ? out : map.getAttribute('name');
-        cmap[code] = name;
-      }
-      n.setAttribute(attr, name);
-    }
-  });
 };
 
-async function patchHmtx(dom) {
-  const hmtxDom = await loadConfigAsync('hmtx');
-  const targetHmtx = xpath.select('/ttFont/hmtx', dom, true);
+const patchGsub = (dom, ligatures) => {
+  // don't patch if no ligatures other than LIG
+  if (ligatures.length <= 1) return;
 
-  const mtx = xpath.select('/hmtx/mtx', hmtxDom);
-  mtx.forEach(node => targetHmtx.appendChild(node));
+  ligatures.forEach(ligature => {
+    // build gsub tables
+    gsub.buildGsubTables(dom, ligature);
+  });
+  gsub.finalizeGsubTables();
+};
 
+const patchHmtx = dom => {
   const mtxCount = xpath.select('count(/ttFont/hmtx/mtx)', dom, true);
   setAttribute(dom, '/ttFont/hhea/numberOfHMetrics', 'value', mtxCount);
 
-  const configDom = await loadConfigAsync('config');
+  const configDom = loadXml('config');
   copyConfigAttribute(dom, configDom, '/ttFont/head/xMin', 'value');
   copyConfigAttribute(dom, configDom, '/ttFont/head/yMin', 'value');
   copyConfigAttribute(dom, configDom, '/ttFont/head/xMax', 'value');
@@ -179,159 +291,104 @@ async function patchHmtx(dom) {
     '/ttFont/CFF/CFFFont/Private/nominalWidthX',
     'value'
   );
-}
+};
 
-async function patchLookup(dom) {
-  const configDom = await loadConfigAsync('../lookup');
-  const featureList = xpath.select('/ttFont/GSUB/FeatureList', dom, true);
-
-  const featuresCount = xpath.select(
-    'count(/ttFont/GSUB/FeatureList/FeatureRecord)',
-    dom,
-    true
-  );
-  const featureRecord = dom.createElement('FeatureRecord');
-  featureRecord.setAttribute('index', featuresCount);
-  const featureTag = dom.createElement('FeatureTag');
-  featureTag.setAttribute('value', 'liga');
-  const feature = dom.createElement('Feature');
-  featureRecord.appendChild(featureTag);
-  featureRecord.appendChild(feature);
-  featureList.appendChild(featureRecord);
-
-  const lookupCount = xpath.select(
-    'count(/ttFont/GSUB/LookupList/Lookup)',
-    dom,
-    true
-  );
-  const lookupListIndex = dom.createElement('LookupListIndex');
-  lookupListIndex.setAttribute('index', '0');
-  lookupListIndex.setAttribute('value', lookupCount);
-  feature.appendChild(lookupListIndex);
-
-  // helper function for adding feature to ScriptRecord
-  const addFeature = (scriptRecord, featureRecord, lang) => {
-    if (!lang) return;
-    const index = featureRecord.getAttribute('index');
-    if (xpath.select(`FeatureIndex[@value="${index}"]`, lang, true)) return;
-
-    const count = xpath.select('count(FeatureIndex)', lang, true);
-    const featureIndex = dom.createElement('FeatureIndex');
-    featureIndex.setAttribute('index', count);
-    featureIndex.setAttribute('value', index);
-    lang.appendChild(featureIndex);
-  };
-
-  // nead to add feature to ScriptList
-  const scriptList = xpath.select('/ttFont/GSUB/ScriptList', dom, true);
-  const scriptRecords = xpath.select('ScriptRecord', scriptList);
-  scriptRecords.forEach(node => {
-    // check for feature in DefaultLangSys
-    addFeature(
-      node,
-      featureRecord,
-      xpath.select('Script/DefaultLangSys', node, true)
-    );
-    // add features to any other languages
-    xpath
-      .select('Script/LangSysRecord/LangSys', node)
-      .forEach(lang => addFeature(node, featureRecord, lang));
-  });
-
-  // finally add LigatureSubst to Lookup
-  const lookupList = xpath.select('/ttFont/GSUB/LookupList', dom, true);
-  const newLookup = xpath.select('/LookupList/Lookup', configDom, true);
-  newLookup.setAttribute('index', lookupCount);
-  lookupList.appendChild(newLookup);
-}
-
-async function patchCharStrings(dom) {
-  const configDom = await loadConfigAsync('charstrings');
-  const nameDom = await loadConfigAsync('names');
-
-  // get font and family name
-  const familyName = getTextNode(
-    nameDom,
-    '/name/namerecord[@nameID="1" and @platformID="1"]'
-  );
-  const fullName = getTextNode(
-    nameDom,
-    '/name/namerecord[@nameID="4" and @platformID="1"]'
-  );
-
+const patchCharStrings = (dom, ligatures) => {
   // patch CFFFont
   const cffFont = xpath.select('/ttFont/CFF/CFFFont', dom, true);
-
-  cffFont.setAttribute('name', ligFontName);
-  setAttribute(cffFont, 'FullName', 'value', fullName);
-  setAttribute(cffFont, 'FamilyName', 'value', familyName);
-
-  const charStrings = xpath.select('/CharStrings/CharString', configDom);
+  const targetHmtx = xpath.select('/ttFont/hmtx', dom, true);
+  const targetCmaps = xpath.select('/ttFont/cmap/cmap_format_4', dom);
   const targetCharStrings = xpath.select('CharStrings', cffFont, true);
+  const targetSubrs = xpath.select(
+    '/ttFont/CFF/CFFFont/Private/Subrs',
+    dom,
+    true
+  );
+  const targetGsubrs = xpath.select('/ttFont/CFF/GlobalSubrs', dom, true);
+  const fingerprints = {};
+  ligatures.forEach(ligature => {
+    console.log(
+      `* ${ligature.name}${
+        ligature.name === ligature.glyph ? '' : ' => ' + ligature.glyph
+      }`
+    );
+    const glyphDom = loadXml(`glyphs/${ligature.glyph}`).documentElement;
+    const node = xpath.select('/Glyph/CharString', glyphDom, true);
+    node.setAttribute('name', ligature.glyph);
 
-  const subrs = {
-    map: [],
-    source: await loadConfigAsync('subrs'),
-    target: xpath.select('/ttFont/CFF/CFFFont/Private/Subrs', dom, true)
-  };
-  const gsubrs = {
-    map: [],
-    source: await loadConfigAsync('gsubrs'),
-    target: xpath.select('/ttFont/CFF/GlobalSubrs', dom, true)
-  };
+    const subrs = {
+      sourcePath: '/Glyph/Subrs',
+      target: targetSubrs
+    };
+    const gsubrs = {
+      sourcePath: '/Glyph/GlobalSubrs',
+      target: targetGsubrs
+    };
 
-  charStrings.forEach(node => {
-    patchCharStringSubrs(node, subrs, gsubrs);
+    patchCharStringSubrs(glyphDom, node, fingerprints, subrs, gsubrs);
+
     targetCharStrings.appendChild(node);
+    targetHmtx.appendChild(
+      createElementWithAttributes('mtx', {
+        name: ligature.glyph,
+        width: glyphDom.getAttribute('width'),
+        lsb: glyphDom.getAttribute('lsb')
+      })
+    );
+    const code = glyphDom.getAttribute('code');
+    if (code) {
+      Array.from(targetCmaps).forEach(node => {
+        node.appendChild(
+          createElementWithAttributes('map', {
+            code,
+            name: ligature.glyph
+          })
+        );
+      });
+    }
   });
-}
+};
 
-const patchCharStringSubrs = (node, subrs, gsubrs) => {
+const patchCharStringSubrs = (glyphDom, node, fingerprints, subrs, gsubrs) => {
   // check for callsubr/callgsubr
 
   const lines = node.childNodes[0].textContent.split(/\r|\r\n|\n/g);
   const newLines = [];
-  let patched = false;
   lines.forEach(line => {
-    const matches = line.match(/(.*?)(-?\d+) (callsubr|callgsubr)$/);
+    if (line.trim().length === 0) return;
+    const matches = line.match(/(.*?)\{([0-9a-z]+)\} (callsubr|callgsubr)$/);
     if (matches != null) {
-      const { map, source, target } =
-        matches[3] === 'callsubr' ? subrs : gsubrs;
-      const index = matches[2];
-      let newIndex = 0;
-      if (!map[index]) {
-        // find subr in source dom and copy to target dom
-        const srcIndex = parseInt(index) + 107;
+      const { sourcePath, target } = matches[3] === 'callsubr' ? subrs : gsubrs;
+      const fingerprint = matches[2];
+      let newIndex = fingerprints[fingerprint];
+      if (!newIndex) {
         const srcSubr = xpath.select(
-          `//CharString[@index="${srcIndex}"]`,
-          source,
+          `/${sourcePath}/CharString[@fingerprint="${fingerprint}"]`,
+          glyphDom,
           true
         );
 
-        // patch up source in case it also has any callsubrs
-        patchCharStringSubrs(srcSubr, subrs, gsubrs);
-
         // append subr to target dom and get new index
         newIndex = xpath.select('count(CharString)', target, true);
-        srcSubr.setAttribute('index', newIndex);
-        target.appendChild(srcSubr);
+
+        const clone = srcSubr.cloneNode(true);
+        clone.setAttribute('index', newIndex);
+        target.appendChild(clone);
 
         // add new index to map and rewrite call
         newIndex = newIndex - 107;
-        map[index] = newIndex;
-      } else {
-        newIndex = map[index];
+        fingerprints[fingerprint] = newIndex;
+
+        // patch up source in case it also has any callsubrs
+        patchCharStringSubrs(glyphDom, clone, fingerprints, subrs, gsubrs);
       }
 
       // rewrite line with new subr index
       line = `${matches[1]}${newIndex} ${matches[3]}`;
-      patched = true;
     }
     newLines.push(line);
   });
-  if (patched) {
-    node.childNodes[0].textContent = newLines.join(os.EOL);
-  }
+  node.childNodes[0].textContent = newLines.join(os.EOL);
 };
 
 const setAttribute = (parent, path, name, value) => {
@@ -344,13 +401,15 @@ const copyConfigAttribute = (dom, configDom, path, name) => {
   setAttribute(dom, path, name, value);
 };
 
-const getTextNode = (dom, path) => {
-  var node = xpath.select(path, dom, true);
-  return node && node.childNodes.length
-    ? node.childNodes[0].nodeValue.trim()
-    : '';
+const createElementWithAttributes = (tagName, attributes) => {
+  const element = dom.createElement(tagName);
+  Object.entries(attributes).forEach(attribute => {
+    element.setAttribute(attribute[0], attribute[1]);
+  });
+  return element;
 };
 
+//const dump = dom => console.log(serialize(dom));
 const serialize = dom =>
   new XMLSerializer().serializeToString(dom, false, node => {
     if (node.nodeType === NodeType.TEXT_NODE) {

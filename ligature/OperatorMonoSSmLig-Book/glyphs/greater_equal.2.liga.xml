@@ -1,0 +1,22 @@
+<Glyph name="greater_equal.2.liga" lsb="-429" width="625">
+    <CharString>
+        -429 805 -332 536 hintmask 01000000
+        -426 47 rmoveto
+        -85 vlineto
+        hintmask 10000000
+        801 324 {25e18274} callgsubr
+        110 -486 rmoveto
+        73 -809 -73 vlineto
+        endchar
+    </CharString>
+    <Subrs/>
+    <GlobalSubrs>
+        <CharString index="0" fingerprint="25e18274">
+            rlineto
+            77 vlineto
+            -764 306 -40 -70 702 -266 rlineto
+            -14 vlineto
+            return
+        </CharString>
+    </GlobalSubrs>
+</Glyph>

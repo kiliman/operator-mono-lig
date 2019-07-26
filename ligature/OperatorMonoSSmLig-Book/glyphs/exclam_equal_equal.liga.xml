@@ -1,0 +1,64 @@
+<Glyph name="exclam_equal_equal.liga" lsb="-1157" width="625">
+    <CharString>
+        {f05ddc40} callsubr
+        -762 77 169 {2104c6cb} callgsubr
+        -1157 1688 -1151 593 cntrmask 01110000
+        hintmask 01111000
+        530 291 {8952ca5e} callsubr
+        -768 hlineto
+        88 169 rlineto
+        679 {2baa6024} callgsubr
+        -640 hlineto
+        hintmask 01110100
+        82 156 rlineto
+        hintmask 10000100
+        -78 37 rlineto
+        hintmask 01010100
+        -101 -193 rlineto
+        -951 -77 911 hlineto
+        hintmask 01110100
+        -89 -169 rlineto
+        -822 -77 782 hlineto
+        -88 -169 rlineto
+        -694 -77 654 hlineto
+        -117 -223 rlineto
+        hintmask 10000100
+        80 -32 rlineto
+        hintmask 01010100
+        133 255 rlineto
+        937 {2baa6024} callgsubr
+        -897 hlineto
+        hintmask 01110100
+        88 169 rlineto
+        endchar
+    </CharString>
+    <Subrs>
+        <CharString index="0" fingerprint="f05ddc40">
+            -210 1017 return
+        </CharString>
+        <CharString index="1" fingerprint="8952ca5e">
+            rmoveto
+            {ab181b74} callgsubr
+            return
+        </CharString>
+    </Subrs>
+    <GlobalSubrs>
+        <CharString index="0" fingerprint="2104c6cb">
+            {5e5f0c6d} callgsubr
+            hstemhm
+            return
+        </CharString>
+        <CharString index="1" fingerprint="5e5f0c6d">
+            77 169 77 return
+        </CharString>
+        <CharString index="2" fingerprint="ab181b74">
+            1 77 rlineto
+            return
+        </CharString>
+        <CharString index="3" fingerprint="2baa6024">
+            hlineto
+            {ab181b74} callgsubr
+            return
+        </CharString>
+    </GlobalSubrs>
+</Glyph>

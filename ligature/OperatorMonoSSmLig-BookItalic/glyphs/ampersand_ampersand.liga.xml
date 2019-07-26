@@ -1,0 +1,52 @@
+<Glyph name="ampersand_ampersand.liga" lsb="-512" width="625">
+    <CharString>
+        -11 81 hstem
+        -511 87 391 84 419 87 vstem
+        547 389 rmoveto
+        -75 26 -33 -65 -33 -54 -33 -46 rlinecurve
+        {01db525f} callsubr
+        -9 0 -8 1 -8 vhcurveto
+        -26 30 -24 30 -22 30 {1d76ed09} callgsubr
+        -48 34 62 -84 163 hhcurveto
+        71 82 45 87 86 hvcurveto
+        34 -48 40 -47 46 -47 71 58 rcurveline
+        -52 52 -43 50 -36 50 45 55 45 67 44 78 rrcurveto
+        -905 -319 rmoveto
+        {a7266e60} callsubr
+        498 hmoveto
+        {a7266e60} callsubr
+        endchar
+    </CharString>
+    <Subrs>
+        <CharString index="0" fingerprint="01db525f">
+            -40 69 -25 68 -9 70 rrcurveto
+            67 68 39 72 55 vvcurveto
+            37 -25 21 -36 -58 -71 -105 -120 vhcurveto
+            -9 vlineto
+            -142 -121 -87 -121 -110 vvcurveto
+            return
+        </CharString>
+        <CharString index="1" fingerprint="01db525f">
+            -40 69 -25 68 -9 70 rrcurveto
+            67 68 39 72 55 vvcurveto
+            37 -25 21 -36 -58 -71 -105 -120 vhcurveto
+            -9 vlineto
+            -142 -121 -87 -121 -110 vvcurveto
+            return
+        </CharString>
+        <CharString index="2" fingerprint="a7266e60">
+            -42 -25 26 47 76 62 87 89 87 hvcurveto
+            15 -71 31 -73 44 -72 rrcurveto
+            -73 -66 -62 -34 -46 hhcurveto
+            return
+        </CharString>
+    </Subrs>
+    <GlobalSubrs>
+        <CharString index="0" fingerprint="1d76ed09">
+            45 55 45 67 44 78 -75 26 rcurveline
+            -33 -65 -33 -54 -33 -46 {01db525f} callsubr
+            -83 45 -52 83 71 82 45 87 86 vhcurveto
+            return
+        </CharString>
+    </GlobalSubrs>
+</Glyph>

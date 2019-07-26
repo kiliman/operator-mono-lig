@@ -1,52 +1,120 @@
 <ttFont>
     <head>
+        
+    
         <!-- Most of this table will be recalculated by the compiler -->
+        
+    
         <tableVersion value="1.0"/>
+        
+    
         <fontRevision value="1.002"/>
-        <checkSumAdjustment value="0x165c5289"/>
+        
+    
+    
         <magicNumber value="0x5f0f3cf5"/>
+        
+    
         <flags value="00000000 00000011"/>
+        
+    
         <unitsPerEm value="1000"/>
-        <created value="Mon Sep 18 15:51:17 2017"/>
-        <modified value="Mon Sep 18 15:51:17 2017"/>
-        <xMin value="-384"/>
+        
+    
+    
+    
+        <xMin value="-1773"/>
+        
+    
         <yMin value="-319"/>
-        <xMax value="2413"/>
+        
+    
+        <xMax value="708"/>
+        
+    
         <yMax value="1270"/>
+        
+    
         <macStyle value="00000000 00000000"/>
+        
+    
         <lowestRecPPEM value="3"/>
+        
+    
         <fontDirectionHint value="2"/>
+        
+    
         <indexToLocFormat value="0"/>
+        
+    
         <glyphDataFormat value="0"/>
+        
+  
     </head>
     <hhea>
+        
+    
         <tableVersion value="0x00010000"/>
+        
+    
         <ascent value="960"/>
+        
+    
         <descent value="-240"/>
+        
+    
         <lineGap value="0"/>
-        <advanceWidthMax value="2500"/>
-        <minLeftSideBearing value="-384"/>
+        
+    
+        <advanceWidthMax value="625"/>
+        
+    
+        <minLeftSideBearing value="-1773"/>
+        
+    
         <minRightSideBearing value="-83"/>
-        <xMaxExtent value="2413"/>
+        
+    
+        <xMaxExtent value="708"/>
+        
+    
         <caretSlopeRise value="1"/>
+        
+    
         <caretSlopeRun value="0"/>
+        
+    
         <caretOffset value="0"/>
+        
+    
         <reserved0 value="0"/>
+        
+    
         <reserved1 value="0"/>
+        
+    
         <reserved2 value="0"/>
+        
+    
         <reserved3 value="0"/>
+        
+    
         <metricDataFormat value="0"/>
-        <numberOfHMetrics value="469"/>
+        
+    
+        <numberOfHMetrics value="482"/>
+        
+  
     </hhea>
     <CFF>
         <CFFFont>
-            <FontBBox value="-2888 -319 2413 1270"/>
+            <FontBBox value="-1773 -319 716 1270"/>
         </CFFFont>
     </CFF>
     <CFF>
         <CFFFont>
             <Private>
-                <nominalWidthX value="1357"/>
+                <nominalWidthX value="107"/>
             </Private>
         </CFFFont>
     </CFF>

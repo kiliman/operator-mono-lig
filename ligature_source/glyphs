@@ -1,0 +1,10 @@
+# List of glyphs to extract
+# includes patterns
+
+*.liga  # all ligatures
+
+percent.alt # alternate % sign
+
+uniE0A0 # Powerline branch
+uniE0B0 # Powerline right triangle
+uniE0B2 # Powerline left triangle
