@@ -1,0 +1,44 @@
+<Glyph name="less_exclam_hyphen_hyphen.liga" lsb="-1787" width="625">
+    <CharString>
+        0 169 100 {2372f2aa} callgsubr
+        -1787 141 656 193 vstem
+        -940 {039eaf0e} callgsubr
+        -353 -171 rmoveto
+        -83 112 {822f0283} callsubr
+        88 113 -239 185 rlineto
+        497 hlineto
+        14 134 rlineto
+        -501 hlineto
+        850 hmoveto
+        -134 1197 vlineto
+        14 134 rlineto
+        -1489 -403 {100d8e6f} callgsubr
+    </CharString>
+    <Subrs>
+        <CharString index="0" fingerprint="822f0283">
+            -370 -298 rlineto
+            -130 vlineto
+            364 -295 return
+        </CharString>
+    </Subrs>
+    <GlobalSubrs>
+        <CharString index="0" fingerprint="2372f2aa">
+            134 hstem
+            return
+        </CharString>
+        <CharString index="1" fingerprint="039eaf0e">
+            284 rmoveto
+            106 hlineto
+            55 469 rlineto
+            -202 hlineto
+            return
+        </CharString>
+        <CharString index="2" fingerprint="100d8e6f">
+            rmoveto
+            193 hlineto
+            4 169 rlineto
+            -193 hlineto
+            endchar
+        </CharString>
+    </GlobalSubrs>
+</Glyph>
