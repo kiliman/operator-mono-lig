@@ -11,7 +11,7 @@
         hintmask 11010000
         {e525c5a7} callsubr
         hintmask 11100000
-        {64c17bc4} callgsubr
+        {64c17bc4} callsubr
         226 182 rlineto
         1031 hlineto
         -90 -70 {00c9cf16} callsubr
@@ -32,7 +32,10 @@
             -14 vlineto
             return
         </CharString>
-        <CharString index="2" fingerprint="00c9cf16">
+        <CharString index="2" fingerprint="64c17bc4">
+            -312 -243 83 -112 return
+        </CharString>
+        <CharString index="3" fingerprint="00c9cf16">
             83 -112 370 298 rlineto
             129 vlineto
             return
@@ -46,9 +49,6 @@
             rlineto
             hintmask 11100000
             return
-        </CharString>
-        <CharString index="2" fingerprint="64c17bc4">
-            -312 -243 83 -112 return
         </CharString>
     </GlobalSubrs>
 </Glyph>

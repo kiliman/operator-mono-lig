@@ -2,7 +2,7 @@
     <CharString>
         -235 1073 -686 132 110 132 hstemhm
         -546 1091 -864 636 hintmask 01110000
-        {2afc7c25} callsubr
+        {cd38f2b2} callsubr
         -351 vlineto
         hintmask 01101000
         123 248 rlineto
@@ -23,15 +23,14 @@
         endchar
     </CharString>
     <Subrs>
-        <CharString index="0" fingerprint="2afc7c25">
-            545 394 {04aa7597} callgsubr
+        <CharString index="0" fingerprint="cd38f2b2">
+            545 394 {04aa7597} callsubr
             return
         </CharString>
-    </Subrs>
-    <GlobalSubrs>
-        <CharString index="0" fingerprint="04aa7597">
+        <CharString index="1" fingerprint="04aa7597">
             rmoveto
             132 return
         </CharString>
-    </GlobalSubrs>
+    </Subrs>
+    <GlobalSubrs/>
 </Glyph>

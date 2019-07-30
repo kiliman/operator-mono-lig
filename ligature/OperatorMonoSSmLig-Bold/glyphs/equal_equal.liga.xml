@@ -3,21 +3,16 @@
         {b6a51f90} callgsubr
         hstem
         -546 1091 vstem
-        {2afc7c25} callsubr
-        -1091 {35032154} callgsubr
-        1091 {2f6bf419} callgsubr
-        -1091 {35032154} callgsubr
+        {cd38f2b2} callsubr
+        -1091 {35032154} callsubr
+        1091 {5bfcf3cb} callgsubr
+        -1091 {35032154} callsubr
         endchar
     </CharString>
     <Subrs>
-        <CharString index="0" fingerprint="2afc7c25">
-            545 394 {04aa7597} callgsubr
+        <CharString index="0" fingerprint="cd38f2b2">
+            545 394 {04aa7597} callsubr
             return
-        </CharString>
-    </Subrs>
-    <GlobalSubrs>
-        <CharString index="0" fingerprint="b6a51f90">
-            152 132 110 132 return
         </CharString>
         <CharString index="1" fingerprint="04aa7597">
             rmoveto
@@ -27,8 +22,13 @@
             -132 vlineto
             return
         </CharString>
-        <CharString index="3" fingerprint="2f6bf419">
-            -242 {04aa7597} callgsubr
+    </Subrs>
+    <GlobalSubrs>
+        <CharString index="0" fingerprint="b6a51f90">
+            152 132 110 132 return
+        </CharString>
+        <CharString index="1" fingerprint="5bfcf3cb">
+            -242 {04aa7597} callsubr
             return
         </CharString>
     </GlobalSubrs>
