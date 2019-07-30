@@ -1,10 +1,10 @@
-<Glyph name="equal_greater.liga" lsb="-546" width="625">
+<Glyph name="equal_equal_greater.liga" lsb="-1171" width="625">
     <CharString>
         {b6a51f90} callgsubr
         hstemhm
-        -546 1087 {7f892a4a} callsubr
-        -704 -132 875 {9a6ba509} callsubr
-        -893 -132 724 hlineto
+        -1171 1712 {7f892a4a} callsubr
+        -1329 -132 1500 {9a6ba509} callsubr
+        -1518 -132 1349 hlineto
         -90 -70 {00c9cf16} callsubr
         endchar
     </CharString>

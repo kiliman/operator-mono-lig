@@ -1,0 +1,27 @@
+<Glyph name="exclam_equal_equal.liga" lsb="-1091" width="625">
+    <CharString>
+        273 132 110 132 hstem
+        -1091 1636 vstem
+        545 515 {04aa7597} callgsubr
+        -563 vlineto
+        63 127 -135 64 -95 -191 rlineto
+        -906 -132 841 hlineto
+        -55 -110 rlineto
+        -786 -132 720 hlineto
+        -54 -110 rlineto
+        -666 -132 600 hlineto
+        -100 -202 136 -64 132 266 rlineto
+        868 132 -803 hlineto
+        55 110 rlineto
+        748 132 -683 hlineto
+        55 110 rlineto
+        endchar
+    </CharString>
+    <Subrs/>
+    <GlobalSubrs>
+        <CharString index="0" fingerprint="04aa7597">
+            rmoveto
+            132 return
+        </CharString>
+    </GlobalSubrs>
+</Glyph>
