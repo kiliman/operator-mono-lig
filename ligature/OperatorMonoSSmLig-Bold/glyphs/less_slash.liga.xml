@@ -5,21 +5,20 @@
         257 838 rmoveto
         -365 -736 -288 223 rlineto
         14 vlineto
-        {a6f5fb2a} callgsubr
+        {a6f5fb2a} callsubr
         {822f0283} callsubr
         -71 -142 136 -64 500 1009 rlineto
         endchar
     </CharString>
     <Subrs>
-        <CharString index="0" fingerprint="822f0283">
+        <CharString index="0" fingerprint="a6f5fb2a">
+            312 243 -83 112 return
+        </CharString>
+        <CharString index="1" fingerprint="822f0283">
             -370 -298 rlineto
             -130 vlineto
             364 -295 return
         </CharString>
     </Subrs>
-    <GlobalSubrs>
-        <CharString index="0" fingerprint="a6f5fb2a">
-            312 243 -83 112 return
-        </CharString>
-    </GlobalSubrs>
+    <GlobalSubrs/>
 </Glyph>
