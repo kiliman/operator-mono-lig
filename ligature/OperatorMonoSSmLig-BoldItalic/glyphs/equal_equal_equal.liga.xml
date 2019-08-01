@@ -5,19 +5,34 @@
         -1223 1845 cntrmask 11100000
         -1100 648 rmoveto
         -27 -131 rlineto
-        1723 {4ff4d421} callsubr
-        -1797 -374 {f7cec177} callgsubr
-        -75 -375 {f7cec177} callgsubr
+        1723 {256033b9} callsubr
+        -1797 -374 {1e39ac37} callsubr
+        -75 -375 {1e39ac37} callsubr
         endchar
     </CharString>
     <Subrs>
-        <CharString index="0" fingerprint="4ff4d421">
+        <CharString index="0" fingerprint="256033b9">
             hlineto
-            {d5a87c62} callgsubr
+            {d5a87c62} callsubr
             return
         </CharString>
-        <CharString index="1" fingerprint="fb64a85a">
+        <CharString index="1" fingerprint="d5a87c62">
+            26 {fb64a85a} callsubr
+            return
+        </CharString>
+        <CharString index="2" fingerprint="fb64a85a">
             131 rlineto
+            return
+        </CharString>
+        <CharString index="3" fingerprint="1e39ac37">
+            rmoveto
+            1723 {800351b2} callsubr
+            -1723 hlineto
+            return
+        </CharString>
+        <CharString index="4" fingerprint="800351b2">
+            hlineto
+            {b0652e66} callgsubr
             return
         </CharString>
     </Subrs>
@@ -25,22 +40,7 @@
         <CharString index="0" fingerprint="145d2e17">
             132 111 131 return
         </CharString>
-        <CharString index="1" fingerprint="d5a87c62">
-            26 {fb64a85a} callsubr
-            return
-        </CharString>
-        <CharString index="2" fingerprint="f7cec177">
-            rmoveto
-            1723 {800351b2} callgsubr
-            -1723 hlineto
-            return
-        </CharString>
-        <CharString index="3" fingerprint="800351b2">
-            hlineto
-            {b0652e66} callgsubr
-            return
-        </CharString>
-        <CharString index="4" fingerprint="b0652e66">
+        <CharString index="1" fingerprint="b0652e66">
             27 132 rlineto
             return
         </CharString>

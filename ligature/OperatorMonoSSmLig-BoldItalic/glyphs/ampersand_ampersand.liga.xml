@@ -9,9 +9,9 @@
         -1 vlineto
         -25 26 -21 23 -10 14 {4fde3afe} callsubr
         149 39 rmoveto
-        {18c1be37} callgsubr
+        {52700f2f} callsubr
         530 hmoveto
-        {18c1be37} callgsubr
+        {52700f2f} callsubr
         endchar
     </CharString>
     <Subrs>
@@ -31,21 +31,21 @@
             -152 -118 -48 -108 -92 vvcurveto
             return
         </CharString>
+        <CharString index="2" fingerprint="52700f2f">
+            40 24 53 60 60 vhcurveto
+            {976989be} callsubr
+            -29 -17 16 38 hvcurveto
+            return
+        </CharString>
+        <CharString index="3" fingerprint="976989be">
+            18 -48 24 -51 30 -53 rrcurveto
+            -40 -44 -38 -15 -28 hhcurveto
+            return
+        </CharString>
     </Subrs>
     <GlobalSubrs>
         <CharString index="0" fingerprint="efa8f865">
             -91 50 -61 97 69 73 31 66 76 vhcurveto
-            return
-        </CharString>
-        <CharString index="1" fingerprint="18c1be37">
-            40 24 53 60 60 vhcurveto
-            {976989be} callgsubr
-            -29 -17 16 38 hvcurveto
-            return
-        </CharString>
-        <CharString index="2" fingerprint="976989be">
-            18 -48 24 -51 30 -53 rrcurveto
-            -40 -44 -38 -15 -28 hhcurveto
             return
         </CharString>
     </GlobalSubrs>
