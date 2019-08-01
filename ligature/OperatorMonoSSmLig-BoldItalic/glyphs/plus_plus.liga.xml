@@ -1,0 +1,63 @@
+<Glyph name="plus_plus.liga" lsb="-501" width="625">
+    <CharString>
+        {ac63e3f4} callgsubr
+        -3 525 vstem
+        342 402 rmoveto
+        {58a7b0aa} callgsubr
+        -359 {f3ea7dc6} callsubr
+        37 189 rlineto
+        359 {406c29c7} callgsubr
+        37 189 rlineto
+        179 {4ff4d421} callsubr
+        endchar
+    </CharString>
+    <Subrs>
+        <CharString index="0" fingerprint="f3ea7dc6">
+            hlineto
+            {58a7b0aa} callgsubr
+            -179 {fdbdf28a} callsubr
+            181 {406c29c7} callgsubr
+            return
+        </CharString>
+        <CharString index="1" fingerprint="fdbdf28a">
+            hlineto
+            -27 -131 rlineto
+            return
+        </CharString>
+        <CharString index="2" fingerprint="4ff4d421">
+            hlineto
+            {d5a87c62} callgsubr
+            return
+        </CharString>
+        <CharString index="3" fingerprint="fb64a85a">
+            131 rlineto
+            return
+        </CharString>
+    </Subrs>
+    <GlobalSubrs>
+        <CharString index="0" fingerprint="ac63e3f4">
+            271 131 hstem
+            return
+        </CharString>
+        <CharString index="1" fingerprint="58a7b0aa">
+            37 {5b68d019} callgsubr
+            -140 hlineto
+            -36 -187 rlineto
+            return
+        </CharString>
+        <CharString index="2" fingerprint="5b68d019">
+            187 rlineto
+            return
+        </CharString>
+        <CharString index="3" fingerprint="406c29c7">
+            hlineto
+            -37 -189 rlineto
+            139 hlineto
+            return
+        </CharString>
+        <CharString index="4" fingerprint="d5a87c62">
+            26 {fb64a85a} callsubr
+            return
+        </CharString>
+    </GlobalSubrs>
+</Glyph>
