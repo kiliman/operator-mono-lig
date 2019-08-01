@@ -1,0 +1,63 @@
+<Glyph name="ampersand_ampersand.liga" lsb="-449" width="625">
+    <CharString>
+        -16 127 451 142 hstem
+        -449 149 267 131 23 160 166 131 vstem
+        491 224 rmoveto
+        {61b5daa5} callgsubr
+        {4301c904} callsubr
+        -79 -50 -50 -54 -13 -71 -24 30 rcurveline
+        {61b5daa5} callgsubr
+        {4301c904} callsubr
+        {2bd6a1b5} callsubr
+        -68 62 108 -31 121 hhcurveto
+        69 68 31 68 52 hvcurveto
+        23 -30 24 -33 25 -36 130 96 rcurveline
+        -41 55 -37 47 -33 42 rrcurveto
+        -724 -113 rmoveto
+        {a063a877} callsubr
+        480 hmoveto
+        {a063a877} callsubr
+        endchar
+    </CharString>
+    <Subrs>
+        <CharString index="0" fingerprint="4301c904">
+            -88 104 -43 47 33 vvcurveto
+            44 30 18 133 -5 vhcurveto
+            -10 142 rlineto
+            -238 4 -75 -102 -102 vvcurveto
+            -43 20 -41 36 -51 vhcurveto
+            return
+        </CharString>
+        <CharString index="1" fingerprint="4301c904">
+            -88 104 -43 47 33 vvcurveto
+            44 30 18 133 -5 vhcurveto
+            -10 142 rlineto
+            -238 4 -75 -102 -102 vvcurveto
+            -43 20 -41 36 -51 vhcurveto
+            return
+        </CharString>
+        <CharString index="2" fingerprint="2bd6a1b5">
+            -94 -59 -52 -65 -93 vvcurveto
+            -96 59 -72 121 69 68 31 68 52 vhcurveto
+            return
+        </CharString>
+        <CharString index="3" fingerprint="a063a877">
+            -45 -22 33 42 39 18 36 37 32 hvcurveto
+            28 -35 33 -40 38 -48 rrcurveto
+            -40 -27 -27 -19 -33 hhcurveto
+            return
+        </CharString>
+    </Subrs>
+    <GlobalSubrs>
+        <CharString index="0" fingerprint="61b5daa5">
+            32 59 33 78 22 75 -131 16 rcurveline
+            -8 -39 -13 -48 -14 -44 rrcurveto
+            return
+        </CharString>
+        <CharString index="1" fingerprint="61b5daa5">
+            32 59 33 78 22 75 -131 16 rcurveline
+            -8 -39 -13 -48 -14 -44 rrcurveto
+            return
+        </CharString>
+    </GlobalSubrs>
+</Glyph>
