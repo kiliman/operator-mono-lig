@@ -4,6 +4,8 @@
   "description": "Patch Operator Mono font to include ligatures",
   "main": "index.js",
   "scripts": {
+    "contributors:add": "all-contributors add",
+    "contributors:generate": "all-contributors generate",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "kiliman@gmail.com",
@@ -16,6 +18,7 @@
     "xpath": "0.0.24"
   },
   "devDependencies": {
+    "all-contributors-cli": "6.8.1",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-import": "^2.9.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
