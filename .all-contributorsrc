@@ -1,0 +1,35 @@
+{
+  "projectName": "operator-mono-lig",
+  "projectOwner": "kiliman",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "commitConvention": "none",
+  "contributors": [
+    {
+      "login": "kiliman",
+      "name": "Kiliman",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/47168?v=4",
+      "profile": "https://github.com/kiliman",
+      "contributions": [
+        "code",
+        "doc",
+        "design"
+      ]
+    },
+    {
+      "login": "markypython",
+      "name": "Mark Skelton",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/25914066?v=4",
+      "profile": "https://github.com/markypython",
+      "contributions": [
+        "design"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7
+}
