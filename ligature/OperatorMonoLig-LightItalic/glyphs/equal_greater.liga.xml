@@ -1,0 +1,69 @@
+<Glyph name="equal_greater.liga" lsb="-549" width="625">
+    <CharString>
+        {42d64d00} callgsubr
+        -549 1094 {6a70e420} callsubr
+        -808 {6a7250c2} callsubr
+        877 hlineto
+        98 -99 -2 -10 {59e2783f} callsubr
+        -897 {1a0862e5} callgsubr
+        824 {1f7399a1} callgsubr
+        endchar
+    </CharString>
+    <Subrs>
+        <CharString index="0" fingerprint="1a4ca569">
+            60 188 59 return
+        </CharString>
+        <CharString index="1" fingerprint="6a70e420">
+            {f85c4f0d} callgsubr
+            hintmask 01110000
+            130 -132 rlineto
+            return
+        </CharString>
+        <CharString index="2" fingerprint="44ebcab6">
+            236 658 rmoveto
+            -48 -47 rlineto
+            return
+        </CharString>
+        <CharString index="3" fingerprint="6a7250c2">
+            hlineto
+            -11 -59 rlineto
+            return
+        </CharString>
+        <CharString index="4" fingerprint="59e2783f">
+            -112 -79 rlineto
+            return
+        </CharString>
+    </Subrs>
+    <GlobalSubrs>
+        <CharString index="0" fingerprint="42d64d00">
+            {dc85467b} callgsubr
+            -486 {1a4ca569} callsubr
+            hstemhm
+            return
+        </CharString>
+        <CharString index="1" fingerprint="dc85467b">
+            -32 -19 677 return
+        </CharString>
+        <CharString index="2" fingerprint="f85c4f0d">
+            hintmask 10010000
+            {44ebcab6} callsubr
+            return
+        </CharString>
+        <CharString index="3" fingerprint="1a0862e5">
+            hlineto
+            -12 -60 rlineto
+            return
+        </CharString>
+        <CharString index="4" fingerprint="1f7399a1">
+            hlineto
+            -195 -137 rlineto
+            hintmask 10010000
+            {29885e03} callgsubr
+            return
+        </CharString>
+        <CharString index="5" fingerprint="29885e03">
+            32 -54 422 299 11 61 rlineto
+            return
+        </CharString>
+    </GlobalSubrs>
+</Glyph>

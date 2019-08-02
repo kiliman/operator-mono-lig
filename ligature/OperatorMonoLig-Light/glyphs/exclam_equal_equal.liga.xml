@@ -1,0 +1,55 @@
+<Glyph name="exclam_equal_equal.liga" lsb="-1152" width="625">
+    <CharString>
+        -32 {36aee12c} callsubr
+        -668 61 187 60 187 60 hstemhm
+        -1152 1679 -1137 520 hintmask 00111000
+        526 297 {5a2ab71c} callsubr
+        -796 hlineto
+        100 187 rlineto
+        695 hlineto
+        {237a2e75} callgsubr
+        -664 hlineto
+        hintmask 00110100
+        47 89 rlineto
+        hintmask 10000100
+        -51 24 rlineto
+        hintmask 00110100
+        -60 -113 rlineto
+        -951 -60 919 hlineto
+        -100 -187 rlineto
+        -819 -60 787 hlineto
+        hintmask 01110100
+        -100 -187 rlineto
+        -687 -61 655 hlineto
+        -113 -211 rlineto
+        hintmask 10000100
+        54 -19 rlineto
+        hintmask 01110100
+        123 230 rlineto
+        959 hlineto
+        1 61 rlineto
+        -928 hlineto
+        100 187 rlineto
+        endchar
+    </CharString>
+    <Subrs>
+        <CharString index="0" fingerprint="36aee12c">
+            -181 898 return
+        </CharString>
+        <CharString index="1" fingerprint="5a2ab71c">
+            rmoveto
+            {237a2e75} callgsubr
+            return
+        </CharString>
+    </Subrs>
+    <GlobalSubrs>
+        <CharString index="0" fingerprint="237a2e75">
+            1 60 rlineto
+            return
+        </CharString>
+        <CharString index="1" fingerprint="237a2e75">
+            1 60 rlineto
+            return
+        </CharString>
+    </GlobalSubrs>
+</Glyph>

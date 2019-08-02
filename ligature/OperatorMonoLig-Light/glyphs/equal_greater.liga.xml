@@ -1,13 +1,15 @@
 <Glyph name="equal_greater.liga" lsb="-468" width="550">
     <CharString>
-        {0bfe7e46} callgsubr
+        {17e5c391} callsubr
         -468 927 -56 {076e1c46} callsubr
-        -709 -52 770 {ce96b479} callsubr
-        -779 -52 717 {3bf8a3e7} callgsubr
+        -709 -52 770 {ce96b479} callgsubr
+        -779 -52 717 {3bf8a3e7} callsubr
     </CharString>
     <Subrs>
-        <CharString index="0" fingerprint="a926ac67">
-            156 52 171 52 return
+        <CharString index="0" fingerprint="17e5c391">
+            {a926ac67} callgsubr
+            hstemhm
+            return
         </CharString>
         <CharString index="1" fingerprint="076e1c46">
             57 hintmask 11100000
@@ -19,7 +21,17 @@
             133 595 rmoveto
             -36 -43 return
         </CharString>
-        <CharString index="3" fingerprint="ce96b479">
+        <CharString index="3" fingerprint="3bf8a3e7">
+            hlineto
+            -158 -134 {c7af96e2} callgsubr
+            endchar
+        </CharString>
+    </Subrs>
+    <GlobalSubrs>
+        <CharString index="0" fingerprint="a926ac67">
+            156 52 171 52 return
+        </CharString>
+        <CharString index="1" fingerprint="ce96b479">
             hlineto
             hintmask 11010000
             101 -85 rlineto
@@ -27,22 +39,10 @@
             -92 -78 {bf847d0e} callgsubr
             return
         </CharString>
-    </Subrs>
-    <GlobalSubrs>
-        <CharString index="0" fingerprint="0bfe7e46">
-            {a926ac67} callsubr
-            hstemhm
-            return
-        </CharString>
-        <CharString index="1" fingerprint="bf847d0e">
+        <CharString index="2" fingerprint="bf847d0e">
             rlineto
             hintmask 11100000
             return
-        </CharString>
-        <CharString index="2" fingerprint="3bf8a3e7">
-            hlineto
-            -158 -134 {c7af96e2} callgsubr
-            endchar
         </CharString>
         <CharString index="3" fingerprint="c7af96e2">
             35 -42 {fe9ab107} callgsubr

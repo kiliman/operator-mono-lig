@@ -1,0 +1,38 @@
+<Glyph name="plus_plus.liga" lsb="-483" width="625">
+    <CharString>
+        -32 {4ef4eda0} callsubr
+        -299 55 414 55 vstem
+        -244 264 {a35b2d5b} callgsubr
+        469 193 {a35b2d5b} callgsubr
+        endchar
+    </CharString>
+    <Subrs>
+        <CharString index="0" fingerprint="4ef4eda0">
+            264 52 hstem
+            return
+        </CharString>
+        <CharString index="1" fingerprint="368d5b4d">
+            hlineto
+            {c7138596} callsubr
+            return
+        </CharString>
+        <CharString index="2" fingerprint="c7138596">
+            1 52 rlineto
+            return
+        </CharString>
+    </Subrs>
+    <GlobalSubrs>
+        <CharString index="0" fingerprint="a35b2d5b">
+            rmoveto
+            182 {368d5b4d} callsubr
+            -183 192 -55 -192 -184 -52 184 -193 55 hlineto
+            return
+        </CharString>
+        <CharString index="1" fingerprint="a35b2d5b">
+            rmoveto
+            182 {368d5b4d} callsubr
+            -183 192 -55 -192 -184 -52 184 -193 55 hlineto
+            return
+        </CharString>
+    </GlobalSubrs>
+</Glyph>

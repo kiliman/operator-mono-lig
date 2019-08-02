@@ -1,59 +1,26 @@
-<Glyph name="less_equal.liga" lsb="-460" width="550">
+<Glyph name="less_equal.liga" lsb="-364" width="550">
     <CharString>
-        {0bfe7e46} callgsubr
-        -460 58 -58 928 hintmask 11100000
-        -402 286 rmoveto
-        {f6de01df} callgsubr
-        hintmask 11010000
-        768 {91954767} callsubr
-        -708 {cb5c326f} callsubr
-        716 {91954767} callsubr
-        -778 hlineto
+        -363 699 vstem
+        336 22 rmoveto
+        -25 -42 -675 283 {baa613f1} callgsubr
+        -88 -193 rmoveto
+        56 vlineto
+        700 -297 -25 -42 rlineto
         endchar
     </CharString>
     <Subrs>
-        <CharString index="0" fingerprint="a926ac67">
-            156 52 171 52 return
-        </CharString>
-        <CharString index="1" fingerprint="91954767">
-            hlineto
-            {c7138596} callgsubr
+        <CharString index="0" fingerprint="1341d64a">
+            -258 rlineto
+            -8 vlineto
             return
-        </CharString>
-        <CharString index="2" fingerprint="cb5c326f">
-            hlineto
-            144 121 -36 43 {f48f8528} callsubr
-            return
-        </CharString>
-        <CharString index="3" fingerprint="f48f8528">
-            {377aa5a8} callsubr
-            -158 134 rlineto
-            return
-        </CharString>
-        <CharString index="4" fingerprint="377aa5a8">
-            {f9df3c06} callgsubr
-            36 42 return
         </CharString>
     </Subrs>
     <GlobalSubrs>
-        <CharString index="0" fingerprint="0bfe7e46">
-            {a926ac67} callsubr
-            hstemhm
+        <CharString index="0" fingerprint="baa613f1">
+            rlineto
+            54 vlineto
+            668 278 25 -43 -605 {1341d64a} callsubr
             return
-        </CharString>
-        <CharString index="1" fingerprint="f6de01df">
-            8 vlineto
-            101 85 rlineto
-            return
-        </CharString>
-        <CharString index="2" fingerprint="c7138596">
-            1 52 rlineto
-            return
-        </CharString>
-        <CharString index="3" fingerprint="f9df3c06">
-            -328 -279 rlineto
-            -53 vlineto
-            333 -283 return
         </CharString>
     </GlobalSubrs>
 </Glyph>

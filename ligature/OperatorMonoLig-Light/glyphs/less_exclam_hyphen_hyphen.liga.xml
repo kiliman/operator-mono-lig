@@ -1,0 +1,60 @@
+<Glyph name="less_exclam_hyphen_hyphen.liga" lsb="-1678" width="625">
+    <CharString>
+        -32 0 96 196 61 hstemhm
+        -1678 58 10 349 234 94 -62 40 1095 349 hintmask 11110110
+        -995 {9500e647} callsubr
+        -319 326 {a1f454f7} callgsubr
+        10 8 rlineto
+        -10 535 vlineto
+        4 61 rlineto
+        -479 hlineto
+        750 hmoveto
+        -61 1285 vlineto
+        4 61 rlineto
+        hintmask 11111010
+        -1517 -353 {8ff4d132} callsubr
+    </CharString>
+    <Subrs>
+        <CharString index="0" fingerprint="9500e647">
+            226 rmoveto
+            40 hlineto
+            3 116 16 212 6 122 rrcurveto
+            -77 hlineto
+            2 -122 10 -212 -116 vvcurveto
+            return
+        </CharString>
+        <CharString index="1" fingerprint="4ea00b91">
+            -36 43 {377aa5a8} callsubr
+            return
+        </CharString>
+        <CharString index="2" fingerprint="377aa5a8">
+            {f9df3c06} callgsubr
+            36 42 return
+        </CharString>
+        <CharString index="3" fingerprint="89cb26bd">
+            264 rlineto
+            8 vlineto
+            return
+        </CharString>
+        <CharString index="4" fingerprint="8ff4d132">
+            rmoveto
+            93 hlineto
+            3 96 rlineto
+            -94 hlineto
+            endchar
+        </CharString>
+    </Subrs>
+    <GlobalSubrs>
+        <CharString index="0" fingerprint="a1f454f7">
+            rmoveto
+            {4ea00b91} callsubr
+            -311 {89cb26bd} callsubr
+            return
+        </CharString>
+        <CharString index="1" fingerprint="f9df3c06">
+            -328 -279 rlineto
+            -53 vlineto
+            333 -283 return
+        </CharString>
+    </GlobalSubrs>
+</Glyph>
