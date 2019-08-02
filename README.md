@@ -1,4 +1,5 @@
 # Operator Mono Ligatures
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 
 <img src="./images/operator-mono-lig.png" />
 
@@ -8,7 +9,7 @@ those found in the popular [Fira Code](https://github.com/tonsky/FiraCode) font.
 These ligatures were custom created using [Glyphs](https://glyphsapp.com/).
 There are even italic versions of the ligatures.
 
-## New Version 2.0
+## New Version 2.1
 
 All new redesigned ligatures with better hinting. Updated font generation to support advanced OpenType features
 like those found in Fira Code. For example, the cursor now moves inside the ligature. It also handles repeating
@@ -16,8 +17,15 @@ characters properly.
 
 <img src="./images/caret-position.gif" />
 
-> NOTE: The new ligatures are currently only available for **Operator Mono SSm Book**. If you don't have this font, you
-> can still use the v1.0 verson of the tool. Download it [here](https://github.com/kiliman/operator-mono-lig/releases/tag/v1.0).
+### 🎉 New in Version 2.1
+
+With the awesome help from [Mark Skelton](https://github.com/markypython), we now have the full set of ligatures for
+**Operator Mono Light**. Thanks Mark, and thanks to all of you who have been patiently
+waiting for these ligatures to be completed.
+
+> NOTE: The new ligatures are currently only available for **Operator Mono SSm Book** and **Operator Mono Light**.
+> If you don't have this font, you can still use the v1.0 verson of the tool.
+> Download it [here](https://github.com/kiliman/operator-mono-lig/releases/tag/v1.0).
 
 ### Customize the generated font
 
@@ -140,3 +148,23 @@ Thanks to Hoefler&Co for making such an amazing font. It makes writing code trul
 
 Thanks also to all of you for your kinds words of encouragement and feedback. I really
 appreciate it.
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/kiliman"><img src="https://avatars3.githubusercontent.com/u/47168?v=4" width="100px;" alt="Kiliman"/><br /><sub><b>Kiliman</b></sub></a><br /><a href="https://github.com/kiliman/operator-mono-lig/commits?author=kiliman" title="Code">💻</a> <a href="https://github.com/kiliman/operator-mono-lig/commits?author=kiliman" title="Documentation">📖</a> <a href="#design-kiliman" title="Design">🎨</a></td>
+    <td align="center"><a href="https://github.com/markypython"><img src="https://avatars3.githubusercontent.com/u/25914066?v=4" width="100px;" alt="Mark Skelton"/><br /><sub><b>Mark Skelton</b></sub></a><br /><a href="#design-markypython" title="Design">🎨</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
