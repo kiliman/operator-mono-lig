@@ -3,7 +3,7 @@
         -10 137 hstem
         -513 149 381 149 vstem
         -513 142 rmoveto
-        {efa8f865} callgsubr
+        {efa8f865} callsubr
         140 -156 296 46 94 110 25 -37 27 -36 30 -37 131 90 rcurveline
         -40 48 -34 45 -30 44 {4fde3afe} callsubr
         -1 vlineto
@@ -15,12 +15,8 @@
         endchar
     </CharString>
     <Subrs>
-        <CharString index="0" fingerprint="4fde3afe">
-            42 52 43 62 44 73 -123 44 rcurveline
-            -24 -48 -24 -41 -22 -35 -23 45 -18 42 -11 40 rrcurveto
-            72 67 40 69 51 vvcurveto
-            52 -44 33 -62 -82 -86 -62 -134 -17 1 -18 3 -19 vhcurveto
-            -152 -118 -48 -108 -92 vvcurveto
+        <CharString index="0" fingerprint="efa8f865">
+            -91 50 -61 97 69 73 31 66 76 vhcurveto
             return
         </CharString>
         <CharString index="1" fingerprint="4fde3afe">
@@ -43,10 +39,5 @@
             return
         </CharString>
     </Subrs>
-    <GlobalSubrs>
-        <CharString index="0" fingerprint="efa8f865">
-            -91 50 -61 97 69 73 31 66 76 vhcurveto
-            return
-        </CharString>
-    </GlobalSubrs>
+    <GlobalSubrs/>
 </Glyph>

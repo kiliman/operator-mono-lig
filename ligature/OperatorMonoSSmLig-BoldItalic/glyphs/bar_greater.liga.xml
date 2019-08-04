@@ -2,7 +2,7 @@
     <CharString>
         -356 755 vstem
         -14 798 {3e5ef760} callsubr
-        584 439 {d4f80b1e} callgsubr
+        584 439 {d4f80b1e} callsubr
         -417 -314 122 626 297 -299 rlineto
         endchar
     </CharString>
@@ -13,12 +13,11 @@
             147 hlineto
             return
         </CharString>
-    </Subrs>
-    <GlobalSubrs>
-        <CharString index="0" fingerprint="d4f80b1e">
+        <CharString index="1" fingerprint="d4f80b1e">
             24 130 rlineto
             -152 -57 rmoveto
             return
         </CharString>
-    </GlobalSubrs>
+    </Subrs>
+    <GlobalSubrs/>
 </Glyph>
