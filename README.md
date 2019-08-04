@@ -1,4 +1,5 @@
 # Operator Mono Ligatures
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 
 <img src="./images/operator-mono-lig.png" />
@@ -9,7 +10,7 @@ those found in the popular [Fira Code](https://github.com/tonsky/FiraCode) font.
 These ligatures were custom created using [Glyphs](https://glyphsapp.com/).
 There are even italic versions of the ligatures.
 
-## New Version 2.1
+## New Version 2.2
 
 All new redesigned ligatures with better hinting. Updated font generation to support advanced OpenType features
 like those found in Fira Code. For example, the cursor now moves inside the ligature. It also handles repeating
@@ -17,15 +18,16 @@ characters properly.
 
 <img src="./images/caret-position.gif" />
 
-### 🎉 New in Version 2.1
+### 🎉 New in Version 2.2
 
 With the awesome help from [Mark Skelton](https://github.com/markypython), we now have the full set of ligatures for
-**Operator Mono Light**. Thanks Mark, and thanks to all of you who have been patiently
-waiting for these ligatures to be completed.
+the following fonts. Thanks Mark, and thanks to all of you who have been patiently waiting for these ligatures to be completed.
 
-> NOTE: The new ligatures are currently only available for **Operator Mono SSm Book** and **Operator Mono Light**.
-> If you don't have this font, you can still use the v1.0 verson of the tool.
-> Download it [here](https://github.com/kiliman/operator-mono-lig/releases/tag/v1.0).
+- Operator Mono SSm Light/Light Italic
+- Operator Mono SSm Book/Book Italic
+- Operator Mono SSm Medium/Medium Italic
+- Operator Mono SSm Bold/Bold Italic
+- Operator Mono Light/Light Italic
 
 ### Customize the generated font
 
@@ -165,6 +167,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
