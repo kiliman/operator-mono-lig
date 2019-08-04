@@ -1,0 +1,62 @@
+<Glyph name="equal_equal.liga" lsb="-549" width="625">
+    <CharString>
+        {6a2b3f70} callsubr
+        -549 1121 vstem
+        560 {b1497916} callsubr
+        -1062 {6a7250c2} callgsubr
+        1013 {72e954b9} callsubr
+        -1061 {93ed7de1} callgsubr
+    </CharString>
+    <Subrs>
+        <CharString index="0" fingerprint="6a2b3f70">
+            {d29b7cb2} callgsubr
+            hstem
+            return
+        </CharString>
+        <CharString index="1" fingerprint="b1497916">
+            420 rmoveto
+            {3e1270ac} callgsubr
+            return
+        </CharString>
+        <CharString index="2" fingerprint="72e954b9">
+            -248 {4bacf368} callgsubr
+            return
+        </CharString>
+    </Subrs>
+    <GlobalSubrs>
+        <CharString index="0" fingerprint="d29b7cb2">
+            172 {1a4ca569} callgsubr
+            return
+        </CharString>
+        <CharString index="1" fingerprint="1a4ca569">
+            60 188 59 return
+        </CharString>
+        <CharString index="2" fingerprint="3e1270ac">
+            12 59 rlineto
+            return
+        </CharString>
+        <CharString index="3" fingerprint="6a7250c2">
+            hlineto
+            -11 -59 rlineto
+            return
+        </CharString>
+        <CharString index="4" fingerprint="4bacf368">
+            rmoveto
+            {e9726f1d} callgsubr
+            return
+        </CharString>
+        <CharString index="5" fingerprint="e9726f1d">
+            12 60 rlineto
+            return
+        </CharString>
+        <CharString index="6" fingerprint="93ed7de1">
+            {1a0862e5} callgsubr
+            endchar
+        </CharString>
+        <CharString index="7" fingerprint="1a0862e5">
+            hlineto
+            -12 -60 rlineto
+            return
+        </CharString>
+    </GlobalSubrs>
+</Glyph>

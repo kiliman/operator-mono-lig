@@ -1,0 +1,26 @@
+<Glyph name="greater_equal.liga" lsb="-388" width="625">
+    <CharString>
+        -23 {45c53c44} callgsubr
+        21 -50 783 314 {c67d4276} callgsubr
+        -186 rmoveto
+        66 vlineto
+        -804 -330 21 -50 rlineto
+        endchar
+    </CharString>
+    <Subrs/>
+    <GlobalSubrs>
+        <CharString index="0" fingerprint="45c53c44">
+            685 hstem
+            -387 805 vstem
+            -388 27 rmoveto
+            return
+        </CharString>
+        <CharString index="1" fingerprint="c67d4276">
+            rlineto
+            62 vlineto
+            -775 309 -22 -51 700 -284 rlineto
+            -10 vlineto
+            97 return
+        </CharString>
+    </GlobalSubrs>
+</Glyph>

@@ -1,0 +1,32 @@
+<Glyph name="slash_greater.liga" lsb="-366" width="625">
+    <CharString>
+        {425b9255} callgsubr
+        -366 579 239 67 hintmask 01110000
+        156 662 rmoveto
+        57 107 rlineto
+        hintmask 10110000
+        {799a92f3} callsubr
+        427 805 328 -275 rlineto
+        -10 vlineto
+        -345 -290 rlineto
+        hintmask 01110000
+        {d56ca169} callsubr
+        endchar
+    </CharString>
+    <Subrs>
+        <CharString index="0" fingerprint="799a92f3">
+            -60 28 -519 -977 63 -23 return
+        </CharString>
+        <CharString index="1" fingerprint="d56ca169">
+            41 -50 371 314 rlineto
+            62 vlineto
+            return
+        </CharString>
+    </Subrs>
+    <GlobalSubrs>
+        <CharString index="0" fingerprint="425b9255">
+            -203 1000 -820 685 hstemhm
+            return
+        </CharString>
+    </GlobalSubrs>
+</Glyph>

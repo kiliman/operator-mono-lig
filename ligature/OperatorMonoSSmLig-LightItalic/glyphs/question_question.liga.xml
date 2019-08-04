@@ -1,0 +1,41 @@
+<Glyph name="question_question.liga" lsb="-377" width="625">
+    <CharString>
+        0 109 hstem
+        -22 79 341 79 vstem
+        -342 753 rmoveto
+        {0b9eeed8} callsubr
+        420 hmoveto
+        {0b9eeed8} callsubr
+        -455 -753 {e35194ac} callsubr
+        397 -109 {e35194ac} callsubr
+        endchar
+    </CharString>
+    <Subrs>
+        <CharString index="0" fingerprint="0b9eeed8">
+            -14 -70 rlineto
+            220 -27 114 -35 -86 vvcurveto
+            -66 -66 -66 -208 -107 vhcurveto
+            22 -39 rlineto
+            239 121 92 89 92 vvcurveto
+            105 -130 60 -269 29 vhcurveto
+            return
+        </CharString>
+        <CharString index="1" fingerprint="0b9eeed8">
+            -14 -70 rlineto
+            220 -27 114 -35 -86 vvcurveto
+            -66 -66 -66 -208 -107 vhcurveto
+            22 -39 rlineto
+            239 121 92 89 92 vvcurveto
+            105 -130 60 -269 29 vhcurveto
+            return
+        </CharString>
+        <CharString index="2" fingerprint="e35194ac">
+            rmoveto
+            103 hlineto
+            23 109 rlineto
+            -103 hlineto
+            return
+        </CharString>
+    </Subrs>
+    <GlobalSubrs/>
+</Glyph>
