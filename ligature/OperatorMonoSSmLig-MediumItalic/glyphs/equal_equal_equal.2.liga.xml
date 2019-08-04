@@ -1,0 +1,70 @@
+<Glyph name="equal_equal_equal.2.liga" lsb="-1189" width="625">
+    <CharString>
+        {c5e331c3} callgsubr
+        -1189 1776 vstem
+        -620 {1360a150} callsubr
+        -520 {ab4f93ab} callsubr
+        1114 hmoveto
+        {a50ed197} callsubr
+        -519 {ab4f93ab} callsubr
+        1114 hmoveto
+        {a50ed197} callsubr
+        -520 {ab4f93ab} callsubr
+        -714 {112599d2} callgsubr
+        -521 {7de8f505} callsubr
+        1114 hmoveto
+        {10a06046} callgsubr
+        -520 {7de8f505} callsubr
+        1114 hmoveto
+        21 103 rlineto
+        -521 {88dc8b40} callsubr
+    </CharString>
+    <Subrs>
+        <CharString index="0" fingerprint="1360a150">
+            405 {21d5deb2} callgsubr
+            return
+        </CharString>
+        <CharString index="1" fingerprint="a50ed197">
+            20 102 rlineto
+            return
+        </CharString>
+        <CharString index="2" fingerprint="ab4f93ab">
+            hlineto
+            -21 -102 rlineto
+            return
+        </CharString>
+        <CharString index="3" fingerprint="7de8f505">
+            hlineto
+            -21 -103 rlineto
+            return
+        </CharString>
+        <CharString index="4" fingerprint="88dc8b40">
+            {7de8f505} callsubr
+            endchar
+        </CharString>
+    </Subrs>
+    <GlobalSubrs>
+        <CharString index="0" fingerprint="c5e331c3">
+            160 {cfbc9cf1} callgsubr
+            hstem
+            return
+        </CharString>
+        <CharString index="1" fingerprint="cfbc9cf1">
+            103 142 102 return
+        </CharString>
+        <CharString index="2" fingerprint="21d5deb2">
+            rmoveto
+            {a50ed197} callsubr
+            return
+        </CharString>
+        <CharString index="3" fingerprint="112599d2">
+            -245 rmoveto
+            {10a06046} callgsubr
+            return
+        </CharString>
+        <CharString index="4" fingerprint="10a06046">
+            21 103 rlineto
+            return
+        </CharString>
+    </GlobalSubrs>
+</Glyph>

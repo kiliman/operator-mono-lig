@@ -1,0 +1,72 @@
+<Glyph name="exclam_equal_equal.liga" lsb="-1215" width="625">
+    <CharString>
+        {44af986a} callsubr
+        -768 103 142 103 141 102 hstemhm
+        -1215 1776 -1248 770 hintmask 00111000
+        592 527 {21d5deb2} callgsubr
+        -622 hlineto
+        hintmask 00110100
+        93 137 rlineto
+        hintmask 10000100
+        -100 40 rlineto
+        hintmask 00110100
+        -121 -177 rlineto
+        -957 {ab4f93ab} callsubr
+        909 hlineto
+        -97 -142 rlineto
+        -842 {ab4f93ab} callsubr
+        794 hlineto
+        hintmask 01110100
+        -97 -142 rlineto
+        -724 {7de8f505} callsubr
+        675 hlineto
+        -147 -216 rlineto
+        hintmask 10000100
+        107 -31 rlineto
+        hintmask 01110100
+        168 247 rlineto
+        905 {150c2501} callsubr
+        -856 hlineto
+        97 142 rlineto
+        786 hlineto
+        {a50ed197} callsubr
+        -737 hlineto
+        96 142 rlineto
+        endchar
+    </CharString>
+    <Subrs>
+        <CharString index="0" fingerprint="44af986a">
+            -209 1015 return
+        </CharString>
+        <CharString index="1" fingerprint="a50ed197">
+            20 102 rlineto
+            return
+        </CharString>
+        <CharString index="2" fingerprint="ab4f93ab">
+            hlineto
+            -21 -102 rlineto
+            return
+        </CharString>
+        <CharString index="3" fingerprint="7de8f505">
+            hlineto
+            -21 -103 rlineto
+            return
+        </CharString>
+        <CharString index="4" fingerprint="150c2501">
+            hlineto
+            {10a06046} callgsubr
+            return
+        </CharString>
+    </Subrs>
+    <GlobalSubrs>
+        <CharString index="0" fingerprint="21d5deb2">
+            rmoveto
+            {a50ed197} callsubr
+            return
+        </CharString>
+        <CharString index="1" fingerprint="10a06046">
+            21 103 rlineto
+            return
+        </CharString>
+    </GlobalSubrs>
+</Glyph>

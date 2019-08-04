@@ -1,0 +1,43 @@
+<Glyph name="percent.alt" lsb="25" width="625">
+    <CharString>
+        -65 73 -70 784 -545 72 162 73 169 72 -54 54 hstemhm
+        25 78 -17 461 -336 78 54 78 108 78 hintmask 1011001011100000
+        152 411 rmoveto
+        83 54 66 96 hvcurveto
+        hintmask 1011011011100000
+        {5e172dd5} callsubr
+        vhcurveto
+        hintmask 1011010100000000
+        394 274 rmoveto
+        hintmask 0100000100000000
+        -79 38 -381 -749 79 -36 rlineto
+        hintmask 1011100100000000
+        -9 715 rmoveto
+        hintmask 1011101011100000
+        {b8651228} callgsubr
+        314 -718 rmoveto
+        83 54 66 96 {5e172dd5} callsubr
+        hvcurveto
+        4 242 rmoveto
+        {b8651228} callgsubr
+        endchar
+    </CharString>
+    <Subrs>
+        <CharString index="0" fingerprint="5e172dd5">
+            94 -46 58 -81 -83 -54 -67 -95 -94 45 -58 82 return
+        </CharString>
+        <CharString index="1" fingerprint="5e172dd5">
+            94 -46 58 -81 -83 -54 -67 -95 -94 45 -58 82 return
+        </CharString>
+    </Subrs>
+    <GlobalSubrs>
+        <CharString index="0" fingerprint="b8651228">
+            37 18 -33 -55 -51 -17 -30 -36 -36 -19 32 56 51 16 30 37 hvcurveto
+            return
+        </CharString>
+        <CharString index="1" fingerprint="b8651228">
+            37 18 -33 -55 -51 -17 -30 -36 -36 -19 32 56 51 16 30 37 hvcurveto
+            return
+        </CharString>
+    </GlobalSubrs>
+</Glyph>

@@ -1,0 +1,69 @@
+<Glyph name="equal_equal_greater.liga" lsb="-1189" width="625">
+    <CharString>
+        {b0d5c74e} callsubr
+        -1189 1742 {cf735d5c} callsubr
+        -1370 {ab4f93ab} callsubr
+        1493 {77e64dd7} callsubr
+        -1530 {7de8f505} callsubr
+        1394 {6d5e68cd} callsubr
+        endchar
+    </CharString>
+    <Subrs>
+        <CharString index="0" fingerprint="b0d5c74e">
+            -24 703 -519 {cfbc9cf1} callgsubr
+            hstemhm
+            return
+        </CharString>
+        <CharString index="1" fingerprint="cf735d5c">
+            hintmask 10010000
+            {e7261302} callgsubr
+            hintmask 01110000
+            91 -91 rlineto
+            return
+        </CharString>
+        <CharString index="2" fingerprint="ab4f93ab">
+            hlineto
+            -21 -102 rlineto
+            return
+        </CharString>
+        <CharString index="3" fingerprint="77e64dd7">
+            hlineto
+            83 -83 -2 -12 -71 -47 rlineto
+            return
+        </CharString>
+        <CharString index="4" fingerprint="7de8f505">
+            hlineto
+            -21 -103 rlineto
+            return
+        </CharString>
+        <CharString index="5" fingerprint="6d5e68cd">
+            hlineto
+            -135 -89 {1b07c958} callsubr
+            {03424c83} callsubr
+            return
+        </CharString>
+        <CharString index="6" fingerprint="1b07c958">
+            rlineto
+            hintmask 10010000
+            return
+        </CharString>
+        <CharString index="7" fingerprint="03424c83">
+            {6e3b20e8} callgsubr
+            rlineto
+            return
+        </CharString>
+    </Subrs>
+    <GlobalSubrs>
+        <CharString index="0" fingerprint="cfbc9cf1">
+            103 142 102 return
+        </CharString>
+        <CharString index="1" fingerprint="e7261302">
+            242 679 rmoveto
+            -83 -81 rlineto
+            return
+        </CharString>
+        <CharString index="2" fingerprint="6e3b20e8">
+            50 -95 415 278 18 102 return
+        </CharString>
+    </GlobalSubrs>
+</Glyph>
