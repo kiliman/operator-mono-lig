@@ -1,9 +1,9 @@
-<Glyph name="underscore_underscore.liga" lsb="-635" width="625">
+<Glyph name="underscore_underscore.liga" lsb="-553" width="550">
     <CharString>
-        -32 -100 50 hstem
-        -635 1267 vstem
-        632 -100 rmoveto
-        50 -1267 -50 vlineto
+        -100 50 hstem
+        -553 1115 vstem
+        562 -100 rmoveto
+        50 -1115 -50 vlineto
         endchar
     </CharString>
     <Subrs/>

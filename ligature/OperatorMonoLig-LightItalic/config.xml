@@ -23,7 +23,7 @@
     
     
     
-        <xMin value="-1782"/>
+        <xMin value="-1557"/>
         
     
         <yMin value="-375"/>
@@ -66,10 +66,10 @@
         <lineGap value="0"/>
         
     
-        <advanceWidthMax value="625"/>
+        <advanceWidthMax value="550"/>
         
     
-        <minLeftSideBearing value="-1782"/>
+        <minLeftSideBearing value="-1557"/>
         
     
         <minRightSideBearing value="-153"/>
@@ -102,19 +102,19 @@
         <metricDataFormat value="0"/>
         
     
-        <numberOfHMetrics value="473"/>
+        <numberOfHMetrics value="468"/>
         
   
     </hhea>
     <CFF>
         <CFFFont>
-            <FontBBox value="-1782 -375 703 1125"/>
+            <FontBBox value="-1557 -375 703 1125"/>
         </CFFFont>
     </CFF>
     <CFF>
         <CFFFont>
             <Private>
-                <nominalWidthX value="657"/>
+                <nominalWidthX value="107"/>
             </Private>
         </CFFFont>
     </CFF>

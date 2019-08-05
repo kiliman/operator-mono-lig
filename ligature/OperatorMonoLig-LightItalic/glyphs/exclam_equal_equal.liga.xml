@@ -1,48 +1,36 @@
-<Glyph name="exclam_equal_equal.liga" lsb="-1197" width="625">
+<Glyph name="exclam_equal_equal.liga" lsb="-1018" width="550">
     <CharString>
-        -32 49 60 188 {1a4ca569} callsubr
-        hstemhm
-        -1197 1793 -1296 665 cntrmask 11100000
-        hintmask 11101000
-        584 545 rmoveto
-        hintmask 11110000
-        {3e1270ac} callsubr
-        -691 hlineto
-        hintmask 11101000
-        60 85 -47 23 -76 -108 rlineto
-        -933 {6a7250c2} callsubr
-        902 hlineto
-        -133 -189 rlineto
-        -805 {6a7250c2} callsubr
-        774 hlineto
-        -132 -188 rlineto
-        -678 hlineto
-        hintmask 11110000
+        {e06728d3} callsubr
+        -603 665 vstem
+        563 511 rmoveto
+        13 60 rlineto
+        -597 hlineto
+        83 118 -47 23 -99 -141 rlineto
+        -826 hlineto
         -12 -60 rlineto
-        647 hlineto
-        hintmask 11101000
-        -150 -213 53 -14 160 227 rlineto
-        976 hlineto
-        12 60 rlineto
-        -945 hlineto
-        132 188 rlineto
-        849 hlineto
-        {3e1270ac} callsubr
-        -819 hlineto
-        133 189 rlineto
+        795 hlineto
+        -132 -187 rlineto
+        -699 hlineto
+        -12 -60 rlineto
+        669 hlineto
+        -132 -187 rlineto
+        -573 hlineto
+        -12 -61 rlineto
+        542 hlineto
+        -127 -180 53 -14 137 194 rlineto
+        880 hlineto
+        13 61 rlineto
+        -850 hlineto
+        132 187 rlineto
+        753 hlineto
+        13 60 rlineto
+        -724 hlineto
+        132 187 rlineto
         endchar
     </CharString>
     <Subrs>
-        <CharString index="0" fingerprint="1a4ca569">
-            60 188 59 return
-        </CharString>
-        <CharString index="1" fingerprint="3e1270ac">
-            12 59 rlineto
-            return
-        </CharString>
-        <CharString index="2" fingerprint="6a7250c2">
-            hlineto
-            -11 -59 rlineto
+        <CharString index="0" fingerprint="e06728d3">
+            16 61 187 60 187 60 hstem
             return
         </CharString>
     </Subrs>

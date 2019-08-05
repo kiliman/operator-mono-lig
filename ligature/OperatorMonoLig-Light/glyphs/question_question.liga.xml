@@ -1,6 +1,6 @@
-<Glyph name="question_question.liga" lsb="-434" width="625">
+<Glyph name="question_question.liga" lsb="-434" width="550">
     <CharString>
-        -32 0 96 525 57 hstem
+        0 96 525 57 hstem
         -337 91 142 63 125 91 141 63 vstem
         -428 678 rmoveto
         {400ad052} callgsubr

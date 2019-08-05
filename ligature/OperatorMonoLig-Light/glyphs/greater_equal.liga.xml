@@ -1,20 +1,13 @@
 <Glyph name="greater_equal.liga" lsb="-334" width="550">
     <CharString>
         -335 702 vstem
-        {64fb1ad2} callgsubr
+        {64fb1ad2} callsubr
         -675 -283 rlineto
         675 113 rmoveto
         -675 -283 -25 42 700 297 rlineto
         endchar
     </CharString>
     <Subrs>
-        <CharString index="0" fingerprint="89cb26bd">
-            264 rlineto
-            8 vlineto
-            return
-        </CharString>
-    </Subrs>
-    <GlobalSubrs>
         <CharString index="0" fingerprint="64fb1ad2">
             -334 22 rmoveto
             612 {89cb26bd} callsubr
@@ -22,5 +15,11 @@
             -54 vlineto
             return
         </CharString>
-    </GlobalSubrs>
+        <CharString index="1" fingerprint="89cb26bd">
+            264 rlineto
+            8 vlineto
+            return
+        </CharString>
+    </Subrs>
+    <GlobalSubrs/>
 </Glyph>

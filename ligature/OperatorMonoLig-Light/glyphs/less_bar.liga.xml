@@ -1,6 +1,6 @@
-<Glyph name="less_bar.liga" lsb="-344" width="625">
+<Glyph name="less_bar.liga" lsb="-344" width="550">
     <CharString>
-        -32 -201 985 hstem
+        -201 985 hstem
         -344 566 vstem
         156 778 rmoveto
         -500 -425 rlineto

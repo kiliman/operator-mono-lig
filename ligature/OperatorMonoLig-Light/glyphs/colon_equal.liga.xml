@@ -1,6 +1,6 @@
-<Glyph name="colon_equal.liga" lsb="-370" width="625">
+<Glyph name="colon_equal.liga" lsb="-370" width="550">
     <CharString>
-        -32 145 113 135 114 hstem
+        145 113 135 114 hstem
         -370 736 vstem
         -370 393 {47439142} callgsubr
         60 rlineto

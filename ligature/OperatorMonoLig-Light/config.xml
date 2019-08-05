@@ -23,13 +23,13 @@
     
     
     
-        <xMin value="-1678"/>
+        <xMin value="-1560"/>
         
     
         <yMin value="-284"/>
         
     
-        <xMax value="672"/>
+        <xMax value="610"/>
         
     
         <yMax value="1140"/>
@@ -66,16 +66,16 @@
         <lineGap value="0"/>
         
     
-        <advanceWidthMax value="625"/>
+        <advanceWidthMax value="550"/>
         
     
-        <minLeftSideBearing value="-1678"/>
+        <minLeftSideBearing value="-1560"/>
         
     
         <minRightSideBearing value="-60"/>
         
     
-        <xMaxExtent value="672"/>
+        <xMaxExtent value="610"/>
         
     
         <caretSlopeRise value="1"/>
@@ -102,19 +102,19 @@
         <metricDataFormat value="0"/>
         
     
-        <numberOfHMetrics value="471"/>
+        <numberOfHMetrics value="466"/>
         
   
     </hhea>
     <CFF>
         <CFFFont>
-            <FontBBox value="-1678 -284 672 1140"/>
+            <FontBBox value="-1560 -284 619 1140"/>
         </CFFFont>
     </CFF>
     <CFF>
         <CFFFont>
             <Private>
-                <nominalWidthX value="657"/>
+                <nominalWidthX value="107"/>
             </Private>
         </CFFFont>
     </CFF>

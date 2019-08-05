@@ -1,20 +1,25 @@
-<Glyph name="greater_equal.2.liga" lsb="-407" width="550">
+<Glyph name="greater_equal.2.liga" lsb="-338" width="550">
     <CharString>
-        -165 4 hstem
-        -384 435 vstem
-        -376 {e303e366} callgsubr
+        -119 50 hstemhm
+        -338 481 -478 702 hintmask 10100000
+        -307 {60d14561} callsubr
         -757 -293 rlineto
         684 -89 rmoveto
-        9 50 rlineto
+        {0e168d1d} callsubr
         -705 hlineto
-        -9 -50 rlineto
+        hintmask 11000000
+        -10 -50 rlineto
         endchar
     </CharString>
-    <Subrs/>
-    <GlobalSubrs>
-        <CharString index="0" fingerprint="e303e366">
+    <Subrs>
+        <CharString index="0" fingerprint="60d14561">
             22 rmoveto
-            663 264 2 8 -555 258 33 43 614 -278 -10 -54 return
+            664 264 1 8 -555 258 34 43 614 -278 -11 -54 return
         </CharString>
-    </GlobalSubrs>
+        <CharString index="1" fingerprint="0e168d1d">
+            10 50 rlineto
+            return
+        </CharString>
+    </Subrs>
+    <GlobalSubrs/>
 </Glyph>

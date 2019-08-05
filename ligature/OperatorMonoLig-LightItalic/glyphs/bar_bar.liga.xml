@@ -1,7 +1,7 @@
-<Glyph name="bar_bar.liga" lsb="-337" width="625">
+<Glyph name="bar_bar.liga" lsb="-312" width="550">
     <CharString>
-        -32 -337 227 158 227 vstem
-        -110 703 {b95482c8} callsubr
+        -312 227 158 227 vstem
+        -85 703 {b95482c8} callsubr
         557 883 {b95482c8} callsubr
         endchar
     </CharString>

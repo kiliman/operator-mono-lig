@@ -1,50 +1,50 @@
-<Glyph name="ampersand_ampersand.liga" lsb="-429" width="625">
+<Glyph name="ampersand_ampersand.liga" lsb="-477" width="550">
     <CharString>
-        -32 -11 64 hstem
-        -429 69 174 60 157 69 174 60 vstem
-        -429 118 rmoveto
-        -80 44 -49 79 70 86 49 92 87 vhcurveto
-        -51 37 61 -90 119 hhcurveto
-        70 86 49 92 87 hvcurveto
-        37 -51 45 -50 51 -50 54 49 rcurveline
-        -56 53 -46 51 -38 52 {254e5086} callsubr
-        -136 -120 -99 -122 -4 -115 -17 19 -15 20 -15 20 {254e5086} callsubr
-        -139 -122 -100 -125 -117 vvcurveto
-        69 14 rmoveto
-        {635b527e} callgsubr
-        460 hmoveto
-        {635b527e} callgsubr
+        -13 60 586 67 hstem
+        -477 70 10 69 291 70 10 69 vstem
+        359 178 rmoveto
+        38 67 35 90 26 106 -63 7 rcurveline
+        -18 -86 -27 -79 -29 -62 rrcurveto
+        {75868691} callgsubr
+        -5 0 -4 1 -5 vhcurveto
+        -45 51 38 67 35 90 26 106 rlinecurve
+        -63 7 -18 -86 -27 -79 -29 -62 rlinecurve
+        {75868691} callgsubr
+        -85 55 -69 100 70 72 40 89 60 vhcurveto
+        -39 33 71 -90 134 hhcurveto
+        70 72 40 89 60 hvcurveto
+        33 -39 37 -43 39 -49 56 47 rcurveline
+        -47 55 -42 49 -37 42 rrcurveto
+        -667 -131 rmoveto
+        {a5af4707} callgsubr
+        440 hmoveto
+        {a5af4707} callgsubr
         endchar
     </CharString>
-    <Subrs>
-        <CharString index="0" fingerprint="254e5086">
-            46 57 46 68 44 79 -61 22 rcurveline
-            -35 -69 -36 -59 -36 -49 -46 75 -26 77 -6 82 rrcurveto
-            63 66 38 72 54 vvcurveto
-            34 -19 17 -29 -50 -65 -114 -114 -2 vhcurveto
-            return
-        </CharString>
-        <CharString index="1" fingerprint="254e5086">
-            46 57 46 68 44 79 -61 22 rcurveline
-            -35 -69 -36 -59 -36 -49 -46 75 -26 77 -6 82 rrcurveto
-            63 66 38 72 54 vvcurveto
-            34 -19 17 -29 -50 -65 -114 -114 -2 vhcurveto
-            return
-        </CharString>
-    </Subrs>
+    <Subrs/>
     <GlobalSubrs>
-        <CharString index="0" fingerprint="635b527e">
-            87 77 99 97 97 vhcurveto
-            11 -82 32 -79 49 -78 rrcurveto
-            -82 -73 -68 -41 -51 hhcurveto
-            -46 -28 29 50 hvcurveto
+        <CharString index="0" fingerprint="75868691">
+            -144 163 -65 69 64 vvcurveto
+            65 51 60 194 -9 vhcurveto
+            -6 67 rlineto
+            -235 5 -73 -101 -93 vvcurveto
+            -49 23 -44 46 -60 vhcurveto
+            -100 -63 -49 -73 -81 vvcurveto
             return
         </CharString>
-        <CharString index="1" fingerprint="635b527e">
-            87 77 99 97 97 vhcurveto
-            11 -82 32 -79 49 -78 rrcurveto
-            -82 -73 -68 -41 -51 hhcurveto
-            -46 -28 29 50 hvcurveto
+        <CharString index="1" fingerprint="75868691">
+            -144 163 -65 69 64 vvcurveto
+            65 51 60 194 -9 vhcurveto
+            -6 67 rlineto
+            -235 5 -73 -101 -93 vvcurveto
+            -49 23 -44 46 -60 vhcurveto
+            -100 -63 -49 -73 -81 vvcurveto
+            return
+        </CharString>
+        <CharString index="2" fingerprint="a5af4707">
+            -66 -33 46 63 56 35 59 73 51 hvcurveto
+            37 -44 48 -53 58 -68 rrcurveto
+            -74 -47 -54 -36 -51 hhcurveto
             return
         </CharString>
     </GlobalSubrs>

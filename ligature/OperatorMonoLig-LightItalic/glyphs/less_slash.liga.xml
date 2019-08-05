@@ -1,11 +1,11 @@
-<Glyph name="less_slash.liga" lsb="-532" width="625">
+<Glyph name="less_slash.liga" lsb="-457" width="525">
     <CharString>
-        -32 -532 417 -246 665 hintmask 10000000
-        257 712 rmoveto
-        -479 -679 -250 253 2 8 355 252 {46d990e9} callgsubr
-        276 -284 rlineto
+        418 -457 417 -245 665 hintmask 10000000
+        333 712 rmoveto
+        -479 -680 -251 254 2 8 355 252 {46d990e9} callgsubr
+        277 -285 rlineto
         hintmask 01000000
-        -105 -149 53 -14 612 867 rlineto
+        -105 -148 53 -14 612 867 rlineto
         endchar
     </CharString>
     <Subrs/>

@@ -1,47 +1,34 @@
-<Glyph name="colon_equal.liga" lsb="-394" width="625">
+<Glyph name="colon_equal.liga" lsb="-370" width="550">
     <CharString>
-        -32 144 115 133 115 hstem
-        -394 801 vstem
-        -347 392 {c12c2549} callsubr
-        719 -87 rmoveto
-        {3e1270ac} callsubr
-        -529 {6a7250c2} callsubr
-        -261 -276 {c12c2549} callsubr
-        718 -87 rmoveto
-        12 60 rlineto
-        -528 {1a0862e5} callgsubr
+        145 113 135 114 hstem
+        -370 736 vstem
+        -322 393 {5e72ad10} callgsubr
+        60 rlineto
+        -529 hlineto
+        -12 -60 rlineto
+        -260 -275 {5e72ad10} callgsubr
+        61 rlineto
+        -529 hlineto
+        -12 -61 rlineto
         endchar
     </CharString>
-    <Subrs>
-        <CharString index="0" fingerprint="c12c2549">
-            rmoveto
-            105 hlineto
-            26 115 rlineto
-            -108 hlineto
-            return
-        </CharString>
-        <CharString index="1" fingerprint="3e1270ac">
-            12 59 rlineto
-            return
-        </CharString>
-        <CharString index="2" fingerprint="6a7250c2">
-            hlineto
-            -11 -59 rlineto
-            return
-        </CharString>
-        <CharString index="3" fingerprint="c12c2549">
-            rmoveto
-            105 hlineto
-            26 115 rlineto
-            -108 hlineto
-            return
-        </CharString>
-    </Subrs>
+    <Subrs/>
     <GlobalSubrs>
-        <CharString index="0" fingerprint="1a0862e5">
-            hlineto
-            -12 -60 rlineto
-            return
+        <CharString index="0" fingerprint="5e72ad10">
+            rmoveto
+            111 hlineto
+            24 114 rlineto
+            -112 hlineto
+            717 -87 rmoveto
+            13 return
+        </CharString>
+        <CharString index="1" fingerprint="5e72ad10">
+            rmoveto
+            111 hlineto
+            24 114 rlineto
+            -112 hlineto
+            717 -87 rmoveto
+            13 return
         </CharString>
     </GlobalSubrs>
 </Glyph>

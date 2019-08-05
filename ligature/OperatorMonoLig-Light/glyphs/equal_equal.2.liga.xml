@@ -1,38 +1,41 @@
-<Glyph name="equal_equal.2.liga" lsb="-527" width="625">
+<Glyph name="equal_equal.2.liga" lsb="-468" width="550">
     <CharString>
-        {8cd17f0d} callgsubr
-        -527 1054 vstem
-        -39 420 {5a2ab71c} callsubr
-        -489 -60 hlineto
-        1053 hmoveto
-        {237a2e75} callgsubr
-        -489 -60 hlineto
-        -77 {288a3e9c} callgsubr
-        -489 -61 hlineto
-        1053 hmoveto
-        1 61 rlineto
-        -489 -61 hlineto
+        {a926ac67} callgsubr
+        hstem
+        -468 425 85 425 vstem
+        -43 379 {37df18c9} callsubr
+        -85 -223 {37df18c9} callsubr
         endchar
     </CharString>
     <Subrs>
-        <CharString index="0" fingerprint="5a2ab71c">
-            rmoveto
-            {237a2e75} callgsubr
+        <CharString index="0" fingerprint="37df18c9">
+            {e986858e} callgsubr
+            -426 -52 hlineto
+            935 hmoveto
+            {c7138596} callsubr
+            -426 -52 hlineto
+            return
+        </CharString>
+        <CharString index="1" fingerprint="c7138596">
+            1 52 rlineto
+            return
+        </CharString>
+        <CharString index="2" fingerprint="37df18c9">
+            {e986858e} callgsubr
+            -426 -52 hlineto
+            935 hmoveto
+            {c7138596} callsubr
+            -426 -52 hlineto
             return
         </CharString>
     </Subrs>
     <GlobalSubrs>
-        <CharString index="0" fingerprint="8cd17f0d">
-            -32 172 61 187 60 hstem
-            return
+        <CharString index="0" fingerprint="a926ac67">
+            156 52 171 52 return
         </CharString>
-        <CharString index="1" fingerprint="237a2e75">
-            1 60 rlineto
-            return
-        </CharString>
-        <CharString index="2" fingerprint="288a3e9c">
-            -248 rmoveto
-            1 61 rlineto
+        <CharString index="1" fingerprint="e986858e">
+            rmoveto
+            {c7138596} callsubr
             return
         </CharString>
     </GlobalSubrs>

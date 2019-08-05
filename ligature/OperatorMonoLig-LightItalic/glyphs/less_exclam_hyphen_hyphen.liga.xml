@@ -1,43 +1,43 @@
-<Glyph name="less_exclam_hyphen_hyphen.liga" lsb="-1782" width="625">
+<Glyph name="less_exclam_hyphen_hyphen.liga" lsb="-1557" width="550">
     <CharString>
-        -32 0 96 196 61 hstemhm
-        -1782 417 -352 651 -16 225 50 1291 hintmask 11010100
-        -1007 226 rmoveto
-        39 hlineto
-        hintmask 11001100
-        {695a0e17} callgsubr
-        -713 68 rmoveto
-        hintmask 11010100
-        4 3 -1 -5 rlineto
-        639 hlineto
-        12 61 rlineto
-        -571 hlineto
-        hintmask 11100100
-        272 193 {dfda4220} callgsubr
-        rlineto
-        927 67 rmoveto
-        -12 -61 rlineto
-        1279 hlineto
-        12 61 rlineto
-        hintmask 11001100
-        -1566 -353 {2f3e5c58} callgsubr
+        0 96 168 52 hstem
+        -1557 417 213 225 vstem
+        -852 {1df71722} callgsubr
+        -288 320 rmoveto
+        {e6467a83} callsubr
+        446 hlineto
+        13 52 rlineto
+        -448 hlineto
+        861 hmoveto
+        -10 -52 rlineto
+        1044 hlineto
+        13 52 rlineto
+        -1371 -316 {2f3e5c58} callgsubr
     </CharString>
-    <Subrs/>
+    <Subrs>
+        <CharString index="0" fingerprint="e6467a83">
+            {502a035d} callsubr
+            -237 240 rlineto
+            return
+        </CharString>
+        <CharString index="1" fingerprint="502a035d">
+            {46d990e9} callgsubr
+            278 -286 41 41 return
+        </CharString>
+    </Subrs>
     <GlobalSubrs>
-        <CharString index="0" fingerprint="695a0e17">
+        <CharString index="0" fingerprint="1df71722">
+            226 rmoveto
+            39 hlineto
             25 116 56 211 30 122 rrcurveto
             -78 hlineto
             -21 -122 -29 -211 -22 -116 rrcurveto
             return
         </CharString>
-        <CharString index="1" fingerprint="dfda4220">
-            {46d990e9} callgsubr
-            278 -286 41 41 -259 262 return
-        </CharString>
-        <CharString index="2" fingerprint="46d990e9">
+        <CharString index="1" fingerprint="46d990e9">
             -27 45 -381 -270 -9 -52 return
         </CharString>
-        <CharString index="3" fingerprint="2f3e5c58">
+        <CharString index="2" fingerprint="2f3e5c58">
             rmoveto
             90 hlineto
             20 96 rlineto
