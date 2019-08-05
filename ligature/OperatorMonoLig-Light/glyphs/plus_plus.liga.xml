@@ -1,30 +1,30 @@
 <Glyph name="plus_plus.liga" lsb="-423" width="550">
     <CharString>
-        {4ef4eda0} callgsubr
+        {4ef4eda0} callsubr
         -239 55 364 55 vstem
         235 {9b6142ec} callsubr
         192 -55 -192 -364 {7c4152a6} callgsubr
         193 364 -193 55 193 182 vlineto
-        {c7138596} callsubr
+        {c7138596} callgsubr
         endchar
     </CharString>
     <Subrs>
-        <CharString index="0" fingerprint="9b6142ec">
-            316 rmoveto
-            return
-        </CharString>
-        <CharString index="1" fingerprint="c7138596">
-            1 52 rlineto
-            return
-        </CharString>
-    </Subrs>
-    <GlobalSubrs>
         <CharString index="0" fingerprint="4ef4eda0">
             264 52 hstem
             return
         </CharString>
-        <CharString index="1" fingerprint="7c4152a6">
+        <CharString index="1" fingerprint="9b6142ec">
+            316 rmoveto
+            return
+        </CharString>
+    </Subrs>
+    <GlobalSubrs>
+        <CharString index="0" fingerprint="7c4152a6">
             192 -55 -192 -184 -52 184 -193 55 return
+        </CharString>
+        <CharString index="1" fingerprint="c7138596">
+            1 52 rlineto
+            return
         </CharString>
     </GlobalSubrs>
 </Glyph>

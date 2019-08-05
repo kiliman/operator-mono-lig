@@ -2,12 +2,12 @@
     <CharString>
         {17e5c391} callgsubr
         -1007 417 657 417 hintmask 11010000
-        {4ae75cfb} callsubr
+        {e0be236e} callsubr
         -1036 hlineto
         hintmask 11110000
-        {e5767b17} callsubr
+        {c18f7f36} callgsubr
         1064 hlineto
-        {9521edfd} callsubr
+        {9521edfd} callgsubr
         -1189 hlineto
         {553b793e} callgsubr
         1160 hlineto
@@ -15,39 +15,20 @@
         endchar
     </CharString>
     <Subrs>
-        <CharString index="0" fingerprint="4ae75cfb">
-            {9e664772} callsubr
+        <CharString index="0" fingerprint="e0be236e">
+            {9e664772} callgsubr
             119 -120 rlineto
             return
         </CharString>
-        <CharString index="1" fingerprint="9e664772">
-            206 591 rmoveto
-            -41 -40 return
-        </CharString>
-        <CharString index="2" fingerprint="e5767b17">
-            162 115 {502a035d} callsubr
-            {13fcb190} callsubr
-            rlineto
-            return
-        </CharString>
-        <CharString index="3" fingerprint="502a035d">
+        <CharString index="1" fingerprint="502a035d">
             {46d990e9} callgsubr
             278 -286 41 41 return
         </CharString>
-        <CharString index="4" fingerprint="13fcb190">
-            -130 132 return
-        </CharString>
-        <CharString index="5" fingerprint="9521edfd">
-            {b821e20e} callsubr
-            -62 -25 rmoveto
-            -103 -73 rlineto
-            return
-        </CharString>
-        <CharString index="6" fingerprint="b821e20e">
+        <CharString index="2" fingerprint="b821e20e">
             -179 -127 {2f89f84b} callgsubr
             return
         </CharString>
-        <CharString index="7" fingerprint="1c31358f">
+        <CharString index="3" fingerprint="1c31358f">
             27 -46 380 271 10 52 return
         </CharString>
     </Subrs>
@@ -60,15 +41,34 @@
         <CharString index="1" fingerprint="a926ac67">
             156 52 171 52 return
         </CharString>
-        <CharString index="2" fingerprint="46d990e9">
+        <CharString index="2" fingerprint="9e664772">
+            206 591 rmoveto
+            -41 -40 return
+        </CharString>
+        <CharString index="3" fingerprint="c18f7f36">
+            162 115 {502a035d} callsubr
+            {13fcb190} callgsubr
+            rlineto
+            return
+        </CharString>
+        <CharString index="4" fingerprint="46d990e9">
             -27 45 -381 -270 -9 -52 return
         </CharString>
-        <CharString index="3" fingerprint="2f89f84b">
+        <CharString index="5" fingerprint="13fcb190">
+            -130 132 return
+        </CharString>
+        <CharString index="6" fingerprint="9521edfd">
+            {b821e20e} callsubr
+            -62 -25 rmoveto
+            -103 -73 rlineto
+            return
+        </CharString>
+        <CharString index="7" fingerprint="2f89f84b">
             {1c31358f} callsubr
             rlineto
             return
         </CharString>
-        <CharString index="4" fingerprint="553b793e">
+        <CharString index="8" fingerprint="553b793e">
             -77 78 2 8 120 85 rlineto
             return
         </CharString>

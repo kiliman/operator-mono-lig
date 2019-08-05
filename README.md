@@ -10,7 +10,7 @@ those found in the popular [Fira Code](https://github.com/tonsky/FiraCode) font.
 These ligatures were custom created using [Glyphs](https://glyphsapp.com/).
 There are even italic versions of the ligatures.
 
-## New Version 2.2.1
+## New Version 2.2.2
 
 All new redesigned ligatures with better hinting. Updated font generation to support advanced OpenType features
 like those found in Fira Code. For example, the cursor now moves inside the ligature. It also handles repeating
@@ -29,12 +29,13 @@ the following fonts. Thanks Mark, and thanks to all of you who have been patient
 - Operator Mono SSm Bold/Bold Italic
 - Operator Mono Light/Light Italic
 
-### 🐛 Fixed in Version 2.2.1
+### 🐛 Fixed in Version 2.2.2
 
 Fixed glyph widths Operator Mono Light and Light Italic. These fonts accidentally were sized
-the same as the ScreenSmart versions and caused alignment issues.
+the same as the ScreenSmart versions and caused alignment issues. Also fixed a few ligatures
+that didn't have the correct weight.
 
-### Customize the generated font
+### 🔧 Customize the generated font
 
 In addition to the new ligatures, this version now allows you to customize what ligatures are added to a font.
 By default, all available ligatures will be added to the generated font. However, if you don't like a particular
@@ -67,7 +68,7 @@ greater_equal.liga=greater_equal.2.liga
 In addition to the graphic above, the following new ligatures are available:
 <img src="./images/new-ligatures.png"/>
 
-### Help Wanted
+### 🙏 Help Wanted
 
 As noted above, v2.0 only includes ligatures for **Operator Mono SSm Book**. In order to
 update the other fonts, all the ligatures need to be redone. Unfortunately I just don't
@@ -76,7 +77,7 @@ please let me know. I will even purchase a license to Gylphs Mini for you.
 
 You can reach me at kiliman@gmail.com.
 
-## Take the poll
+## ☑️ Take the poll
 
 Which font weight of Operator Mono do you use? Also note difference between Screen Smart (SSm) and regular version. This will help prioritize the order of development.
 
@@ -99,7 +100,7 @@ Which font weight of Operator Mono do you use? Also note difference between Scre
     - for Mac users it's better to run `pip3 install fonttools` - [info](https://stackoverflow.com/a/33416270/3191011)
 - Node.js
 
-## How to Install
+## 🛠 How to Install
 
 1. Once all the prerequisites have been installed, clone this repo. Or download latest release from [Releases](https://github.com/kiliman/operator-mono-lig/releases) and unzip.
 
@@ -149,14 +150,14 @@ You can now select the newly generated font in your code editor. Make sure you e
   "editor.fontWeight": "500",   // adjust for desired weight
 ```
 
-## Thank You
+## 😍 Thank You
 
 Thanks to Hoefler&Co for making such an amazing font. It makes writing code truly pleasurable.
 
 Thanks also to all of you for your kinds words of encouragement and feedback. I really
 appreciate it.
 
-## Contributors ✨
+## ✨ Contributors
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 

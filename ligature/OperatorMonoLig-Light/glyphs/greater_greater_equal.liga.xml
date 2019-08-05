@@ -6,18 +6,18 @@
         -327 278 -36 -43 {7d351c1f} callgsubr
         rlineto
         hintmask 11010000
-        {fe9ab107} callsubr
+        {fe9ab107} callgsubr
         hintmask 11001000
         300 hmoveto
         54 vlineto
         -73 62 {bf847d0e} callgsubr
-        880 {368d5b4d} callsubr
+        880 {91954767} callsubr
         -942 {75fc0322} callsubr
         hintmask 11001000
         {735054ce} callsubr
         {4d0a4e5f} callsubr
         208 176 {bf847d0e} callgsubr
-        933 {368d5b4d} callsubr
+        933 {91954767} callsubr
         -873 hlineto
         endchar
     </CharString>
@@ -29,25 +29,17 @@
         <CharString index="1" fingerprint="4d0a4e5f">
             -312 -264 35 -42 return
         </CharString>
-        <CharString index="2" fingerprint="fe9ab107">
-            334 283 rlineto
-            return
-        </CharString>
-        <CharString index="3" fingerprint="368d5b4d">
+        <CharString index="2" fingerprint="91954767">
             hlineto
-            {c7138596} callsubr
+            {c7138596} callgsubr
             return
         </CharString>
-        <CharString index="4" fingerprint="c7138596">
-            1 52 rlineto
-            return
-        </CharString>
-        <CharString index="5" fingerprint="75fc0322">
+        <CharString index="3" fingerprint="75fc0322">
             hlineto
             -193 164 -36 -43 rlineto
             return
         </CharString>
-        <CharString index="6" fingerprint="735054ce">
+        <CharString index="4" fingerprint="735054ce">
             306 {1341d64a} callgsubr
             return
         </CharString>
@@ -72,9 +64,17 @@
             -8 vlineto
             return
         </CharString>
-        <CharString index="4" fingerprint="bf847d0e">
+        <CharString index="4" fingerprint="fe9ab107">
+            334 283 rlineto
+            return
+        </CharString>
+        <CharString index="5" fingerprint="bf847d0e">
             rlineto
             hintmask 11100000
+            return
+        </CharString>
+        <CharString index="6" fingerprint="c7138596">
+            1 52 rlineto
             return
         </CharString>
     </GlobalSubrs>

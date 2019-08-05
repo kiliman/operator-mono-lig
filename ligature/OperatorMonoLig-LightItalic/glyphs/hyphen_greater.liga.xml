@@ -1,41 +1,41 @@
 <Glyph name="hyphen_greater.liga" lsb="-430" width="550">
     <CharString>
         264 52 hstemhm
-        -430 890 {7928fd8b} callgsubr
+        -430 890 {eadcabe1} callgsubr
         -817 {50f87708} callgsubr
         828 {5fadfa30} callsubr
     </CharString>
     <Subrs>
-        <CharString index="0" fingerprint="9e664772">
-            206 591 rmoveto
-            -41 -40 return
-        </CharString>
-        <CharString index="1" fingerprint="5fadfa30">
+        <CharString index="0" fingerprint="5fadfa30">
             hlineto
             hintmask 10100000
             -331 -235 {8182c88f} callsubr
         </CharString>
-        <CharString index="2" fingerprint="8182c88f">
+        <CharString index="1" fingerprint="8182c88f">
             {2f89f84b} callgsubr
             endchar
         </CharString>
-        <CharString index="3" fingerprint="1c31358f">
+        <CharString index="2" fingerprint="1c31358f">
             27 -46 380 271 10 52 return
         </CharString>
     </Subrs>
     <GlobalSubrs>
-        <CharString index="0" fingerprint="7928fd8b">
+        <CharString index="0" fingerprint="eadcabe1">
             -393 417 hintmask 11000000
-            {9e664772} callsubr
+            {9e664772} callgsubr
             232 -235 rlineto
             return
         </CharString>
-        <CharString index="1" fingerprint="50f87708">
+        <CharString index="1" fingerprint="9e664772">
+            206 591 rmoveto
+            -41 -40 return
+        </CharString>
+        <CharString index="2" fingerprint="50f87708">
             hlineto
             -10 -52 rlineto
             return
         </CharString>
-        <CharString index="2" fingerprint="2f89f84b">
+        <CharString index="3" fingerprint="2f89f84b">
             {1c31358f} callsubr
             rlineto
             return

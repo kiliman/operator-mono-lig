@@ -3,39 +3,29 @@
         {a926ac67} callgsubr
         hstem
         -468 425 85 425 vstem
-        -43 379 {37df18c9} callsubr
-        -85 -223 {37df18c9} callsubr
+        -43 379 {a8999db7} callgsubr
+        -85 -223 {a8999db7} callgsubr
         endchar
     </CharString>
-    <Subrs>
-        <CharString index="0" fingerprint="37df18c9">
-            {e986858e} callgsubr
-            -426 -52 hlineto
-            935 hmoveto
-            {c7138596} callsubr
-            -426 -52 hlineto
-            return
-        </CharString>
-        <CharString index="1" fingerprint="c7138596">
-            1 52 rlineto
-            return
-        </CharString>
-        <CharString index="2" fingerprint="37df18c9">
-            {e986858e} callgsubr
-            -426 -52 hlineto
-            935 hmoveto
-            {c7138596} callsubr
-            -426 -52 hlineto
-            return
-        </CharString>
-    </Subrs>
+    <Subrs/>
     <GlobalSubrs>
         <CharString index="0" fingerprint="a926ac67">
             156 52 171 52 return
         </CharString>
-        <CharString index="1" fingerprint="e986858e">
+        <CharString index="1" fingerprint="a8999db7">
             rmoveto
-            {c7138596} callsubr
+            {d805e4a1} callgsubr
+            935 hmoveto
+            {d805e4a1} callgsubr
+            return
+        </CharString>
+        <CharString index="2" fingerprint="d805e4a1">
+            {c7138596} callgsubr
+            -426 -52 hlineto
+            return
+        </CharString>
+        <CharString index="3" fingerprint="c7138596">
+            1 52 rlineto
             return
         </CharString>
     </GlobalSubrs>

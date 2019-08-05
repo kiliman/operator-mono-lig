@@ -1,32 +1,48 @@
-<Glyph name="colon_equal.liga" lsb="-370" width="550">
+<Glyph name="colon_equal.liga" lsb="-289" width="550">
     <CharString>
-        145 113 135 114 hstem
-        -370 736 vstem
-        -370 393 {47439142} callgsubr
-        60 rlineto
-        -529 -60 hlineto
-        -207 -275 {47439142} callgsubr
-        61 rlineto
-        -529 -61 hlineto
+        131 101 -76 52 147 101 -77 52 hstemhm
+        -288.5 96.5 hintmask 00000000
+        hintmask 01101000
+        -289 355 {f593abee} callsubr
+        hintmask 10011000
+        635 -77 rmoveto
+        {d805e4a1} callgsubr
+        -211 -248 {f593abee} callsubr
+        hintmask 01011000
+        635 -76 rmoveto
+        {d805e4a1} callgsubr
         endchar
     </CharString>
-    <Subrs/>
-    <GlobalSubrs>
-        <CharString index="0" fingerprint="47439142">
+    <Subrs>
+        <CharString index="0" fingerprint="f593abee">
             rmoveto
-            111 hlineto
-            2 114 rlineto
-            -112 hlineto
-            734 -87 rmoveto
-            1 return
+            96 hlineto
+            2 101 rlineto
+            -97 hlineto
+            return
         </CharString>
-        <CharString index="1" fingerprint="47439142">
+        <CharString index="1" fingerprint="f593abee">
             rmoveto
-            111 hlineto
-            2 114 rlineto
-            -112 hlineto
-            734 -87 rmoveto
-            1 return
+            96 hlineto
+            2 101 rlineto
+            -97 hlineto
+            return
+        </CharString>
+    </Subrs>
+    <GlobalSubrs>
+        <CharString index="0" fingerprint="d805e4a1">
+            {c7138596} callgsubr
+            -426 -52 hlineto
+            return
+        </CharString>
+        <CharString index="1" fingerprint="c7138596">
+            1 52 rlineto
+            return
+        </CharString>
+        <CharString index="2" fingerprint="d805e4a1">
+            {c7138596} callgsubr
+            -426 -52 hlineto
+            return
         </CharString>
     </GlobalSubrs>
 </Glyph>

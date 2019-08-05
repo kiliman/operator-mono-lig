@@ -16,7 +16,7 @@
         -311 264 rlineto
         hintmask 11001000
         300 hmoveto
-        {fd54dc80} callsubr
+        {9d42e380} callsubr
         {bf847d0e} callgsubr
         36 42 rlineto
         endchar
@@ -25,15 +25,20 @@
         <CharString index="0" fingerprint="653069d6">
             306 258 -36 43 return
         </CharString>
-        <CharString index="1" fingerprint="fd54dc80">
-            {a8585996} callgsubr
+        <CharString index="1" fingerprint="9d42e380">
+            {a8585996} callsubr
             {f9df3c06} callsubr
             return
         </CharString>
-        <CharString index="2" fingerprint="653069d6">
+        <CharString index="2" fingerprint="a8585996">
+            8 vlineto
+            {653069d6} callsubr
+            return
+        </CharString>
+        <CharString index="3" fingerprint="653069d6">
             306 258 -36 43 return
         </CharString>
-        <CharString index="3" fingerprint="f9df3c06">
+        <CharString index="4" fingerprint="f9df3c06">
             -328 -279 rlineto
             -53 vlineto
             333 -283 return
@@ -51,11 +56,6 @@
         <CharString index="2" fingerprint="bf847d0e">
             rlineto
             hintmask 11100000
-            return
-        </CharString>
-        <CharString index="3" fingerprint="a8585996">
-            8 vlineto
-            {653069d6} callsubr
             return
         </CharString>
     </GlobalSubrs>

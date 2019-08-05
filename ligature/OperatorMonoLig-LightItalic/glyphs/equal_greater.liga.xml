@@ -1,8 +1,8 @@
 <Glyph name="equal_greater.liga" lsb="-468" width="550">
     <CharString>
         {17e5c391} callgsubr
-        -468 927 -392 {9772cd75} callgsubr
-        {4ae75cfb} callsubr
+        -468 927 -392 {9772cd75} callsubr
+        {e0be236e} callsubr
         -699 {50f87708} callgsubr
         760 {34bb5356} callsubr
         -777 {50f87708} callgsubr
@@ -11,14 +11,14 @@
         endchar
     </CharString>
     <Subrs>
-        <CharString index="0" fingerprint="4ae75cfb">
-            {9e664772} callsubr
-            119 -120 rlineto
+        <CharString index="0" fingerprint="9772cd75">
+            417 hintmask 11100000
             return
         </CharString>
-        <CharString index="1" fingerprint="9e664772">
-            206 591 rmoveto
-            -41 -40 return
+        <CharString index="1" fingerprint="e0be236e">
+            {9e664772} callgsubr
+            119 -120 rlineto
+            return
         </CharString>
         <CharString index="2" fingerprint="34bb5356">
             hlineto
@@ -47,9 +47,9 @@
         <CharString index="1" fingerprint="a926ac67">
             156 52 171 52 return
         </CharString>
-        <CharString index="2" fingerprint="9772cd75">
-            417 hintmask 11100000
-            return
+        <CharString index="2" fingerprint="9e664772">
+            206 591 rmoveto
+            -41 -40 return
         </CharString>
         <CharString index="3" fingerprint="50f87708">
             hlineto

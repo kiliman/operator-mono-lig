@@ -2,40 +2,40 @@
     <CharString>
         126 22 201 22 hstem
         -498 906 vstem
-        510 379 {8426191d} callsubr
-        892 -223 {8426191d} callsubr
+        510 379 {a61c4392} callsubr
+        892 -223 {a61c4392} callsubr
         endchar
     </CharString>
     <Subrs>
-        <CharString index="0" fingerprint="8426191d">
-            {0b772534} callgsubr
+        <CharString index="0" fingerprint="a61c4392">
+            {053ace07} callsubr
             -936 {50f87708} callgsubr
             return
         </CharString>
-        <CharString index="1" fingerprint="8426191d">
-            {0b772534} callgsubr
+        <CharString index="1" fingerprint="053ace07">
+            rmoveto
+            {9b1a6feb} callsubr
+            return
+        </CharString>
+        <CharString index="2" fingerprint="9b1a6feb">
+            11 52 rlineto
+            return
+        </CharString>
+        <CharString index="3" fingerprint="a61c4392">
+            {053ace07} callsubr
             -936 {50f87708} callgsubr
             return
         </CharString>
     </Subrs>
     <GlobalSubrs>
-        <CharString index="0" fingerprint="0b772534">
-            rmoveto
-            {9b1a6feb} callgsubr
-            return
-        </CharString>
-        <CharString index="1" fingerprint="9b1a6feb">
-            11 52 rlineto
-            return
-        </CharString>
-        <CharString index="2" fingerprint="50f87708">
+        <CharString index="0" fingerprint="50f87708">
             hlineto
             -10 -52 rlineto
             return
         </CharString>
-        <CharString index="3" fingerprint="0b772534">
-            rmoveto
-            {9b1a6feb} callgsubr
+        <CharString index="1" fingerprint="50f87708">
+            hlineto
+            -10 -52 rlineto
             return
         </CharString>
     </GlobalSubrs>

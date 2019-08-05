@@ -3,7 +3,7 @@
         148 -21 hstem
         -365 706 vstem
         364 18 rmoveto
-        -10 -52 -643 293 {cc477545} callgsubr
+        -10 -52 -643 293 {cc477545} callsubr
         -168 -405 rmoveto
         705 hlineto
         {0e168d1d} callsubr
@@ -11,15 +11,14 @@
         endchar
     </CharString>
     <Subrs>
-        <CharString index="0" fingerprint="0e168d1d">
-            10 50 rlineto
-            return
-        </CharString>
-    </Subrs>
-    <GlobalSubrs>
         <CharString index="0" fingerprint="cc477545">
             11 54 722 278 16 -43 -655 -258 -1 -8 rlineto
             return
         </CharString>
-    </GlobalSubrs>
+        <CharString index="1" fingerprint="0e168d1d">
+            10 50 rlineto
+            return
+        </CharString>
+    </Subrs>
+    <GlobalSubrs/>
 </Glyph>
