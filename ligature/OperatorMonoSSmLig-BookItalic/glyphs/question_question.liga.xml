@@ -1,13 +1,13 @@
-<Glyph name="question_question.liga" lsb="-382" width="625">
+<Glyph name="question_question.liga" lsb="-379" width="625">
     <CharString>
         0 123 hstem
-        -41 102 338 102 vstem
-        -338 753 rmoveto
+        -38 102 318 102 vstem
+        -335 753 rmoveto
         {ce5baade} callsubr
-        440 hmoveto
+        420 hmoveto
         {ce5baade} callsubr
-        -484 -753 {378fec3f} callsubr
-        415 -123 {378fec3f} callsubr
+        -464 -753 {378fec3f} callgsubr
+        395 -123 {378fec3f} callgsubr
         endchar
     </CharString>
     <Subrs>
@@ -29,13 +29,21 @@
             106 -129 61 -270 28 vhcurveto
             return
         </CharString>
-        <CharString index="2" fingerprint="378fec3f">
+    </Subrs>
+    <GlobalSubrs>
+        <CharString index="0" fingerprint="378fec3f">
             rmoveto
             121 hlineto
             25 123 rlineto
             -121 hlineto
             return
         </CharString>
-    </Subrs>
-    <GlobalSubrs/>
+        <CharString index="1" fingerprint="378fec3f">
+            rmoveto
+            121 hlineto
+            25 123 rlineto
+            -121 hlineto
+            return
+        </CharString>
+    </GlobalSubrs>
 </Glyph>

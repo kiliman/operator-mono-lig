@@ -8,7 +8,7 @@
         <tableVersion value="1.0"/>
         
     
-        <fontRevision value="1.002"/>
+        <fontRevision value="1.20099"/>
         
     
     
@@ -66,7 +66,7 @@
         <lineGap value="0"/>
         
     
-        <advanceWidthMax value="625"/>
+        <advanceWidthMax value="626"/>
         
     
         <minLeftSideBearing value="-1771"/>
@@ -102,7 +102,7 @@
         <metricDataFormat value="0"/>
         
     
-        <numberOfHMetrics value="481"/>
+        <numberOfHMetrics value="478"/>
         
   
     </hhea>
