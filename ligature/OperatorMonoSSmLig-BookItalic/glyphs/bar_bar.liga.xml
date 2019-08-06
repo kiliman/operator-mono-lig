@@ -1,8 +1,8 @@
-<Glyph name="bar_bar.liga" lsb="-361" width="625">
+<Glyph name="bar_bar.liga" lsb="-372" width="625">
     <CharString>
-        -361 276 169 276 vstem
-        -85 785 {4b261514} callgsubr
-        637 986 {4b261514} callgsubr
+        -372 276 179 276 vstem
+        -96 785 {4b261514} callgsubr
+        647 986 {4b261514} callgsubr
         endchar
     </CharString>
     <Subrs/>
