@@ -6,8 +6,8 @@
         {3c3b4f3b} callsubr
         420 hmoveto
         {3c3b4f3b} callsubr
-        -321 -752 {89b2413f} callsubr
-        418 -109 {89b2413f} callsubr
+        -321 -752 {89b2413f} callgsubr
+        418 -109 {89b2413f} callgsubr
         endchar
     </CharString>
     <Subrs>
@@ -29,13 +29,21 @@
             86 -98 72 -332 19 vhcurveto
             return
         </CharString>
-        <CharString index="2" fingerprint="89b2413f">
+    </Subrs>
+    <GlobalSubrs>
+        <CharString index="0" fingerprint="89b2413f">
             rmoveto
             104 hlineto
             2 109 rlineto
             -104 hlineto
             return
         </CharString>
-    </Subrs>
-    <GlobalSubrs/>
+        <CharString index="1" fingerprint="89b2413f">
+            rmoveto
+            104 hlineto
+            2 109 rlineto
+            -104 hlineto
+            return
+        </CharString>
+    </GlobalSubrs>
 </Glyph>

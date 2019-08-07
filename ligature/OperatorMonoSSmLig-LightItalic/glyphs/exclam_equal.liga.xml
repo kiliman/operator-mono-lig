@@ -5,7 +5,7 @@
         -549 1121 -961 741 hintmask 11010000
         560 420 rmoveto
         hintmask 11100000
-        {3e1270ac} callgsubr
+        {3e1270ac} callsubr
         -421 hlineto
         hintmask 11010000
         201 286 -56 27 -220 -313 rlineto
@@ -19,14 +19,22 @@
         hintmask 11010000
         -249 -354 63 -17 261 371 rlineto
         577 hlineto
-        {e9726f1d} callgsubr
+        {e9726f1d} callsubr
         -547 hlineto
         132 188 rlineto
         endchar
     </CharString>
     <Subrs>
-        <CharString index="0" fingerprint="2069af8c">
+        <CharString index="0" fingerprint="3e1270ac">
+            12 59 rlineto
+            return
+        </CharString>
+        <CharString index="1" fingerprint="2069af8c">
             -132 -188 rlineto
+            return
+        </CharString>
+        <CharString index="2" fingerprint="e9726f1d">
+            12 60 rlineto
             return
         </CharString>
     </Subrs>
@@ -38,17 +46,9 @@
         <CharString index="1" fingerprint="1a4ca569">
             60 188 59 return
         </CharString>
-        <CharString index="2" fingerprint="3e1270ac">
-            12 59 rlineto
-            return
-        </CharString>
-        <CharString index="3" fingerprint="6a7250c2">
+        <CharString index="2" fingerprint="6a7250c2">
             hlineto
             -11 -59 rlineto
-            return
-        </CharString>
-        <CharString index="4" fingerprint="e9726f1d">
-            12 60 rlineto
             return
         </CharString>
     </GlobalSubrs>
