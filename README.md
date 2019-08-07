@@ -10,7 +10,7 @@ those found in the popular [Fira Code](https://github.com/tonsky/FiraCode) font.
 These ligatures were custom created using [Glyphs](https://glyphsapp.com/).
 There are even italic versions of the ligatures.
 
-## New Version 2.2.3
+## New Version 2.2.4
 
 All new redesigned ligatures with better hinting. Updated font generation to support advanced OpenType features
 like those found in Fira Code. For example, the cursor now moves inside the ligature. It also handles repeating
@@ -28,6 +28,10 @@ the following fonts. Thanks Mark, and thanks to all of you who have been patient
 - Operator Mono SSm Medium/Medium Italic
 - Operator Mono SSm Bold/Bold Italic
 - Operator Mono Light/Light Italic
+
+### 🐛 Fixed in Version 2.2.4
+
+Add some missing ligatures.
 
 ### 🐛 Fixed in Version 2.2.3
 
