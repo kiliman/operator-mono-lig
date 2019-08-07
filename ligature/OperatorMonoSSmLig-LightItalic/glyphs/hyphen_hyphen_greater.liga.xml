@@ -1,24 +1,14 @@
 <Glyph name="hyphen_hyphen_greater.liga" lsb="-1106" width="625">
     <CharString>
-        {62fdf4a4} callgsubr
-        -1106 1651 {cd8d7d7a} callgsubr
+        {9c6399b2} callsubr
+        -1106 1651 {cd8d7d7a} callsubr
         -1536 hlineto
         -12 -61 rlineto
-        1551 {023c72a5} callgsubr
+        1551 {26d06932} callgsubr
     </CharString>
     <Subrs>
-        <CharString index="0" fingerprint="bea2e09e">
-            -19 677 return
-        </CharString>
-        <CharString index="1" fingerprint="44ebcab6">
-            236 658 rmoveto
-            -48 -47 rlineto
-            return
-        </CharString>
-    </Subrs>
-    <GlobalSubrs>
-        <CharString index="0" fingerprint="62fdf4a4">
-            {bea2e09e} callsubr
+        <CharString index="0" fingerprint="9c6399b2">
+            {bea2e09e} callgsubr
             -366 61 hstemhm
             return
         </CharString>
@@ -29,23 +19,33 @@
             254 -258 rlineto
             return
         </CharString>
-        <CharString index="2" fingerprint="023c72a5">
+        <CharString index="2" fingerprint="44ebcab6">
+            236 658 rmoveto
+            -48 -47 rlineto
+            return
+        </CharString>
+        <CharString index="3" fingerprint="8660b198">
+            32 -54 422 299 return
+        </CharString>
+    </Subrs>
+    <GlobalSubrs>
+        <CharString index="0" fingerprint="bea2e09e">
+            -19 677 return
+        </CharString>
+        <CharString index="1" fingerprint="26d06932">
             hlineto
             -365 -257 rlineto
             hintmask 10100000
-            {5f8c1c5f} callgsubr
+            {25a966e5} callgsubr
         </CharString>
-        <CharString index="3" fingerprint="5f8c1c5f">
-            {f2eb570c} callgsubr
+        <CharString index="2" fingerprint="25a966e5">
+            {d3745836} callgsubr
+            rlineto
             endchar
         </CharString>
-        <CharString index="4" fingerprint="f2eb570c">
-            {fbf36c20} callgsubr
-            rlineto
-            return
-        </CharString>
-        <CharString index="5" fingerprint="fbf36c20">
-            32 -54 422 299 11 61 return
+        <CharString index="3" fingerprint="d3745836">
+            {8660b198} callsubr
+            11 61 return
         </CharString>
     </GlobalSubrs>
 </Glyph>

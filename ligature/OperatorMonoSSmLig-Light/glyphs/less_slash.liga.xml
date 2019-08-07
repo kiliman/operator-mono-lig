@@ -1,32 +1,41 @@
 <Glyph name="less_slash.liga" lsb="-518" width="625">
     <CharString>
-        {425b9255} callgsubr
+        {beae34ac} callgsubr
+        -820 685 hstemhm
         -518 66 219 579 hintmask 10110000
         286 797 rmoveto
         -404 -761 -334 281 rlineto
         10 vlineto
-        339 285 rlineto
+        {51d9a808} callgsubr
+        rlineto
         hintmask 01110000
-        {fae42a88} callgsubr
+        {5557c980} callsubr
         -84 -157 rlineto
         hintmask 10110000
         63 -23 516 972 rlineto
         endchar
     </CharString>
-    <Subrs/>
-    <GlobalSubrs>
-        <CharString index="0" fingerprint="425b9255">
-            -203 1000 -820 685 hstemhm
+    <Subrs>
+        <CharString index="0" fingerprint="5557c980">
+            -41 50 {3be9a3f2} callsubr
+            {cc74de2c} callsubr
             return
         </CharString>
-        <CharString index="1" fingerprint="fae42a88">
-            -41 50 -364 {f180a5c2} callgsubr
-            369 -314 return
-        </CharString>
-        <CharString index="2" fingerprint="f180a5c2">
-            -309 rlineto
+        <CharString index="1" fingerprint="3be9a3f2">
+            -364 -309 rlineto
             -62 vlineto
             return
+        </CharString>
+        <CharString index="2" fingerprint="cc74de2c">
+            369 -314 return
+        </CharString>
+    </Subrs>
+    <GlobalSubrs>
+        <CharString index="0" fingerprint="beae34ac">
+            -203 1000 return
+        </CharString>
+        <CharString index="1" fingerprint="51d9a808">
+            339 285 return
         </CharString>
     </GlobalSubrs>
 </Glyph>

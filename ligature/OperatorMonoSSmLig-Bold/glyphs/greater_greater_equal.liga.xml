@@ -9,7 +9,7 @@
         hintmask 11011000
         {e525c5a7} callgsubr
         hintmask 11100000
-        {64c17bc4} callgsubr
+        {64c17bc4} callsubr
         rlineto
         hintmask 11011000
         370 298 {bf847d0e} callgsubr
@@ -18,14 +18,21 @@
         -205 167 -88 -114 rlineto
         hintmask 11011000
         {e525c5a7} callgsubr
-        {64c17bc4} callgsubr
+        {64c17bc4} callsubr
         226 182 {bf847d0e} callgsubr
         978 132 hlineto
         hintmask 11011000
         -834 110 hlineto
         endchar
     </CharString>
-    <Subrs/>
+    <Subrs>
+        <CharString index="0" fingerprint="64c17bc4">
+            -312 -243 83 -112 return
+        </CharString>
+        <CharString index="1" fingerprint="64c17bc4">
+            -312 -243 83 -112 return
+        </CharString>
+    </Subrs>
     <GlobalSubrs>
         <CharString index="0" fingerprint="b6a51f90">
             152 132 110 132 return
@@ -40,10 +47,7 @@
             -14 vlineto
             return
         </CharString>
-        <CharString index="3" fingerprint="64c17bc4">
-            -312 -243 83 -112 return
-        </CharString>
-        <CharString index="4" fingerprint="04aa7597">
+        <CharString index="3" fingerprint="04aa7597">
             rmoveto
             132 return
         </CharString>

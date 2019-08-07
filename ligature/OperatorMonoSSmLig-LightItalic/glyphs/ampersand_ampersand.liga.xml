@@ -8,11 +8,11 @@
         70 86 49 92 87 hvcurveto
         37 -51 45 -50 51 -50 54 49 rcurveline
         -56 53 -46 51 -38 52 {254e5086} callsubr
-        -136 -120 -99 -122 -4 -115 -17 19 -15 20 -15 20 {fe69575c} callsubr
+        -136 -120 -99 -122 -4 -115 -17 19 -15 20 -15 20 {fe69575c} callgsubr
         69 14 rmoveto
-        {2765b42c} callgsubr
+        {1fd0b397} callsubr
         460 hmoveto
-        {2765b42c} callgsubr
+        {1fd0b397} callsubr
         endchar
     </CharString>
     <Subrs>
@@ -27,28 +27,22 @@
             34 -19 17 -29 -50 -65 -114 -114 -2 vhcurveto
             return
         </CharString>
-        <CharString index="2" fingerprint="fe69575c">
-            {254e5086} callsubr
-            -139 -122 -100 -125 -117 vvcurveto
-            return
-        </CharString>
-        <CharString index="3" fingerprint="0e9a217f">
-            11 -82 32 -79 49 -78 rrcurveto
-            -82 -73 -68 -41 -51 hhcurveto
+        <CharString index="2" fingerprint="1fd0b397">
+            87 77 99 97 97 vhcurveto
+            {0e9a217f} callgsubr
+            -46 -28 29 50 hvcurveto
             return
         </CharString>
     </Subrs>
     <GlobalSubrs>
-        <CharString index="0" fingerprint="2765b42c">
-            87 77 99 97 97 vhcurveto
-            {0e9a217f} callsubr
-            -46 -28 29 50 hvcurveto
+        <CharString index="0" fingerprint="fe69575c">
+            {254e5086} callsubr
+            -139 -122 -100 -125 -117 vvcurveto
             return
         </CharString>
-        <CharString index="1" fingerprint="2765b42c">
-            87 77 99 97 97 vhcurveto
-            {0e9a217f} callsubr
-            -46 -28 29 50 hvcurveto
+        <CharString index="1" fingerprint="0e9a217f">
+            11 -82 32 -79 49 -78 rrcurveto
+            -82 -73 -68 -41 -51 hhcurveto
             return
         </CharString>
     </GlobalSubrs>
