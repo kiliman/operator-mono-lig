@@ -29,6 +29,15 @@
       "contributions": [
         "design"
       ]
+    },
+    {
+      "login": "drod3763",
+      "name": "Derick Rodriguez",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/7785716?v=4",
+      "profile": "https://github.com/drod3763",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7
