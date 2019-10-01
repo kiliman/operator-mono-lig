@@ -1,0 +1,20 @@
+<Glyph name="less_equal.2.liga" lsb="-283" width="600">
+    <CharString>
+        493 -141 69 hstem
+        -283 756 vstem
+        378 {90be0ec6} callgsubr
+        -25 63 -628 -280 -14 -69 557 -302 rlineto
+        -646 -157 rmoveto
+        615 hlineto
+        13 69 rlineto
+        -615 hlineto
+        endchar
+    </CharString>
+    <Subrs/>
+    <GlobalSubrs>
+        <CharString index="0" fingerprint="90be0ec6">
+            95 rmoveto
+            -467 252 2 10 560 247 return
+        </CharString>
+    </GlobalSubrs>
+</Glyph>

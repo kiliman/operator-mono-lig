@@ -1,0 +1,25 @@
+<Glyph name="less_slash.liga" lsb="-462" width="550">
+    <CharString>
+        {c41cabed} callsubr
+        hstemhm
+        -462 424 -252 676 hintmask 10100000
+        323 718 rmoveto
+        -466 -670 -241 243 2 10 rlineto
+        hintmask 11000000
+        344 237 {64f993c2} callgsubr
+        275 -284 rlineto
+        hintmask 10100000
+        -103 -147 70 -20 606 871 rlineto
+        endchar
+    </CharString>
+    <Subrs>
+        <CharString index="0" fingerprint="c41cabed">
+            -182 900 return
+        </CharString>
+    </Subrs>
+    <GlobalSubrs>
+        <CharString index="0" fingerprint="64f993c2">
+            -34 61 -378 -263 -12 -67 return
+        </CharString>
+    </GlobalSubrs>
+</Glyph>

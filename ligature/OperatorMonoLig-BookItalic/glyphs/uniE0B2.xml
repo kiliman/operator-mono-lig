@@ -1,0 +1,16 @@
+<Glyph name="uniE0B2" code="0xe0b2" lsb="-20" width="550">
+    <CharString>
+        {99cad421} callsubr
+        -20 313 rmoveto
+        629 -518 -2 1099 rlineto
+        endchar
+    </CharString>
+    <Subrs>
+        <CharString index="0" fingerprint="99cad421">
+            -205 1099 hstem
+            -20 629 vstem
+            return
+        </CharString>
+    </Subrs>
+    <GlobalSubrs/>
+</Glyph>

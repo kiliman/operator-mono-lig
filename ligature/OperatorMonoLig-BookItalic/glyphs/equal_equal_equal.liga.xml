@@ -1,0 +1,54 @@
+<Glyph name="equal_equal_equal.liga" lsb="-1022" width="550">
+    <CharString>
+        40 69 153 {2a39309a} callsubr
+        hstem
+        -1022 1494 cntrmask 11100000
+        557 484 {331d84c3} callgsubr
+        -1494 {fff746ed} callgsubr
+        1450 -222 {331d84c3} callgsubr
+        -1494 {fff746ed} callgsubr
+        1450 {b7988df5} callgsubr
+        -1494 {83c7393b} callsubr
+        endchar
+    </CharString>
+    <Subrs>
+        <CharString index="0" fingerprint="2a39309a">
+            69 153 69 return
+        </CharString>
+        <CharString index="1" fingerprint="b42578a3">
+            15 69 rlineto
+            return
+        </CharString>
+        <CharString index="2" fingerprint="83c7393b">
+            hlineto
+            -13 -69 rlineto
+            return
+        </CharString>
+    </Subrs>
+    <GlobalSubrs>
+        <CharString index="0" fingerprint="331d84c3">
+            rmoveto
+            {b42578a3} callsubr
+            return
+        </CharString>
+        <CharString index="1" fingerprint="fff746ed">
+            hlineto
+            -14 -69 rlineto
+            return
+        </CharString>
+        <CharString index="2" fingerprint="331d84c3">
+            rmoveto
+            {b42578a3} callsubr
+            return
+        </CharString>
+        <CharString index="3" fingerprint="b7988df5">
+            {4bc44ff7} callgsubr
+            69 rlineto
+            return
+        </CharString>
+        <CharString index="4" fingerprint="4bc44ff7">
+            -222 rmoveto
+            14 return
+        </CharString>
+    </GlobalSubrs>
+</Glyph>

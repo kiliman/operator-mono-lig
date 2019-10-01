@@ -1,0 +1,121 @@
+<ttFont>
+    <head>
+        
+    
+        <!-- Most of this table will be recalculated by the compiler -->
+        
+    
+        <tableVersion value="1.0"/>
+        
+    
+        <fontRevision value="1.002"/>
+        
+    
+    
+        <magicNumber value="0x5f0f3cf5"/>
+        
+    
+        <flags value="00000000 00000011"/>
+        
+    
+        <unitsPerEm value="1000"/>
+        
+    
+    
+    
+        <xMin value="-1562"/>
+        
+    
+        <yMin value="-371"/>
+        
+    
+        <xMax value="717"/>
+        
+    
+        <yMax value="1130"/>
+        
+    
+        <macStyle value="00000000 00000010"/>
+        
+    
+        <lowestRecPPEM value="3"/>
+        
+    
+        <fontDirectionHint value="2"/>
+        
+    
+        <indexToLocFormat value="0"/>
+        
+    
+        <glyphDataFormat value="0"/>
+        
+  
+    </head>
+    <hhea>
+        
+    
+        <tableVersion value="0x00010000"/>
+        
+    
+        <ascent value="960"/>
+        
+    
+        <descent value="-240"/>
+        
+    
+        <lineGap value="0"/>
+        
+    
+        <advanceWidthMax value="600"/>
+        
+    
+        <minLeftSideBearing value="-1562"/>
+        
+    
+        <minRightSideBearing value="-167"/>
+        
+    
+        <xMaxExtent value="717"/>
+        
+    
+        <caretSlopeRise value="1000"/>
+        
+    
+        <caretSlopeRun value="194"/>
+        
+    
+        <caretOffset value="0"/>
+        
+    
+        <reserved0 value="0"/>
+        
+    
+        <reserved1 value="0"/>
+        
+    
+        <reserved2 value="0"/>
+        
+    
+        <reserved3 value="0"/>
+        
+    
+        <metricDataFormat value="0"/>
+        
+    
+        <numberOfHMetrics value="468"/>
+        
+  
+    </hhea>
+    <CFF>
+        <CFFFont>
+            <FontBBox value="-1562 -371 717 1130"/>
+        </CFFFont>
+    </CFF>
+    <CFF>
+        <CFFFont>
+            <Private>
+                <nominalWidthX value="107"/>
+            </Private>
+        </CFFFont>
+    </CFF>
+</ttFont>
