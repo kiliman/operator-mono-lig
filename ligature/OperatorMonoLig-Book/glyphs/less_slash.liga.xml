@@ -1,0 +1,24 @@
+<Glyph name="less_slash.liga" lsb="-464" width="550">
+    <CharString>
+        {749ae412} callsubr
+        hstem
+        -464 75 182 534 vstem
+        258 726 rmoveto
+        -357 -680 -290 241 rlineto
+        10 vlineto
+        299 248 {f3a774e8} callsubr
+        330 -277 -73 -140 71 -29 463 883 rlineto
+        endchar
+    </CharString>
+    <Subrs>
+        <CharString index="0" fingerprint="749ae412">
+            -189 915 return
+        </CharString>
+        <CharString index="1" fingerprint="f3a774e8">
+            -45 58 -329 -277 rlineto
+            -69 vlineto
+            return
+        </CharString>
+    </Subrs>
+    <GlobalSubrs/>
+</Glyph>

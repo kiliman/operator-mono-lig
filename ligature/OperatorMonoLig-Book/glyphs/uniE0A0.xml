@@ -1,0 +1,38 @@
+<Glyph name="uniE0A0" code="0xe0a0" lsb="6" width="550">
+    <CharString>
+        -59 53 160 104 264 54 53 53 hstemhm
+        6 53 0 105 0 53 106 53 0 105 0 53 hintmask 1111010101000000
+        428 576 rmoveto
+        -58 -47 -47 -60 hvcurveto
+        hintmask 1111010010000000
+        -38 22 -34 31 -18 vhcurveto
+        -15 vlineto
+        -53 -53 -53 -53 -44 -34 -9 -15 -28 vhcurveto
+        251 vlineto
+        hintmask 1111101101000000
+        31 17 22 34 40 vvcurveto
+        58 -47 48 -58 -60 -46 -48 -58 vhcurveto
+        hintmask 1111010101000000
+        -40 21 -34 32 -17 vhcurveto
+        -347 vlineto
+        hintmask 1111101010000000
+        -32 -17 -21 -34 -40 vvcurveto
+        -58 46 -48 60 58 47 48 58 29 -11 25 -17 19 vhcurveto
+        18 16 24 16 41 hhcurveto
+        106 105 105 106 hvcurveto
+        14 vlineto
+        hintmask 1111010101000000
+        32 19 21 34 38 vvcurveto
+        59 -46 47 -60 vhcurveto
+        hintmask 1111101101000000
+        -316 53 rmoveto
+        28 24 -24 -29 -30 -24 -24 -28 -30 -23 24 30 29 23 24 30 hvcurveto
+        316 -212 rmoveto
+        -28 -24 24 28 30 24 23 28 30 23 -23 -30 -28 -23 -24 -30 hvcurveto
+        -316 -423 rmoveto
+        -30 -23 23 30 29 23 24 30 28 24 -24 -29 -30 -24 -23 -28 hvcurveto
+        endchar
+    </CharString>
+    <Subrs/>
+    <GlobalSubrs/>
+</Glyph>
