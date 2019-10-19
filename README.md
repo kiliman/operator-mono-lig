@@ -20,7 +20,7 @@ characters properly.
 
 ### 🎉 New in Version 2.2
 
-With the awesome help from [Mark Skelton](https://github.com/markypython), we now have the full set of ligatures for
+With the awesome help from [Mark Skelton](https://github.com/mskelton), we now have the full set of ligatures for
 the following fonts. Thanks Mark, and thanks to all of you who have been patiently waiting for these ligatures to be completed.
 
 - Operator Mono SSm Light/Light Italic
