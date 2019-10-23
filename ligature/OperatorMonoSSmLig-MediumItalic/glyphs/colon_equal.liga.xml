@@ -1,5 +1,5 @@
-<Glyph name="colon_equal.liga" lsb="-377" width="625">r
-    <CharString>r
+<Glyph name="colon_equal.liga" lsb="-377" width="625">
+    <CharString>
         132 158 87 158 hstem
         -377 789 vstem
         -300 535 {b74abf82} callgsubr
@@ -10,34 +10,34 @@
         75 -130 rmoveto
         458 {93c65c5b} callsubr
         -458 hlineto
-        endcharr
-    </CharString>r
-    <Subrs>r
-        <CharString index="0" fingerprint="93c65c5b">r
+        endchar
+    </CharString>
+    <Subrs>
+        <CharString index="0" fingerprint="93c65c5b">
             hlineto
             21 103 rlineto
-            returnr
-        </CharString>r
-    </Subrs>r
-    <GlobalSubrs>r
-        <CharString index="0" fingerprint="b74abf82">r
+            return
+        </CharString>
+    </Subrs>
+    <GlobalSubrs>
+        <CharString index="0" fingerprint="b74abf82">
             rmoveto
             -30 -158 rlineto
             155 hlineto
             33 158 rlineto
-            returnr
-        </CharString>r
-        <CharString index="1" fingerprint="f4efd62c">r
+            return
+        </CharString>
+        <CharString index="1" fingerprint="f4efd62c">
             hlineto
             20 102 rlineto
-            returnr
-        </CharString>r
-        <CharString index="2" fingerprint="b74abf82">r
+            return
+        </CharString>
+        <CharString index="2" fingerprint="b74abf82">
             rmoveto
             -30 -158 rlineto
             155 hlineto
             33 158 rlineto
-            returnr
-        </CharString>r
-    </GlobalSubrs>r
+            return
+        </CharString>
+    </GlobalSubrs>
 </Glyph>

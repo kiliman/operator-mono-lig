@@ -1,5 +1,5 @@
-<Glyph name="ampersand_ampersand.liga" lsb="-462" width="625">r
-    <CharString>r
+<Glyph name="ampersand_ampersand.liga" lsb="-462" width="625">
+    <CharString>
         -11 81 hstem
         -462 87 142 84 177 87 142 84 vstem
         -462 124 rmoveto
@@ -16,37 +16,37 @@
         76 62 87 89 87 vhcurveto
         {47bfda45} callgsubr
         -42 -25 26 47 hvcurveto
-        endcharr
-    </CharString>r
-    <Subrs>r
-        <CharString index="0" fingerprint="ad35efbc">r
+        endchar
+    </CharString>
+    <Subrs>
+        <CharString index="0" fingerprint="ad35efbc">
             -83 45 -52 83 71 82 45 87 86 vhcurveto
-            returnr
-        </CharString>r
-    </Subrs>r
-    <GlobalSubrs>r
-        <CharString index="0" fingerprint="55c9c96f">r
+            return
+        </CharString>
+    </Subrs>
+    <GlobalSubrs>
+        <CharString index="0" fingerprint="55c9c96f">
             45 55 45 67 44 78 -75 26 rcurveline
             -33 -65 -33 -54 -33 -46 -40 69 -25 68 -9 70 rrcurveto
             67 68 39 72 55 vvcurveto
             37 -25 21 -36 -58 -71 -105 -120 vhcurveto
             -9 vlineto
             -142 -121 -87 -121 -110 vvcurveto
-            returnr
-        </CharString>r
-        <CharString index="1" fingerprint="55c9c96f">r
+            return
+        </CharString>
+        <CharString index="1" fingerprint="55c9c96f">
             45 55 45 67 44 78 -75 26 rcurveline
             -33 -65 -33 -54 -33 -46 -40 69 -25 68 -9 70 rrcurveto
             67 68 39 72 55 vvcurveto
             37 -25 21 -36 -58 -71 -105 -120 vhcurveto
             -9 vlineto
             -142 -121 -87 -121 -110 vvcurveto
-            returnr
-        </CharString>r
-        <CharString index="2" fingerprint="47bfda45">r
+            return
+        </CharString>
+        <CharString index="2" fingerprint="47bfda45">
             15 -71 31 -73 44 -72 rrcurveto
             -73 -66 -62 -34 -46 hhcurveto
-            returnr
-        </CharString>r
-    </GlobalSubrs>r
+            return
+        </CharString>
+    </GlobalSubrs>
 </Glyph>

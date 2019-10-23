@@ -1,5 +1,5 @@
-<Glyph name="less_hyphen_greater.liga" lsb="-1146" width="625">r
-    <CharString>r
+<Glyph name="less_hyphen_greater.liga" lsb="-1146" width="625">
+    <CharString>
         286 78 hstem
         -1146 299 rmoveto
         310 -320 62 60 {64b0c386} callgsubr
@@ -9,20 +9,20 @@
         239 -242 rlineto
         -1427 hlineto
         337 232 -39 70 -419 -291 rlineto
-        endcharr
-    </CharString>r
-    <Subrs>r
-        <CharString index="0" fingerprint="85e1233b">r
-            39 -70 419 291 returnr
-        </CharString>r
-    </Subrs>r
-    <GlobalSubrs>r
-        <CharString index="0" fingerprint="64b0c386">r
+        endchar
+    </CharString>
+    <Subrs>
+        <CharString index="0" fingerprint="85e1233b">
+            39 -70 419 291 return
+        </CharString>
+    </Subrs>
+    <GlobalSubrs>
+        <CharString index="0" fingerprint="64b0c386">
             -245 247 rlineto
-            returnr
-        </CharString>r
-        <CharString index="1" fingerprint="02a8eaf2">r
-            -310 319 -61 -60 returnr
-        </CharString>r
-    </GlobalSubrs>r
+            return
+        </CharString>
+        <CharString index="1" fingerprint="02a8eaf2">
+            -310 319 -61 -60 return
+        </CharString>
+    </GlobalSubrs>
 </Glyph>

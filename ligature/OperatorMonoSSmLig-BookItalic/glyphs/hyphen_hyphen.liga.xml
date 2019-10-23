@@ -1,26 +1,26 @@
-<Glyph name="hyphen_hyphen.liga" lsb="-416" width="625">r
-    <CharString>r
+<Glyph name="hyphen_hyphen.liga" lsb="-416" width="625">
+    <CharString>
         286 78 hstem
         -416 346 161 346 vstem
         -416 286 rmoveto
         331 {742c1467} callsubr
         492 -78 rmoveto
         331 {742c1467} callsubr
-        endcharr
-    </CharString>r
-    <Subrs>r
-        <CharString index="0" fingerprint="742c1467">r
+        endchar
+    </CharString>
+    <Subrs>
+        <CharString index="0" fingerprint="742c1467">
             hlineto
             15 78 rlineto
             -331 hlineto
-            returnr
-        </CharString>r
-        <CharString index="1" fingerprint="742c1467">r
+            return
+        </CharString>
+        <CharString index="1" fingerprint="742c1467">
             hlineto
             15 78 rlineto
             -331 hlineto
-            returnr
-        </CharString>r
-    </Subrs>r
-    <GlobalSubrs/>r
+            return
+        </CharString>
+    </Subrs>
+    <GlobalSubrs/>
 </Glyph>

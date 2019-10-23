@@ -1,12 +1,12 @@
-<Glyph name="greater_equal.liga" lsb="-476" width="625">r
-    <CharString>r
+<Glyph name="greater_equal.liga" lsb="-476" width="625">
+    <CharString>
         -436 766 vstem
         204 325 rmoveto
         -629 -243 22 -127 817 313 25 129 -703 311 -72 -129 543 -240 rlineto
         -660 -644 rmoveto
         816 313 29 149 -868 -335 rlineto
-        endcharr
-    </CharString>r
-    <Subrs/>r
-    <GlobalSubrs/>r
+        endchar
+    </CharString>
+    <Subrs/>
+    <GlobalSubrs/>
 </Glyph>

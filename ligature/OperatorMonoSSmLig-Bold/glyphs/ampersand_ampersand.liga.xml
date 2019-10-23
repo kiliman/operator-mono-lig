@@ -1,5 +1,5 @@
-<Glyph name="ampersand_ampersand.liga" lsb="-449" width="625">r
-    <CharString>r
+<Glyph name="ampersand_ampersand.liga" lsb="-449" width="625">
+    <CharString>
         -16 127 451 142 hstem
         -449 149 267 131 23 160 166 131 vstem
         491 224 rmoveto
@@ -17,39 +17,39 @@
         {a063a877} callgsubr
         480 hmoveto
         {a063a877} callgsubr
-        endcharr
-    </CharString>r
-    <Subrs>r
-        <CharString index="0" fingerprint="2bd6a1b5">r
+        endchar
+    </CharString>
+    <Subrs>
+        <CharString index="0" fingerprint="2bd6a1b5">
             -94 -59 -52 -65 -93 vvcurveto
             -96 59 -72 121 69 68 31 68 52 vhcurveto
-            returnr
-        </CharString>r
-    </Subrs>r
-    <GlobalSubrs>r
-        <CharString index="0" fingerprint="61b5daa5">r
+            return
+        </CharString>
+    </Subrs>
+    <GlobalSubrs>
+        <CharString index="0" fingerprint="61b5daa5">
             32 59 33 78 22 75 -131 16 rcurveline
             -8 -39 -13 -48 -14 -44 rrcurveto
-            returnr
-        </CharString>r
-        <CharString index="1" fingerprint="4301c904">r
+            return
+        </CharString>
+        <CharString index="1" fingerprint="4301c904">
             -88 104 -43 47 33 vvcurveto
             44 30 18 133 -5 vhcurveto
             -10 142 rlineto
             -238 4 -75 -102 -102 vvcurveto
             -43 20 -41 36 -51 vhcurveto
-            returnr
-        </CharString>r
-        <CharString index="2" fingerprint="61b5daa5">r
+            return
+        </CharString>
+        <CharString index="2" fingerprint="61b5daa5">
             32 59 33 78 22 75 -131 16 rcurveline
             -8 -39 -13 -48 -14 -44 rrcurveto
-            returnr
-        </CharString>r
-        <CharString index="3" fingerprint="a063a877">r
+            return
+        </CharString>
+        <CharString index="3" fingerprint="a063a877">
             -45 -22 33 42 39 18 36 37 32 hvcurveto
             28 -35 33 -40 38 -48 rrcurveto
             -40 -27 -27 -19 -33 hhcurveto
-            returnr
-        </CharString>r
-    </GlobalSubrs>r
+            return
+        </CharString>
+    </GlobalSubrs>
 </Glyph>

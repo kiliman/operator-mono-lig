@@ -1,43 +1,43 @@
-<Glyph name="less_hyphen.liga" lsb="-537" width="625">r
-    <CharString>r
+<Glyph name="less_hyphen.liga" lsb="-537" width="625">
+    <CharString>
         269 134 hstemhm
         -537 141 -141 1034 {6961c057} callgsubr
-        -811 {553dd561} callgsubrr
-    </CharString>r
-    <Subrs>r
-        <CharString index="0" fingerprint="89a1708a">r
+        -811 {553dd561} callgsubr
+    </CharString>
+    <Subrs>
+        <CharString index="0" fingerprint="89a1708a">
             134 rlineto
-            returnr
-        </CharString>r
-        <CharString index="1" fingerprint="822f0283">r
+            return
+        </CharString>
+        <CharString index="1" fingerprint="822f0283">
             -370 -298 rlineto
             -130 vlineto
-            364 -295 returnr
-        </CharString>r
-    </Subrs>r
-    <GlobalSubrs>r
-        <CharString index="0" fingerprint="6961c057">r
+            364 -295 return
+        </CharString>
+    </Subrs>
+    <GlobalSubrs>
+        <CharString index="0" fingerprint="6961c057">
             hintmask 11000000
             483 269 rmoveto
             hintmask 10100000
             14 {89a1708a} callsubr
-            returnr
-        </CharString>r
-        <CharString index="1" fingerprint="553dd561">r
+            return
+        </CharString>
+        <CharString index="1" fingerprint="553dd561">
             hlineto
             230 179 -83 112 rlineto
             hintmask 11000000
             {f7e2ed7f} callgsubr
-            endcharr
-        </CharString>r
-        <CharString index="2" fingerprint="f7e2ed7f">r
+            endchar
+        </CharString>
+        <CharString index="2" fingerprint="f7e2ed7f">
             {499fc8ce} callgsubr
             -239 185 rlineto
-            returnr
-        </CharString>r
-        <CharString index="3" fingerprint="499fc8ce">r
+            return
+        </CharString>
+        <CharString index="3" fingerprint="499fc8ce">
             {822f0283} callsubr
-            88 113 returnr
-        </CharString>r
-    </GlobalSubrs>r
+            88 113 return
+        </CharString>
+    </GlobalSubrs>
 </Glyph>

@@ -1,5 +1,5 @@
-<Glyph name="less_slash.liga" lsb="-523" width="625">r
-    <CharString>r
+<Glyph name="less_slash.liga" lsb="-523" width="625">
+    <CharString>
         {f05ddc40} callgsubr
         -831 693 hstemhm
         -523 84 204 593 hintmask 10110000
@@ -12,30 +12,30 @@
         -81 -154 rlineto
         hintmask 10110000
         80 -32 rlineto
-        endcharr
-    </CharString>r
-    <Subrs>r
-        <CharString index="0" fingerprint="f6a5b790">r
+        endchar
+    </CharString>
+    <Subrs>
+        <CharString index="0" fingerprint="f6a5b790">
             -366 -306 rlineto
             -77 vlineto
-            returnr
-        </CharString>r
-    </Subrs>r
-    <GlobalSubrs>r
-        <CharString index="0" fingerprint="f05ddc40">r
-            -210 1017 returnr
-        </CharString>r
-        <CharString index="1" fingerprint="887c05ba">r
+            return
+        </CharString>
+    </Subrs>
+    <GlobalSubrs>
+        <CharString index="0" fingerprint="f05ddc40">
+            -210 1017 return
+        </CharString>
+        <CharString index="1" fingerprint="887c05ba">
             -50 64 {54ef34ac} callgsubr
-            returnr
-        </CharString>r
-        <CharString index="2" fingerprint="54ef34ac">r
+            return
+        </CharString>
+        <CharString index="2" fingerprint="54ef34ac">
             {f6a5b790} callsubr
             {304d9169} callgsubr
-            returnr
-        </CharString>r
-        <CharString index="3" fingerprint="304d9169">r
-            369 -310 returnr
-        </CharString>r
-    </GlobalSubrs>r
+            return
+        </CharString>
+        <CharString index="3" fingerprint="304d9169">
+            369 -310 return
+        </CharString>
+    </GlobalSubrs>
 </Glyph>

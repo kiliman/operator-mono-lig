@@ -1,5 +1,5 @@
-<Glyph name="plus_plus.liga" lsb="-479" width="625">r
-    <CharString>r
+<Glyph name="plus_plus.liga" lsb="-479" width="625">
+    <CharString>
         287 76 hstem
         3 498 vstem
         501 363 rmoveto
@@ -14,10 +14,10 @@
         81 hlineto
         40 208 rlineto
         200 hlineto
-        endcharr
-    </CharString>r
-    <Subrs>r
-        <CharString index="0" fingerprint="b0f9bbd2">r
+        endchar
+    </CharString>
+    <Subrs>
+        <CharString index="0" fingerprint="b0f9bbd2">
             hlineto
             40 207 rlineto
             -81 hlineto
@@ -26,14 +26,14 @@
             201 hlineto
             -40 -208 rlineto
             81 hlineto
-            returnr
-        </CharString>r
-    </Subrs>r
-    <GlobalSubrs>r
-        <CharString index="0" fingerprint="62d12451">r
+            return
+        </CharString>
+    </Subrs>
+    <GlobalSubrs>
+        <CharString index="0" fingerprint="62d12451">
             hlineto
             -15 -76 rlineto
-            returnr
-        </CharString>r
-    </GlobalSubrs>r
+            return
+        </CharString>
+    </GlobalSubrs>
 </Glyph>

@@ -1,19 +1,19 @@
-<Glyph name="less_bar.liga" lsb="-338" width="625">r
-    <CharString>r
+<Glyph name="less_bar.liga" lsb="-338" width="625">
+    <CharString>
         -202 993 hstem
         -338 709 vstem
         371 791 rmoveto
         -115 -3 -576 -387 -18 -102 401 -501 {50d841f6} callsubr
         50 842 rmoveto
         -135 -694 -313 387 3 12 rlineto
-        endcharr
-    </CharString>r
-    <Subrs>r
-        <CharString index="0" fingerprint="50d841f6">r
+        endchar
+    </CharString>
+    <Subrs>
+        <CharString index="0" fingerprint="50d841f6">
             rlineto
             114 hlineto
-            returnr
-        </CharString>r
-    </Subrs>r
-    <GlobalSubrs/>r
+            return
+        </CharString>
+    </Subrs>
+    <GlobalSubrs/>
 </Glyph>

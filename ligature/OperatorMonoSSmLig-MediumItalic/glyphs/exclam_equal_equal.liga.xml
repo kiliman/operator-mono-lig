@@ -1,5 +1,5 @@
-<Glyph name="exclam_equal_equal.liga" lsb="-1215" width="625">r
-    <CharString>r
+<Glyph name="exclam_equal_equal.liga" lsb="-1215" width="625">
+    <CharString>
         -209 1015 -768 103 142 103 141 102 hstemhm
         -1215 1776 -1248 770 hintmask 00111000
         -80 527 rmoveto
@@ -30,35 +30,35 @@
         97 142 rlineto
         786 {f4efd62c} callgsubr
         -737 hlineto
-        endcharr
-    </CharString>r
-    <Subrs>r
-        <CharString index="0" fingerprint="7de8f505">r
+        endchar
+    </CharString>
+    <Subrs>
+        <CharString index="0" fingerprint="7de8f505">
             hlineto
             -21 -103 rlineto
-            returnr
-        </CharString>r
-        <CharString index="1" fingerprint="93c65c5b">r
+            return
+        </CharString>
+        <CharString index="1" fingerprint="93c65c5b">
             hlineto
             21 103 rlineto
-            returnr
-        </CharString>r
-    </Subrs>r
-    <GlobalSubrs>r
-        <CharString index="0" fingerprint="f4efd62c">r
+            return
+        </CharString>
+    </Subrs>
+    <GlobalSubrs>
+        <CharString index="0" fingerprint="f4efd62c">
             hlineto
             20 102 rlineto
-            returnr
-        </CharString>r
-        <CharString index="1" fingerprint="ab4f93ab">r
+            return
+        </CharString>
+        <CharString index="1" fingerprint="ab4f93ab">
             hlineto
             -21 -102 rlineto
-            returnr
-        </CharString>r
-        <CharString index="2" fingerprint="f4efd62c">r
+            return
+        </CharString>
+        <CharString index="2" fingerprint="f4efd62c">
             hlineto
             20 102 rlineto
-            returnr
-        </CharString>r
-    </GlobalSubrs>r
+            return
+        </CharString>
+    </GlobalSubrs>
 </Glyph>

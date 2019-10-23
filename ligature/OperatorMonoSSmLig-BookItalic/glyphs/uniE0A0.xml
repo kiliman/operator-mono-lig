@@ -1,5 +1,5 @@
-<Glyph name="uniE0A0" code="0xe0a0" lsb="0" width="625">r
-    <CharString>r
+<Glyph name="uniE0A0" code="0xe0a0" lsb="0" width="625">
+    <CharString>
         -136 63 193 127 320 64 64 64 hstemhm
         0 64 0 128 0 64 128 64 0 128 0 64 cntrmask 0000101100000000
         hintmask 1111100100000000
@@ -39,32 +39,32 @@
         {c6d403ca} callgsubr
         hintmask 1111010100000000
         {c0cac83c} callsubr
-        endcharr
-    </CharString>r
-    <Subrs>r
-        <CharString index="0" fingerprint="265f5ea6">r
-            -71 -57 -57 -71 -47 26 -41 38 -22 returnr
-        </CharString>r
-        <CharString index="1" fingerprint="265f5ea6">r
-            -71 -57 -57 -71 -47 26 -41 38 -22 returnr
-        </CharString>r
-        <CharString index="2" fingerprint="c0cac83c">r
+        endchar
+    </CharString>
+    <Subrs>
+        <CharString index="0" fingerprint="265f5ea6">
+            -71 -57 -57 -71 -47 26 -41 38 -22 return
+        </CharString>
+        <CharString index="1" fingerprint="265f5ea6">
+            -71 -57 -57 -71 -47 26 -41 38 -22 return
+        </CharString>
+        <CharString index="2" fingerprint="c0cac83c">
             35 29 -29 -35 -35 -29 -29 -35 hvcurveto
-            returnr
-        </CharString>r
-    </Subrs>r
-    <GlobalSubrs>r
-        <CharString index="0" fingerprint="6b0561fb">r
+            return
+        </CharString>
+    </Subrs>
+    <GlobalSubrs>
+        <CharString index="0" fingerprint="6b0561fb">
             38 22 26 41 47 vvcurveto
-            71 -57 57 -71 returnr
-        </CharString>r
-        <CharString index="1" fingerprint="6b0561fb">r
+            71 -57 57 -71 return
+        </CharString>
+        <CharString index="1" fingerprint="6b0561fb">
             38 22 26 41 47 vvcurveto
-            71 -57 57 -71 returnr
-        </CharString>r
-        <CharString index="2" fingerprint="c6d403ca">r
+            71 -57 57 -71 return
+        </CharString>
+        <CharString index="2" fingerprint="c6d403ca">
             -35 -29 29 35 35 29 29 35 hvcurveto
-            returnr
-        </CharString>r
-    </GlobalSubrs>r
+            return
+        </CharString>
+    </GlobalSubrs>
 </Glyph>

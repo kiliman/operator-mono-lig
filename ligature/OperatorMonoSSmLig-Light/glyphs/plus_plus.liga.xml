@@ -1,16 +1,16 @@
-<Glyph name="plus_plus.liga" lsb="-470" width="625">r
-    <CharString>r
+<Glyph name="plus_plus.liga" lsb="-470" width="625">
+    <CharString>
         292 60 hstem
         -267 64 405 64 vstem
         469 352 rmoveto
         -203 213 -64 -213 -405 {cc1f0f71} callgsubr
         213 405 -213 64 213 202 hlineto
-        endcharr
-    </CharString>r
-    <Subrs/>r
-    <GlobalSubrs>r
-        <CharString index="0" fingerprint="cc1f0f71">r
-            213 -64 -213 -203 -60 203 -213 64 returnr
-        </CharString>r
-    </GlobalSubrs>r
+        endchar
+    </CharString>
+    <Subrs/>
+    <GlobalSubrs>
+        <CharString index="0" fingerprint="cc1f0f71">
+            213 -64 -213 -203 -60 203 -213 64 return
+        </CharString>
+    </GlobalSubrs>
 </Glyph>

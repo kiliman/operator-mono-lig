@@ -1,5 +1,5 @@
-<Glyph name="less_equal_equal.liga" lsb="-1146" width="625">r
-    <CharString>r
+<Glyph name="less_equal_equal.liga" lsb="-1146" width="625">
+    <CharString>
         {ec659a60} callgsubr
         -1146 1724 hintmask 01010000
         -1055 334 rmoveto
@@ -15,36 +15,36 @@
         1417 {ca724b19} callgsubr
         -1508 hlineto
         -79 80 rlineto
-        endcharr
-    </CharString>r
-    <Subrs>r
-        <CharString index="0" fingerprint="f8f09bfc">r
+        endchar
+    </CharString>
+    <Subrs>
+        <CharString index="0" fingerprint="f8f09bfc">
             hlineto
             {1af50f36} callgsubr
-            returnr
-        </CharString>r
-        <CharString index="1" fingerprint="1b07c958">r
+            return
+        </CharString>
+        <CharString index="1" fingerprint="1b07c958">
             rlineto
             hintmask 10010000
-            returnr
-        </CharString>r
-        <CharString index="2" fingerprint="588d100c">r
-            -39 70 -419 -291 -14 -76 310 -320 62 60 returnr
-        </CharString>r
-    </Subrs>r
-    <GlobalSubrs>r
-        <CharString index="0" fingerprint="ec659a60">r
+            return
+        </CharString>
+        <CharString index="2" fingerprint="588d100c">
+            -39 70 -419 -291 -14 -76 310 -320 62 60 return
+        </CharString>
+    </Subrs>
+    <GlobalSubrs>
+        <CharString index="0" fingerprint="ec659a60">
             -21 687 -498 76 170 76 hstemhm
-            returnr
-        </CharString>r
-        <CharString index="1" fingerprint="1af50f36">r
+            return
+        </CharString>
+        <CharString index="1" fingerprint="1af50f36">
             16 76 rlineto
-            returnr
-        </CharString>r
-        <CharString index="2" fingerprint="ca724b19">r
+            return
+        </CharString>
+        <CharString index="2" fingerprint="ca724b19">
             hlineto
             15 76 rlineto
-            returnr
-        </CharString>r
-    </GlobalSubrs>r
+            return
+        </CharString>
+    </GlobalSubrs>
 </Glyph>

@@ -1,5 +1,5 @@
-<Glyph name="bar_greater.liga" lsb="-304" width="625">r
-    <CharString>r
+<Glyph name="bar_greater.liga" lsb="-304" width="625">
+    <CharString>
         -304 652 vstem
         348 397 rmoveto
         -503 409 {3d96e405} callsubr
@@ -8,18 +8,18 @@
         {61eaf5a7} callsubr
         -362 -339 rlineto
         637 vlineto
-        endcharr
-    </CharString>r
-    <Subrs>r
-        <CharString index="0" fingerprint="3d96e405">r
+        endchar
+    </CharString>
+    <Subrs>
+        <CharString index="0" fingerprint="3d96e405">
             -149 -12 rlineto
-            -998 returnr
-        </CharString>r
-        <CharString index="1" fingerprint="61eaf5a7">r
+            -998 return
+        </CharString>
+        <CharString index="1" fingerprint="61eaf5a7">
             -141 71 rmoveto
             -14 vlineto
-            returnr
-        </CharString>r
-    </Subrs>r
-    <GlobalSubrs/>r
+            return
+        </CharString>
+    </Subrs>
+    <GlobalSubrs/>
 </Glyph>

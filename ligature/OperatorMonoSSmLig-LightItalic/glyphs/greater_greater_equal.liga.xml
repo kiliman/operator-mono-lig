@@ -1,5 +1,5 @@
-<Glyph name="greater_greater_equal.liga" lsb="-1170" width="625">r
-    <CharString>r
+<Glyph name="greater_greater_equal.liga" lsb="-1170" width="625">
+    <CharString>
         {20f2e0e1} callsubr
         -1170 1742 hintmask 10010000
         -716 280 rmoveto
@@ -21,37 +21,37 @@
         68 48 11 61 rlineto
         hintmask 00110000
         -77 79 rlineto
-        endcharr
-    </CharString>r
-    <Subrs>r
-        <CharString index="0" fingerprint="20f2e0e1">r
+        endchar
+    </CharString>
+    <Subrs>
+        <CharString index="0" fingerprint="20f2e0e1">
             -19 677 -486 {4378ab5e} callgsubr
-            returnr
-        </CharString>r
-        <CharString index="1" fingerprint="1a4ca569">r
-            60 188 59 returnr
-        </CharString>r
-        <CharString index="2" fingerprint="e9726f1d">r
+            return
+        </CharString>
+        <CharString index="1" fingerprint="1a4ca569">
+            60 188 59 return
+        </CharString>
+        <CharString index="2" fingerprint="e9726f1d">
             12 60 rlineto
-            returnr
-        </CharString>r
-    </Subrs>r
-    <GlobalSubrs>r
-        <CharString index="0" fingerprint="4378ab5e">r
+            return
+        </CharString>
+    </Subrs>
+    <GlobalSubrs>
+        <CharString index="0" fingerprint="4378ab5e">
             {1a4ca569} callsubr
             hstemhm
-            returnr
-        </CharString>r
-        <CharString index="1" fingerprint="311c538e">r
-            -48 -47 286 -290 -2 -10 returnr
-        </CharString>r
-        <CharString index="2" fingerprint="0f917b72">r
-            -392 -276 32 -54 returnr
-        </CharString>r
-        <CharString index="3" fingerprint="146e1133">r
+            return
+        </CharString>
+        <CharString index="1" fingerprint="311c538e">
+            -48 -47 286 -290 -2 -10 return
+        </CharString>
+        <CharString index="2" fingerprint="0f917b72">
+            -392 -276 32 -54 return
+        </CharString>
+        <CharString index="3" fingerprint="146e1133">
             hlineto
             {e9726f1d} callsubr
-            returnr
-        </CharString>r
-    </GlobalSubrs>r
+            return
+        </CharString>
+    </GlobalSubrs>
 </Glyph>

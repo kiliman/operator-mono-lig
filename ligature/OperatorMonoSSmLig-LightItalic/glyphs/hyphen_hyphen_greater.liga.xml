@@ -1,26 +1,26 @@
-<Glyph name="hyphen_hyphen_greater.liga" lsb="-1106" width="625">r
-    <CharString>r
+<Glyph name="hyphen_hyphen_greater.liga" lsb="-1106" width="625">
+    <CharString>
         {6a6b52f4} callsubr
         -1106 1651 {6ea387ac} callgsubr
         -1536 {37a1c1ac} callsubr
-        1551 {30cfb708} callgsubrr
-    </CharString>r
-    <Subrs>r
-        <CharString index="0" fingerprint="6a6b52f4">r
+        1551 {30cfb708} callgsubr
+    </CharString>
+    <Subrs>
+        <CharString index="0" fingerprint="6a6b52f4">
             -19 677 -366 61 hstemhm
-            returnr
-        </CharString>r
-        <CharString index="1" fingerprint="37a1c1ac">r
+            return
+        </CharString>
+        <CharString index="1" fingerprint="37a1c1ac">
             hlineto
             -12 -61 rlineto
-            returnr
-        </CharString>r
-        <CharString index="2" fingerprint="8660b198">r
-            32 -54 422 299 returnr
-        </CharString>r
-    </Subrs>r
-    <GlobalSubrs>r
-        <CharString index="0" fingerprint="6ea387ac">r
+            return
+        </CharString>
+        <CharString index="2" fingerprint="8660b198">
+            32 -54 422 299 return
+        </CharString>
+    </Subrs>
+    <GlobalSubrs>
+        <CharString index="0" fingerprint="6ea387ac">
             hintmask 01100000
             545 341 rmoveto
             hintmask 10100000
@@ -28,21 +28,21 @@
             rlineto
             hintmask 01100000
             254 -258 rlineto
-            returnr
-        </CharString>r
-        <CharString index="1" fingerprint="6e5cea83">r
-            -309 317 -48 -47 returnr
-        </CharString>r
-        <CharString index="2" fingerprint="30cfb708">r
+            return
+        </CharString>
+        <CharString index="1" fingerprint="6e5cea83">
+            -309 317 -48 -47 return
+        </CharString>
+        <CharString index="2" fingerprint="30cfb708">
             hlineto
             -365 -257 rlineto
             hintmask 10100000
-            {bef588ce} callgsubrr
-        </CharString>r
-        <CharString index="3" fingerprint="bef588ce">r
+            {bef588ce} callgsubr
+        </CharString>
+        <CharString index="3" fingerprint="bef588ce">
             {8660b198} callsubr
             rlineto
-            endcharr
-        </CharString>r
-    </GlobalSubrs>r
+            endchar
+        </CharString>
+    </GlobalSubrs>
 </Glyph>

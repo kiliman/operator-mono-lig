@@ -1,5 +1,5 @@
-<Glyph name="question_question.liga" lsb="-418" width="625">r
-    <CharString>r
+<Glyph name="question_question.liga" lsb="-418" width="625">
+    <CharString>
         0 109 577 66 hstem
         -311 104 152 74 90 104 152 74 vstem
         -411 752 rmoveto
@@ -10,33 +10,33 @@
         {185020e9} callsubr
         316 hmoveto
         {185020e9} callsubr
-        endcharr
-    </CharString>r
-    <Subrs>r
-        <CharString index="0" fingerprint="3c3b4f3b">r
+        endchar
+    </CharString>
+    <Subrs>
+        <CharString index="0" fingerprint="3c3b4f3b">
             -7 -66 rlineto
             289 -18 74 -50 -58 vvcurveto
             -87 -212 -66 -9 -157 vhcurveto
             49 -2 rlineto
             15 144 231 62 121 vvcurveto
             86 -98 72 -332 19 vhcurveto
-            returnr
-        </CharString>r
-        <CharString index="1" fingerprint="3c3b4f3b">r
+            return
+        </CharString>
+        <CharString index="1" fingerprint="3c3b4f3b">
             -7 -66 rlineto
             289 -18 74 -50 -58 vvcurveto
             -87 -212 -66 -9 -157 vhcurveto
             49 -2 rlineto
             15 144 231 62 121 vvcurveto
             86 -98 72 -332 19 vhcurveto
-            returnr
-        </CharString>r
-        <CharString index="2" fingerprint="185020e9">r
+            return
+        </CharString>
+        <CharString index="2" fingerprint="185020e9">
             -2 -109 rlineto
             104 hlineto
             2 109 rlineto
-            returnr
-        </CharString>r
-    </Subrs>r
-    <GlobalSubrs/>r
+            return
+        </CharString>
+    </Subrs>
+    <GlobalSubrs/>
 </Glyph>

@@ -1,5 +1,5 @@
-<Glyph name="percent.alt" lsb="24" width="625">r
-    <CharString>r
+<Glyph name="percent.alt" lsb="24" width="625">
+    <CharString>
         -65 73 -60 763 -534 72 162 73 169 72 hstemhm
         24 579 -533 80 107 79 -40 80 106 80 hintmask 1001100100000000
         167 411 rmoveto
@@ -35,8 +35,8 @@
         hintmask 1011100010000000
         -36 -12 32 56 11 hvcurveto
         51 9 22 30 37 hhcurveto
-        endcharr
-    </CharString>r
-    <Subrs/>r
-    <GlobalSubrs/>r
+        endchar
+    </CharString>
+    <Subrs/>
+    <GlobalSubrs/>
 </Glyph>

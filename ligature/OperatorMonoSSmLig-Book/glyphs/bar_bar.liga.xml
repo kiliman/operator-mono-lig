@@ -1,5 +1,5 @@
-<Glyph name="bar_bar.liga" lsb="-265" width="625">r
-    <CharString>r
+<Glyph name="bar_bar.liga" lsb="-265" width="625">
+    <CharString>
         -265 85 360 85 vstem
         -180 -202 rmoveto
         991 vlineto
@@ -9,17 +9,17 @@
         991 vlineto
         {ab5ed5c7} callsubr
         vlineto
-        endcharr
-    </CharString>r
-    <Subrs>r
-        <CharString index="0" fingerprint="ab5ed5c7">r
+        endchar
+    </CharString>
+    <Subrs>
+        <CharString index="0" fingerprint="ab5ed5c7">
             -85 -8 rlineto
-            -983 returnr
-        </CharString>r
-        <CharString index="1" fingerprint="ab5ed5c7">r
+            -983 return
+        </CharString>
+        <CharString index="1" fingerprint="ab5ed5c7">
             -85 -8 rlineto
-            -983 returnr
-        </CharString>r
-    </Subrs>r
-    <GlobalSubrs/>r
+            -983 return
+        </CharString>
+    </Subrs>
+    <GlobalSubrs/>
 </Glyph>

@@ -1,5 +1,5 @@
-<Glyph name="less_slash.liga" lsb="-518" width="625">r
-    <CharString>r
+<Glyph name="less_slash.liga" lsb="-518" width="625">
+    <CharString>
         -203 1000 -820 685 hstemhm
         -518 66 219 579 hintmask 10110000
         346 769 rmoveto
@@ -11,14 +11,14 @@
         -84 -157 rlineto
         hintmask 10110000
         63 -23 rlineto
-        endcharr
-    </CharString>r
-    <Subrs>r
-        <CharString index="0" fingerprint="b6ee1e95">r
+        endchar
+    </CharString>
+    <Subrs>
+        <CharString index="0" fingerprint="b6ee1e95">
             -41 50 -364 -309 rlineto
             -62 vlineto
-            369 -314 returnr
-        </CharString>r
-    </Subrs>r
-    <GlobalSubrs/>r
+            369 -314 return
+        </CharString>
+    </Subrs>
+    <GlobalSubrs/>
 </Glyph>

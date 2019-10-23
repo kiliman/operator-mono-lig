@@ -1,18 +1,18 @@
-<Glyph name="underscore_underscore.liga" lsb="-697" width="625">r
-    <CharString>r
+<Glyph name="underscore_underscore.liga" lsb="-697" width="625">
+    <CharString>
         -126 70 hstem
         -697 1271 vstem
         561 {f4281f2f} callsubr
         -1257 hlineto
         -14 -70 rlineto
-        endcharr
-    </CharString>r
-    <Subrs>r
-        <CharString index="0" fingerprint="f4281f2f">r
+        endchar
+    </CharString>
+    <Subrs>
+        <CharString index="0" fingerprint="f4281f2f">
             -126 rmoveto
             13 70 rlineto
-            returnr
-        </CharString>r
-    </Subrs>r
-    <GlobalSubrs/>r
+            return
+        </CharString>
+    </Subrs>
+    <GlobalSubrs/>
 </Glyph>

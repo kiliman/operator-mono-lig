@@ -1,5 +1,5 @@
-<Glyph name="exclam_equal_equal.liga" lsb="-1157" width="625">r
-    <CharString>r
+<Glyph name="exclam_equal_equal.liga" lsb="-1157" width="625">
+    <CharString>
         {f05ddc40} callgsubr
         hstemhm
         -1157 1688 -1151 593 hintmask 11000000
@@ -22,23 +22,23 @@
         hintmask 11000000
         937 {d2565a81} callsubr
         -897 hlineto
-        endcharr
-    </CharString>r
-    <Subrs>r
-        <CharString index="0" fingerprint="d2565a81">r
+        endchar
+    </CharString>
+    <Subrs>
+        <CharString index="0" fingerprint="d2565a81">
             hlineto
             1 77 rlineto
-            returnr
-        </CharString>r
-        <CharString index="1" fingerprint="d2565a81">r
+            return
+        </CharString>
+        <CharString index="1" fingerprint="d2565a81">
             hlineto
             1 77 rlineto
-            returnr
-        </CharString>r
-    </Subrs>r
-    <GlobalSubrs>r
-        <CharString index="0" fingerprint="f05ddc40">r
-            -210 1017 returnr
-        </CharString>r
-    </GlobalSubrs>r
+            return
+        </CharString>
+    </Subrs>
+    <GlobalSubrs>
+        <CharString index="0" fingerprint="f05ddc40">
+            -210 1017 return
+        </CharString>
+    </GlobalSubrs>
 </Glyph>

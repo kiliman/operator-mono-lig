@@ -1,27 +1,27 @@
-<Glyph name="hyphen_hyphen_greater.liga" lsb="-1112" width="625">r
-    <CharString>r
+<Glyph name="hyphen_hyphen_greater.liga" lsb="-1112" width="625">
+    <CharString>
         -27 707 -402 105 hstemhm
         -1112 1644 {2a281609} callsubr
-        -1472 -105 1478 {a2b211d5} callsubrr
-    </CharString>r
-    <Subrs>r
-        <CharString index="0" fingerprint="2a281609">r
+        -1472 -105 1478 {a2b211d5} callsubr
+    </CharString>
+    <Subrs>
+        <CharString index="0" fingerprint="2a281609">
             hintmask 10100000
             532 380 rmoveto
             -364 300 -69 -88 rlineto
             hintmask 01100000
             261 -209 rlineto
-            returnr
-        </CharString>r
-        <CharString index="1" fingerprint="a2b211d5">r
+            return
+        </CharString>
+        <CharString index="1" fingerprint="a2b211d5">
             hlineto
             -270 -218 rlineto
             hintmask 10100000
             66 -87 rlineto
             hintmask 01100000
             370 304 rlineto
-            endcharr
-        </CharString>r
-    </Subrs>r
-    <GlobalSubrs/>r
+            endchar
+        </CharString>
+    </Subrs>
+    <GlobalSubrs/>
 </Glyph>

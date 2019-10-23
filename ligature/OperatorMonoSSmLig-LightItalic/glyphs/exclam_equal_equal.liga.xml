@@ -1,5 +1,5 @@
-<Glyph name="exclam_equal_equal.liga" lsb="-1197" width="625">r
-    <CharString>r
+<Glyph name="exclam_equal_equal.liga" lsb="-1197" width="625">
+    <CharString>
         -1197 1793 -1297 741 hintmask 01000000
         -115 545 rmoveto
         699 hlineto
@@ -25,42 +25,42 @@
         132 188 rlineto
         826 {acc12146} callsubr
         -797 hlineto
-        endcharr
-    </CharString>r
-    <Subrs>r
-        <CharString index="0" fingerprint="2069af8c">r
+        endchar
+    </CharString>
+    <Subrs>
+        <CharString index="0" fingerprint="2069af8c">
             -132 -188 rlineto
-            returnr
-        </CharString>r
-        <CharString index="1" fingerprint="2069af8c">r
+            return
+        </CharString>
+        <CharString index="1" fingerprint="2069af8c">
             -132 -188 rlineto
-            returnr
-        </CharString>r
-        <CharString index="2" fingerprint="e9726f1d">r
+            return
+        </CharString>
+        <CharString index="2" fingerprint="e9726f1d">
             12 60 rlineto
-            returnr
-        </CharString>r
-        <CharString index="3" fingerprint="acc12146">r
+            return
+        </CharString>
+        <CharString index="3" fingerprint="acc12146">
             hlineto
             12 59 rlineto
-            returnr
-        </CharString>r
-    </Subrs>r
-    <GlobalSubrs>r
-        <CharString index="0" fingerprint="6a7250c2">r
+            return
+        </CharString>
+    </Subrs>
+    <GlobalSubrs>
+        <CharString index="0" fingerprint="6a7250c2">
             hlineto
             -11 -59 rlineto
-            returnr
-        </CharString>r
-        <CharString index="1" fingerprint="6a7250c2">r
+            return
+        </CharString>
+        <CharString index="1" fingerprint="6a7250c2">
             hlineto
             -11 -59 rlineto
-            returnr
-        </CharString>r
-        <CharString index="2" fingerprint="146e1133">r
+            return
+        </CharString>
+        <CharString index="2" fingerprint="146e1133">
             hlineto
             {e9726f1d} callsubr
-            returnr
-        </CharString>r
-    </GlobalSubrs>r
+            return
+        </CharString>
+    </GlobalSubrs>
 </Glyph>

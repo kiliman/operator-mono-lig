@@ -1,5 +1,5 @@
-<Glyph name="question_question.liga" lsb="-365" width="625">r
-    <CharString>r
+<Glyph name="question_question.liga" lsb="-365" width="625">
+    <CharString>
         0 168 hstem
         -71 177 303 177 vstem
         -293 755 rmoveto
@@ -12,32 +12,32 @@
         299 hmoveto
         -33 -168 {11796820} callgsubr
         33 168 rlineto
-        endcharr
-    </CharString>r
-    <Subrs/>r
-    <GlobalSubrs>r
-        <CharString index="0" fingerprint="1ed82935">r
+        endchar
+    </CharString>
+    <Subrs/>
+    <GlobalSubrs>
+        <CharString index="0" fingerprint="1ed82935">
             -36 -156 rlineto
             172 -18 86 -23 -61 vvcurveto
             -50 -56 -39 -148 -77 vhcurveto
             48 -81 rlineto
             239 116 94 94 94 vvcurveto
             109 -126 65 -273 27 vhcurveto
-            returnr
-        </CharString>r
-        <CharString index="1" fingerprint="1ed82935">r
+            return
+        </CharString>
+        <CharString index="1" fingerprint="1ed82935">
             -36 -156 rlineto
             172 -18 86 -23 -61 vvcurveto
             -50 -56 -39 -148 -77 vhcurveto
             48 -81 rlineto
             239 116 94 94 94 vvcurveto
             109 -126 65 -273 27 vhcurveto
-            returnr
-        </CharString>r
-        <CharString index="2" fingerprint="11796820">r
+            return
+        </CharString>
+        <CharString index="2" fingerprint="11796820">
             rlineto
             181 hlineto
-            returnr
-        </CharString>r
-    </GlobalSubrs>r
+            return
+        </CharString>
+    </GlobalSubrs>
 </Glyph>

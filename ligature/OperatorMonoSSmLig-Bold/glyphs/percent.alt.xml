@@ -1,5 +1,5 @@
-<Glyph name="percent.alt" lsb="33" width="625">r
-    <CharString>r
+<Glyph name="percent.alt" lsb="33" width="625">
+    <CharString>
         -143 91 -90 887 -663 90 255 91 134 90 hstemhm
         32 95 -73 526 -384 92 46 92 72 90 hintmask 1001110111000000
         167 -142 rmoveto
@@ -19,26 +19,26 @@
         {663a1a77} callgsubr
         vhcurveto
         {12617999} callsubr
-        endcharr
-    </CharString>r
-    <Subrs>r
-        <CharString index="0" fingerprint="12617999">r
+        endchar
+    </CharString>
+    <Subrs>
+        <CharString index="0" fingerprint="12617999">
             3 225 rmoveto
             26 13 -27 -45 -39 -11 -23 -25 -26 -13 26 45 39 11 24 25 hvcurveto
-            returnr
-        </CharString>r
-        <CharString index="1" fingerprint="12617999">r
+            return
+        </CharString>
+        <CharString index="1" fingerprint="12617999">
             3 225 rmoveto
             26 13 -27 -45 -39 -11 -23 -25 -26 -13 26 45 39 11 24 25 hvcurveto
-            returnr
-        </CharString>r
-    </Subrs>r
-    <GlobalSubrs>r
-        <CharString index="0" fingerprint="663a1a77">r
-            93 -44 59 -79 -79 -53 -68 -95 -94 44 -58 79 returnr
-        </CharString>r
-        <CharString index="1" fingerprint="663a1a77">r
-            93 -44 59 -79 -79 -53 -68 -95 -94 44 -58 79 returnr
-        </CharString>r
-    </GlobalSubrs>r
+            return
+        </CharString>
+    </Subrs>
+    <GlobalSubrs>
+        <CharString index="0" fingerprint="663a1a77">
+            93 -44 59 -79 -79 -53 -68 -95 -94 44 -58 79 return
+        </CharString>
+        <CharString index="1" fingerprint="663a1a77">
+            93 -44 59 -79 -79 -53 -68 -95 -94 44 -58 79 return
+        </CharString>
+    </GlobalSubrs>
 </Glyph>

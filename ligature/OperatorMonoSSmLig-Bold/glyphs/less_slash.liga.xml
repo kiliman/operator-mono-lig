@@ -1,5 +1,5 @@
-<Glyph name="less_slash.liga" lsb="-537" width="625">r
-    <CharString>r
+<Glyph name="less_slash.liga" lsb="-537" width="625">
+    <CharString>
         -235 1073 hstem
         -537 141 152 636 vstem
         392 774 rmoveto
@@ -8,17 +8,17 @@
         {a6f5fb2a} callsubr
         {822f0283} callsubr
         -71 -142 136 -64 rlineto
-        endcharr
-    </CharString>r
-    <Subrs>r
-        <CharString index="0" fingerprint="a6f5fb2a">r
-            312 243 -83 112 returnr
-        </CharString>r
-        <CharString index="1" fingerprint="822f0283">r
+        endchar
+    </CharString>
+    <Subrs>
+        <CharString index="0" fingerprint="a6f5fb2a">
+            312 243 -83 112 return
+        </CharString>
+        <CharString index="1" fingerprint="822f0283">
             -370 -298 rlineto
             -130 vlineto
-            364 -295 returnr
-        </CharString>r
-    </Subrs>r
-    <GlobalSubrs/>r
+            364 -295 return
+        </CharString>
+    </Subrs>
+    <GlobalSubrs/>
 </Glyph>

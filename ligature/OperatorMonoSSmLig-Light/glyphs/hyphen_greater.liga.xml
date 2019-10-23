@@ -1,21 +1,21 @@
-<Glyph name="hyphen_greater.liga" lsb="-485" width="625">r
-    <CharString>r
+<Glyph name="hyphen_greater.liga" lsb="-485" width="625">
+    <CharString>
         {5732d485} callgsubr
         -485 1004 {e8a61897} callgsubr
-        -906 -61 907 {5287ad95} callgsubrr
-    </CharString>r
-    <Subrs>r
-        <CharString index="0" fingerprint="3acd1221">r
+        -906 -61 907 {5287ad95} callgsubr
+    </CharString>
+    <Subrs>
+        <CharString index="0" fingerprint="3acd1221">
             371 314 rlineto
-            returnr
-        </CharString>r
-    </Subrs>r
-    <GlobalSubrs>r
-        <CharString index="0" fingerprint="5732d485">r
+            return
+        </CharString>
+    </Subrs>
+    <GlobalSubrs>
+        <CharString index="0" fingerprint="5732d485">
             -23 685 -370 61 hstemhm
-            returnr
-        </CharString>r
-        <CharString index="1" fingerprint="e8a61897">r
+            return
+        </CharString>
+        <CharString index="1" fingerprint="e8a61897">
             hintmask 01100000
             {c4ad3a1e} callgsubr
             hintmask 10100000
@@ -23,23 +23,23 @@
             rlineto
             hintmask 01100000
             307 -258 rlineto
-            returnr
-        </CharString>r
-        <CharString index="2" fingerprint="c4ad3a1e">r
+            return
+        </CharString>
+        <CharString index="2" fingerprint="c4ad3a1e">
             519 353 rmoveto
-            returnr
-        </CharString>r
-        <CharString index="3" fingerprint="02296cfc">r
-            -363 309 -42 -51 returnr
-        </CharString>r
-        <CharString index="4" fingerprint="5287ad95">r
+            return
+        </CharString>
+        <CharString index="3" fingerprint="02296cfc">
+            -363 309 -42 -51 return
+        </CharString>
+        <CharString index="4" fingerprint="5287ad95">
             hlineto
             -315 -265 rlineto
             hintmask 10100000
             41 -50 rlineto
             hintmask 01100000
             {3acd1221} callsubr
-            endcharr
-        </CharString>r
-    </GlobalSubrs>r
+            endchar
+        </CharString>
+    </GlobalSubrs>
 </Glyph>

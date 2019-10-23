@@ -1,44 +1,44 @@
-<Glyph name="less_hyphen.liga" lsb="-523" width="625">r
-    <CharString>r
+<Glyph name="less_hyphen.liga" lsb="-523" width="625">
+    <CharString>
         -24 693 -383 78 hstemhm
         -523 84 hintmask 01100000
         {ccb71414} callsubr
-        -889 {c22fec97} callgsubrr
-    </CharString>r
-    <Subrs>r
-        <CharString index="0" fingerprint="ccb71414">r
+        -889 {c22fec97} callgsubr
+    </CharString>
+    <Subrs>
+        <CharString index="0" fingerprint="ccb71414">
             485 286 rmoveto
             6 78 rlineto
-            returnr
-        </CharString>r
-        <CharString index="1" fingerprint="f6a5b790">r
+            return
+        </CharString>
+        <CharString index="1" fingerprint="f6a5b790">
             -366 -306 rlineto
             -77 vlineto
-            returnr
-        </CharString>r
-    </Subrs>r
-    <GlobalSubrs>r
-        <CharString index="0" fingerprint="c22fec97">r
+            return
+        </CharString>
+    </Subrs>
+    <GlobalSubrs>
+        <CharString index="0" fingerprint="c22fec97">
             hlineto
             291 241 rlineto
             hintmask 10100000
             -50 64 {9b3d3177} callgsubr
             hintmask 01100000
             -297 246 rlineto
-            endcharr
-        </CharString>r
-        <CharString index="1" fingerprint="9b3d3177">r
+            endchar
+        </CharString>
+        <CharString index="1" fingerprint="9b3d3177">
             {54ef34ac} callgsubr
             52 64 rlineto
-            returnr
-        </CharString>r
-        <CharString index="2" fingerprint="54ef34ac">r
+            return
+        </CharString>
+        <CharString index="2" fingerprint="54ef34ac">
             {f6a5b790} callsubr
             {304d9169} callgsubr
-            returnr
-        </CharString>r
-        <CharString index="3" fingerprint="304d9169">r
-            369 -310 returnr
-        </CharString>r
-    </GlobalSubrs>r
+            return
+        </CharString>
+        <CharString index="3" fingerprint="304d9169">
+            369 -310 return
+        </CharString>
+    </GlobalSubrs>
 </Glyph>

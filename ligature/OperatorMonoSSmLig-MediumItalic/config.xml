@@ -1,121 +1,121 @@
-<ttFont>r
-    <head>r
-        
-    r
-        <!-- Most of this table will be recalculated by the compiler -->r
-        
-    r
-        <tableVersion value="1.0"/>r
-        
-    r
-        <fontRevision value="1.002"/>r
+<ttFont>
+    <head>
         
     
-    r
-        <magicNumber value="0x5f0f3cf5"/>r
+        <!-- Most of this table will be recalculated by the compiler -->
         
-    r
-        <flags value="00000000 00000011"/>r
+    
+        <tableVersion value="1.0"/>
         
-    r
-        <unitsPerEm value="1000"/>r
+    
+        <fontRevision value="1.002"/>
         
     
     
-    r
-        <xMin value="-1778"/>r
+        <magicNumber value="0x5f0f3cf5"/>
         
-    r
-        <yMin value="-403"/>r
+    
+        <flags value="00000000 00000011"/>
         
-    r
-        <xMax value="834"/>r
+    
+        <unitsPerEm value="1000"/>
         
-    r
-        <yMax value="1262"/>r
+    
+    
+    
+        <xMin value="-1778"/>
         
-    r
-        <macStyle value="00000000 00000010"/>r
+    
+        <yMin value="-403"/>
         
-    r
-        <lowestRecPPEM value="3"/>r
+    
+        <xMax value="834"/>
         
-    r
-        <fontDirectionHint value="2"/>r
+    
+        <yMax value="1262"/>
         
-    r
-        <indexToLocFormat value="0"/>r
+    
+        <macStyle value="00000000 00000010"/>
         
-    r
-        <glyphDataFormat value="0"/>r
+    
+        <lowestRecPPEM value="3"/>
         
-  r
-    </head>r
-    <hhea>r
+    
+        <fontDirectionHint value="2"/>
         
-    r
-        <tableVersion value="0x00010000"/>r
+    
+        <indexToLocFormat value="0"/>
         
-    r
-        <ascent value="960"/>r
+    
+        <glyphDataFormat value="0"/>
         
-    r
-        <descent value="-240"/>r
+  
+    </head>
+    <hhea>
         
-    r
-        <lineGap value="0"/>r
+    
+        <tableVersion value="0x00010000"/>
         
-    r
-        <advanceWidthMax value="625"/>r
+    
+        <ascent value="960"/>
         
-    r
-        <minLeftSideBearing value="-1778"/>r
+    
+        <descent value="-240"/>
         
-    r
-        <minRightSideBearing value="-548"/>r
+    
+        <lineGap value="0"/>
         
-    r
-        <xMaxExtent value="834"/>r
+    
+        <advanceWidthMax value="625"/>
         
-    r
-        <caretSlopeRise value="1000"/>r
+    
+        <minLeftSideBearing value="-1778"/>
         
-    r
-        <caretSlopeRun value="194"/>r
+    
+        <minRightSideBearing value="-548"/>
         
-    r
-        <caretOffset value="0"/>r
+    
+        <xMaxExtent value="834"/>
         
-    r
-        <reserved0 value="0"/>r
+    
+        <caretSlopeRise value="1000"/>
         
-    r
-        <reserved1 value="0"/>r
+    
+        <caretSlopeRun value="194"/>
         
-    r
-        <reserved2 value="0"/>r
+    
+        <caretOffset value="0"/>
         
-    r
-        <reserved3 value="0"/>r
+    
+        <reserved0 value="0"/>
         
-    r
-        <metricDataFormat value="0"/>r
+    
+        <reserved1 value="0"/>
         
-    r
-        <numberOfHMetrics value="449"/>r
+    
+        <reserved2 value="0"/>
         
-  r
-    </hhea>r
-    <CFF>r
-        <CFFFont>r
-            <FontBBox value="-1778 -403 834 1262"/>r
-        </CFFFont>r
-    </CFF>r
-    <CFF>r
-        <CFFFont>r
-            <Private>r
-                <nominalWidthX value="107"/>r
-            </Private>r
-        </CFFFont>r
-    </CFF>r
+    
+        <reserved3 value="0"/>
+        
+    
+        <metricDataFormat value="0"/>
+        
+    
+        <numberOfHMetrics value="449"/>
+        
+  
+    </hhea>
+    <CFF>
+        <CFFFont>
+            <FontBBox value="-1778 -403 834 1262"/>
+        </CFFFont>
+    </CFF>
+    <CFF>
+        <CFFFont>
+            <Private>
+                <nominalWidthX value="107"/>
+            </Private>
+        </CFFFont>
+    </CFF>
 </ttFont>

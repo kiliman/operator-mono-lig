@@ -1,5 +1,5 @@
-<Glyph name="plus_plus.liga" lsb="-501" width="625">r
-    <CharString>r
+<Glyph name="plus_plus.liga" lsb="-501" width="625">
+    <CharString>
         271 131 hstem
         -3 525 vstem
         522 402 rmoveto
@@ -11,39 +11,39 @@
         359 {406c29c7} callsubr
         37 189 rlineto
         179 hlineto
-        endcharr
-    </CharString>r
-    <Subrs>r
-        <CharString index="0" fingerprint="ed6d2752">r
+        endchar
+    </CharString>
+    <Subrs>
+        <CharString index="0" fingerprint="ed6d2752">
             hlineto
             37 187 rlineto
             -140 hlineto
             -36 -187 rlineto
-            returnr
-        </CharString>r
-        <CharString index="1" fingerprint="ed6d2752">r
+            return
+        </CharString>
+        <CharString index="1" fingerprint="ed6d2752">
             hlineto
             37 187 rlineto
             -140 hlineto
             -36 -187 rlineto
-            returnr
-        </CharString>r
-        <CharString index="2" fingerprint="406c29c7">r
+            return
+        </CharString>
+        <CharString index="2" fingerprint="406c29c7">
             hlineto
             -37 -189 rlineto
             139 hlineto
-            returnr
-        </CharString>r
-    </Subrs>r
-    <GlobalSubrs>r
-        <CharString index="0" fingerprint="0e7435a9">r
+            return
+        </CharString>
+    </Subrs>
+    <GlobalSubrs>
+        <CharString index="0" fingerprint="0e7435a9">
             hlineto
             -27 {51a562bb} callgsubr
-            returnr
-        </CharString>r
-        <CharString index="1" fingerprint="51a562bb">r
+            return
+        </CharString>
+        <CharString index="1" fingerprint="51a562bb">
             -131 rlineto
-            returnr
-        </CharString>r
-    </GlobalSubrs>r
+            return
+        </CharString>
+    </GlobalSubrs>
 </Glyph>

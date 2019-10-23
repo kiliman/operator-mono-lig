@@ -1,5 +1,5 @@
-<Glyph name="less_exclam_hyphen_hyphen.liga" lsb="-1778" width="625">r
-    <CharString>r
+<Glyph name="less_exclam_hyphen_hyphen.liga" lsb="-1778" width="625">
+    <CharString>
         -24 703 -679 146 132 105 hstemhm
         -1778 483 220 307 10 1255 hintmask 01111100
         -982 {64858872} callgsubr
@@ -19,25 +19,25 @@
         -29 -146 rlineto
         152 hlineto
         29 146 rlineto
-        endcharr
-    </CharString>r
-    <Subrs/>r
-    <GlobalSubrs>r
-        <CharString index="0" fingerprint="64858872">r
+        endchar
+    </CharString>
+    <Subrs/>
+    <GlobalSubrs>
+        <CharString index="0" fingerprint="64858872">
             272 rmoveto
             81 hlineto
             11 50 110 378 12 52 rrcurveto
             -156 hlineto
             -9 -52 -39 -378 -10 -50 rrcurveto
-            returnr
-        </CharString>r
-        <CharString index="1" fingerprint="0bf7e66c">r
-            -51 95 -414 -278 -18 -102 311 -323 83 81 returnr
-        </CharString>r
-        <CharString index="2" fingerprint="345294be">r
+            return
+        </CharString>
+        <CharString index="1" fingerprint="0bf7e66c">
+            -51 95 -414 -278 -18 -102 311 -323 83 81 return
+        </CharString>
+        <CharString index="2" fingerprint="345294be">
             hlineto
             -21 -105 rlineto
-            returnr
-        </CharString>r
-    </GlobalSubrs>r
+            return
+        </CharString>
+    </GlobalSubrs>
 </Glyph>

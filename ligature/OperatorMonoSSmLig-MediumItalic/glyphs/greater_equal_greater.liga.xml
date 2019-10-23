@@ -1,5 +1,5 @@
-<Glyph name="greater_equal_greater.liga" lsb="-1180" width="625">r
-    <CharString>r
+<Glyph name="greater_equal_greater.liga" lsb="-1180" width="625">
+    <CharString>
         {41e8d065} callsubr
         -1180 1733 {2d320f31} callgsubr
         -1092 {1f294808} callsubr
@@ -10,65 +10,65 @@
         -1075 hlineto
         16 93 -47 49 rlineto
         1096 hlineto
-        endcharr
-    </CharString>r
-    <Subrs>r
-        <CharString index="0" fingerprint="41e8d065">r
+        endchar
+    </CharString>
+    <Subrs>
+        <CharString index="0" fingerprint="41e8d065">
             -24 703 -519 {1c06515d} callsubr
-            returnr
-        </CharString>r
-        <CharString index="1" fingerprint="1c06515d">r
+            return
+        </CharString>
+        <CharString index="1" fingerprint="1c06515d">
             {cfbc9cf1} callsubr
             hstemhm
-            returnr
-        </CharString>r
-        <CharString index="2" fingerprint="cfbc9cf1">r
-            103 142 102 returnr
-        </CharString>r
-        <CharString index="3" fingerprint="1f294808">r
+            return
+        </CharString>
+        <CharString index="2" fingerprint="cfbc9cf1">
+            103 142 102 return
+        </CharString>
+        <CharString index="3" fingerprint="1f294808">
             hlineto
             hintmask 10010000
             -166 172 {5d0032b7} callgsubr
             275 184 rlineto
-            returnr
-        </CharString>r
-        <CharString index="4" fingerprint="2ad6329f">r
-            50 -95 415 278 returnr
-        </CharString>r
-    </Subrs>r
-    <GlobalSubrs>r
-        <CharString index="0" fingerprint="2d320f31">r
+            return
+        </CharString>
+        <CharString index="4" fingerprint="2ad6329f">
+            50 -95 415 278 return
+        </CharString>
+    </Subrs>
+    <GlobalSubrs>
+        <CharString index="0" fingerprint="2d320f31">
             hintmask 01110000
             553 356 rmoveto
             hintmask 10010000
             {fbeb67dc} callgsubr
             {2d66c04c} callgsubr
             91 -91 rlineto
-            returnr
-        </CharString>r
-        <CharString index="1" fingerprint="fbeb67dc">r
-            -311 323 -83 -81 returnr
-        </CharString>r
-        <CharString index="2" fingerprint="2d66c04c">r
+            return
+        </CharString>
+        <CharString index="1" fingerprint="fbeb67dc">
+            -311 323 -83 -81 return
+        </CharString>
+        <CharString index="2" fingerprint="2d66c04c">
             rlineto
             hintmask 01110000
-            returnr
-        </CharString>r
-        <CharString index="3" fingerprint="5d0032b7">r
+            return
+        </CharString>
+        <CharString index="3" fingerprint="5d0032b7">
             -83 -81 276 -276 -2 -12 -363 -239 50 -95 {2d66c04c} callgsubr
-            returnr
-        </CharString>r
-        <CharString index="4" fingerprint="98377a8b">r
+            return
+        </CharString>
+        <CharString index="4" fingerprint="98377a8b">
             hlineto
             -135 -89 {1b07c958} callgsubr
             {2ad6329f} callsubr
             rlineto
-            returnr
-        </CharString>r
-        <CharString index="5" fingerprint="1b07c958">r
+            return
+        </CharString>
+        <CharString index="5" fingerprint="1b07c958">
             rlineto
             hintmask 10010000
-            returnr
-        </CharString>r
-    </GlobalSubrs>r
+            return
+        </CharString>
+    </GlobalSubrs>
 </Glyph>

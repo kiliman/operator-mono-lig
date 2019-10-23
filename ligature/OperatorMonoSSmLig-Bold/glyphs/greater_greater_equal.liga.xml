@@ -1,5 +1,5 @@
-<Glyph name="greater_greater_equal.liga" lsb="-1162" width="625">r
-    <CharString>r
+<Glyph name="greater_greater_equal.liga" lsb="-1162" width="625">
+    <CharString>
         {b6a51f90} callsubr
         hstemhm
         -1162 1707 -1395 141 279 141 hintmask 11011000
@@ -26,24 +26,24 @@
         978 132 hlineto
         hintmask 11011000
         -834 hlineto
-        endcharr
-    </CharString>r
-    <Subrs>r
-        <CharString index="0" fingerprint="b6a51f90">r
-            152 132 110 132 returnr
-        </CharString>r
-        <CharString index="1" fingerprint="e525c5a7">r
+        endchar
+    </CharString>
+    <Subrs>
+        <CharString index="0" fingerprint="b6a51f90">
+            152 132 110 132 return
+        </CharString>
+        <CharString index="1" fingerprint="e525c5a7">
             311 -240 rlineto
             -14 vlineto
-            returnr
-        </CharString>r
-    </Subrs>r
-    <GlobalSubrs>r
-        <CharString index="0" fingerprint="64c17bc4">r
-            -312 -243 83 -112 returnr
-        </CharString>r
-        <CharString index="1" fingerprint="64c17bc4">r
-            -312 -243 83 -112 returnr
-        </CharString>r
-    </GlobalSubrs>r
+            return
+        </CharString>
+    </Subrs>
+    <GlobalSubrs>
+        <CharString index="0" fingerprint="64c17bc4">
+            -312 -243 83 -112 return
+        </CharString>
+        <CharString index="1" fingerprint="64c17bc4">
+            -312 -243 83 -112 return
+        </CharString>
+    </GlobalSubrs>
 </Glyph>

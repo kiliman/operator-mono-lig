@@ -1,5 +1,5 @@
-<Glyph name="equal_greater.liga" lsb="-549" width="625">r
-    <CharString>r
+<Glyph name="equal_greater.liga" lsb="-549" width="625">
+    <CharString>
         {20f2e0e1} callsubr
         -549 1094 {a840b755} callgsubr
         -808 {6a7250c2} callgsubr
@@ -7,35 +7,35 @@
         -897 hlineto
         -12 -60 rlineto
         824 {9027d310} callsubr
-        endcharr
-    </CharString>r
-    <Subrs>r
-        <CharString index="0" fingerprint="20f2e0e1">r
+        endchar
+    </CharString>
+    <Subrs>
+        <CharString index="0" fingerprint="20f2e0e1">
             -19 677 -486 {4378ab5e} callgsubr
-            returnr
-        </CharString>r
-        <CharString index="1" fingerprint="1a4ca569">r
-            60 188 59 returnr
-        </CharString>r
-        <CharString index="2" fingerprint="9027d310">r
+            return
+        </CharString>
+        <CharString index="1" fingerprint="1a4ca569">
+            60 188 59 return
+        </CharString>
+        <CharString index="2" fingerprint="9027d310">
             hlineto
             -195 -137 rlineto
             hintmask 10010000
             {8660b198} callsubr
             rlineto
-            returnr
-        </CharString>r
-        <CharString index="3" fingerprint="8660b198">r
-            32 -54 422 299 returnr
-        </CharString>r
-    </Subrs>r
-    <GlobalSubrs>r
-        <CharString index="0" fingerprint="4378ab5e">r
+            return
+        </CharString>
+        <CharString index="3" fingerprint="8660b198">
+            32 -54 422 299 return
+        </CharString>
+    </Subrs>
+    <GlobalSubrs>
+        <CharString index="0" fingerprint="4378ab5e">
             {1a4ca569} callsubr
             hstemhm
-            returnr
-        </CharString>r
-        <CharString index="1" fingerprint="a840b755">r
+            return
+        </CharString>
+        <CharString index="1" fingerprint="a840b755">
             hintmask 01110000
             545 341 rmoveto
             hintmask 10010000
@@ -43,20 +43,20 @@
             rlineto
             hintmask 01110000
             130 -132 rlineto
-            returnr
-        </CharString>r
-        <CharString index="2" fingerprint="6e5cea83">r
-            -309 317 -48 -47 returnr
-        </CharString>r
-        <CharString index="3" fingerprint="6a7250c2">r
+            return
+        </CharString>
+        <CharString index="2" fingerprint="6e5cea83">
+            -309 317 -48 -47 return
+        </CharString>
+        <CharString index="3" fingerprint="6a7250c2">
             hlineto
             -11 -59 rlineto
-            returnr
-        </CharString>r
-        <CharString index="4" fingerprint="4eb19c4e">r
+            return
+        </CharString>
+        <CharString index="4" fingerprint="4eb19c4e">
             hlineto
             98 -99 -2 -10 -112 -79 rlineto
-            returnr
-        </CharString>r
-    </GlobalSubrs>r
+            return
+        </CharString>
+    </GlobalSubrs>
 </Glyph>

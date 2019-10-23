@@ -1,5 +1,5 @@
-<Glyph name="ampersand_ampersand.liga" lsb="-387" width="625">r
-    <CharString>r
+<Glyph name="ampersand_ampersand.liga" lsb="-387" width="625">
+    <CharString>
         -13 60 586 67 hstem
         -387 70 10 69 291 70 10 69 vstem
         449 178 rmoveto
@@ -19,40 +19,40 @@
         {a5af4707} callsubr
         440 hmoveto
         {a5af4707} callsubr
-        endcharr
-    </CharString>r
-    <Subrs>r
-        <CharString index="0" fingerprint="a5af4707">r
+        endchar
+    </CharString>
+    <Subrs>
+        <CharString index="0" fingerprint="a5af4707">
             -66 -33 46 63 56 35 59 73 51 hvcurveto
             37 -44 48 -53 58 -68 rrcurveto
             -74 -47 -54 -36 -51 hhcurveto
-            returnr
-        </CharString>r
-        <CharString index="1" fingerprint="a5af4707">r
+            return
+        </CharString>
+        <CharString index="1" fingerprint="a5af4707">
             -66 -33 46 63 56 35 59 73 51 hvcurveto
             37 -44 48 -53 58 -68 rrcurveto
             -74 -47 -54 -36 -51 hhcurveto
-            returnr
-        </CharString>r
-    </Subrs>r
-    <GlobalSubrs>r
-        <CharString index="0" fingerprint="75868691">r
+            return
+        </CharString>
+    </Subrs>
+    <GlobalSubrs>
+        <CharString index="0" fingerprint="75868691">
             -144 163 -65 69 64 vvcurveto
             65 51 60 194 -9 vhcurveto
             -6 67 rlineto
             -235 5 -73 -101 -93 vvcurveto
             -49 23 -44 46 -60 vhcurveto
             -100 -63 -49 -73 -81 vvcurveto
-            returnr
-        </CharString>r
-        <CharString index="1" fingerprint="75868691">r
+            return
+        </CharString>
+        <CharString index="1" fingerprint="75868691">
             -144 163 -65 69 64 vvcurveto
             65 51 60 194 -9 vhcurveto
             -6 67 rlineto
             -235 5 -73 -101 -93 vvcurveto
             -49 23 -44 46 -60 vhcurveto
             -100 -63 -49 -73 -81 vvcurveto
-            returnr
-        </CharString>r
-    </GlobalSubrs>r
+            return
+        </CharString>
+    </GlobalSubrs>
 </Glyph>
