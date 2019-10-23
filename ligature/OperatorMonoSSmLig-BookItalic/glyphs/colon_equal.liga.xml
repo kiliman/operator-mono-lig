@@ -1,69 +1,47 @@
-<Glyph name="colon_equal.liga" lsb="-408" width="625">
-    <CharString>
+<Glyph name="colon_equal.liga" lsb="-408" width="625">r
+    <CharString>r
         140 131 115 132 hstem
         -408 851 vstem
-        -361 386 {3222d6e6} callsubr
-        132 {0e9e0f8e} callgsubr
-        762 -104 {7807176c} callsubr
-        -545 {62d12451} callgsubr
-        -291 -274 {1b4e7231} callsubr
-        762 -103 {20afed72} callsubr
-        -544 {c1d997ea} callgsubr
-    </CharString>
-    <Subrs>
-        <CharString index="0" fingerprint="3222d6e6">
-            rmoveto
+        -335 518 rmoveto
+        -26 -132 rlineto
+        {8fb18ae9} callsubr
+        132 rlineto
+        94 -104 rmoveto
+        544 {f8f09bfc} callsubr
+        -545 hlineto
+        -280 -219 rmoveto
+        -26 -131 rlineto
+        {8fb18ae9} callsubr
+        131 rlineto
+        94 -103 rmoveto
+        544 {ca724b19} callgsubr
+        -544 hlineto
+        endcharr
+    </CharString>r
+    <Subrs>r
+        <CharString index="0" fingerprint="8fb18ae9">r
             124 hlineto
-            26 return
-        </CharString>
-        <CharString index="1" fingerprint="7807176c">
-            rmoveto
+            26 returnr
+        </CharString>r
+        <CharString index="1" fingerprint="f8f09bfc">r
+            hlineto
             {1af50f36} callgsubr
-            return
-        </CharString>
-        <CharString index="2" fingerprint="1b4e7231">
-            rmoveto
-            124 {61e10cb2} callsubr
-            return
-        </CharString>
-        <CharString index="3" fingerprint="61e10cb2">
-            hlineto
-            26 131 {0e9e0f8e} callgsubr
-            return
-        </CharString>
-        <CharString index="4" fingerprint="20afed72">
-            rmoveto
-            {e86cdc87} callgsubr
-            return
-        </CharString>
-    </Subrs>
-    <GlobalSubrs>
-        <CharString index="0" fingerprint="0e9e0f8e">
-            rlineto
-            -124 hlineto
-            return
-        </CharString>
-        <CharString index="1" fingerprint="1af50f36">
+            returnr
+        </CharString>r
+        <CharString index="2" fingerprint="8fb18ae9">r
+            124 hlineto
+            26 returnr
+        </CharString>r
+    </Subrs>r
+    <GlobalSubrs>r
+        <CharString index="0" fingerprint="1af50f36">r
             16 76 rlineto
-            return
-        </CharString>
-        <CharString index="2" fingerprint="62d12451">
+            returnr
+        </CharString>r
+        <CharString index="1" fingerprint="ca724b19">r
             hlineto
-            -15 -76 rlineto
-            return
-        </CharString>
-        <CharString index="3" fingerprint="0e9e0f8e">
-            rlineto
-            -124 hlineto
-            return
-        </CharString>
-        <CharString index="4" fingerprint="e86cdc87">
             15 76 rlineto
-            return
-        </CharString>
-        <CharString index="5" fingerprint="c1d997ea">
-            {62d12451} callgsubr
-            endchar
-        </CharString>
-    </GlobalSubrs>
+            returnr
+        </CharString>r
+    </GlobalSubrs>r
 </Glyph>

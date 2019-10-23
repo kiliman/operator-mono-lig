@@ -1,54 +1,43 @@
-<Glyph name="question_question.liga" lsb="-365" width="625">
-    <CharString>
+<Glyph name="question_question.liga" lsb="-365" width="625">r
+    <CharString>r
         0 168 hstem
         -71 177 303 177 vstem
         -293 755 rmoveto
-        {f5650554} callsubr
+        {1ed82935} callgsubr
         480 hmoveto
-        {f5650554} callsubr
-        -552 -755 {4181973e} callsubr
-        447 -168 {4181973e} callsubr
-        endchar
-    </CharString>
-    <Subrs>
-        <CharString index="0" fingerprint="f5650554">
+        {1ed82935} callgsubr
+        -519 -587 rmoveto
+        -33 -168 {11796820} callgsubr
+        33 168 rlineto
+        299 hmoveto
+        -33 -168 {11796820} callgsubr
+        33 168 rlineto
+        endcharr
+    </CharString>r
+    <Subrs/>r
+    <GlobalSubrs>r
+        <CharString index="0" fingerprint="1ed82935">r
             -36 -156 rlineto
             172 -18 86 -23 -61 vvcurveto
             -50 -56 -39 -148 -77 vhcurveto
-            48 -81 {44dabc1d} callgsubr
-            116 94 94 94 vvcurveto
+            48 -81 rlineto
+            239 116 94 94 94 vvcurveto
             109 -126 65 -273 27 vhcurveto
-            return
-        </CharString>
-        <CharString index="1" fingerprint="f5650554">
+            returnr
+        </CharString>r
+        <CharString index="1" fingerprint="1ed82935">r
             -36 -156 rlineto
             172 -18 86 -23 -61 vvcurveto
             -50 -56 -39 -148 -77 vhcurveto
-            48 -81 {44dabc1d} callgsubr
-            116 94 94 94 vvcurveto
+            48 -81 rlineto
+            239 116 94 94 94 vvcurveto
             109 -126 65 -273 27 vhcurveto
-            return
-        </CharString>
-        <CharString index="2" fingerprint="4181973e">
-            rmoveto
-            {f230a2a4} callgsubr
-            33 168 rlineto
-            -181 hlineto
-            return
-        </CharString>
-    </Subrs>
-    <GlobalSubrs>
-        <CharString index="0" fingerprint="44dabc1d">
+            returnr
+        </CharString>r
+        <CharString index="2" fingerprint="11796820">r
             rlineto
-            239 return
-        </CharString>
-        <CharString index="1" fingerprint="44dabc1d">
-            rlineto
-            239 return
-        </CharString>
-        <CharString index="2" fingerprint="f230a2a4">
             181 hlineto
-            return
-        </CharString>
-    </GlobalSubrs>
+            returnr
+        </CharString>r
+    </GlobalSubrs>r
 </Glyph>

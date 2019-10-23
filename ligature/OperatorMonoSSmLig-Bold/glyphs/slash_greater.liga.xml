@@ -1,23 +1,26 @@
-<Glyph name="slash_greater.liga" lsb="-418" width="625">
-    <CharString>
+<Glyph name="slash_greater.liga" lsb="-418" width="625">r
+    <CharString>r
         -235 1073 hstem
         -418 636 182 141 vstem
-        178 693 rmoveto
-        40 81 {511654ac} callgsubr
+        541 397 rmoveto
+        -363 296 40 81 {511654ac} callgsubr
         394 796 288 -222 rlineto
         -14 vlineto
-        -312 -243 {00c9cf16} callgsubr
-        endchar
-    </CharString>
-    <Subrs/>
-    <GlobalSubrs>
-        <CharString index="0" fingerprint="511654ac">
-            -135 64 -501 -1009 136 -64 return
-        </CharString>
-        <CharString index="1" fingerprint="00c9cf16">
+        -312 -243 {411bb63a} callsubrr
+    </CharString>r
+    <Subrs>r
+        <CharString index="0" fingerprint="411bb63a">r
+            {8403b49a} callgsubr
+            endcharr
+        </CharString>r
+    </Subrs>r
+    <GlobalSubrs>r
+        <CharString index="0" fingerprint="511654ac">r
+            -135 64 -501 -1009 136 -64 returnr
+        </CharString>r
+        <CharString index="1" fingerprint="8403b49a">r
             83 -112 370 298 rlineto
-            129 vlineto
-            return
-        </CharString>
-    </GlobalSubrs>
+            returnr
+        </CharString>r
+    </GlobalSubrs>r
 </Glyph>

@@ -1,37 +1,35 @@
-<Glyph name="slash_greater.liga" lsb="-496" width="625">
-    <CharString>
-        {4465ff65} callsubr
-        hstemhm
-        -496 791 -232 496 hintmask 11000000
-        246 693 rmoveto
-        49 73 {8f7a5840} callsubr
+<Glyph name="slash_greater.liga" lsb="-496" width="625">r
+    <CharString>r
+        -215 1031 hstemhm
+        -496 791 -232 496 hintmask 10100000
+        559 366 rmoveto
+        -313 327 rlineto
+        hintmask 11000000
+        49 73 {8f7a5840} callgsubr
         520 781 247 -244 -2 -13 rlineto
         hintmask 10100000
-        -344 -215 {9d6990a4} callsubr
-    </CharString>
-    <Subrs>
-        <CharString index="0" fingerprint="4465ff65">
-            -215 1031 return
-        </CharString>
-        <CharString index="1" fingerprint="8f7a5840">
-            -129 50 -662 -991 138 -40 return
-        </CharString>
-        <CharString index="2" fingerprint="9d6990a4">
-            {0a376d15} callsubr
-            endchar
-        </CharString>
-        <CharString index="3" fingerprint="0a376d15">
-            {ce9611a3} callsubr
+        -344 -215 {bc4f1e2d} callgsubrr
+    </CharString>r
+    <Subrs/>r
+    <GlobalSubrs>r
+        <CharString index="0" fingerprint="8f7a5840">r
+            -129 50 -662 -991 138 -40 returnr
+        </CharString>r
+        <CharString index="1" fingerprint="bc4f1e2d">r
+            {c611b2ca} callgsubr
+            endcharr
+        </CharString>r
+        <CharString index="2" fingerprint="c611b2ca">r
+            {6f04d2ac} callgsubr
             rlineto
-            return
-        </CharString>
-        <CharString index="4" fingerprint="ce9611a3">
-            {9ffb92b0} callsubr
-            24 130 return
-        </CharString>
-        <CharString index="5" fingerprint="9ffb92b0">
-            63 -122 409 264 return
-        </CharString>
-    </Subrs>
-    <GlobalSubrs/>
+            returnr
+        </CharString>r
+        <CharString index="3" fingerprint="6f04d2ac">r
+            {46392069} callgsubr
+            409 264 returnr
+        </CharString>r
+        <CharString index="4" fingerprint="46392069">r
+            63 -122 returnr
+        </CharString>r
+    </GlobalSubrs>r
 </Glyph>

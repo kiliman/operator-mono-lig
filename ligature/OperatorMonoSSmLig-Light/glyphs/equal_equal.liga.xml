@@ -1,45 +1,35 @@
-<Glyph name="equal_equal.liga" lsb="-527" width="625">
-    <CharString>
-        {30ed7960} callgsubr
+<Glyph name="equal_equal.liga" lsb="-527" width="625">r
+    <CharString>r
+        {d0d2c68b} callgsubr
         -527 1054 vstem
-        526 {6fa57c79} callsubr
-        -1054 -60 hlineto
-        1053 {b17fe655} callsubr
-        -1054 -61 hlineto
-        endchar
-    </CharString>
-    <Subrs>
-        <CharString index="0" fingerprint="94cc09f2">
-            61 187 60 return
-        </CharString>
-        <CharString index="1" fingerprint="6fa57c79">
-            420 {3abcacd5} callgsubr
-            return
-        </CharString>
-        <CharString index="2" fingerprint="237a2e75">
-            1 60 rlineto
-            return
-        </CharString>
-        <CharString index="3" fingerprint="b17fe655">
-            -248 rmoveto
-            {2c9ba62e} callsubr
-            return
-        </CharString>
-        <CharString index="4" fingerprint="2c9ba62e">
-            1 61 rlineto
-            return
-        </CharString>
-    </Subrs>
-    <GlobalSubrs>
-        <CharString index="0" fingerprint="30ed7960">
-            172 {94cc09f2} callsubr
-            hstem
-            return
-        </CharString>
-        <CharString index="1" fingerprint="3abcacd5">
-            rmoveto
+        -527 420 rmoveto
+        1053 {fee401a5} callsubr
+        -1054 hlineto
+        -308 vmoveto
+        1053 {553ac882} callsubr
+        -1054 hlineto
+        endcharr
+    </CharString>r
+    <Subrs>r
+        <CharString index="0" fingerprint="fee401a5">r
+            hlineto
             {237a2e75} callsubr
-            return
-        </CharString>
-    </GlobalSubrs>
+            returnr
+        </CharString>r
+        <CharString index="1" fingerprint="237a2e75">r
+            1 60 rlineto
+            returnr
+        </CharString>r
+        <CharString index="2" fingerprint="553ac882">r
+            hlineto
+            1 61 rlineto
+            returnr
+        </CharString>r
+    </Subrs>r
+    <GlobalSubrs>r
+        <CharString index="0" fingerprint="d0d2c68b">r
+            172 61 187 60 hstem
+            returnr
+        </CharString>r
+    </GlobalSubrs>r
 </Glyph>
