@@ -64,8 +64,7 @@ Which font weight of Operator Mono do you use? Also note difference between Scre
 ### Prerequisites
 
 - The original _Operator Mono_ font... of course. Get one of the font packs: 
-  - [Operator Mono SSm](https://www.typography.com/fonts/operator/styles/operatormonoscreensmart)
-    provides better clarity using the ScreenSmart technology to generate the fonts.
+  - [Operator Mono SSm](https://www.typography.com/fonts/operator/styles/operatormonoscreensmart) - provides better clarity using the ScreenSmart technology to generate the fonts.
   - [Operator Mono](typography.com/fonts/operator/styles/operatormono)
 - Install _fonttools_ from https://github.com/fonttools/fonttools
   - Install Python (v2.7+) & add Python packages to command PATH variable
