@@ -91,13 +91,13 @@ Once all the prerequisites have been installed, follow the steps:
      - etc.
 
 4. From the command line, run the following command, which will generate the new font files in the `build` folder:
-  - Windows: `build`
-  - Linux/Mac: `./build.sh`
+    - Windows: `build`
+    - Linux/Mac: `./build.sh`
 
 5. ✔ Install the newly created fonts on your system.
 
 ## Using Docker:
-> Note: This requires you to build the docker image as it is not hosted on Dockerhub.
+> Note: This requires you to build the docker image as it is not hosted on Dockerhub anymore.
 If you use Docker, you can also use the executable Docker image [here](https://github.com/drod3763/kiliman-operator-mono-lig-docker). It handles all the prerequisite installation for you, you just need to:
 
 Using Docker Compose cli tool: 
@@ -108,6 +108,21 @@ Using Docker Compose cli tool:
   3. From the command line run: `docker-compose run --rm operator-mono-lig`
   
   4. ✔ Install the generated fonts - The image will build and execute the conversion. The new font files will be generated into the `output` folder.
+
+# 👨‍💻 Configure Your Code Editor
+
+You can now select the newly generated font in your code editor. Make sure you enable font ligatures.
+
+### VS Code settings file:
+
+```json
+  "editor.fontFamily": "OperatorMonoSSmLig-Book",
+  "editor.fontLigatures": true,
+  // for Windows
+  "editor.fontFamily": "Operator Mono SSm Lig",
+  "editor.fontLigatures": true,
+  "editor.fontWeight": "500",   // adjust for desired weight
+```
 
 # 🔧 Customize the generated font
 
@@ -135,21 +150,6 @@ greater_equal.liga=greater_equal.2.liga
 # another optional section (will create a font named Operator Mono Lig Go)
 [Go]
 ... add custom directives for this font ...
-```
-
-# 👨‍💻 Configure Your Code Editor
-
-You can now select the newly generated font in your code editor. Make sure you enable font ligatures.
-
-### VS Code settings file:
-
-```json
-  "editor.fontFamily": "OperatorMonoSSmLig-Book",
-  "editor.fontLigatures": true,
-  // for Windows
-  "editor.fontFamily": "Operator Mono SSm Lig",
-  "editor.fontLigatures": true,
-  "editor.fontWeight": "500",   // adjust for desired weight
 ```
 
 # 😍 Thank You
