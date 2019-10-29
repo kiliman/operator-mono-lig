@@ -76,25 +76,27 @@ docker-compose run --rm operator-mono-lig
 
 The image will build and execute the conversion. The new font files will be generated into the `output` folder.
 
-## Using Unix-based OS / Windows OS with Python installed:
+## Using Unix-based/Windows OS with Python installed:
 ### Prerequisites
 
-- The original _Operator Mono_ font... of course.
+- The original _Operator Mono_ font... of course. Get one of the font packs: 
+  - [Operator Mono SSm](https://www.typography.com/fonts/operator/styles/operatormonoscreensmart)
+    provides better clarity using the ScreenSmart technology to generate the fonts.
+  - [Operator Mono](typography.com/fonts/operator/styles/operatormono)
 - Install _fonttools_ from https://github.com/fonttools/fonttools
-  - Install Python (v2.7+)
+  - Install Python (v2.7+) & add Python packages to command PATH variable
+    `sudo apt install -y python3-pip python-pip && PATH=$PATH:~/.local/bin`
   - Run: `pip install fonttools`
     - for Mac users it's better to run `pip3 install fonttools` - [info](https://stackoverflow.com/a/33416270/3191011)
 - Node.js
 
 ### Steps:
+Once all the prerequisites have been installed, follow the steps:
 
-1. Once all the prerequisites have been installed, clone this repo. Or download latest release from [Releases](https://github.com/kiliman/operator-mono-lig/releases) and unzip.
-
-2. From the command line, run:
-
-```
-npm install
-```
+1. Clone this repo `git clone https://github.com/kiliman/operator-mono-lig`. 
+   Or download latest release from [Releases](https://github.com/kiliman/operator-mono-lig/releases) and unzip.
+  
+2. From the command line, run:  `npm install`
 
 3. Copy your _Operator Mono_ OpenType files into the `original` folder.
 
@@ -105,18 +107,11 @@ npm install
      - OperatorMono-LightItalic.otf
      - etc.
 
-4. From the command line, run:
-  - Windows
-    ```
-    build
-    ```
+4. From the command line, run the following command, which will generate the new font files in the `build` folder:
+  - Windows: `build`
+  - Linux/Mac: `./build.sh`
 
-  - Linux/Mac
-    ```
-    ./build.sh
-    ```
-
-This will generate the new font files in the `build` folder. You can now install these fonts on your system.
+5. ✔ Install the newly created fonts on your system.
 
 # 🔧 Customize the generated font
 
@@ -150,7 +145,7 @@ greater_equal.liga=greater_equal.2.liga
 
 You can now select the newly generated font in your code editor. Make sure you enable font ligatures.
 
-## VS Code
+### VS Code settings file:
 
 ```json
   "editor.fontFamily": "OperatorMonoSSmLig-Book",
