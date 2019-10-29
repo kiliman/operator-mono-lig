@@ -68,8 +68,10 @@ Which font weight of Operator Mono do you use? Also note difference between Scre
   - [Operator Mono](typography.com/fonts/operator/styles/operatormono)
 - Install _fonttools_ from https://github.com/fonttools/fonttools
   - Install Python (v2.7+) & add Python packages to command PATH variable
+    
     `sudo apt install -y python3-pip python-pip && PATH=$PATH:~/.local/bin`
-  - Run: `pip install fonttools`
+  - Install "fonttools" Python package: 
+    `pip install fonttools`
     - for Mac users it's better to run `pip3 install fonttools` - [info](https://stackoverflow.com/a/33416270/3191011)
 - Node.js
 
