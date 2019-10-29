@@ -60,22 +60,6 @@ Which font weight of Operator Mono do you use? Also note difference between Scre
 
 # 🛠 How to Install
 
-## Using Docker:
-
-If you use Docker, you can also use the executable Docker image [here](https://github.com/drod3763/kiliman-operator-mono-lig-docker). It handles all the prerequisite installation for you, you just need to:
-
-1. Clone the repo located at [https://github.com/drod3763/kiliman-operator-mono-lig-docker].
-
-2. Copy your _Operator Mono_ OpenType files into the `input` folder.
-
-3. From the command line run:
-
-```
-docker-compose run --rm operator-mono-lig
-```
-
-The image will build and execute the conversion. The new font files will be generated into the `output` folder.
-
 ## Using Unix-based/Windows OS with Python installed:
 ### Prerequisites
 
@@ -112,6 +96,19 @@ Once all the prerequisites have been installed, follow the steps:
   - Linux/Mac: `./build.sh`
 
 5. ✔ Install the newly created fonts on your system.
+
+## Using Docker:
+> Note: This requires you to build the docker image as it is not hosted on Dockerhub.
+If you use Docker, you can also use the executable Docker image [here](https://github.com/drod3763/kiliman-operator-mono-lig-docker). It handles all the prerequisite installation for you, you just need to:
+
+Using Docker Compose cli tool: 
+  1. Clone the repo located at [https://github.com/drod3763/kiliman-operator-mono-lig-docker].
+
+  2. Copy your _Operator Mono_ OpenType files into the `input` folder.
+
+  3. From the command line run: `docker-compose run --rm operator-mono-lig`
+  
+  4. ✔ Install the generated fonts - The image will build and execute the conversion. The new font files will be generated into the `output` folder.
 
 # 🔧 Customize the generated font
 
