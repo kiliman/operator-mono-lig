@@ -104,7 +104,26 @@ Which font weight of Operator Mono do you use? Also note difference between Scre
 > NOTE: Because _Operator Mono_ is not a free font, you must have the original font files. This utility
 > will merge the ligature definitions into a copy of the original font. The new font family is named _Operator Mono Lig_ so you can install it side-by-side with the original font.
 
-## Prerequisites
+# 🛠 How to Install
+
+## Using Docker:
+
+If you use Docker, you can also use the executable Docker image [here](https://github.com/drod3763/kiliman-operator-mono-lig-docker). It handles all the prerequisite installation for you, you just need to:
+
+1. Clone the repo located at [https://github.com/drod3763/kiliman-operator-mono-lig-docker].
+
+2. Copy your _Operator Mono_ OpenType files into the `input` folder.
+
+3. From the command line run:
+
+```
+docker-compose run --rm operator-mono-lig
+```
+
+The image will build and execute the conversion. The new font files will be generated into the `output` folder.
+
+## Using Linux OS:
+### Prerequisites
 
 - The original _Operator Mono_ font... of course.
 - Install _fonttools_ from https://github.com/fonttools/fonttools
@@ -113,7 +132,7 @@ Which font weight of Operator Mono do you use? Also note difference between Scre
     - for Mac users it's better to run `pip3 install fonttools` - [info](https://stackoverflow.com/a/33416270/3191011)
 - Node.js
 
-## 🛠 How to Install
+### Steps:
 
 1. Once all the prerequisites have been installed, clone this repo. Or download latest release from [Releases](https://github.com/kiliman/operator-mono-lig/releases) and unzip.
 
@@ -147,22 +166,6 @@ build
 ```
 
 This will generate the new font files in the `build` folder. You can now install these fonts on your system.
-
-### Docker
-
-If you use Docker, you can also use the executable Docker image [here](https://github.com/drod3763/kiliman-operator-mono-lig-docker). It handles all the prerequisite installation for you, you just need to:
-
-1. Clone the repo located at [https://github.com/drod3763/kiliman-operator-mono-lig-docker].
-
-2. Copy your _Operator Mono_ OpenType files into the `input` folder.
-
-3. From the command line run:
-
-```
-docker-compose run --rm operator-mono-lig
-```
-
-The image will build and execute the conversion. The new font files will be generated into the `output` folder.
 
 ## Configure Your Code Editor
 
