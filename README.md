@@ -77,7 +77,7 @@ Which font weight of Operator Mono do you use? Also note difference between Scre
 - Node.js
 
 ### Steps:
-Once all the prerequisites have been installed, follow the steps:
+_Once all the prerequisites have been installed, follow the steps:_
 
 1. Clone this repo `git clone https://github.com/kiliman/operator-mono-lig`. 
    Or download latest release from [Releases](https://github.com/kiliman/operator-mono-lig/releases) and unzip.
