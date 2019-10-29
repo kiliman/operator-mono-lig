@@ -81,7 +81,7 @@ greater_equal.liga=greater_equal.2.liga
 In addition to the graphic above, the following new ligatures are available:
 <img src="./images/new-ligatures.png"/>
 
-### 🙏 Help Wanted
+# 🙏 Help Wanted
 
 As noted above, v2.0 only includes ligatures for **Operator Mono SSm Book**. In order to
 update the other fonts, all the ligatures need to be redone. Unfortunately I just don't
@@ -122,7 +122,7 @@ docker-compose run --rm operator-mono-lig
 
 The image will build and execute the conversion. The new font files will be generated into the `output` folder.
 
-## Using Linux OS:
+## Using Unix-based OS / Windows OS with Python installed:
 ### Prerequisites
 
 - The original _Operator Mono_ font... of course.
@@ -152,26 +152,23 @@ npm install
      - etc.
 
 4. From the command line, run:
+  - Windows
+    ```
+    build
+    ```
 
-### Windows
-
-```
-build
-```
-
-### Linux/Mac
-
-```
-./build.sh
-```
+  - Linux/Mac
+    ```
+    ./build.sh
+    ```
 
 This will generate the new font files in the `build` folder. You can now install these fonts on your system.
 
-## Configure Your Code Editor
+# 👨‍💻 Configure Your Code Editor
 
 You can now select the newly generated font in your code editor. Make sure you enable font ligatures.
 
-### VS Code
+## VS Code
 
 ```json
   "editor.fontFamily": "OperatorMonoSSmLig-Book",
@@ -182,7 +179,7 @@ You can now select the newly generated font in your code editor. Make sure you e
   "editor.fontWeight": "500",   // adjust for desired weight
 ```
 
-## 😍 Thank You
+# 😍 Thank You
 
 Thanks to Hoefler&Co for making such an amazing font. It makes writing code truly pleasurable.
 
