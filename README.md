@@ -7,12 +7,17 @@ There are even italic versions of the ligatures.
 
 <img src="./images/operator-mono-lig.png" />
 
+In addition to the graphic above, the following new ligatures are available:
+
+<img src="./images/new-ligatures.png"/>
+
 # Release notes: 
 
 - 🎉 New Version 2.2.5
   All new redesigned ligatures with better hinting. Updated font generation to support advanced OpenType features
   like those found in Fira Code. For example, the cursor now moves inside the ligature. It also handles repeating
   characters properly.
+  
   <img src="./images/caret-position.gif" />
 
 - 🎉 New in Version 2.2
@@ -38,11 +43,6 @@ There are even italic versions of the ligatures.
   Fixed glyph widths Operator Mono Light and Light Italic. These fonts accidentally were sized
   the same as the ScreenSmart versions and caused alignment issues. Also fixed a few ligatures
   that didn't have the correct weight.
-
-### New ligatures
-
-In addition to the graphic above, the following new ligatures are available:
-<img src="./images/new-ligatures.png"/>
 
 # ☑️ Take the poll
 
