@@ -71,6 +71,7 @@ Which font weight of Operator Mono do you use? Also note difference between Scre
     
     `sudo apt install -y python3-pip python-pip && PATH=$PATH:~/.local/bin`
   - Install "fonttools" Python package: 
+  
     `pip install fonttools`
     - for Mac users it's better to run `pip3 install fonttools` - [info](https://stackoverflow.com/a/33416270/3191011)
 - Node.js
