@@ -48,34 +48,6 @@ Fixed glyph widths Operator Mono Light and Light Italic. These fonts accidentall
 the same as the ScreenSmart versions and caused alignment issues. Also fixed a few ligatures
 that didn't have the correct weight.
 
-### 🔧 Customize the generated font
-
-In addition to the new ligatures, this version now allows you to customize what ligatures are added to a font.
-By default, all available ligatures will be added to the generated font. However, if you don't like a particular
-ligature, or would prefer to use an alternate glyph, you can create a `profiles.ini` file in the `./original` folder
-to configure how the font should be built.
-
-You can create one or more profiles. Each profile will have a set of directives. You can specify alternate glyphs for
-a given ligature. You can also prevent a ligature from being added.
-
-Each profile will be listed with `[profile name]` (the first profile should be named default). The generated font will
-include the profile name. For example `[Go]` would generate the font: _Operator Mono Lig Go_. This way you can configure
-a different set of ligatures for each language in your favorite code editor.
-
-```ini
-# name of profile (one or more sections, first should be name default)
-[default]
-# glyph=altglyph
-greater_equal.liga=greater_equal.2.liga
-
-# do not include glyph (add ! prefix)
-!equal_equal.liga
-
-# another optional section (will create a font named Operator Mono Lig Go)
-[Go]
-... add custom directives for this font ...
-```
-
 ### New ligatures
 
 In addition to the graphic above, the following new ligatures are available:
@@ -163,6 +135,34 @@ npm install
     ```
 
 This will generate the new font files in the `build` folder. You can now install these fonts on your system.
+
+# 🔧 Customize the generated font
+
+In addition to the new ligatures, this version now allows you to customize what ligatures are added to a font.
+By default, all available ligatures will be added to the generated font. However, if you don't like a particular
+ligature, or would prefer to use an alternate glyph, you can create a `profiles.ini` file in the `./original` folder
+to configure how the font should be built.
+
+You can create one or more profiles. Each profile will have a set of directives. You can specify alternate glyphs for
+a given ligature. You can also prevent a ligature from being added.
+
+Each profile will be listed with `[profile name]` (the first profile should be named default). The generated font will
+include the profile name. For example `[Go]` would generate the font: _Operator Mono Lig Go_. This way you can configure
+a different set of ligatures for each language in your favorite code editor.
+
+```ini
+# name of profile (one or more sections, first should be name default)
+[default]
+# glyph=altglyph
+greater_equal.liga=greater_equal.2.liga
+
+# do not include glyph (add ! prefix)
+!equal_equal.liga
+
+# another optional section (will create a font named Operator Mono Lig Go)
+[Go]
+... add custom directives for this font ...
+```
 
 # 👨‍💻 Configure Your Code Editor
 
