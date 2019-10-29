@@ -1,68 +1,53 @@
 # Operator Mono Ligatures
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
-
-<img src="./images/operator-mono-lig.png" />
-
 This project will generate new OpenType fonts for [Operator Mono](https://www.typography.com/fonts/operator/styles/) that includes ligatures similar to
 those found in the popular [Fira Code](https://github.com/tonsky/FiraCode) font.
 
 These ligatures were custom created using [Glyphs](https://glyphsapp.com/).
 There are even italic versions of the ligatures.
 
-## New Version 2.2.5
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
 
-All new redesigned ligatures with better hinting. Updated font generation to support advanced OpenType features
-like those found in Fira Code. For example, the cursor now moves inside the ligature. It also handles repeating
-characters properly.
+<img src="./images/operator-mono-lig.png" />
 
-<img src="./images/caret-position.gif" />
+# Release notes: 
 
-### 🎉 New in Version 2.2
+- 🎉 New Version 2.2.5
+  All new redesigned ligatures with better hinting. Updated font generation to support advanced OpenType features
+  like those found in Fira Code. For example, the cursor now moves inside the ligature. It also handles repeating
+  characters properly.
+  <img src="./images/caret-position.gif" />
 
-With the awesome help from [Mark Skelton](https://github.com/mskelton), we now have the full set of ligatures for
-the following fonts. Thanks Mark, and thanks to all of you who have been patiently waiting for these ligatures to be completed.
+- 🎉 New in Version 2.2
+  With the awesome help from [Mark Skelton](https://github.com/mskelton), we now have the full set of ligatures for
+  the following fonts. Thanks Mark, and thanks to all of you who have been patiently waiting for these ligatures to be completed.
+  - Operator Mono SSm Light/Light Italic
+  - Operator Mono SSm Book/Book Italic
+  - Operator Mono SSm Medium/Medium Italic
+  - Operator Mono SSm Bold/Bold Italic
+  - Operator Mono Light/Light Italic
+  - Operator Mono Book/Book Italic
 
-- Operator Mono SSm Light/Light Italic
-- Operator Mono SSm Book/Book Italic
-- Operator Mono SSm Medium/Medium Italic
-- Operator Mono SSm Bold/Bold Italic
-- Operator Mono Light/Light Italic
-- Operator Mono Book/Book Italic
+- 🐛 Fixed in Version 2.2.5
+  Add Operator Mono Book/Book Italic ligatures.
 
-### 🐛 Fixed in Version 2.2.5
+- 🐛 Fixed in Version 2.2.4
+  Add some missing ligatures.
 
-Add Operator Mono Book/Book Italic ligatures.
+- 🐛 Fixed in Version 2.2.3
+  Updated Operator Mono SSm Book Italic ligatures.
 
-### 🐛 Fixed in Version 2.2.4
-
-Add some missing ligatures.
-
-### 🐛 Fixed in Version 2.2.3
-
-Updated Operator Mono SSm Book Italic ligatures.
-
-### 🐛 Fixed in Version 2.2.2
-
-Fixed glyph widths Operator Mono Light and Light Italic. These fonts accidentally were sized
-the same as the ScreenSmart versions and caused alignment issues. Also fixed a few ligatures
-that didn't have the correct weight.
+- 🐛 Fixed in Version 2.2.2
+  Fixed glyph widths Operator Mono Light and Light Italic. These fonts accidentally were sized
+  the same as the ScreenSmart versions and caused alignment issues. Also fixed a few ligatures
+  that didn't have the correct weight.
 
 ### New ligatures
 
 In addition to the graphic above, the following new ligatures are available:
 <img src="./images/new-ligatures.png"/>
 
-# 🙏 Help Wanted
-
-As noted above, v2.0 only includes ligatures for **Operator Mono SSm Book**. In order to
-update the other fonts, all the ligatures need to be redone. Unfortunately I just don't
-have the time to do that at the moment. If you have a Mac and are interested in helping,
-please let me know. I will even purchase a license to Gylphs Mini for you.
-
-You can reach me at kiliman@gmail.com.
-
-## ☑️ Take the poll
+# ☑️ Take the poll
 
 Which font weight of Operator Mono do you use? Also note difference between Screen Smart (SSm) and regular version. This will help prioritize the order of development.
 
@@ -185,6 +170,15 @@ Thanks to Hoefler&Co for making such an amazing font. It makes writing code trul
 
 Thanks also to all of you for your kinds words of encouragement and feedback. I really
 appreciate it.
+
+## 🙏 Help Wanted
+
+As noted above, v2.0 only includes ligatures for **Operator Mono SSm Book**. In order to
+update the other fonts, all the ligatures need to be redone. Unfortunately I just don't
+have the time to do that at the moment. If you have a Mac and are interested in helping,
+please let me know. I will even purchase a license to Gylphs Mini for you.
+
+You can reach me at kiliman@gmail.com.
 
 ## ✨ Contributors
 
