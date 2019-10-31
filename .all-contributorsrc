@@ -38,6 +38,16 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "amitkparekh",
+      "name": "Amit Parekh",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/7276308?v=4",
+      "profile": "https://github.com/amitkparekh",
+      "contributions": [
+        "doc",
+        "design"
+      ]
     }
   ],
   "contributorsPerLine": 7

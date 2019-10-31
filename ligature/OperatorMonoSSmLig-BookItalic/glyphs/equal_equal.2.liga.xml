@@ -1,67 +1,25 @@
 <Glyph name="equal_equal.2.liga" lsb="-554" width="625">
     <CharString>
-        {53655acc} callgsubr
-        -12 {6a441620} callgsubr
-        -496 {62d12451} callgsubr
+        168 76 170 76 hstem
+        -554 1132 vstem
+        -12 414 rmoveto
+        16 76 rlineto
+        -496 hlineto
+        -15 -76 rlineto
         1069 hmoveto
-        {1af50f36} callgsubr
-        -496 {62d12451} callgsubr
-        -126 {e5d5018e} callsubr
-        -495 {62d12451} callgsubr
+        16 76 rlineto
+        -496 hlineto
+        -15 -76 rlineto
+        -126 -246 rmoveto
+        15 76 rlineto
+        -495 hlineto
+        -15 -76 rlineto
         1069 hmoveto
-        {e86cdc87} callgsubr
-        -495 {c1d997ea} callgsubr
+        15 76 rlineto
+        -495 hlineto
+        -15 -76 rlineto
+        endchar
     </CharString>
-    <Subrs>
-        <CharString index="0" fingerprint="7807176c">
-            rmoveto
-            {1af50f36} callgsubr
-            return
-        </CharString>
-        <CharString index="1" fingerprint="e5d5018e">
-            -246 {20afed72} callsubr
-            return
-        </CharString>
-        <CharString index="2" fingerprint="20afed72">
-            rmoveto
-            {e86cdc87} callgsubr
-            return
-        </CharString>
-    </Subrs>
-    <GlobalSubrs>
-        <CharString index="0" fingerprint="53655acc">
-            {c0b7177d} callgsubr
-            -554 1132 vstem
-            return
-        </CharString>
-        <CharString index="1" fingerprint="c0b7177d">
-            168 {5ac84507} callgsubr
-            hstem
-            return
-        </CharString>
-        <CharString index="2" fingerprint="5ac84507">
-            76 170 76 return
-        </CharString>
-        <CharString index="3" fingerprint="6a441620">
-            414 {7807176c} callsubr
-            return
-        </CharString>
-        <CharString index="4" fingerprint="1af50f36">
-            16 76 rlineto
-            return
-        </CharString>
-        <CharString index="5" fingerprint="62d12451">
-            hlineto
-            -15 -76 rlineto
-            return
-        </CharString>
-        <CharString index="6" fingerprint="e86cdc87">
-            15 76 rlineto
-            return
-        </CharString>
-        <CharString index="7" fingerprint="c1d997ea">
-            {62d12451} callgsubr
-            endchar
-        </CharString>
-    </GlobalSubrs>
+    <Subrs/>
+    <GlobalSubrs/>
 </Glyph>

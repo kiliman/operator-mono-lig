@@ -102,13 +102,13 @@
         <metricDataFormat value="0"/>
         
     
-        <numberOfHMetrics value="482"/>
+        <numberOfHMetrics value="489"/>
         
   
     </hhea>
     <CFF>
         <CFFFont>
-            <FontBBox value="-1773 -319 716 1270"/>
+            <FontBBox value="-1773 -319 708 1270"/>
         </CFFFont>
     </CFF>
     <CFF>
