@@ -1,6 +1,6 @@
 # Operator Mono Ligatures
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors-)
 
 <img src="./images/operator-mono-lig.png" />
 
@@ -156,6 +156,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/mskelton"><img src="https://avatars3.githubusercontent.com/u/25914066?v=4" width="100px;" alt="Mark Skelton"/><br /><sub><b>Mark Skelton</b></sub></a><br /><a href="#design-mskelton" title="Design">🎨</a></td>
     <td align="center"><a href="https://github.com/drod3763"><img src="https://avatars2.githubusercontent.com/u/7785716?v=4" width="100px;" alt="Derick Rodriguez"/><br /><sub><b>Derick Rodriguez</b></sub></a><br /><a href="https://github.com/kiliman/operator-mono-lig/commits?author=drod3763" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/amitkparekh"><img src="https://avatars3.githubusercontent.com/u/7276308?v=4" width="100px;" alt="Amit Parekh"/><br /><sub><b>Amit Parekh</b></sub></a><br /><a href="https://github.com/kiliman/operator-mono-lig/commits?author=amitkparekh" title="Documentation">📖</a> <a href="#design-amitkparekh" title="Design">🎨</a></td>
+    <td align="center"><a href="https://github.com/CandySunPlus"><img src="https://avatars0.githubusercontent.com/u/502700?v=4" width="100px;" alt="NikSun"/><br /><sub><b>NikSun</b></sub></a><br /><a href="#design-CandySunPlus" title="Design">🎨</a></td>
   </tr>
 </table>
 
