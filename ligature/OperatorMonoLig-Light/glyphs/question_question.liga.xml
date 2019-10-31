@@ -3,39 +3,29 @@
         0 96 525 57 hstem
         -337 91 142 63 125 91 141 63 vstem
         -428 678 rmoveto
-        {400ad052} callgsubr
+        -6 -57 rlineto
+        261 -16 69 -46 -54 vvcurveto
+        -79 -193 -61 -9 -141 vhcurveto
+        42 -1 rlineto
+        14 129 209 57 109 vvcurveto
+        78 -88 64 -299 18 vhcurveto
         420 hmoveto
-        {400ad052} callgsubr
-        -329 -678 {b01158f3} callgsubr
-        419 -96 {b01158f3} callgsubr
+        -6 -57 rlineto
+        261 -16 69 -46 -54 vvcurveto
+        -79 -193 -61 -9 -141 vhcurveto
+        42 -1 rlineto
+        14 129 209 57 109 vvcurveto
+        78 -88 64 -299 18 vhcurveto
+        -329 -678 rmoveto
+        90 hlineto
+        2 96 rlineto
+        -91 hlineto
+        419 -96 rmoveto
+        90 hlineto
+        2 96 rlineto
+        -91 hlineto
         endchar
     </CharString>
     <Subrs/>
-    <GlobalSubrs>
-        <CharString index="0" fingerprint="400ad052">
-            -6 -57 rlineto
-            261 -16 69 -46 -54 vvcurveto
-            -79 -193 -61 -9 -141 vhcurveto
-            42 -1 rlineto
-            14 129 209 57 109 vvcurveto
-            78 -88 64 -299 18 vhcurveto
-            return
-        </CharString>
-        <CharString index="1" fingerprint="400ad052">
-            -6 -57 rlineto
-            261 -16 69 -46 -54 vvcurveto
-            -79 -193 -61 -9 -141 vhcurveto
-            42 -1 rlineto
-            14 129 209 57 109 vvcurveto
-            78 -88 64 -299 18 vhcurveto
-            return
-        </CharString>
-        <CharString index="2" fingerprint="b01158f3">
-            rmoveto
-            90 hlineto
-            2 96 rlineto
-            -91 hlineto
-            return
-        </CharString>
-    </GlobalSubrs>
+    <GlobalSubrs/>
 </Glyph>

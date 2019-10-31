@@ -1,61 +1,27 @@
 <Glyph name="equal_equal_equal.2.liga" lsb="-1152" width="625">
     <CharString>
-        {30ed7960} callgsubr
-        {8251723a} callgsubr
-        429 196 429 196 429 cntrmask 00111000
-        -648 {6fa57c79} callsubr
+        172 61 187 60 hstem
+        -1152 429 196 429 196 429 cntrmask 00111000
+        -648 420 rmoveto
+        1 60 rlineto
         -505 -60 hlineto
         1097 hmoveto
-        {237a2e75} callsubr
+        1 60 rlineto
         -517 -60 hlineto
         1097 hmoveto
-        {237a2e75} callsubr
+        1 60 rlineto
         -505 -60 hlineto
-        -670 {b17fe655} callsubr
+        -670 -248 rmoveto
+        1 61 rlineto
         -505 -61 hlineto
         1097 hmoveto
-        {2c9ba62e} callsubr
+        1 61 rlineto
         -517 -61 hlineto
         1097 hmoveto
-        {2c9ba62e} callsubr
+        1 61 rlineto
         -505 -61 hlineto
         endchar
     </CharString>
-    <Subrs>
-        <CharString index="0" fingerprint="94cc09f2">
-            61 187 60 return
-        </CharString>
-        <CharString index="1" fingerprint="6fa57c79">
-            420 {3abcacd5} callgsubr
-            return
-        </CharString>
-        <CharString index="2" fingerprint="237a2e75">
-            1 60 rlineto
-            return
-        </CharString>
-        <CharString index="3" fingerprint="b17fe655">
-            -248 rmoveto
-            {2c9ba62e} callsubr
-            return
-        </CharString>
-        <CharString index="4" fingerprint="2c9ba62e">
-            1 61 rlineto
-            return
-        </CharString>
-    </Subrs>
-    <GlobalSubrs>
-        <CharString index="0" fingerprint="30ed7960">
-            172 {94cc09f2} callsubr
-            hstem
-            return
-        </CharString>
-        <CharString index="1" fingerprint="8251723a">
-            -1152 return
-        </CharString>
-        <CharString index="2" fingerprint="3abcacd5">
-            rmoveto
-            {237a2e75} callsubr
-            return
-        </CharString>
-    </GlobalSubrs>
+    <Subrs/>
+    <GlobalSubrs/>
 </Glyph>

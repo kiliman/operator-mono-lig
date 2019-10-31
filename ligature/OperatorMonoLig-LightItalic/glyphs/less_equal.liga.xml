@@ -2,16 +2,11 @@
     <CharString>
         -363 699 vstem
         377 22 rmoveto
-        -33 -42 -620 283 {cc477545} callsubr
+        -33 -42 -620 283 11 54 722 278 16 -43 -655 -258 -1 -8 rlineto
         -126 -193 rmoveto
         11 56 642 -297 -33 -42 rlineto
         endchar
     </CharString>
-    <Subrs>
-        <CharString index="0" fingerprint="cc477545">
-            11 54 722 278 16 -43 -655 -258 -1 -8 rlineto
-            return
-        </CharString>
-    </Subrs>
+    <Subrs/>
     <GlobalSubrs/>
 </Glyph>

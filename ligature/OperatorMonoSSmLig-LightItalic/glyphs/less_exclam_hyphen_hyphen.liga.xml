@@ -1,64 +1,31 @@
 <Glyph name="less_exclam_hyphen_hyphen.liga" lsb="-1766" width="625">
     <CharString>
-        {bea2e09e} callgsubr
-        -658 110 182 61 hstemhm
+        -19 677 -658 110 182 61 hstemhm
         -1766 465 -416 651 8 254 -3 1291 hintmask 01101010
         -896 750 rmoveto
-        {4fc01720} callgsubr
+        -22 -129 -32 -246 -24 -122 rrcurveto
         46 hlineto
         hintmask 01101100
-        {18d41e38} callgsubr
+        27 122 66 246 31 129 rrcurveto
         hintmask 01110010
         -497 -146 rmoveto
         hintmask 10010010
-        {2042e0de} callgsubr
-        rlineto
+        -32 54 -422 -298 -11 -61 309 -318 48 48 rlineto
         hintmask 01110010
         -260 263 rlineto
-        591 {29863fb2} callsubr
+        591 hlineto
+        12 61 rlineto
         -591 hlineto
         862 hmoveto
         -12 -61 rlineto
-        1279 {29863fb2} callsubr
-        -1542 -353 {bec862c1} callsubr
+        1279 hlineto
+        12 61 rlineto
+        -1542 -353 rmoveto
+        104 hlineto
+        22 110 rlineto
+        -103 hlineto
+        endchar
     </CharString>
-    <Subrs>
-        <CharString index="0" fingerprint="29863fb2">
-            hlineto
-            12 61 rlineto
-            return
-        </CharString>
-        <CharString index="1" fingerprint="29863fb2">
-            hlineto
-            12 61 rlineto
-            return
-        </CharString>
-        <CharString index="2" fingerprint="bec862c1">
-            rmoveto
-            104 hlineto
-            22 110 rlineto
-            -103 hlineto
-            endchar
-        </CharString>
-    </Subrs>
-    <GlobalSubrs>
-        <CharString index="0" fingerprint="bea2e09e">
-            -19 677 return
-        </CharString>
-        <CharString index="1" fingerprint="4fc01720">
-            -22 -129 -32 -246 -24 -122 rrcurveto
-            return
-        </CharString>
-        <CharString index="2" fingerprint="18d41e38">
-            27 122 66 246 31 129 rrcurveto
-            return
-        </CharString>
-        <CharString index="3" fingerprint="2042e0de">
-            {1922b804} callgsubr
-            48 48 return
-        </CharString>
-        <CharString index="4" fingerprint="1922b804">
-            -32 54 -422 -298 -11 -61 309 -318 return
-        </CharString>
-    </GlobalSubrs>
+    <Subrs/>
+    <GlobalSubrs/>
 </Glyph>

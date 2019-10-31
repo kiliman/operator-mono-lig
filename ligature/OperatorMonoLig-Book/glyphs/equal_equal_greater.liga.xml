@@ -1,56 +1,18 @@
 <Glyph name="equal_equal_greater.liga" lsb="-1022" width="550">
     <CharString>
-        {806e0ede} callsubr
+        151 69 153 69 hstem
         -1022 394 1019 74 vstem
-        {d4d5756e} callgsubr
+        138 602 rmoveto
+        -47 -58 124 -102 rlineto
         -1237 -69 1321 hlineto
-        {53342509} callsubr
-        -1332 -69 1249 {6c481ea1} callsubr
+        92 -76 rlineto
+        -10 vlineto
+        -81 -67 rlineto
+        -1332 -69 1249 hlineto
+        -140 -116 45 -57 333 280 rlineto
+        69 vlineto
         endchar
     </CharString>
-    <Subrs>
-        <CharString index="0" fingerprint="806e0ede">
-            {03f44ce8} callgsubr
-            hstem
-            return
-        </CharString>
-        <CharString index="1" fingerprint="2a39309a">
-            69 153 69 return
-        </CharString>
-        <CharString index="2" fingerprint="2e66eddf">
-            602 rmoveto
-            return
-        </CharString>
-        <CharString index="3" fingerprint="53342509">
-            92 -76 rlineto
-            -10 vlineto
-            -81 -67 rlineto
-            return
-        </CharString>
-        <CharString index="4" fingerprint="6c481ea1">
-            hlineto
-            -140 -116 {f9e588f2} callgsubr
-            return
-        </CharString>
-    </Subrs>
-    <GlobalSubrs>
-        <CharString index="0" fingerprint="03f44ce8">
-            151 {2a39309a} callsubr
-            return
-        </CharString>
-        <CharString index="1" fingerprint="d4d5756e">
-            {d95d51dd} callgsubr
-            124 -102 rlineto
-            return
-        </CharString>
-        <CharString index="2" fingerprint="d95d51dd">
-            138 {2e66eddf} callsubr
-            -47 -58 return
-        </CharString>
-        <CharString index="3" fingerprint="f9e588f2">
-            45 -57 333 280 rlineto
-            69 vlineto
-            return
-        </CharString>
-    </GlobalSubrs>
+    <Subrs/>
+    <GlobalSubrs/>
 </Glyph>

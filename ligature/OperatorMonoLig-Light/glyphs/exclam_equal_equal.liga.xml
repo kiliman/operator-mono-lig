@@ -1,7 +1,6 @@
 <Glyph name="exclam_equal_equal.liga" lsb="-1018" width="550">
     <CharString>
-        {36aee12c} callsubr
-        -701 61 187 60 187 60 hstemhm
+        -181 898 -701 61 187 60 187 60 hstemhm
         -530 520 hintmask 01111000
         467 264 rmoveto
         1 60 rlineto
@@ -31,10 +30,6 @@
         99 187 rlineto
         endchar
     </CharString>
-    <Subrs>
-        <CharString index="0" fingerprint="36aee12c">
-            -181 898 return
-        </CharString>
-    </Subrs>
+    <Subrs/>
     <GlobalSubrs/>
 </Glyph>

@@ -3,16 +3,11 @@
         -70 638 hstem
         -434 758 vstem
         -429 27 rmoveto
-        11 -50 844 314 {57377a1d} callsubr
+        11 -50 844 314 12 62 -715 309 -32 -51 645 -284 -2 -10 rlineto
         61 -186 rmoveto
         13 66 -868 -330 11 -50 rlineto
         endchar
     </CharString>
-    <Subrs>
-        <CharString index="0" fingerprint="57377a1d">
-            12 62 -715 309 -32 -51 645 -284 -2 -10 rlineto
-            return
-        </CharString>
-    </Subrs>
+    <Subrs/>
     <GlobalSubrs/>
 </Glyph>

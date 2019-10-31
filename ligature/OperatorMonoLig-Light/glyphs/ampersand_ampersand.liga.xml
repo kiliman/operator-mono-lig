@@ -3,13 +3,20 @@
         -12 52 533 58 hstem
         296 159 rmoveto
         35 61 31 81 25 96 -55 7 rcurveline
-        {8f8784a0} callgsubr
-        rrcurveto
-        {db974013} callgsubr
+        -17 -79 -24 -72 -27 -58 rrcurveto
+        -132 149 -60 63 60 vvcurveto
+        59 47 55 177 -8 vhcurveto
+        -4 58 rlineto
+        -212 4 -66 -91 -83 vvcurveto
         -21 5 -21 10 -21 vhcurveto
-        -48 6 {8f8784a0} callgsubr
-        rlinecurve
-        {4eaf5c4e} callgsubr
+        -48 6 -17 -79 -24 -72 -27 -58 rlinecurve
+        -132 149 -60 63 60 vvcurveto
+        59 47 55 177 -8 vhcurveto
+        -4 58 rlineto
+        -212 4 -66 -91 -83 vvcurveto
+        -44 21 -41 42 -54 vhcurveto
+        -90 -57 -44 -66 -72 vvcurveto
+        -77 49 -62 89 63 65 36 82 54 vhcurveto
         38 -59 33 -31 33 -15 rrcurveto
         -8 19 21 -5 25 hhcurveto
         63 65 36 82 54 hvcurveto
@@ -18,40 +25,17 @@
         -219 163 rmoveto
         -38 -24 -29 -25 -22 -27 17 43 15 48 14 51 10 -21 14 -21 19 -24 rrcurveto
         -335 -282 rmoveto
-        {62d0dced} callgsubr
+        -60 -31 42 58 50 32 55 68 47 hvcurveto
+        34 -41 43 -48 53 -61 rrcurveto
+        -69 -43 -49 -33 -47 hhcurveto
         351 hmoveto
-        {62d0dced} callgsubr
+        -60 -31 42 58 50 32 55 68 47 hvcurveto
+        34 -41 43 -48 53 -61 rrcurveto
+        -69 -43 -49 -33 -47 hhcurveto
         -148 114 rmoveto
         0 0 0 0 vhcurveto
         endchar
     </CharString>
     <Subrs/>
-    <GlobalSubrs>
-        <CharString index="0" fingerprint="8f8784a0">
-            -17 -79 -24 -72 -27 -58 return
-        </CharString>
-        <CharString index="1" fingerprint="db974013">
-            -132 149 -60 63 60 vvcurveto
-            59 47 55 177 -8 vhcurveto
-            -4 58 rlineto
-            -212 4 -66 -91 -83 vvcurveto
-            return
-        </CharString>
-        <CharString index="2" fingerprint="8f8784a0">
-            -17 -79 -24 -72 -27 -58 return
-        </CharString>
-        <CharString index="3" fingerprint="4eaf5c4e">
-            {db974013} callgsubr
-            -44 21 -41 42 -54 vhcurveto
-            -90 -57 -44 -66 -72 vvcurveto
-            -77 49 -62 89 63 65 36 82 54 vhcurveto
-            return
-        </CharString>
-        <CharString index="4" fingerprint="62d0dced">
-            -60 -31 42 58 50 32 55 68 47 hvcurveto
-            34 -41 43 -48 53 -61 rrcurveto
-            -69 -43 -49 -33 -47 hhcurveto
-            return
-        </CharString>
-    </GlobalSubrs>
+    <GlobalSubrs/>
 </Glyph>

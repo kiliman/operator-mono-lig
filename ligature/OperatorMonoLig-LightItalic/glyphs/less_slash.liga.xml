@@ -2,16 +2,11 @@
     <CharString>
         418 -457 417 -245 665 hintmask 10000000
         333 712 rmoveto
-        -479 -680 -251 254 2 8 355 252 {46d990e9} callgsubr
-        277 -285 rlineto
+        -479 -680 -251 254 2 8 355 252 -27 45 -381 -270 -9 -52 277 -285 rlineto
         hintmask 01000000
         -105 -148 53 -14 612 867 rlineto
         endchar
     </CharString>
     <Subrs/>
-    <GlobalSubrs>
-        <CharString index="0" fingerprint="46d990e9">
-            -27 45 -381 -270 -9 -52 return
-        </CharString>
-    </GlobalSubrs>
+    <GlobalSubrs/>
 </Glyph>

@@ -1,58 +1,24 @@
 <Glyph name="equal_less_less.liga" lsb="-1022" width="550">
     <CharString>
-        {03f44ce8} callsubr
-        hstemhm
+        151 69 153 69 hstemhm
         -1022 1486 -686 424 -114 424 hintmask 11001000
         -142 301 rmoveto
         hintmask 11010000
-        {83815ada} callsubr
-        -907 {fff746ed} callgsubr
-        822 {5abe2a2a} callgsubr
+        344 237 -34 61 -226 -157 rlineto
+        -907 hlineto
+        -14 -69 rlineto
+        822 hlineto
+        -53 -37 -12 -67 47 -49 rlineto
         -834 hlineto
         hintmask 11100000
         -13 -69 rlineto
-        914 {e5b3db5a} callgsubr
+        914 hlineto
+        165 -170 54 53 -255 257 rlineto
         312 10 rmoveto
         hintmask 11001000
-        344 237 {83946452} callsubr
-        -255 257 rlineto
+        344 237 -34 61 -378 -263 -12 -67 279 -288 54 53 -255 257 rlineto
         endchar
     </CharString>
-    <Subrs>
-        <CharString index="0" fingerprint="03f44ce8">
-            151 {2a39309a} callsubr
-            return
-        </CharString>
-        <CharString index="1" fingerprint="2a39309a">
-            69 153 69 return
-        </CharString>
-        <CharString index="2" fingerprint="83815ada">
-            344 237 -34 61 -226 -157 rlineto
-            return
-        </CharString>
-        <CharString index="3" fingerprint="83946452">
-            {64f993c2} callgsubr
-            279 -288 54 53 return
-        </CharString>
-    </Subrs>
-    <GlobalSubrs>
-        <CharString index="0" fingerprint="fff746ed">
-            hlineto
-            -14 -69 rlineto
-            return
-        </CharString>
-        <CharString index="1" fingerprint="5abe2a2a">
-            hlineto
-            -53 -37 -12 -67 47 -49 rlineto
-            return
-        </CharString>
-        <CharString index="2" fingerprint="e5b3db5a">
-            hlineto
-            165 -170 54 53 -255 257 rlineto
-            return
-        </CharString>
-        <CharString index="3" fingerprint="64f993c2">
-            -34 61 -378 -263 -12 -67 return
-        </CharString>
-    </GlobalSubrs>
+    <Subrs/>
+    <GlobalSubrs/>
 </Glyph>

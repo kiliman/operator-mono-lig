@@ -10,10 +10,10 @@
         -18 vlineto
         -64 -64 -64 -64 -53 -42 -11 -18 -33 vhcurveto
         303 vlineto
-        hintmask 1110110110100000
+        hintmask 1110110101000000
         38 22 26 41 47 vvcurveto
         71 -57 57 -71 -71 -57 -57 -71 vhcurveto
-        hintmask 1110101010100000
+        hintmask 1110101001000000
         -47 26 -41 38 -22 vhcurveto
         -419 vlineto
         hintmask 1110110101000000
@@ -22,32 +22,23 @@
         23 19 30 18 49 hhcurveto
         128 128 128 128 hvcurveto
         18 vlineto
-        hintmask 1110101010100000
+        hintmask 1110101000100000
         38 22 26 41 47 vvcurveto
         hintmask 1101101010100000
         71 -57 57 -71 vhcurveto
         hintmask 1110110110100000
         -384 63 rmoveto
-        35 29 -29 -35 -35 -29 -29 -35 {0f5e6060} callsubr
-        hvcurveto
+        35 29 -29 -35 -35 -29 -29 -35 -35 -29 29 35 35 29 29 35 hvcurveto
         384 -256 rmoveto
         hintmask 1101101010100000
-        {0f5e6060} callsubr
-        35 29 -29 -35 hvcurveto
+        -35 -29 29 35 35 29 29 35 35 29 -29 -35 hvcurveto
         hintmask 1110110110100000
         -35 -29 -29 -35 vhcurveto
+        hintmask 1110110101000000
         -384 -512 rmoveto
-        {0f5e6060} callsubr
-        35 29 -29 -35 -35 -29 -29 -35 hvcurveto
+        -35 -29 29 35 35 29 29 35 35 29 -29 -35 -35 -29 -29 -35 hvcurveto
         endchar
     </CharString>
-    <Subrs>
-        <CharString index="0" fingerprint="0f5e6060">
-            -35 -29 29 35 35 29 29 35 return
-        </CharString>
-        <CharString index="1" fingerprint="0f5e6060">
-            -35 -29 29 35 35 29 29 35 return
-        </CharString>
-    </Subrs>
+    <Subrs/>
     <GlobalSubrs/>
 </Glyph>

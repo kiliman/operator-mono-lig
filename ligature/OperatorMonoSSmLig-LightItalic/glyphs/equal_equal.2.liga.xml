@@ -1,72 +1,25 @@
 <Glyph name="equal_equal.2.liga" lsb="-549" width="625">
     <CharString>
-        {6a2b3f70} callgsubr
+        172 60 188 59 hstem
         -549 1121 vstem
-        -13 {7555218e} callgsubr
-        -489 {6a7250c2} callgsubr
+        -13 420 rmoveto
+        12 59 rlineto
+        -489 hlineto
+        -11 -59 rlineto
         1061 hmoveto
-        {3e1270ac} callsubr
-        -489 {6a7250c2} callgsubr
-        -133 {4ac2dd88} callsubr
-        -488 {1a0862e5} callgsubr
+        12 59 rlineto
+        -489 hlineto
+        -11 -59 rlineto
+        -133 -248 rmoveto
+        12 60 rlineto
+        -488 hlineto
+        -12 -60 rlineto
         1061 hmoveto
-        {e9726f1d} callsubr
-        -488 {93ed7de1} callgsubr
+        12 60 rlineto
+        -488 hlineto
+        -12 -60 rlineto
+        endchar
     </CharString>
-    <Subrs>
-        <CharString index="0" fingerprint="3e1270ac">
-            12 59 rlineto
-            return
-        </CharString>
-        <CharString index="1" fingerprint="3e1270ac">
-            12 59 rlineto
-            return
-        </CharString>
-        <CharString index="2" fingerprint="4ac2dd88">
-            -248 {31de7032} callsubr
-            return
-        </CharString>
-        <CharString index="3" fingerprint="31de7032">
-            rmoveto
-            {e9726f1d} callsubr
-            return
-        </CharString>
-        <CharString index="4" fingerprint="e9726f1d">
-            12 60 rlineto
-            return
-        </CharString>
-    </Subrs>
-    <GlobalSubrs>
-        <CharString index="0" fingerprint="6a2b3f70">
-            {d29b7cb2} callgsubr
-            hstem
-            return
-        </CharString>
-        <CharString index="1" fingerprint="d29b7cb2">
-            172 {1a4ca569} callgsubr
-            return
-        </CharString>
-        <CharString index="2" fingerprint="1a4ca569">
-            60 188 59 return
-        </CharString>
-        <CharString index="3" fingerprint="7555218e">
-            420 rmoveto
-            {3e1270ac} callsubr
-            return
-        </CharString>
-        <CharString index="4" fingerprint="6a7250c2">
-            hlineto
-            -11 -59 rlineto
-            return
-        </CharString>
-        <CharString index="5" fingerprint="1a0862e5">
-            hlineto
-            -12 -60 rlineto
-            return
-        </CharString>
-        <CharString index="6" fingerprint="93ed7de1">
-            {1a0862e5} callgsubr
-            endchar
-        </CharString>
-    </GlobalSubrs>
+    <Subrs/>
+    <GlobalSubrs/>
 </Glyph>

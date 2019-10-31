@@ -1,35 +1,14 @@
 <Glyph name="slash_greater.liga" lsb="-347" width="550">
     <CharString>
-        {749ae412} callsubr
-        hstem
+        -189 915 hstem
         -347 534 204 74 vstem
-        139 {2e66eddf} callsubr
-        48 92 {88f7ced4} callgsubr
-        379 723 288 -237 rlineto
+        139 602 rmoveto
+        48 92 -69 32 -465 -886 71 -29 379 723 288 -237 rlineto
         -10 vlineto
-        -304 -252 {f8ffdd53} callgsubr
+        -304 -252 45 -57 333 280 rlineto
+        69 vlineto
+        endchar
     </CharString>
-    <Subrs>
-        <CharString index="0" fingerprint="749ae412">
-            -189 915 return
-        </CharString>
-        <CharString index="1" fingerprint="2e66eddf">
-            602 rmoveto
-            return
-        </CharString>
-    </Subrs>
-    <GlobalSubrs>
-        <CharString index="0" fingerprint="88f7ced4">
-            -69 32 -465 -886 71 -29 return
-        </CharString>
-        <CharString index="1" fingerprint="f8ffdd53">
-            {f9e588f2} callgsubr
-            endchar
-        </CharString>
-        <CharString index="2" fingerprint="f9e588f2">
-            45 -57 333 280 rlineto
-            69 vlineto
-            return
-        </CharString>
-    </GlobalSubrs>
+    <Subrs/>
+    <GlobalSubrs/>
 </Glyph>

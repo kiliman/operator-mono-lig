@@ -1,62 +1,30 @@
 <Glyph name="equal_less_less.liga" lsb="-1018" width="550">
     <CharString>
-        {17e5c391} callgsubr
+        156 52 171 52 hstemhm
         -1018 1477 -669 58 242 58 hintmask 11010000
         -152 294 rmoveto
-        {653069d6} callsubr
-        -193 -164 {bf847d0e} callgsubr
+        306 258 -36 43 -193 -164 rlineto
+        hintmask 11100000
         -943 -52 882 hlineto
         hintmask 11010000
         -74 -63 rlineto
         -53 vlineto
-        65 -55 {bf847d0e} callgsubr
+        65 -55 rlineto
+        hintmask 11100000
         -873 -52 934 hlineto
         207 -176 36 42 rlineto
         hintmask 11010000
         -311 264 rlineto
         hintmask 11001000
         300 hmoveto
-        {9d42e380} callsubr
-        {bf847d0e} callgsubr
+        8 vlineto
+        306 258 -36 43 -328 -279 rlineto
+        -53 vlineto
+        333 -283 rlineto
+        hintmask 11100000
         36 42 rlineto
         endchar
     </CharString>
-    <Subrs>
-        <CharString index="0" fingerprint="653069d6">
-            306 258 -36 43 return
-        </CharString>
-        <CharString index="1" fingerprint="9d42e380">
-            {a8585996} callsubr
-            {f9df3c06} callsubr
-            return
-        </CharString>
-        <CharString index="2" fingerprint="a8585996">
-            8 vlineto
-            {653069d6} callsubr
-            return
-        </CharString>
-        <CharString index="3" fingerprint="653069d6">
-            306 258 -36 43 return
-        </CharString>
-        <CharString index="4" fingerprint="f9df3c06">
-            -328 -279 rlineto
-            -53 vlineto
-            333 -283 return
-        </CharString>
-    </Subrs>
-    <GlobalSubrs>
-        <CharString index="0" fingerprint="17e5c391">
-            {a926ac67} callgsubr
-            hstemhm
-            return
-        </CharString>
-        <CharString index="1" fingerprint="a926ac67">
-            156 52 171 52 return
-        </CharString>
-        <CharString index="2" fingerprint="bf847d0e">
-            rlineto
-            hintmask 11100000
-            return
-        </CharString>
-    </GlobalSubrs>
+    <Subrs/>
+    <GlobalSubrs/>
 </Glyph>

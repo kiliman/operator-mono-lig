@@ -3,22 +3,13 @@
         278 105 hstem
         -447 356 142 356 vstem
         -101 278 rmoveto
-        {9b4f9a6e} callsubr
+        10 105 rlineto
+        -356 -105 hlineto
         844 hmoveto
-        {9b4f9a6e} callsubr
+        10 105 rlineto
+        -356 -105 hlineto
         endchar
     </CharString>
-    <Subrs>
-        <CharString index="0" fingerprint="9b4f9a6e">
-            10 105 rlineto
-            -356 -105 hlineto
-            return
-        </CharString>
-        <CharString index="1" fingerprint="9b4f9a6e">
-            10 105 rlineto
-            -356 -105 hlineto
-            return
-        </CharString>
-    </Subrs>
+    <Subrs/>
     <GlobalSubrs/>
 </Glyph>

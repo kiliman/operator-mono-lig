@@ -1,28 +1,14 @@
 <Glyph name="hyphen_greater.liga" lsb="-489" width="625">
     <CharString>
-        269 {2372f2aa} callsubr
+        269 134 hstem
         -489 1030 vstem
-        {8890d024} callgsubr
-        228 -176 rlineto
+        177 693 rmoveto
+        -88 -114 228 -176 rlineto
         -806 -134 817 hlineto
-        -240 -187 {00c9cf16} callgsubr
+        -240 -187 83 -112 370 298 rlineto
+        129 vlineto
         endchar
     </CharString>
-    <Subrs>
-        <CharString index="0" fingerprint="2372f2aa">
-            134 hstem
-            return
-        </CharString>
-    </Subrs>
-    <GlobalSubrs>
-        <CharString index="0" fingerprint="8890d024">
-            177 693 rmoveto
-            -88 -114 return
-        </CharString>
-        <CharString index="1" fingerprint="00c9cf16">
-            83 -112 370 298 rlineto
-            129 vlineto
-            return
-        </CharString>
-    </GlobalSubrs>
+    <Subrs/>
+    <GlobalSubrs/>
 </Glyph>

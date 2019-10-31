@@ -3,49 +3,27 @@
         264 50 hstem
         -3 439 vstem
         248 314 rmoveto
-        {b27b490d} callgsubr
-        -365 {b7d29b5c} callsubr
+        38 194 rlineto
+        -54 hlineto
+        -38 -194 rlineto
+        -365 hlineto
+        38 194 rlineto
+        -54 hlineto
+        -38 -194 rlineto
+        -187 hlineto
+        -10 -50 rlineto
+        188 hlineto
+        -38 -193 rlineto
+        54 hlineto
         38 193 rlineto
         365 hlineto
         -38 -193 rlineto
         54 hlineto
         38 193 rlineto
         187 hlineto
-        {0e168d1d} callsubr
+        10 50 rlineto
         endchar
     </CharString>
-    <Subrs>
-        <CharString index="0" fingerprint="b7d29b5c">
-            hlineto
-            {b27b490d} callgsubr
-            -187 {71266b2d} callgsubr
-            188 hlineto
-            -38 -193 rlineto
-            54 hlineto
-            return
-        </CharString>
-        <CharString index="1" fingerprint="0e168d1d">
-            10 50 rlineto
-            return
-        </CharString>
-    </Subrs>
-    <GlobalSubrs>
-        <CharString index="0" fingerprint="b27b490d">
-            38 194 rlineto
-            -54 hlineto
-            -38 -194 rlineto
-            return
-        </CharString>
-        <CharString index="1" fingerprint="b27b490d">
-            38 194 rlineto
-            -54 hlineto
-            -38 -194 rlineto
-            return
-        </CharString>
-        <CharString index="2" fingerprint="71266b2d">
-            hlineto
-            -10 -50 rlineto
-            return
-        </CharString>
-    </GlobalSubrs>
+    <Subrs/>
+    <GlobalSubrs/>
 </Glyph>

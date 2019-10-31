@@ -1,16 +1,20 @@
 <Glyph name="less_exclam_hyphen_hyphen.liga" lsb="-1661" width="625">
     <CharString>
-        {f66ef581} callgsubr
-        -662 110 182 61 hstemhm
+        -23 685 -662 110 182 61 hstemhm
         -1661 66 -15 349 264 108 -71 46 1054 349 hintmask 00101011
-        -960 {ea4d4c8f} callgsubr
+        -960 252 rmoveto
+        46 hlineto
+        3 124 20 244 6 130 rrcurveto
+        -91 hlineto
+        3 -130 13 -244 -124 vvcurveto
         -296 360 rmoveto
         hintmask 10001011
         -41 50 rlineto
         hintmask 00110101
-        {3be9a3f2} callsubr
+        -364 -309 rlineto
+        -62 vlineto
         hintmask 10010101
-        {b3a025f2} callsubr
+        369 -314 42 50 rlineto
         hintmask 00110101
         -315 265 rlineto
         490 hlineto
@@ -21,44 +25,11 @@
         4 61 rlineto
         -1487 -353 rmoveto
         hintmask 01110101
-        {67311771} callgsubr
+        107 hlineto
+        3 110 rlineto
+        -108 hlineto
+        endchar
     </CharString>
-    <Subrs>
-        <CharString index="0" fingerprint="3be9a3f2">
-            -364 -309 rlineto
-            -62 vlineto
-            return
-        </CharString>
-        <CharString index="1" fingerprint="b3a025f2">
-            {cef2d1fd} callsubr
-            rlineto
-            return
-        </CharString>
-        <CharString index="2" fingerprint="cef2d1fd">
-            {cc74de2c} callsubr
-            42 50 return
-        </CharString>
-        <CharString index="3" fingerprint="cc74de2c">
-            369 -314 return
-        </CharString>
-    </Subrs>
-    <GlobalSubrs>
-        <CharString index="0" fingerprint="f66ef581">
-            -23 685 return
-        </CharString>
-        <CharString index="1" fingerprint="ea4d4c8f">
-            252 rmoveto
-            46 hlineto
-            3 124 20 244 6 130 rrcurveto
-            -91 hlineto
-            3 -130 13 -244 -124 vvcurveto
-            return
-        </CharString>
-        <CharString index="2" fingerprint="67311771">
-            107 hlineto
-            3 110 rlineto
-            -108 hlineto
-            endchar
-        </CharString>
-    </GlobalSubrs>
+    <Subrs/>
+    <GlobalSubrs/>
 </Glyph>

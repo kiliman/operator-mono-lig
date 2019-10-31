@@ -1,23 +1,14 @@
 <Glyph name="bar_bar.liga" lsb="-312" width="550">
     <CharString>
         -312 227 158 227 vstem
-        -85 703 {b95482c8} callgsubr
-        557 883 {b95482c8} callgsubr
+        -85 703 rmoveto
+        -56 -2 -171 -881 rlineto
+        55 hlineto
+        557 883 rmoveto
+        -56 -2 -171 -881 rlineto
+        55 hlineto
         endchar
     </CharString>
     <Subrs/>
-    <GlobalSubrs>
-        <CharString index="0" fingerprint="b95482c8">
-            rmoveto
-            -56 -2 -171 -881 rlineto
-            55 hlineto
-            return
-        </CharString>
-        <CharString index="1" fingerprint="b95482c8">
-            rmoveto
-            -56 -2 -171 -881 rlineto
-            55 hlineto
-            return
-        </CharString>
-    </GlobalSubrs>
+    <GlobalSubrs/>
 </Glyph>

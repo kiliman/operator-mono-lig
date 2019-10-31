@@ -1,65 +1,25 @@
 <Glyph name="equal_equal.2.liga" lsb="-472" width="550">
     <CharString>
-        {53fa50ea} callsubr
+        151 69 153 69 hstem
         -472 944 vstem
-        -6 373 {331d84c3} callgsubr
-        -424 {fff746ed} callgsubr
+        -6 373 rmoveto
+        15 69 rlineto
+        -424 hlineto
+        -14 -69 rlineto
         943 hmoveto
-        {b42578a3} callsubr
-        -414 {fff746ed} callgsubr
-        -150 {b7988df5} callgsubr
-        -424 {83c7393b} callsubr
+        15 69 rlineto
+        -414 hlineto
+        -14 -69 rlineto
+        -150 -222 rmoveto
+        14 69 rlineto
+        -424 hlineto
+        -13 -69 rlineto
         943 hmoveto
-        {14bcb405} callgsubr
-        -414 {83c7393b} callsubr
+        14 69 rlineto
+        -414 hlineto
+        -13 -69 rlineto
         endchar
     </CharString>
-    <Subrs>
-        <CharString index="0" fingerprint="53fa50ea">
-            {03f44ce8} callsubr
-            hstem
-            return
-        </CharString>
-        <CharString index="1" fingerprint="03f44ce8">
-            151 {2a39309a} callsubr
-            return
-        </CharString>
-        <CharString index="2" fingerprint="2a39309a">
-            69 153 69 return
-        </CharString>
-        <CharString index="3" fingerprint="b42578a3">
-            15 69 rlineto
-            return
-        </CharString>
-        <CharString index="4" fingerprint="83c7393b">
-            hlineto
-            -13 -69 rlineto
-            return
-        </CharString>
-    </Subrs>
-    <GlobalSubrs>
-        <CharString index="0" fingerprint="331d84c3">
-            rmoveto
-            {b42578a3} callsubr
-            return
-        </CharString>
-        <CharString index="1" fingerprint="fff746ed">
-            hlineto
-            -14 -69 rlineto
-            return
-        </CharString>
-        <CharString index="2" fingerprint="b7988df5">
-            {4bc44ff7} callgsubr
-            69 rlineto
-            return
-        </CharString>
-        <CharString index="3" fingerprint="4bc44ff7">
-            -222 rmoveto
-            14 return
-        </CharString>
-        <CharString index="4" fingerprint="14bcb405">
-            14 69 rlineto
-            return
-        </CharString>
-    </GlobalSubrs>
+    <Subrs/>
+    <GlobalSubrs/>
 </Glyph>

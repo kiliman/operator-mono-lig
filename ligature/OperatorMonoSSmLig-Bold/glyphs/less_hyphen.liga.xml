@@ -6,17 +6,12 @@
         -811 hlineto
         230 179 -83 112 rlineto
         hintmask 11000000
-        {822f0283} callsubr
-        88 113 -239 185 rlineto
+        -370 -298 rlineto
+        -130 vlineto
+        364 -295 88 113 -239 185 rlineto
         807 hlineto
         endchar
     </CharString>
-    <Subrs>
-        <CharString index="0" fingerprint="822f0283">
-            -370 -298 rlineto
-            -130 vlineto
-            364 -295 return
-        </CharString>
-    </Subrs>
+    <Subrs/>
     <GlobalSubrs/>
 </Glyph>

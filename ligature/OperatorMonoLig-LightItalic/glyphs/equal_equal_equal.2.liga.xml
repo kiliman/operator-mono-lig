@@ -1,60 +1,33 @@
 <Glyph name="equal_equal_equal.2.liga" lsb="-1018" width="550">
     <CharString>
-        {a926ac67} callgsubr
-        hstem
+        156 52 171 52 hstem
         -1018 442 80 441 81 441 cntrmask 00111000
-        -533 379 {2b10fd76} callsubr
-        -645 -223 {2b10fd76} callsubr
+        -533 379 rmoveto
+        11 52 rlineto
+        -443 hlineto
+        -10 -52 rlineto
+        963 hmoveto
+        11 52 rlineto
+        -442 hlineto
+        -10 -52 rlineto
+        963 hmoveto
+        11 52 rlineto
+        -442 hlineto
+        -10 -52 rlineto
+        -645 -223 rmoveto
+        11 52 rlineto
+        -443 hlineto
+        -10 -52 rlineto
+        963 hmoveto
+        11 52 rlineto
+        -442 hlineto
+        -10 -52 rlineto
+        963 hmoveto
+        11 52 rlineto
+        -442 hlineto
+        -10 -52 rlineto
         endchar
     </CharString>
-    <Subrs>
-        <CharString index="0" fingerprint="2b10fd76">
-            {053ace07} callsubr
-            -443 hlineto
-            -10 -52 rlineto
-            963 hmoveto
-            11 52 rlineto
-            -442 {90479866} callsubr
-            return
-        </CharString>
-        <CharString index="1" fingerprint="053ace07">
-            rmoveto
-            {9b1a6feb} callsubr
-            return
-        </CharString>
-        <CharString index="2" fingerprint="9b1a6feb">
-            11 52 rlineto
-            return
-        </CharString>
-        <CharString index="3" fingerprint="90479866">
-            {50f87708} callgsubr
-            963 {a590d80b} callsubr
-            -442 {50f87708} callgsubr
-            return
-        </CharString>
-        <CharString index="4" fingerprint="a590d80b">
-            hmoveto
-            {9b1a6feb} callsubr
-            return
-        </CharString>
-        <CharString index="5" fingerprint="2b10fd76">
-            {053ace07} callsubr
-            -443 hlineto
-            -10 -52 rlineto
-            963 hmoveto
-            11 52 rlineto
-            -442 {90479866} callsubr
-            return
-        </CharString>
-    </Subrs>
-    <GlobalSubrs>
-        <CharString index="0" fingerprint="a926ac67">
-            156 52 171 52 return
-        </CharString>
-        <CharString index="1" fingerprint="50f87708">
-            hlineto
-            -10 -52 rlineto
-            return
-        </CharString>
-    </GlobalSubrs>
+    <Subrs/>
+    <GlobalSubrs/>
 </Glyph>

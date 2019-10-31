@@ -2,9 +2,15 @@
     <CharString>
         0 96 168 52 hstemhm
         -1560 58 629 94 -62 40 hintmask 11101000
-        -841 {9500e647} callgsubr
+        -841 226 rmoveto
+        40 hlineto
+        3 116 16 212 6 122 rrcurveto
+        -77 hlineto
+        2 -122 10 -212 -116 vvcurveto
         -355 326 rmoveto
-        -36 43 {80b4b821} callgsubr
+        -36 43 -328 -279 rlineto
+        -53 vlineto
+        333 -283 36 42 -285 242 rlineto
         447 hlineto
         3 52 rlineto
         -450 hlineto
@@ -12,39 +18,12 @@
         -52 1044 vlineto
         3 52 rlineto
         hintmask 11110000
-        -1308 -316 {8ff4d132} callsubr
+        -1308 -316 rmoveto
+        93 hlineto
+        3 96 rlineto
+        -94 hlineto
+        endchar
     </CharString>
-    <Subrs>
-        <CharString index="0" fingerprint="ecf99dc2">
-            {f9df3c06} callsubr
-            36 42 return
-        </CharString>
-        <CharString index="1" fingerprint="f9df3c06">
-            -328 -279 rlineto
-            -53 vlineto
-            333 -283 return
-        </CharString>
-        <CharString index="2" fingerprint="8ff4d132">
-            rmoveto
-            93 hlineto
-            3 96 rlineto
-            -94 hlineto
-            endchar
-        </CharString>
-    </Subrs>
-    <GlobalSubrs>
-        <CharString index="0" fingerprint="9500e647">
-            226 rmoveto
-            40 hlineto
-            3 116 16 212 6 122 rrcurveto
-            -77 hlineto
-            2 -122 10 -212 -116 vvcurveto
-            return
-        </CharString>
-        <CharString index="1" fingerprint="80b4b821">
-            {ecf99dc2} callsubr
-            -285 242 rlineto
-            return
-        </CharString>
-    </GlobalSubrs>
+    <Subrs/>
+    <GlobalSubrs/>
 </Glyph>

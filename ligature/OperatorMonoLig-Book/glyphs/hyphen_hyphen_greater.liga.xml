@@ -1,46 +1,14 @@
 <Glyph name="hyphen_hyphen_greater.liga" lsb="-981" width="550">
     <CharString>
-        {05172461} callsubr
-        -981 1446 {523bf78f} callsubr
-        -1336 -69 1337 {946ed192} callgsubr
+        258 69 hstem
+        -981 1446 vstem
+        138 602 rmoveto
+        -47 -58 264 -217 rlineto
+        -1336 -69 1337 hlineto
+        -269 -223 45 -57 333 280 rlineto
+        69 vlineto
+        endchar
     </CharString>
-    <Subrs>
-        <CharString index="0" fingerprint="05172461">
-            258 69 hstem
-            return
-        </CharString>
-        <CharString index="1" fingerprint="523bf78f">
-            {1bf9d7d7} callsubr
-            264 -217 rlineto
-            return
-        </CharString>
-        <CharString index="2" fingerprint="1bf9d7d7">
-            vstem
-            {d95d51dd} callgsubr
-            return
-        </CharString>
-        <CharString index="3" fingerprint="2e66eddf">
-            602 rmoveto
-            return
-        </CharString>
-    </Subrs>
-    <GlobalSubrs>
-        <CharString index="0" fingerprint="d95d51dd">
-            138 {2e66eddf} callsubr
-            -47 -58 return
-        </CharString>
-        <CharString index="1" fingerprint="946ed192">
-            hlineto
-            -269 -223 {f8ffdd53} callgsubr
-        </CharString>
-        <CharString index="2" fingerprint="f8ffdd53">
-            {f9e588f2} callgsubr
-            endchar
-        </CharString>
-        <CharString index="3" fingerprint="f9e588f2">
-            45 -57 333 280 rlineto
-            69 vlineto
-            return
-        </CharString>
-    </GlobalSubrs>
+    <Subrs/>
+    <GlobalSubrs/>
 </Glyph>

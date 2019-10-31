@@ -2,57 +2,24 @@
     <CharString>
         144 115 133 115 hstem
         -394 801 vstem
-        -347 392 {c12c2549} callgsubr
+        -347 392 rmoveto
+        105 hlineto
+        26 115 rlineto
+        -108 hlineto
         719 -87 rmoveto
-        {3e1270ac} callsubr
-        -529 {6a7250c2} callgsubr
-        -261 -276 {c12c2549} callgsubr
-        718 -87 {31de7032} callsubr
-        -528 {93ed7de1} callgsubr
+        12 59 rlineto
+        -529 hlineto
+        -11 -59 rlineto
+        -261 -276 rmoveto
+        105 hlineto
+        26 115 rlineto
+        -108 hlineto
+        718 -87 rmoveto
+        12 60 rlineto
+        -528 hlineto
+        -12 -60 rlineto
+        endchar
     </CharString>
-    <Subrs>
-        <CharString index="0" fingerprint="3e1270ac">
-            12 59 rlineto
-            return
-        </CharString>
-        <CharString index="1" fingerprint="31de7032">
-            rmoveto
-            {e9726f1d} callsubr
-            return
-        </CharString>
-        <CharString index="2" fingerprint="e9726f1d">
-            12 60 rlineto
-            return
-        </CharString>
-    </Subrs>
-    <GlobalSubrs>
-        <CharString index="0" fingerprint="c12c2549">
-            rmoveto
-            105 hlineto
-            26 115 rlineto
-            -108 hlineto
-            return
-        </CharString>
-        <CharString index="1" fingerprint="6a7250c2">
-            hlineto
-            -11 -59 rlineto
-            return
-        </CharString>
-        <CharString index="2" fingerprint="c12c2549">
-            rmoveto
-            105 hlineto
-            26 115 rlineto
-            -108 hlineto
-            return
-        </CharString>
-        <CharString index="3" fingerprint="93ed7de1">
-            {1a0862e5} callgsubr
-            endchar
-        </CharString>
-        <CharString index="4" fingerprint="1a0862e5">
-            hlineto
-            -12 -60 rlineto
-            return
-        </CharString>
-    </GlobalSubrs>
+    <Subrs/>
+    <GlobalSubrs/>
 </Glyph>

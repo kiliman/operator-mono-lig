@@ -1,39 +1,17 @@
 <Glyph name="less_hyphen_hyphen.liga" lsb="-1141" width="625">
     <CharString>
-        {9c6399b2} callsubr
+        -19 677 -366 61 hstemhm
         -1141 1625 hintmask 01100000
         484 353 rmoveto
-        -1516 {6f5f6a13} callsubr
+        -1516 hlineto
+        356 251 rlineto
+        hintmask 10100000
+        -32 54 -422 -298 -11 -61 309 -318 48 48 rlineto
+        hintmask 01100000
+        -260 263 rlineto
         1516 hlineto
         endchar
     </CharString>
-    <Subrs>
-        <CharString index="0" fingerprint="9c6399b2">
-            {bea2e09e} callgsubr
-            -366 61 hstemhm
-            return
-        </CharString>
-        <CharString index="1" fingerprint="6f5f6a13">
-            hlineto
-            356 251 rlineto
-            hintmask 10100000
-            {2042e0de} callgsubr
-            rlineto
-            hintmask 01100000
-            -260 263 rlineto
-            return
-        </CharString>
-    </Subrs>
-    <GlobalSubrs>
-        <CharString index="0" fingerprint="bea2e09e">
-            -19 677 return
-        </CharString>
-        <CharString index="1" fingerprint="2042e0de">
-            {1922b804} callgsubr
-            48 48 return
-        </CharString>
-        <CharString index="2" fingerprint="1922b804">
-            -32 54 -422 -298 -11 -61 309 -318 return
-        </CharString>
-    </GlobalSubrs>
+    <Subrs/>
+    <GlobalSubrs/>
 </Glyph>

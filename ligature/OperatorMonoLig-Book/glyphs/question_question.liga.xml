@@ -1,50 +1,31 @@
 <Glyph name="question_question.liga" lsb="-395" width="550">
     <CharString>
         0 109 493 76 hstem
-        -304 {8aa986d8} callsubr
-        86 73 {8aa986d8} callsubr
-        86 vstem
+        -304 111 110 86 73 111 110 86 vstem
         -387 678 rmoveto
-        {9ecc4586} callgsubr
+        -8 -76 rlineto
+        252 -16 60 -40 -47 vvcurveto
+        -72 -180 -55 -8 -143 vhcurveto
+        57 -1 rlineto
+        14 129 203 51 110 vvcurveto
+        79 -88 65 -302 16 vhcurveto
         380 hmoveto
-        {9ecc4586} callgsubr
-        -298 -678 {d2717239} callgsubr
-        378 -109 {d2717239} callgsubr
+        -8 -76 rlineto
+        252 -16 60 -40 -47 vvcurveto
+        -72 -180 -55 -8 -143 vhcurveto
+        57 -1 rlineto
+        14 129 203 51 110 vvcurveto
+        79 -88 65 -302 16 vhcurveto
+        -298 -678 rmoveto
+        110 hlineto
+        3 109 rlineto
+        -111 hlineto
+        378 -109 rmoveto
+        110 hlineto
+        3 109 rlineto
+        -111 hlineto
         endchar
     </CharString>
-    <Subrs>
-        <CharString index="0" fingerprint="8aa986d8">
-            111 110 return
-        </CharString>
-        <CharString index="1" fingerprint="8aa986d8">
-            111 110 return
-        </CharString>
-    </Subrs>
-    <GlobalSubrs>
-        <CharString index="0" fingerprint="9ecc4586">
-            -8 -76 rlineto
-            252 -16 60 -40 -47 vvcurveto
-            -72 -180 -55 -8 -143 vhcurveto
-            57 -1 rlineto
-            14 129 203 51 110 vvcurveto
-            79 -88 65 -302 16 vhcurveto
-            return
-        </CharString>
-        <CharString index="1" fingerprint="9ecc4586">
-            -8 -76 rlineto
-            252 -16 60 -40 -47 vvcurveto
-            -72 -180 -55 -8 -143 vhcurveto
-            57 -1 rlineto
-            14 129 203 51 110 vvcurveto
-            79 -88 65 -302 16 vhcurveto
-            return
-        </CharString>
-        <CharString index="2" fingerprint="d2717239">
-            rmoveto
-            110 hlineto
-            3 109 rlineto
-            -111 hlineto
-            return
-        </CharString>
-    </GlobalSubrs>
+    <Subrs/>
+    <GlobalSubrs/>
 </Glyph>

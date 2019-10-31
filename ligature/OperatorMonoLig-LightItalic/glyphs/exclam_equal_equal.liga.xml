@@ -1,6 +1,6 @@
 <Glyph name="exclam_equal_equal.liga" lsb="-1018" width="550">
     <CharString>
-        {e06728d3} callsubr
+        16 61 187 60 187 60 hstem
         -603 665 vstem
         563 511 rmoveto
         13 60 rlineto
@@ -28,11 +28,6 @@
         132 187 rlineto
         endchar
     </CharString>
-    <Subrs>
-        <CharString index="0" fingerprint="e06728d3">
-            16 61 187 60 187 60 hstem
-            return
-        </CharString>
-    </Subrs>
+    <Subrs/>
     <GlobalSubrs/>
 </Glyph>

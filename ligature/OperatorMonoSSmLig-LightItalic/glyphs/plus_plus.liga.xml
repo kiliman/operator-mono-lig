@@ -3,51 +3,27 @@
         292 60 hstem
         0 490 vstem
         282 352 rmoveto
-        {6d7e19b6} callgsubr
-        -413 {f331089d} callgsubr
         42 213 rlineto
-        413 {a341c853} callsubr
+        -64 hlineto
+        -42 -213 rlineto
+        -413 hlineto
+        42 213 rlineto
+        -64 hlineto
+        -42 -213 rlineto
+        -206 hlineto
+        -12 -60 rlineto
+        207 hlineto
+        -42 -213 rlineto
+        64 hlineto
+        42 213 rlineto
+        413 hlineto
+        -42 -213 rlineto
         64 hlineto
         42 213 rlineto
         206 hlineto
         13 60 rlineto
         endchar
     </CharString>
-    <Subrs>
-        <CharString index="0" fingerprint="a341c853">
-            hlineto
-            -42 -213 rlineto
-            return
-        </CharString>
-        <CharString index="1" fingerprint="a341c853">
-            hlineto
-            -42 -213 rlineto
-            return
-        </CharString>
-    </Subrs>
-    <GlobalSubrs>
-        <CharString index="0" fingerprint="6d7e19b6">
-            42 213 rlineto
-            -64 {a341c853} callsubr
-            return
-        </CharString>
-        <CharString index="1" fingerprint="f331089d">
-            hlineto
-            {6d7e19b6} callgsubr
-            -206 {1a0862e5} callgsubr
-            207 {a341c853} callsubr
-            64 hlineto
-            return
-        </CharString>
-        <CharString index="2" fingerprint="6d7e19b6">
-            42 213 rlineto
-            -64 {a341c853} callsubr
-            return
-        </CharString>
-        <CharString index="3" fingerprint="1a0862e5">
-            hlineto
-            -12 -60 rlineto
-            return
-        </CharString>
-    </GlobalSubrs>
+    <Subrs/>
+    <GlobalSubrs/>
 </Glyph>
