@@ -3,6 +3,7 @@ less_slash.liga             </
 slash_greater.liga          />
 underscore_underscore.liga  __
 colon_equal.liga            :=
+w_w_w.liga									www
 
 // alternate ligature glyphs
 greater_equal.2.liga     >=
