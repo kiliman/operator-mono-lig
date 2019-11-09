@@ -5,7 +5,7 @@ title: "Create `[LIGATURE NAME]` ligature"
 labels: enhancement
 ---
 
-> **Please only request a single ligature per issue, unless you would like something which has both symmetrical pairs (e.g. `{{` and `}}`)**
+<!-- Please only request a single ligature per issue, unless you would like something which has both symmetrical pairs (e.g. {{ and }}) -->
 
 ## Request preferences
 
