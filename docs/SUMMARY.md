@@ -12,5 +12,4 @@
 ## Ligature Recipes
 
 * [\`{{\` and \`}}\`](ligature-recipes/double-braces.md)
-* [Untitled](ligature-recipes/untitled.md)
 
