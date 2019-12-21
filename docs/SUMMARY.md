@@ -1,6 +1,8 @@
 # Table of contents
 
 * [Introduction](README.md)
+* [Installation instructions](installation-instructions.md)
+* [Changelog](changelog.md)
 
 ## Developing ligatures
 

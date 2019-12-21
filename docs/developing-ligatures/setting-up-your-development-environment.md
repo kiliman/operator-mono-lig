@@ -1,3 +1,7 @@
+---
+description: Things you will need to create additional ligatures.
+---
+
 # Setting up your development environment
 
 ## Getting Super Powers
