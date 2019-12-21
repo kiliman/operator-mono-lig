@@ -11,5 +11,7 @@
 
 ## Ligature Recipes
 
-* [\`{{\` and \`}}\`](ligature-recipes/double-braces.md)
+* [www](ligature-recipes/www.md)
+* [Double-braces](ligature-recipes/double-braces/README.md)
+  * [Roman variant](ligature-recipes/double-braces/roman-variant.md)
 
