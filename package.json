@@ -12,7 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "hash.js": "^1.1.3",
-    "npm": "^5.7.1",
+    "npm": "^6.13.4",
     "xml-formatter": "^1.0.1",
     "xmldom": "^0.1.27",
     "xpath": "0.0.24"
