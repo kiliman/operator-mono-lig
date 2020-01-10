@@ -94,7 +94,7 @@ If you use Docker, you can also use the executable Docker image [here](https://g
    docker-compose run --rm operator-mono-lig
    ```
 
-The image will build and execute the conversion. The new font files will be generated into the `output` folder.
+The image will build and execute the conversion. The new font files will be generated into the `build` folder.
 
 ## Configure Your Code Editor
 
