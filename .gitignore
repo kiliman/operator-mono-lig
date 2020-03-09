@@ -1,4 +1,5 @@
 build
 node_modules
+.idea
 .vscode/launch.json
 .DS_Store
