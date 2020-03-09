@@ -36,9 +36,7 @@ function main() {
 
 const buildFont = profile => {
   // add suffix to dstFileName if present
-  const dstFileName = `./build/${ligFontName}${
-    profile.suffixWithLeadingHyphen
-  }.ttx`;
+  const dstFileName = `./build/${ligFontName}${profile.suffixWithLeadingHyphen}.ttx`;
   console.log(
     `Building ligature font file ${dstFileName} name = ${profile.name}`
   );
@@ -87,7 +85,7 @@ const getProfiles = () => {
 
   const content = fs.readFileSync(profilePath, 'utf-8');
   content
-    .split(os.EOL)
+    .split(/\r|\r\n|\n/g)
     .filter(line => /^[#]/.test(line) === false && line.length > 0)
     .forEach(line => {
       const ch = line.trim()[0];
@@ -103,7 +101,7 @@ const getProfiles = () => {
         profiles.push(profile);
       } else {
         if (!profile) {
-          throw new Error('You must profile a profile name in []');
+          throw new Error('You must provide a profile name in []');
         }
         profile.ligatures.push(line);
       }

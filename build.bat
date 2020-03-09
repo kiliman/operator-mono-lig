@@ -24,5 +24,5 @@ if not exist .\ligature\%lig%\glyphs\* exit /b
 @echo Building %lig%
 ttx -f .\original\%otf%.otf
 node index.js %otf%
-ttx -f .\build\%lig%.ttx
+for %%f in (.\build\%lig%*.ttx) do ttx -f %%f
 exit /b

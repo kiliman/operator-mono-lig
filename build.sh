@@ -18,7 +18,10 @@ build_font() {
     echo Building $1
     ttx -f "./original/$otf.otf"
     node index.js $otf
-    ttx -f ./build/$1.ttx
+
+    for f in ./build/$1*.ttx ; do
+        ttx -f $f
+    done
 }
 
 if [ -n "$1" ]
