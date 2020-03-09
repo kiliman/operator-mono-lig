@@ -214,6 +214,7 @@ const patchNames = (dom, ligatures, profile) => {
   setAttribute(cffFont, 'FamilyName', 'value', familyNamePlat);
 
   // update existing names with new names
+  // mac family name does not include style
   updateName(PlatformId.mac, NameId.familyName, familyNamePlat);
   updateName(PlatformId.mac, NameId.fontStyle, names.fontStyle);
   updateName(PlatformId.mac, NameId.uniqueId, uniqueId);
@@ -222,6 +223,7 @@ const patchNames = (dom, ligatures, profile) => {
   updateName(PlatformId.mac, NameId.windowsFamilyName, familyNamePlat);
   updateName(PlatformId.mac, NameId.fontStyleName, names.fontStyle);
 
+  // windows family name includes style
   updateName(PlatformId.win, NameId.familyName, familyName);
   updateName(PlatformId.win, NameId.fontStyle, names.windowsFontStyle);
   updateName(PlatformId.win, NameId.uniqueId, uniqueId);
