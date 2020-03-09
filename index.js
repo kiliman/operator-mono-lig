@@ -216,7 +216,7 @@ const patchNames = (dom, ligatures, profile) => {
   setAttribute(cffFont, 'FamilyName', 'value', familyNamePlat);
 
   // update existing names with new names
-  updateName(PlatformId.mac, NameId.familyName, familyName);
+  updateName(PlatformId.mac, NameId.familyName, familyNamePlat);
   updateName(PlatformId.mac, NameId.fontStyle, names.fontStyle);
   updateName(PlatformId.mac, NameId.uniqueId, uniqueId);
   updateName(PlatformId.mac, NameId.fullName, fullName);
