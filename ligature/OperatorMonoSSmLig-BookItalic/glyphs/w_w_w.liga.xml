@@ -1,48 +1,44 @@
-<Glyph name="w_w_w.liga" lsb="-940" width="625">
+<Glyph name="w_w_w.liga" lsb="144" width="1875">
     <CharString>
-        0 111 -111 112 431 -20 hstemhm
-        -940 1559 hintmask 01110000
-        -940 hmoveto
-        86 hlineto
-        157 312 43 -312 rlineto
-        55 hlineto
-        158 308 42 -308 rlineto
-        55 hlineto
-        164 302 36 -302 rlineto
-        55 hlineto
-        161 308 39 -308 rlineto
-        55 hlineto
-        158 312 42 -312 rlineto
-        84 hlineto
-        70 201 51 163 48 179 rrcurveto
-        -93 hlineto
-        hintmask 10110000
-        -34 -152 -32 -128 -40 -152 rrcurveto
-        -5 hlineto
-        -39 315 rlineto
-        -56 hlineto
-        hintmask 01110000
-        -155 -314 rlineto
-        -5 hlineto
-        -36 310 rlineto
-        -56 hlineto
-        -158 -310 rlineto
-        -5 hlineto
-        -33 304 rlineto
-        -56 hlineto
-        -161 -304 rlineto
-        -5 hlineto
+        1768 144 hmoveto
+        90 hlineto
+        165 312 45 -312 rlineto
+        58 hlineto
+        165 308 46 -308 rlineto
+        56 hlineto
+        173 302 38 -302 rlineto
+        58 hlineto
+        170 308 40 -308 rlineto
+        59 hlineto
+        165 312 45 -312 rlineto
+        88 hlineto
+        74 201 53 163 51 179 rrcurveto
+        -98 hlineto
+        -36 -152 -34 -128 -41 -152 rrcurveto
+        -6 hlineto
+        -41 315 rlineto
+        -59 hlineto
+        -162 -314 rlineto
+        -6 hlineto
         -39 310 rlineto
-        -56 hlineto
-        -155 -310 rlineto
+        -57 hlineto
+        -167 -310 rlineto
+        -5 hlineto
+        -34 304 rlineto
+        -60 hlineto
+        -170 -304 rlineto
+        -5 hlineto
+        -40 310 rlineto
+        -60 hlineto
+        -162 -310 rlineto
         -4 hlineto
-        -41 314 rlineto
-        -56 hlineto
-        -154 -314 rlineto
+        -44 314 rlineto
+        -58 hlineto
+        -162 -314 rlineto
         -4 hlineto
-        19 148 16 129 24 154 rrcurveto
-        -89 hlineto
-        -28 -203 -18 -211 -5 -129 rrcurveto
+        19 148 17 129 25 154 rrcurveto
+        -93 hlineto
+        -30 -203 -18 -211 -5 -129 rrcurveto
         endchar
     </CharString>
     <Subrs/>
