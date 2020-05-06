@@ -2,15 +2,8 @@
     <CharString>
         -12 67 501 76 hstemhm
         -269 80 227 77 -4 80 hintmask 11110000
-        316 169 rmoveto
-        33 59 32 79 22 89 -70 9 rcurveline
-        -14 -68 -21 -66 -23 -54 rrcurveto
-        -119 136 -55 59 52 vvcurveto
-        54 42 46 163 -8 vhcurveto
-        -6 76 rlineto
-        -213 4 -66 -91 -86 vvcurveto
-        -43 20 -40 40 -52 vhcurveto
-        -79 -50 -44 -56 -8 -65 -14 16 rcurveline
+        87 -12 rmoveto
+        -40 50 -41 50 -37 43 -33 38 rlinecurve
         33 59 32 79 22 89 -70 9 rcurveline
         -14 -68 -21 -66 -23 -54 rrcurveto
         -119 136 -55 59 52 vvcurveto
@@ -20,15 +13,24 @@
         -43 20 -40 40 -52 vhcurveto
         -88 -56 -45 -63 -75 vvcurveto
         -80 49 -62 95 64 64 34 77 51 vhcurveto
-        22 -27 47 -52 67 -22 rrcurveto
-        -6 17 20 -4 23 hhcurveto
-        64 -1 69 35 51 77 28 -34 31 -37 32 -41 65 51 rcurveline
-        -41 50 -37 43 -33 38 rrcurveto
-        -587 -114 rmoveto
+        28 -34 69 -75 99 -2 rrcurveto
+        -358 67 rmoveto
         -55 -29 39 53 47 28 49 59 42 hvcurveto
         32 -38 41 -46 48 -57 rrcurveto
         -61 -39 -43 -28 -42 hhcurveto
-        380 hmoveto
+        633 -68 rmoveto
+        65 51 -41 50 -37 43 -33 38 rlinecurve
+        33 59 32 79 22 89 -70 9 rcurveline
+        -14 -68 -21 -66 -23 -54 rrcurveto
+        -119 136 -55 59 52 vvcurveto
+        54 42 46 163 -8 vhcurveto
+        -6 76 rlineto
+        -213 4 -66 -91 -86 vvcurveto
+        -43 20 -40 40 -52 vhcurveto
+        -88 -56 -45 -63 -75 vvcurveto
+        -80 40 -60 99 -2 vhcurveto
+        64 -1 69 35 51 77 28 -34 31 -37 32 -41 rrcurveto
+        -253 68 rmoveto
         -55 -29 39 53 hvcurveto
         hintmask 11101000
         47 28 49 59 42 vhcurveto

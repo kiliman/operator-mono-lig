@@ -2,13 +2,13 @@
     <CharString>
         40 69 153 69 153 69 hstem
         -1022 1494 cntrmask 11100000
-        471 484 rmoveto
+        471 262 rmoveto
         1 69 rlineto
         -1494 -69 hlineto
         1493 -222 rmoveto
         1 69 rlineto
         -1494 -69 hlineto
-        1493 -222 rmoveto
+        1493 444 rmoveto
         1 69 rlineto
         -1494 -69 hlineto
         endchar

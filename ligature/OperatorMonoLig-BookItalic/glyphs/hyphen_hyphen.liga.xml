@@ -2,11 +2,11 @@
     <CharString>
         259 68 hstem
         -337 310 70 310 vstem
-        -39 259 rmoveto
+        341 259 rmoveto
         12 68 rlineto
         -297 hlineto
         -13 -68 rlineto
-        678 hmoveto
+        -82 hmoveto
         12 68 rlineto
         -297 hlineto
         -13 -68 rlineto

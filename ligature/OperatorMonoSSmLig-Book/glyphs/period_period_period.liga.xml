@@ -1,0 +1,21 @@
+<Glyph name="period_period_period.liga" lsb="-741" width="625">
+    <CharString>
+        0 129 hstem
+        -738 134 239 134 237 134 cntrmask 10000000
+        2 hmoveto
+        134 hlineto
+        6 129 rlineto
+        -133 hlineto
+        -377 -129 rmoveto
+        134 hlineto
+        6 129 rlineto
+        -133 hlineto
+        -380 -129 rmoveto
+        134 hlineto
+        6 129 rlineto
+        -133 hlineto
+        endchar
+    </CharString>
+    <Subrs/>
+    <GlobalSubrs/>
+</Glyph>

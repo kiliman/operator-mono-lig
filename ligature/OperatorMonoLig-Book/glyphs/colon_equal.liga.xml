@@ -6,14 +6,14 @@
         118 hlineto
         2 117 rlineto
         -119 hlineto
-        657 -98 rmoveto
-        1 69 rlineto
-        -424 -69 hlineto
-        -235 -245 rmoveto
+        -1 -343 rmoveto
         118 hlineto
         2 117 rlineto
         -119 hlineto
-        657 -94 rmoveto
+        657 128 rmoveto
+        1 69 rlineto
+        -424 -69 hlineto
+        423 -222 rmoveto
         1 69 rlineto
         -424 -69 hlineto
         endchar

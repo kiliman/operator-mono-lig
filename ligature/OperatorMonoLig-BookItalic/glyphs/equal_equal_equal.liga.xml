@@ -2,11 +2,7 @@
     <CharString>
         40 69 153 69 153 69 hstem
         -1022 1494 cntrmask 11100000
-        557 484 rmoveto
-        15 69 rlineto
-        -1494 hlineto
-        -14 -69 rlineto
-        1450 -222 rmoveto
+        514 262 rmoveto
         15 69 rlineto
         -1494 hlineto
         -14 -69 rlineto
@@ -14,6 +10,10 @@
         14 69 rlineto
         -1494 hlineto
         -13 -69 rlineto
+        1579 444 rmoveto
+        15 69 rlineto
+        -1494 hlineto
+        -14 -69 rlineto
         endchar
     </CharString>
     <Subrs/>

@@ -1,13 +1,12 @@
 <Glyph name="less_slash.liga" lsb="-462" width="550">
     <CharString>
         -182 900 hstemhm
-        -462 424 -252 676 hintmask 10100000
-        323 718 rmoveto
-        -466 -670 -241 243 2 10 rlineto
-        hintmask 11000000
-        344 237 -34 61 -378 -263 -12 -67 275 -284 rlineto
+        -462 424 -252 676 hintmask 11000000
+        -38 538 rmoveto
+        -34 61 -378 -263 -12 -67 279 -288 54 53 -255 257 2 10 rlineto
         hintmask 10100000
-        -103 -147 70 -20 606 871 rlineto
+        768 388 rmoveto
+        -63 29 -613 -880 70 -20 rlineto
         endchar
     </CharString>
     <Subrs/>

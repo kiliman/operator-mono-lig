@@ -9,13 +9,13 @@
         779 -104 rmoveto
         1 77 rlineto
         -538 -77 hlineto
-        -244 -278 rmoveto
+        537 -246 rmoveto
+        1 77 rlineto
+        -538 -77 hlineto
+        -244 -32 rmoveto
         133 hlineto
         2 130 rlineto
         -133 hlineto
-        779 -98 rmoveto
-        1 77 rlineto
-        -538 -77 hlineto
         endchar
     </CharString>
     <Subrs/>

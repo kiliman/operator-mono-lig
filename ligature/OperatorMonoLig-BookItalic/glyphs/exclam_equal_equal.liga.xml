@@ -3,39 +3,23 @@
         -185 917 -691 70 156 70 156 70 hstemhm
         -987 1522 -1113 689 cntrmask 01110000
         hintmask 01111000
-        592 493 rmoveto
+        549 267 rmoveto
         15 70 rlineto
-        -604 hlineto
-        95 139 rlineto
+        -1494 hlineto
+        -14 -70 rlineto
+        1450 -226 rmoveto
+        14 70 rlineto
+        -1494 hlineto
+        -13 -70 rlineto
+        1579 452 rmoveto
+        15 70 rlineto
+        -1494 hlineto
+        -14 -70 rlineto
+        999 209 rmoveto
         hintmask 10001000
         -63 29 rlineto
-        hintmask 01111000
-        -115 -168 rlineto
-        -807 hlineto
-        -14 -70 rlineto
-        773 hlineto
-        -107 -156 rlineto
-        -695 hlineto
-        -14 -70 rlineto
-        662 hlineto
-        -107 -156 rlineto
-        -585 hlineto
-        -13 -70 rlineto
-        550 hlineto
-        hintmask 01110100
-        -141 -206 rlineto
         hintmask 10000100
-        70 -20 rlineto
-        hintmask 01110100
-        154 226 rlineto
-        860 hlineto
-        14 70 rlineto
-        -826 hlineto
-        107 156 rlineto
-        748 hlineto
-        15 70 rlineto
-        -715 hlineto
-        106 156 rlineto
+        -613 -896 70 -20 rlineto
         endchar
     </CharString>
     <Subrs/>

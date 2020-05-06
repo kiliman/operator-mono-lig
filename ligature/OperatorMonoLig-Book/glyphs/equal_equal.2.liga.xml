@@ -5,13 +5,13 @@
         -49 373 rmoveto
         1 69 rlineto
         -424 -69 hlineto
-        943 hmoveto
-        1 69 rlineto
-        -414 -69 hlineto
-        -107 -222 rmoveto
+        423 -222 rmoveto
         1 69 rlineto
         -424 -69 hlineto
-        943 hmoveto
+        943 222 rmoveto
+        1 69 rlineto
+        -414 -69 hlineto
+        413 -222 rmoveto
         1 69 rlineto
         -414 -69 hlineto
         endchar

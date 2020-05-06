@@ -2,11 +2,10 @@
     <CharString>
         287 76 hstem
         3 498 vstem
-        300 363 rmoveto
-        40 207 rlineto
-        -81 hlineto
-        -40 -207 rlineto
-        -401 hlineto
+        285 287 rmoveto
+        200 hlineto
+        16 76 rlineto
+        -201 hlineto
         40 207 rlineto
         -81 hlineto
         -40 -207 rlineto
@@ -15,13 +14,18 @@
         201 hlineto
         -40 -208 rlineto
         81 hlineto
-        40 208 rlineto
-        401 hlineto
-        -40 -208 rlineto
-        81 hlineto
-        40 208 rlineto
+        -442 208 rmoveto
         200 hlineto
         16 76 rlineto
+        -201 hlineto
+        40 207 rlineto
+        -81 hlineto
+        -40 -207 rlineto
+        -201 hlineto
+        -15 -76 rlineto
+        201 hlineto
+        -40 -208 rlineto
+        81 hlineto
         endchar
     </CharString>
     <Subrs/>

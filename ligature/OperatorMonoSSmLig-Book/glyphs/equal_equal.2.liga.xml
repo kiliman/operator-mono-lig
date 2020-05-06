@@ -5,13 +5,13 @@
         -40 414 rmoveto
         1 77 rlineto
         -493 -77 hlineto
-        1062 hmoveto
+        492 -246 rmoveto
         1 77 rlineto
         -493 -77 hlineto
-        -78 -246 rmoveto
+        1062 246 rmoveto
         1 77 rlineto
         -493 -77 hlineto
-        1062 hmoveto
+        492 -246 rmoveto
         1 77 rlineto
         -493 -77 hlineto
         endchar

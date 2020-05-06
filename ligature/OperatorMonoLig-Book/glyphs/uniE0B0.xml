@@ -1,7 +1,5 @@
 <Glyph name="uniE0B0" code="0xe0b0" lsb="-20" width="550">
     <CharString>
-        -205 1099 hstem
-        -20 629 vstem
         609 313 rmoveto
         -627 581 -2 -1099 rlineto
         endchar

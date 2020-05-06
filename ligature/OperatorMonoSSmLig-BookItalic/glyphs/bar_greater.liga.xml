@@ -5,9 +5,8 @@
         -77 785 rmoveto
         -84 -3 -192 -983 rlineto
         84 hlineto
-        603 471 14 77 rlineto
-        -91 -36 rmoveto
-        -503 -393 149 765 356 -362 rlineto
+        -39 70 rmoveto
+        39 -70 603 471 14 77 -425 438 -61 -60 397 -404 -2 -10 rlineto
         endchar
     </CharString>
     <Subrs/>

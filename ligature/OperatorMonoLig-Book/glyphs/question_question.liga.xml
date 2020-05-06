@@ -9,18 +9,18 @@
         57 -1 rlineto
         14 129 203 51 110 vvcurveto
         79 -88 65 -302 16 vhcurveto
-        380 hmoveto
+        82 -678 rmoveto
+        110 hlineto
+        3 109 rlineto
+        -111 hlineto
+        296 569 rmoveto
         -8 -76 rlineto
         252 -16 60 -40 -47 vvcurveto
         -72 -180 -55 -8 -143 vhcurveto
         57 -1 rlineto
         14 129 203 51 110 vvcurveto
         79 -88 65 -302 16 vhcurveto
-        -298 -678 rmoveto
-        110 hlineto
-        3 109 rlineto
-        -111 hlineto
-        378 -109 rmoveto
+        82 -678 rmoveto
         110 hlineto
         3 109 rlineto
         -111 hlineto

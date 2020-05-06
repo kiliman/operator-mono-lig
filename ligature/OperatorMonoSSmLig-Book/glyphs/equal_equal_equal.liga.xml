@@ -2,13 +2,13 @@
     <CharString>
         45 77 169 77 169 77 hstem
         -1157 1688 cntrmask 11100000
-        530 537 rmoveto
+        530 291 rmoveto
         1 77 rlineto
         -1688 -77 hlineto
         1687 -246 rmoveto
         1 77 rlineto
         -1688 -77 hlineto
-        1687 -246 rmoveto
+        1687 492 rmoveto
         1 77 rlineto
         -1688 -77 hlineto
         endchar

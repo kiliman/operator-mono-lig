@@ -1,7 +1,5 @@
 <Glyph name="w_w_w.liga" lsb="-940" width="625">
     <CharString>
-        0 111 -111 112 431 -20 hstemhm
-        -940 1559 hintmask 01110000
         -940 hmoveto
         86 hlineto
         157 312 43 -312 rlineto
@@ -16,12 +14,10 @@
         84 hlineto
         70 201 51 163 48 179 rrcurveto
         -93 hlineto
-        hintmask 10110000
         -34 -152 -32 -128 -40 -152 rrcurveto
         -5 hlineto
         -39 315 rlineto
         -56 hlineto
-        hintmask 01110000
         -155 -314 rlineto
         -5 hlineto
         -36 310 rlineto

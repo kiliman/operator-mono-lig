@@ -2,17 +2,17 @@
     <CharString>
         168 76 170 76 hstem
         -1205 1809 vstem
-        588 537 rmoveto
-        16 76 rlineto
-        -1695 hlineto
-        -15 -76 rlineto
-        1642 -246 rmoveto
+        536 291 rmoveto
         16 76 rlineto
         -1695 hlineto
         -15 -76 rlineto
         1647 -246 rmoveto
         15 76 rlineto
         -1694 hlineto
+        -15 -76 rlineto
+        1793 492 rmoveto
+        16 76 rlineto
+        -1695 hlineto
         -15 -76 rlineto
         endchar
     </CharString>

@@ -1,10 +1,10 @@
 <Glyph name="bar_bar.liga" lsb="-211" width="550">
     <CharString>
         -211 75 275 75 vstem
-        -136 710 rmoveto
+        214 710 rmoveto
         -75 -6 rlineto
         -886 75 vlineto
-        350 892 rmoveto
+        -350 892 rmoveto
         -75 -6 rlineto
         -886 75 vlineto
         endchar
