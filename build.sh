@@ -4,6 +4,7 @@ mkdir -p build
 
 build_font() {
     lig="$1"
+    flags="$2"
     otf=${lig/Lig-/-}
 
     if [ ! -e "./original/$otf.otf" ]
@@ -17,20 +18,24 @@ build_font() {
 
     echo Building $1
     ttx -f "./original/$otf.otf"
-    node index.js $otf
+    node index.js $otf $flags
 
-    for f in ./build/$1*.ttx ; do
-        ttx -f $f
-    done
+    ttx -f ./build/$1.ttx
 }
 
+flags=
+if [ "$1" = "--italics-hack" ]
+then
+    flags=$1
+    shift
+fi
 if [ -n "$1" ]
 then
     # build specified font
-    build_font $1
+    build_font $1 $flags
 else
     # build all available fonts
     for d in ./ligature/*/ ; do
-        build_font $(basename $d)
+        build_font $(basename $d) $flags
     done
 fi

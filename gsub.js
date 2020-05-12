@@ -12,7 +12,7 @@ let lookupIndex = 0;
 let chainIndex = 0;
 const substLookupMap = {};
 
-const buildGsubTables = (_dom, ligature) => {
+const buildGsubTables = (_dom, ligature, options) => {
   dom = _dom;
 
   if (/_/.test(ligature.glyph) === false) {
@@ -35,6 +35,17 @@ const buildGsubTables = (_dom, ligature) => {
   // look for 'calt' feature
   featureListDom = xpath.select('FeatureList', gsubDom, true);
 
+  if (options.italicsHack) {
+    // remove all features from FeatureList
+    Array.from(featureListDom.childNodes).forEach((c) =>
+      featureListDom.removeChild(c)
+    );
+
+    Array.from(xpath.select('ttFont/GSUB//FeatureIndex', dom)).forEach((c) =>
+      c.parentNode.removeChild(c);
+    );
+  }
+
   let featureRecord;
   const featureTag = xpath.select(
     'FeatureRecord/FeatureTag[@value="calt"]',
@@ -48,7 +59,7 @@ const buildGsubTables = (_dom, ligature) => {
       true
     );
     featureRecord = createElementWithAttributes('FeatureRecord', {
-      index: featureListCount
+      index: featureListCount,
     });
     featureRecord.appendChild(
       createElementWithAttributes('FeatureTag', { value: 'calt' })
@@ -67,10 +78,17 @@ const buildGsubTables = (_dom, ligature) => {
   addFeatureToScriptList('latn', featureIndex);
 
   lookupListDom = xpath.select('LookupList', gsubDom, true);
+  if (options.italicsHack) {
+    // remove all lookups from LookupList
+    Array.from(lookupListDom.childNodes).forEach((c) =>
+      lookupListDom.removeChild(c)
+    );
+  }
+
   lookupIndex = xpath.select('count(Lookup)', lookupListDom, true);
 
   const lookupDom = createElementWithAttributes('Lookup', {
-    index: lookupIndex++
+    index: lookupIndex++,
   });
   appendChildren(
     lookupDom,
@@ -87,7 +105,7 @@ const buildGsubTables = (_dom, ligature) => {
   featureDom.appendChild(
     createElementWithAttributes('LookupListIndex', {
       index: featureLookupCount,
-      value: lookupDom.getAttribute('index')
+      value: lookupDom.getAttribute('index'),
     })
   );
 
@@ -122,11 +140,10 @@ const finalizeGsubTables = () => {
       lookupListDom,
       false
     );
-    substLookups.forEach(substLookup => {
+    substLookups.forEach((substLookup) => {
       substLookup.setAttribute('value', newIndex);
     });
     lookup.setAttribute('index', newIndex++);
-    lookupListDom.appendChild(lookup);
     lookupListDom.appendChild(lookup);
   });
 };
@@ -150,20 +167,20 @@ const addFeatureToScriptList = (tag, featureIndex) => {
     defaultLangSys.appendChild(
       createElementWithAttributes('FeatureIndex', {
         index: count,
-        value: featureIndex
+        value: featureIndex,
       })
     );
   }
 };
 
-const buildBacktrackFirst = glyphs => {
+const buildBacktrackFirst = (glyphs) => {
   // backtrack = first glyph
   // input = first glphy
   // lookAhead = [1..n]
   return buildChainContext([glyphs[0]], [glyphs[0]], glyphs.slice(1));
 };
 
-const buildLookAheadLast = glyphs => {
+const buildLookAheadLast = (glyphs) => {
   // backtrack = none
   // input = first glyph
   // lookAhead = [1..n] + [n]
@@ -186,12 +203,12 @@ const buildLigatureSubst = (glyphs, lookup) => {
   );
 };
 
-const getLIGs = length => new Array(length).fill('LIG', 0, length);
+const getLIGs = (length) => new Array(length).fill('LIG', 0, length);
 
 const buildChainContext = (backtrack, input, lookAhead, substitute) => {
   const chainDom = createElementWithAttributes('ChainContextSubst', {
     index: chainIndex++,
-    Format: 3
+    Format: 3,
   });
 
   buildCoverage(chainDom, 'BacktrackCoverage', backtrack);
@@ -218,7 +235,7 @@ const buildCoverage = (chainDom, tagName, coverage) => {
     coverage.forEach((glyph, i) => {
       const coverageDom = createElementWithAttributes(tagName, {
         index: i++,
-        Format: 1
+        Format: 1,
       });
       coverageDom.appendChild(
         createElementWithAttributes('Glyph', { value: glyph })
@@ -235,7 +252,7 @@ const getSubstLookup = (input, output, lookupDom) => {
 
   if (!lookupDom) {
     lookupDom = createElementWithAttributes('Lookup', {
-      index: Object.keys(substLookupMap).length + 1
+      index: Object.keys(substLookupMap).length + 1,
     });
     lookupDom.appendChild(
       createElementWithAttributes('LookupType', { value: 1 })
@@ -251,7 +268,7 @@ const getSubstLookup = (input, output, lookupDom) => {
   if (!singleSubstDom) {
     singleSubstDom = createElementWithAttributes('SingleSubst', {
       index: 0,
-      Format: 2
+      Format: 2,
     });
     lookupDom.appendChild(singleSubstDom);
   }
@@ -272,14 +289,14 @@ const getSubstLookup = (input, output, lookupDom) => {
 
 const createElementWithAttributes = (tagName, attributes) => {
   const element = dom.createElement(tagName);
-  Object.entries(attributes).forEach(attribute => {
+  Object.entries(attributes).forEach((attribute) => {
     element.setAttribute(attribute[0], attribute[1]);
   });
   return element;
 };
 
 const appendChildren = (node, ...children) => {
-  children.forEach(child => node.appendChild(child));
+  children.forEach((child) => node.appendChild(child));
 };
 
 //const serialize = dom => new XMLSerializer().serializeToString(dom);
