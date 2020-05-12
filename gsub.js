@@ -12,6 +12,32 @@ let lookupIndex = 0;
 let chainIndex = 0;
 const substLookupMap = {};
 
+const initGsubTables = (_dom, options) => {
+  dom = _dom;
+
+  gsubDom = xpath.select('ttFont/GSUB', dom, true);
+
+  // look for 'calt' feature
+  featureListDom = xpath.select('FeatureList', gsubDom, true);
+  lookupListDom = xpath.select('LookupList', gsubDom, true);
+
+  if (options.italicsHack) {
+    // remove all features from FeatureList
+    Array.from(featureListDom.childNodes).forEach((c) => {
+      featureListDom.removeChild(c);
+    });
+
+    Array.from(xpath.select('ttFont/GSUB//FeatureIndex', dom)).forEach((c) => {
+      c.parentNode.removeChild(c);
+    });
+
+    // remove all lookups from LookupList
+    Array.from(lookupListDom.childNodes).forEach((c) =>
+      lookupListDom.removeChild(c)
+    );
+  }
+};
+
 const buildGsubTables = (_dom, ligature, options) => {
   dom = _dom;
 
@@ -34,17 +60,6 @@ const buildGsubTables = (_dom, ligature, options) => {
 
   // look for 'calt' feature
   featureListDom = xpath.select('FeatureList', gsubDom, true);
-
-  if (options.italicsHack) {
-    // remove all features from FeatureList
-    Array.from(featureListDom.childNodes).forEach((c) =>
-      featureListDom.removeChild(c)
-    );
-
-    Array.from(xpath.select('ttFont/GSUB//FeatureIndex', dom)).forEach((c) =>
-      c.parentNode.removeChild(c);
-    );
-  }
 
   let featureRecord;
   const featureTag = xpath.select(
@@ -76,14 +91,6 @@ const buildGsubTables = (_dom, ligature, options) => {
   // add feature to scriptlist for DFLT and latn if not present
   addFeatureToScriptList('DFLT', featureIndex);
   addFeatureToScriptList('latn', featureIndex);
-
-  lookupListDom = xpath.select('LookupList', gsubDom, true);
-  if (options.italicsHack) {
-    // remove all lookups from LookupList
-    Array.from(lookupListDom.childNodes).forEach((c) =>
-      lookupListDom.removeChild(c)
-    );
-  }
 
   lookupIndex = xpath.select('count(Lookup)', lookupListDom, true);
 
@@ -301,5 +308,6 @@ const appendChildren = (node, ...children) => {
 
 //const serialize = dom => new XMLSerializer().serializeToString(dom);
 
+exports.initGsubTables = initGsubTables;
 exports.buildGsubTables = buildGsubTables;
 exports.finalizeGsubTables = finalizeGsubTables;

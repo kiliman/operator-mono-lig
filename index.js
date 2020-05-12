@@ -269,6 +269,7 @@ const patchGlyphs = (dom, ligatures) => {
 const patchGsub = (dom, ligatures, options) => {
   // don't patch if no ligatures other than LIG
   if (ligatures.length <= 1) return;
+  gsub.initGsubTables(dom, options);
 
   ligatures.forEach((ligature) => {
     // build gsub tables
