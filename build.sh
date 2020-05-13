@@ -24,7 +24,7 @@ build_font() {
 }
 
 flags=
-if [ "$1" = "--italics-hack" ]
+if [ "$1" = "--italics-hack-off" ]
 then
     flags=$1
     shift

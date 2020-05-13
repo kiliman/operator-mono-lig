@@ -4,7 +4,7 @@ setlocal
 if not exist .\build\* mkdir build
 
 set flags=
-if "%1"=="--italics-hack" (
+if "%1"=="--italics-hack-off" (
 	set flags=%1
 	shift
 )

@@ -21,7 +21,7 @@ let italicsHack = false;
 function main() {
   fontName = process.argv[2];
   italicsHack =
-    process.argv[3] === '--italics-hack' && fontName.includes('Italic');
+    fontName.includes('Italic') && process.argv[3] !== '--italics-hack-off';
 
   ligFontName = fontName.split('-').join('Lig-');
 
