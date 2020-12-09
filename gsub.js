@@ -38,7 +38,7 @@ const initGsubTables = (_dom, options) => {
   }
 };
 
-const buildGsubTables = (_dom, ligature, options) => {
+const buildGsubTables = (_dom, ligature) => {
   dom = _dom;
 
   if (/_/.test(ligature.glyph) === false) {
