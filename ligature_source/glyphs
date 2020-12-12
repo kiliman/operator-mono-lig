@@ -2,7 +2,7 @@
 # includes patterns
 
 *.liga  # all ligatures
-
+*.spacer
 percent.alt # alternate % sign
 
 uniE0A0 # Powerline branch
