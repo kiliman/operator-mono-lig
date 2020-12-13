@@ -16,11 +16,13 @@ build_font() {
         return
     fi
 
-    echo Building $1
+    echo Building "$1"
     ttx -f "./original/$otf.otf"
-    node index.js $otf $flags
+    node index.js "$otf" "$flags"
 
-    ttx -f ./build/$1.ttx
+    ttx -f "./build/$1.ttx"
+
+    fonttools feaLib -v -o "./build/$1.otf" ./features/default.fea "./build/$1.otf"
 }
 
 flags=
@@ -32,10 +34,10 @@ fi
 if [ -n "$1" ]
 then
     # build specified font
-    build_font $1 $flags
+    build_font "$1" "$flags"
 else
     # build all available fonts
     for d in ./ligature/*/ ; do
-        build_font $(basename $d) $flags
+        build_font "$(basename "$d")" "$flags"
     done
 fi
