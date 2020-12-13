@@ -1,10 +1,11 @@
+// @ts-nocheck
 const fs = require('fs');
 const os = require('os');
 if (!os.EOL) {
   os.EOL = process.platform === 'win32' ? '\r\n' : '\n';
 }
 
-const gsub = require('./gsub');
+const calt = require('./calt');
 
 const xpath = require('xpath');
 const { DOMParser, XMLSerializer } = require('xmldom');
@@ -60,10 +61,12 @@ const buildFont = (profile, options) => {
   //[...ligatures, { name: 'LIG', glyph: 'LIG' }];
 
   processPatch('names', patchNames, dom, ligatures, profile);
-  processPatch('gsub', patchGsub, dom, ligatures, options);
   processPatch('charstrings', patchCharStrings, dom, ligaturesWithLIG);
   processPatch('glyphs', patchGlyphs, dom, ligaturesWithLIG);
   processPatch('hmtx', patchHmtx, dom);
+
+  const feature = calt.gencalt(ligatures);
+  fs.writeFileSync('./features/calt.fea', feature);
 
   console.log(`Writing ligature font file ${dstFileName}`);
   fs.writeFileSync(dstFileName, format(serialize(dom)));
