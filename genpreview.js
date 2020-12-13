@@ -58,10 +58,10 @@ function generate(style, filenames) {
   </head>
   <body>
     <h1>Operator Mono Ligatures</h1>
-    <a href="../normal/" class="${
+    <a href="https://htmlpreview.github.io/?https://github.com/kiliman/operator-mono-lig/blob/master/images/preview/normal/index.html" class="${
       style === 'normal' ? 'active' : ''
     }">Normal</a> |
-    <a href="../italic/" class="${
+    <a href="https://htmlpreview.github.io/?https://github.com/kiliman/operator-mono-lig/blob/master/images/preview/italic/index.html" class="${
       style === 'italic' ? 'active' : ''
     }">Italic</a>
     <div class="container">
