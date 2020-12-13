@@ -31,4 +31,6 @@ if not exist .\ligature\%lig%\glyphs\* exit /b
 ttx -f .\original\%otf%.otf
 node index.js %otf% %flags%
 ttx -f .\build\%lig%.ttx
+fonttools feaLib -v -o ".\build\%lig%.otf" .\features\default.fea ".\build\%lig%.otf"
+
 exit /b
