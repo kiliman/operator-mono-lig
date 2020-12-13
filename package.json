@@ -1,6 +1,6 @@
 {
   "name": "operator-mono-lig",
-  "version": "2.3.0",
+  "version": "2.4.0",
   "description": "Patch Operator Mono font to include ligatures",
   "repository": "github:kiliman/operator-mono-lig",
   "main": "index.js",
