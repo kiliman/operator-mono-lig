@@ -20,8 +20,6 @@ characters properly.
 
 <img src="./images/caret-position.gif" />
 
-👀 <a href="./images/preview/normal">Click here to see preview images of all ligatures</a>
-
 With the awesome help from [Mark Skelton](https://github.com/mskelton), we now have the full set of ligatures for
 the following fonts. Thanks Mark, and thanks to all of you who have been patiently waiting for these ligatures to be completed.
 
