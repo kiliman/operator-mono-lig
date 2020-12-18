@@ -7,23 +7,25 @@
         46 hlineto
         hintmask 01101100
         27 122 66 246 31 129 rrcurveto
-        hintmask 01110010
-        -497 -146 rmoveto
+        hintmask 10001100
+        -529 -92 rmoveto
+        -422 -298 rlineto
         hintmask 10010010
-        -32 54 -422 -298 -11 -61 309 -318 48 48 rlineto
+        -11 -61 309 -318 48 48 rlineto
         hintmask 01110010
         -260 263 rlineto
         591 hlineto
         12 61 rlineto
         -591 hlineto
-        862 hmoveto
-        -12 -61 rlineto
+        356 251 rlineto
+        494 -312 rmoveto
         1279 hlineto
         12 61 rlineto
-        -1542 -353 rmoveto
-        104 hlineto
+        -1279 hlineto
+        -159 -353 rmoveto
         22 110 rlineto
         -103 hlineto
+        -23 -110 rlineto
         endchar
     </CharString>
     <Subrs/>

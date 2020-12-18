@@ -2,22 +2,22 @@
     <CharString>
         151 69 153 69 hstem
         -472 944 vstem
-        -6 373 rmoveto
-        15 69 rlineto
+        9 442 rmoveto
         -424 hlineto
         -14 -69 rlineto
-        943 hmoveto
-        15 69 rlineto
+        423 hlineto
+        535 69 rmoveto
         -414 hlineto
         -14 -69 rlineto
-        -150 -222 rmoveto
-        14 69 rlineto
+        413 hlineto
+        -549 -153 rmoveto
         -424 hlineto
         -13 -69 rlineto
-        943 hmoveto
-        14 69 rlineto
+        423 hlineto
+        534 69 rmoveto
         -414 hlineto
         -13 -69 rlineto
+        413 hlineto
         endchar
     </CharString>
     <Subrs/>

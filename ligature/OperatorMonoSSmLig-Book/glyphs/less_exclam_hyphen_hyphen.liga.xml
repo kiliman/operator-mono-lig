@@ -2,14 +2,13 @@
     <CharString>
         -24 693 -669 123 163 78 hstemhm
         -1773 84 685 127 hintmask 01011000
-        -964 260 rmoveto
-        60 hlineto
+        -904 260 rmoveto
         2 95 28 295 5 101 rrcurveto
         -116 hlineto
         2 -101 19 -295 -95 vvcurveto
-        -393 345 rmoveto
         hintmask 10011000
-        -50 64 -366 -306 rlineto
+        -443 409 rmoveto
+        -366 -306 rlineto
         -77 vlineto
         369 -310 52 64 rlineto
         hintmask 01111000
@@ -17,13 +16,15 @@
         540 hlineto
         6 78 rlineto
         -545 hlineto
-        887 hmoveto
-        -78 1246 vlineto
+        291 241 rlineto
+        596 -319 rmoveto
+        1246 hlineto
         6 78 rlineto
-        -1496 -364 rmoveto
-        127 hlineto
+        -1252 hlineto
+        -117 -364 rmoveto
         3 123 rlineto
         -127 hlineto
+        -3 -123 rlineto
         endchar
     </CharString>
     <Subrs/>

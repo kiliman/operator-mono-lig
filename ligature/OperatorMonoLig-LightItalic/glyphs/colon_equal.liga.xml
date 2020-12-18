@@ -3,24 +3,24 @@
         131 101 -76 52 147 101 -77 52 hstemhm
         -321 696 hintmask 00000000
         hintmask 01101000
-        -277 355 rmoveto
-        96 hlineto
+        -181 355 rmoveto
         22 101 rlineto
         -97 hlineto
+        -21 -101 rlineto
         hintmask 10011000
-        620 -77 rmoveto
-        11 52 rlineto
+        652 76 rmoveto
         -426 hlineto
         -10 -52 rlineto
-        -260 -248 rmoveto
-        96 hlineto
+        425 hlineto
+        -589 -248 rmoveto
         22 101 rlineto
         -97 hlineto
+        -21 -101 rlineto
         hintmask 01011000
-        620 -76 rmoveto
-        11 52 rlineto
+        652 77 rmoveto
         -426 hlineto
         -10 -52 rlineto
+        425 hlineto
         endchar
     </CharString>
     <Subrs/>

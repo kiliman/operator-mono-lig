@@ -2,8 +2,8 @@
     <CharString>
         151 69 153 69 hstemhm
         -472 937 -74 74 hintmask 11100000
-        138 602 rmoveto
-        -47 -58 124 -102 rlineto
+        91 544 rmoveto
+        124 -102 rlineto
         -687 -69 771 hlineto
         hintmask 11010000
         92 -76 rlineto
@@ -13,6 +13,7 @@
         -782 -69 699 hlineto
         -140 -116 45 -57 333 280 rlineto
         69 vlineto
+        -327 275 rlineto
         endchar
     </CharString>
     <Subrs/>

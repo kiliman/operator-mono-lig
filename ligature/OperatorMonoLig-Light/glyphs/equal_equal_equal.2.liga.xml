@@ -2,24 +2,18 @@
     <CharString>
         156 52 171 52 hstem
         -1018 442 80 441 81 441 cntrmask 00111000
-        -576 379 rmoveto
-        1 52 rlineto
-        -443 -52 hlineto
-        963 hmoveto
-        1 52 rlineto
-        -442 -52 hlineto
-        963 hmoveto
-        1 52 rlineto
-        -442 -52 hlineto
-        -602 -223 rmoveto
-        1 52 rlineto
-        -443 -52 hlineto
-        963 hmoveto
-        1 52 rlineto
-        -442 -52 hlineto
-        963 hmoveto
-        1 52 rlineto
-        -442 -52 hlineto
+        -575 431 rmoveto
+        -443 -52 442 hlineto
+        522 52 rmoveto
+        -442 -52 441 hlineto
+        523 52 rmoveto
+        -442 -52 441 hlineto
+        -1042 -171 rmoveto
+        -443 -52 442 hlineto
+        522 52 rmoveto
+        -442 -52 441 hlineto
+        523 52 rmoveto
+        -442 -52 441 hlineto
         endchar
     </CharString>
     <Subrs/>

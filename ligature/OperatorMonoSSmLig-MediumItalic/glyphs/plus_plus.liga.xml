@@ -2,8 +2,7 @@
     <CharString>
         279 103 hstem
         -489 511 vstem
-        322 382 rmoveto
-        38 197 rlineto
+        360 579 rmoveto
         -110 hlineto
         -38 -197 rlineto
         -380 hlineto
@@ -22,6 +21,7 @@
         39 198 rlineto
         189 hlineto
         21 103 rlineto
+        -190 hlineto
         endchar
     </CharString>
     <Subrs/>

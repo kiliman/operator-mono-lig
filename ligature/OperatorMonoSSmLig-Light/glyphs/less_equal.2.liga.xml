@@ -1,15 +1,13 @@
-<Glyph name="less_equal.2.liga" lsb="-348" width="666">
+<Glyph name="less_equal.2.liga" lsb="-388" width="625">
     <CharString>
-        559 -163 50 90 685 hstem
-        455 805 vstem
-        456 27 rmoveto
-        -707 290 rlineto
+        -163 50 90 685 hstem
+        -291 317 rmoveto
         10 vlineto
         700 284 -22 51 -775 -309 rlineto
         -62 vlineto
-        805 -323 rlineto
-        -805 -131 rmoveto
-        804 50 -804 hlineto
+        805 -323 -1 59 rlineto
+        -190 vmoveto
+        50 -804 -50 vlineto
         endchar
     </CharString>
     <Subrs/>
