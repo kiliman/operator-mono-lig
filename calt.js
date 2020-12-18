@@ -1,7 +1,7 @@
-const fs = require('fs');
+const fs = require('fs')
 
 const rules = [
-  ,
+  '',
   `
 lookup 1 {
   sub 1 by glyph;
@@ -30,37 +30,36 @@ lookup 1_2_3_4 {
   sub 1.spacer 2'       3        4  by 2.spacer;
   sub 1'       2        3        4  by 1.spacer;
 } 1_2_3_4;`,
-];
+]
 
-const gencalt = (ligatures) => {
-  let calt = 'feature calt {\n';
-  const ligs = {};
-  console.log(ligatures);
+const gencalt = ligatures => {
+  let calt = 'feature calt {\n'
+  const ligs = {}
 
   ligatures
-    .filter((l) => !!l.name.match(/\.liga$/) || l.name !== l.glyph)
-    .map((l) => l.glyph)
+    .filter(l => !!l.name.match(/\.liga$/) || l.name !== l.glyph)
+    .map(l => l.glyph)
     .sort((a, b) => {
-      const length = b.split('_').length - a.split('_').length;
-      if (length !== 0) return length;
-      return a < b ? -1 : 1;
+      const length = b.split('_').length - a.split('_').length
+      if (length !== 0) return length
+      return a < b ? -1 : 1
     })
-    .forEach((g) => {
+    .forEach(g => {
       g.split('.')
         .slice(0, 1)
-        .forEach((l) => {
-          if (ligs[l]) return;
-          ligs[l] = true;
-          const c = l.split('_');
-          let rule = rules[c.length];
+        .forEach(l => {
+          if (ligs[l]) return
+          ligs[l] = true
+          const c = l.split('_')
+          let rule = rules[c.length]
           rule = rule
-            .replace(/\d/g, (m) => c[parseInt(m) - 1])
-            .replace(/glyph/g, g);
-          calt += rule + '\n';
-        });
-    });
+            .replace(/\d/g, m => c[parseInt(m) - 1])
+            .replace(/glyph/g, g)
+          calt += rule + '\n'
+        })
+    })
 
-  return calt + '\n} calt;\n';
-};
+  return calt + '\n} calt;\n'
+}
 
-exports.gencalt = gencalt;
+exports.gencalt = gencalt
