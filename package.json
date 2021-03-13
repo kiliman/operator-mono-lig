@@ -14,7 +14,7 @@
   "dependencies": {
     "hash.js": "^1.1.7",
     "xml-formatter": "^1.0.1",
-    "xmldom": "^0.1.27",
+    "xmldom": "^0.5.0",
     "xpath": "0.0.24"
   },
   "devDependencies": {
