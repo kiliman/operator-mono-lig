@@ -58,7 +58,9 @@ Which font weight of Operator Mono do you use? Also note difference between Scre
 - Python (v2.7+)
 - Node.js
 - Install _fonttools_ from https://github.com/fonttools/fonttools
-  - Windows/Linux: `pip install fonttools` **NOTE**: For Windows you should use a console with administrative permissions if your Python sit under `C:\PythonX`
+  - Windows/Linux: `pip install fonttools`
+      - **NOTE**: For Windows you should use a console with administrative permissions if your Python sit under `C:\PythonX`
+      - **NOTE**: For Linux in WSL/WSL2, ensure that _fonttools_ is added to PATH after install. Alternatively, consider installing via `sudo apt install fonttools`.
   - Mac: `pip3 install fonttools`
 
 ## Installation
