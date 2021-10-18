@@ -164,6 +164,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/Jakob6174"><img src="https://avatars3.githubusercontent.com/u/40262817?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Jakob Pearson</b></sub></a><br /><a href="https://github.com/kiliman/operator-mono-lig/commits?author=Jakob6174" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/Kilua99"><img src="https://avatars.githubusercontent.com/u/44760686?v=4?s=100" width="100px;" alt=""/><br /><sub><b>kilua99</b></sub></a><br /><a href="https://github.com/kiliman/operator-mono-lig/commits?author=Kilua99" title="Documentation">📖</a></td>
   </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/GlorifiedBicycle"><img src="https://avatars.githubusercontent.com/u/71753585?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Reland Boyle</b></sub></a><br /><a href="https://github.com/kiliman/operator-mono-lig/commits?author=GlorifiedBicycle" title="Documentation">📖</a></td>
+  </tr>
 </table>
 
 <!-- markdownlint-restore -->
