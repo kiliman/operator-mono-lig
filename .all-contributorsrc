@@ -84,6 +84,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "killua99",
+      "name": "Luigi",
+      "avatar_url": "https://avatars.githubusercontent.com/u/457822?v=4",
+      "profile": "http://killua.me/",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7

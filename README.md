@@ -166,6 +166,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   </tr>
   <tr>
     <td align="center"><a href="https://github.com/GlorifiedBicycle"><img src="https://avatars.githubusercontent.com/u/71753585?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Reland Boyle</b></sub></a><br /><a href="https://github.com/kiliman/operator-mono-lig/commits?author=GlorifiedBicycle" title="Documentation">📖</a></td>
+    <td align="center"><a href="http://killua.me/"><img src="https://avatars.githubusercontent.com/u/457822?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Luigi</b></sub></a><br /><a href="https://github.com/kiliman/operator-mono-lig/commits?author=killua99" title="Documentation">📖</a></td>
   </tr>
 </table>
 
