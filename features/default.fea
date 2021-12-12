@@ -1,0 +1,212 @@
+languagesystem DFLT dflt;
+languagesystem latn dflt;
+
+lookup lookup_0 {
+sub zero by zero.num;
+sub one by one.num;
+sub two by two.num;
+sub three by three.num;
+sub four by four.num;
+sub five by five.num;
+sub six by six.num;
+sub seven by seven.num;
+sub eight by eight.num;
+sub nine by nine.num;
+sub slash by fraction;
+sub fraction by fraction.afrc;
+} lookup_0;
+
+lookup lookup_1 {
+sub zero by zero.den;
+sub one by one.den;
+sub two by two.den;
+sub three by three.den;
+sub four by four.den;
+sub five by five.den;
+sub six by six.den;
+sub seven by seven.den;
+sub eight by eight.den;
+sub nine by nine.den;
+sub slash by fraction;
+} lookup_1;
+
+lookup lookup_2 {
+sub L periodcentered by Ldot;
+sub l periodcentered by ldot;
+} lookup_2;
+
+
+feature case {
+sub guillemotleft by guillemotleft.cap;
+sub guillemotright by guillemotright.cap;
+sub guilsinglleft by guilsinglleft.cap;
+sub guilsinglright by guilsinglright.cap;
+sub parenleft by parenleft.cap;
+sub parenright by parenright.cap;
+sub bracketleft by bracketleft.cap;
+sub bracketright by bracketright.cap;
+sub braceleft by braceleft.cap;
+sub braceright by braceright.cap;
+} case;
+
+feature dnom {
+sub zero by zero.den;
+sub one by one.den;
+sub two by two.den;
+sub three by three.den;
+sub four by four.den;
+sub five by five.den;
+sub six by six.den;
+sub seven by seven.den;
+sub eight by eight.den;
+sub nine by nine.den;
+} dnom;
+
+feature frac {
+lookup frac0 {
+	sub [zero one two three four five six seven eight nine] slash' lookup lookup_0 [zero one two three four five six seven eight nine] ;
+} frac0;
+lookup frac1 {
+	ignore sub [zero one two three four five six seven eight nine zero.num one.num two.num three.num four.num five.num six.num seven.num eight.num nine.num zero.den one.den two.den three.den four.den five.den six.den seven.den eight.den nine.den] [zero one two three four five six seven eight nine zero.num one.num two.num three.num four.num five.num six.num seven.num eight.num nine.num zero.den one.den two.den three.den four.den five.den six.den seven.den eight.den nine.den] fraction' ;
+	ignore sub fraction' [zero one two three four five six seven eight nine zero.num one.num two.num three.num four.num five.num six.num seven.num eight.num nine.num zero.den one.den two.den three.den four.den five.den six.den seven.den eight.den nine.den] [zero one two three four five six seven eight nine zero.num one.num two.num three.num four.num five.num six.num seven.num eight.num nine.num zero.den one.den two.den three.den four.den five.den six.den seven.den eight.den nine.den] ;
+	sub [zero one two three four five six seven eight nine zero.num one.num two.num three.num four.num five.num six.num seven.num eight.num nine.num zero.den one.den two.den three.den four.den five.den six.den seven.den eight.den nine.den] fraction' lookup lookup_0 [zero one two three four five six seven eight nine zero.num one.num two.num three.num four.num five.num six.num seven.num eight.num nine.num zero.den one.den two.den three.den four.den five.den six.den seven.den eight.den nine.den] ;
+} frac1;
+lookup frac2 {
+	sub [zero one two three four five six seven eight nine]' lookup lookup_0 fraction.afrc ;
+	sub fraction.afrc [zero one two three four five six seven eight nine]' lookup lookup_1 ;
+} frac2;
+lookup frac3 {
+	sub one.num fraction.afrc two.den by onehalf;
+	sub one.num fraction.afrc three.den by onethird;
+	sub one.num fraction.afrc four.den by onequarter;
+	sub one.num fraction.afrc five.den by onefifth;
+	sub one.num fraction.afrc six.den by onesixth;
+	sub one.num fraction.afrc eight.den by oneeighth;
+	sub two.num fraction.afrc three.den by twothirds;
+	sub two.num fraction.afrc five.den by twofifths;
+	sub three.num fraction.afrc four.den by threequarters;
+	sub three.num fraction.afrc five.den by threefifths;
+	sub three.num fraction.afrc eight.den by threeeighths;
+	sub four.num fraction.afrc five.den by fourfifths;
+	sub five.num fraction.afrc six.den by fivesixths;
+	sub five.num fraction.afrc eight.den by fiveeighths;
+	sub seven.num fraction.afrc eight.den by seveneighths;
+} frac3;
+} frac;
+
+feature locl {
+script latn;
+language CAT ;
+sub l' lookup lookup_2 periodcentered' lookup lookup_2 l ;
+sub L' lookup lookup_2 periodcentered' lookup lookup_2 L ;
+} locl;
+
+feature numr {
+sub zero by zero.num;
+sub one by one.num;
+sub two by two.num;
+sub three by three.num;
+sub four by four.num;
+sub five by five.num;
+sub six by six.num;
+sub seven by seven.num;
+sub eight by eight.num;
+sub nine by nine.num;
+} numr;
+
+feature rupa {
+sub R p by R_p;
+} rupa;
+
+feature ss01 {
+sub registered by registered.alt;
+} ss01;
+
+feature salt {
+lookup salt0 {
+	sub registered by registered.alt;
+} salt0;
+lookup salt1 {
+	sub colon by colon.alt;
+} salt1;
+lookup salt2 {
+	sub bullet by bullet.alt;
+} salt2;
+lookup salt3 {
+	sub asterisk by asterisk.alt;
+} salt3;
+lookup salt4 {
+	sub zero by zero.alt;
+} salt4;
+lookup salt5 {
+	sub underscore by underscore.alt;
+} salt5;
+lookup salt6 {
+	sub [zero one two three four five six seven eight nine zero.num one.num two.num three.num four.num five.num six.num seven.num eight.num nine.num zero.den one.den two.den three.den four.den five.den six.den seven.den eight.den nine.den] slash' lookup lookup_1 [zero one two three four five six seven eight nine zero.num one.num two.num three.num four.num five.num six.num seven.num eight.num nine.num zero.den one.den two.den three.den four.den five.den six.den seven.den eight.den nine.den] ;
+} salt6;
+} salt;
+
+feature sinf {
+sub zero by zero.inf;
+sub one by one.inf;
+sub two by two.inf;
+sub three by three.inf;
+sub four by four.inf;
+sub five by five.inf;
+sub six by six.inf;
+sub seven by seven.inf;
+sub eight by eight.inf;
+sub nine by nine.inf;
+} sinf;
+
+feature ss03 {
+sub colon by colon.alt;
+} ss03;
+
+feature ss04 {
+sub bullet by bullet.alt;
+} ss04;
+
+feature ss05 {
+sub asterisk by asterisk.alt;
+} ss05;
+
+feature ss07 {
+sub zero by zero.alt;
+} ss07;
+
+feature ss08 {
+sub underscore by underscore.alt;
+} ss08;
+
+feature ss09 {
+sub [zero one two three four five six seven eight nine zero.num one.num two.num three.num four.num five.num six.num seven.num eight.num nine.num zero.den one.den two.den three.den four.den five.den six.den seven.den eight.den nine.den] slash' lookup lookup_1 [zero one two three four five six seven eight nine zero.num one.num two.num three.num four.num five.num six.num seven.num eight.num nine.num zero.den one.den two.den three.den four.den five.den six.den seven.den eight.den nine.den] ;
+} ss09;
+
+feature subs {
+sub zero by zero.inf;
+sub one by one.inf;
+sub two by two.inf;
+sub three by three.inf;
+sub four by four.inf;
+sub five by five.inf;
+sub six by six.inf;
+sub seven by seven.inf;
+sub eight by eight.inf;
+sub nine by nine.inf;
+} subs;
+
+feature subs {
+sub zero by zero.sup;
+sub one by one.sup;
+sub two by two.sup;
+sub three by three.sup;
+sub four by four.sup;
+sub five by five.sup;
+sub six by six.sup;
+sub seven by seven.sup;
+sub eight by eight.sup;
+sub nine by nine.sup;
+} subs;
+
+include(calt.fea);

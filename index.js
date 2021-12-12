@@ -1,10 +1,11 @@
+// @ts-nocheck
 const fs = require('fs');
 const os = require('os');
 if (!os.EOL) {
   os.EOL = process.platform === 'win32' ? '\r\n' : '\n';
 }
 
-const gsub = require('./gsub');
+const calt = require('./calt');
 
 const xpath = require('xpath');
 const { DOMParser, XMLSerializer } = require('xmldom');
@@ -17,8 +18,12 @@ const NodeType = {};
 NodeType.TEXT_NODE = 3;
 
 let dom;
+let italicsHack = false;
 function main() {
   fontName = process.argv[2];
+  italicsHack =
+    fontName.includes('Italic') && process.argv[3] !== '--italics-hack-off';
+
   ligFontName = fontName.split('-').join('Lig-');
 
   const srcFileName = `./original/${fontName}.ttx`;
@@ -29,16 +34,14 @@ function main() {
   const profiles = getProfiles();
 
   // process settings (there may be more than one font to build)
-  profiles.forEach(profile => buildFont(profile));
+  profiles.forEach((profile) => buildFont(profile, { italicsHack }));
 
   console.log('Done');
 }
 
-const buildFont = profile => {
+const buildFont = (profile, options) => {
   // add suffix to dstFileName if present
-  const dstFileName = `./build/${ligFontName}${
-    profile.suffixWithLeadingHyphen
-  }.ttx`;
+  const dstFileName = `./build/${ligFontName}${profile.suffixWithLeadingHyphen}.ttx`;
   console.log(
     `Building ligature font file ${dstFileName} name = ${profile.name}`
   );
@@ -46,22 +49,24 @@ const buildFont = profile => {
   const ligatures = sortLigatures(
     fs
       .readdirSync(`./ligature/${ligFontName}/glyphs`)
-      .filter(file => /\.xml$/.test(file))
-      .map(file => file.replace('.xml', ''))
+      .filter((file) => /\.xml$/.test(file))
+      .map((file) => file.replace('.xml', ''))
   )
-    .filter(name => !/\d+\.liga$/.test(name)) // skip alternates (ends with .#)
-    .filter(name => filterLigatures(name, profile.ligatures))
-    .map(name => mapLigatures(name, profile.ligatures))
-    .filter(entry => filterGlyphsExists(entry));
+    .filter((name) => !/\d+\.liga$/.test(name)) // skip alternates (ends with .#)
+    .filter((name) => filterLigatures(name, profile.ligatures))
+    .map((name) => mapLigatures(name, profile.ligatures))
+    .filter((entry) => filterGlyphsExists(entry));
 
   const ligaturesWithLIG = ligatures;
   //[...ligatures, { name: 'LIG', glyph: 'LIG' }];
 
   processPatch('names', patchNames, dom, ligatures, profile);
-  processPatch('gsub', patchGsub, dom, ligatures);
   processPatch('charstrings', patchCharStrings, dom, ligaturesWithLIG);
   processPatch('glyphs', patchGlyphs, dom, ligaturesWithLIG);
   processPatch('hmtx', patchHmtx, dom);
+
+  const feature = calt.gencalt(ligatures);
+  fs.writeFileSync('./features/calt.fea', feature);
 
   console.log(`Writing ligature font file ${dstFileName}`);
   fs.writeFileSync(dstFileName, format(serialize(dom)));
@@ -77,8 +82,8 @@ const getProfiles = () => {
         suffix: '',
         suffixWithLeadingSpace: '',
         suffixWithLeadingHyphen: '',
-        ligatures: []
-      }
+        ligatures: [],
+      },
     ];
   }
 
@@ -87,9 +92,9 @@ const getProfiles = () => {
 
   const content = fs.readFileSync(profilePath, 'utf-8');
   content
-    .split(os.EOL)
-    .filter(line => /^[#]/.test(line) === false && line.length > 0)
-    .forEach(line => {
+    .split(/\r|\r\n|\n/g)
+    .filter((line) => /^[#]/.test(line) === false && line.length > 0)
+    .forEach((line) => {
       const ch = line.trim()[0];
       if (ch === '[') {
         let name = line.substr(1, line.indexOf(']') - 1);
@@ -98,12 +103,12 @@ const getProfiles = () => {
           suffix: name === 'default' ? '' : name,
           suffixWithLeadingSpace: name === 'default' ? '' : ' ' + name,
           suffixWithLeadingHyphen: name === 'default' ? '' : '-' + name,
-          ligatures: []
+          ligatures: [],
         };
         profiles.push(profile);
       } else {
         if (!profile) {
-          throw new Error('You must profile a profile name in []');
+          throw new Error('You must provide a profile name in []');
         }
         profile.ligatures.push(line);
       }
@@ -115,12 +120,12 @@ const getProfiles = () => {
 const filterLigatures = (name, mappings) => {
   // loop through mappings and return if name applies or not
   // skip if setting is !name
-  return mappings.filter(entry => entry === '!' + name).length === 0;
+  return mappings.filter((entry) => entry === '!' + name).length === 0;
 };
 
 const mapLigatures = (name, mappings) => {
   let mapping = { name, glyph: name };
-  mappings.forEach(entry => {
+  mappings.forEach((entry) => {
     const [val1, val2] = entry.split('=');
     // handle lig=altliga
     if (val1 === name) {
@@ -137,10 +142,10 @@ const filterGlyphsExists = ({ glyph }) => {
   return exists;
 };
 
-const sortLigatures = ligatures => {
+const sortLigatures = (ligatures) => {
   // sort by most glyphs then alphabetically
   const sorted = ligatures
-    .map(ligature => {
+    .map((ligature) => {
       return { count: ligature.split('_').length + 1, ligature: ligature };
     })
     .sort(
@@ -148,7 +153,7 @@ const sortLigatures = ligatures => {
         -compareProperty(a.count, b.count) || // sort by count descending
         compareProperty(a.ligature, b.ligature) // then by ligature alphabetically
     )
-    .map(entry => entry.ligature);
+    .map((entry) => entry.ligature);
   return sorted;
 };
 
@@ -160,20 +165,20 @@ const compareProperty = (a, b) => {
   }
 };
 
-const loadXml = name => {
+const loadXml = (name) => {
   const fileName = `./ligature/${ligFontName}/${name}.xml`;
   const xml = fs.readFileSync(fileName, 'utf-8');
   return new DOMParser().parseFromString(xml);
 };
 
-const processPatch = (name, patchFunc, dom, ligatures, profile) => {
+const processPatch = (name, patchFunc, dom, ligatures, profile, options) => {
   console.log(`Patching ${name}`);
-  patchFunc(dom, ligatures, profile);
+  patchFunc(dom, ligatures, profile, options);
 };
 
 const PlatformId = {
   mac: 1,
-  win: 3
+  win: 3,
 };
 
 const NameId = {
@@ -184,7 +189,7 @@ const NameId = {
   version: 5,
   postscriptName: 6,
   windowsFamilyName: 16,
-  fontStyleName: 17
+  fontStyleName: 17,
 };
 
 const patchNames = (dom, ligatures, profile) => {
@@ -216,6 +221,7 @@ const patchNames = (dom, ligatures, profile) => {
   setAttribute(cffFont, 'FamilyName', 'value', familyNamePlat);
 
   // update existing names with new names
+  // mac family name does not include style
   updateName(PlatformId.mac, NameId.familyName, familyNamePlat);
   updateName(PlatformId.mac, NameId.fontStyle, names.fontStyle);
   updateName(PlatformId.mac, NameId.uniqueId, uniqueId);
@@ -224,6 +230,7 @@ const patchNames = (dom, ligatures, profile) => {
   updateName(PlatformId.mac, NameId.windowsFamilyName, familyNamePlat);
   updateName(PlatformId.mac, NameId.fontStyleName, names.fontStyle);
 
+  // windows family name includes style
   updateName(PlatformId.win, NameId.familyName, familyName);
   updateName(PlatformId.win, NameId.fontStyle, names.windowsFontStyle);
   updateName(PlatformId.win, NameId.uniqueId, uniqueId);
@@ -253,7 +260,7 @@ const patchGlyphs = (dom, ligatures) => {
   // only import glyphs specified
   let n = glyphsCount;
   // get ligature glyphs
-  ligatures.forEach(ligature => {
+  ligatures.forEach((ligature) => {
     targetGlyphs.appendChild(
       createElementWithAttributes('GlyphID', { id: n++, name: ligature.glyph })
     );
@@ -262,18 +269,19 @@ const patchGlyphs = (dom, ligatures) => {
   setAttribute(dom, '/ttFont/maxp/numGlyphs', 'value', n);
 };
 
-const patchGsub = (dom, ligatures) => {
+const patchGsub = (dom, ligatures, options) => {
   // don't patch if no ligatures other than LIG
   if (ligatures.length <= 1) return;
+  gsub.initGsubTables(dom, options);
 
-  ligatures.forEach(ligature => {
+  ligatures.forEach((ligature) => {
     // build gsub tables
-    gsub.buildGsubTables(dom, ligature);
+    gsub.buildGsubTables(dom, ligature, options);
   });
   gsub.finalizeGsubTables();
 };
 
-const patchHmtx = dom => {
+const patchHmtx = (dom) => {
   const mtxCount = xpath.select('count(/ttFont/hmtx/mtx)', dom, true);
   setAttribute(dom, '/ttFont/hhea/numberOfHMetrics', 'value', mtxCount);
 
@@ -306,7 +314,7 @@ const patchCharStrings = (dom, ligatures) => {
   );
   const targetGsubrs = xpath.select('/ttFont/CFF/GlobalSubrs', dom, true);
   const fingerprints = {};
-  ligatures.forEach(ligature => {
+  ligatures.forEach((ligature) => {
     console.log(
       `* ${ligature.name}${
         ligature.name === ligature.glyph ? '' : ' => ' + ligature.glyph
@@ -318,11 +326,11 @@ const patchCharStrings = (dom, ligatures) => {
 
     const subrs = {
       sourcePath: '/Glyph/Subrs',
-      target: targetSubrs
+      target: targetSubrs,
     };
     const gsubrs = {
       sourcePath: '/Glyph/GlobalSubrs',
-      target: targetGsubrs
+      target: targetGsubrs,
     };
 
     patchCharStringSubrs(glyphDom, node, fingerprints, subrs, gsubrs);
@@ -332,16 +340,16 @@ const patchCharStrings = (dom, ligatures) => {
       createElementWithAttributes('mtx', {
         name: ligature.glyph,
         width: glyphDom.getAttribute('width'),
-        lsb: glyphDom.getAttribute('lsb')
+        lsb: glyphDom.getAttribute('lsb'),
       })
     );
     const code = glyphDom.getAttribute('code');
     if (code) {
-      Array.from(targetCmaps).forEach(node => {
+      Array.from(targetCmaps).forEach((node) => {
         node.appendChild(
           createElementWithAttributes('map', {
             code,
-            name: ligature.glyph
+            name: ligature.glyph,
           })
         );
       });
@@ -354,7 +362,7 @@ const patchCharStringSubrs = (glyphDom, node, fingerprints, subrs, gsubrs) => {
 
   const lines = node.childNodes[0].textContent.split(/\r|\r\n|\n/g);
   const newLines = [];
-  lines.forEach(line => {
+  lines.forEach((line) => {
     if (line.trim().length === 0) return;
     const matches = line.match(/(.*?)\{([0-9a-z]+)\} (callsubr|callgsubr)$/);
     if (matches != null) {
@@ -403,21 +411,21 @@ const copyConfigAttribute = (dom, configDom, path, name) => {
 
 const createElementWithAttributes = (tagName, attributes) => {
   const element = dom.createElement(tagName);
-  Object.entries(attributes).forEach(attribute => {
+  Object.entries(attributes).forEach((attribute) => {
     element.setAttribute(attribute[0], attribute[1]);
   });
   return element;
 };
 
 //const dump = dom => console.log(serialize(dom));
-const serialize = dom =>
-  new XMLSerializer().serializeToString(dom, false, node => {
+const serialize = (dom) =>
+  new XMLSerializer().serializeToString(dom, false, (node) => {
     if (node.nodeType === NodeType.TEXT_NODE) {
       if (regExWhitespace.test(node.data)) return null;
       const data = node.data
         .split(/\r|\r\n|\n/g)
-        .filter(s => /\S+/.test(s))
-        .map(s => s.replace(/^\s+/g, ''))
+        .filter((s) => /\S+/.test(s))
+        .map((s) => s.replace(/^\s+/g, ''))
         .join(os.EOL);
 
       return node.ownerDocument.createTextNode(data);

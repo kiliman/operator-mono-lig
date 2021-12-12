@@ -2,28 +2,26 @@
     <CharString>
         0 143 496 115 hstem
         -369 156 71 132 111 156 71 132 vstem
-        -447 754 rmoveto
-        -12 -115 rlineto
+        -459 639 rmoveto
         263 -19 54 -34 -44 vvcurveto
         -66 -178 -52 -8 -161 vhcurveto
         87 -3 rlineto
         15 142 216 47 125 vvcurveto
         89 -97 75 -340 16 vhcurveto
-        470 hmoveto
-        -12 -115 rlineto
+        458 -115 rmoveto
         263 -19 54 -34 -44 vvcurveto
         -66 -178 -52 -8 -161 vhcurveto
         87 -3 rlineto
         15 142 216 47 125 vvcurveto
         89 -97 75 -340 16 vhcurveto
-        -394 -754 rmoveto
-        156 hlineto
+        -238 -754 rmoveto
         3 143 rlineto
         -155 hlineto
-        466 -143 rmoveto
-        156 hlineto
+        -4 -143 rlineto
+        626 hmoveto
         3 143 rlineto
         -155 hlineto
+        -4 -143 rlineto
         endchar
     </CharString>
     <Subrs/>

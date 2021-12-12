@@ -1,10 +1,10 @@
 <Glyph name="greater_equal.liga" lsb="-326" width="550">
     <CharString>
         -335 702 vstem
-        -293 22 rmoveto
-        664 264 1 8 -555 258 34 43 614 -278 -11 -54 -730 -283 rlineto
-        697 113 rmoveto
-        -730 -283 -17 42 758 297 rlineto
+        371 286 rmoveto
+        1 8 -555 258 34 43 614 -278 -11 -54 -730 -283 -17 42 rlineto
+        -16 -212 rmoveto
+        -17 42 758 297 -11 -56 rlineto
         endchar
     </CharString>
     <Subrs/>

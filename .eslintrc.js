@@ -1,17 +1,14 @@
 module.exports = {
   env: {
     es6: true,
-    node: true
+    node: true,
   },
-  extends: 'eslint:recommended',
+  extends: ['eslint:recommended', 'prettier'],
   parserOptions: {
-    sourceType: 'module'
+    sourceType: 'module',
   },
   rules: {
-    indent: ['error', 2],
     'linebreak-style': ['error', 'unix'],
-    quotes: ['error', 'single'],
-    semi: ['error', 'always'],
-    'no-console': 'off'
-  }
-};
+    'no-console': 'off',
+  },
+}

@@ -1,18 +1,18 @@
 <Glyph name="percent.alt" lsb="25" width="625">
     <CharString>
-        -65 73 -70 784 -545 72 162 55 -55 73 169 72 hstemhm
-        25 78 -17 461 -336 78 54 78 108 78 hintmask 1011011011100000
+        -65 73 -70 784 -545 72 162 73 169 72 hstemhm
+        25 78 -17 461 -336 78 54 78 108 78 hintmask 1011110111000000
         152 411 rmoveto
         83 54 66 96 94 -46 58 -81 -83 -54 -67 -95 -94 45 -58 82 hvcurveto
-        hintmask 1011010100000000
-        394 274 rmoveto
-        hintmask 0100000100000000
-        -79 38 -381 -749 79 -36 rlineto
-        hintmask 1010010100000000
-        -9 715 rmoveto
-        hintmask 1010011011100000
+        hintmask 0100010111000000
+        315 312 rmoveto
+        hintmask 0100001000000000
+        -381 -749 79 -36 381 747 rlineto
+        hintmask 1010101000000000
+        -390 -32 rmoveto
+        hintmask 1010110111000000
         37 18 -33 -55 hvcurveto
-        hintmask 1010111011100000
+        hintmask 1011110111000000
         -51 -17 -30 -36 -36 -19 32 56 51 16 30 37 vhcurveto
         314 -718 rmoveto
         83 54 66 96 94 -46 58 -81 -83 -54 -67 -95 -94 45 -58 82 hvcurveto

@@ -2,8 +2,7 @@
     <CharString>
         -26 707 -403 105 hstemhm
         -1155 1649 hintmask 01100000
-        494 383 rmoveto
-        -1476 hlineto
+        -982 383 rmoveto
         261 211 rlineto
         hintmask 10100000
         -66 87 -368 -302 rlineto
@@ -12,6 +11,7 @@
         hintmask 01100000
         -269 217 rlineto
         1472 hlineto
+        10 105 rlineto
         endchar
     </CharString>
     <Subrs/>

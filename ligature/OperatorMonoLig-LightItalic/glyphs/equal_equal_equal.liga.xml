@@ -1,18 +1,18 @@
 <Glyph name="equal_equal_equal.liga" lsb="-1018" width="550">
     <CharString>
         16 61 187 60 187 60 hstem
-        563 511 rmoveto
-        13 60 rlineto
+        576 571 rmoveto
         -1486 hlineto
         -12 -60 rlineto
-        1437 -247 rmoveto
-        13 60 rlineto
+        1485 hlineto
+        -35 -187 rmoveto
         -1486 hlineto
         -12 -60 rlineto
-        1437 -248 rmoveto
-        13 61 rlineto
+        1485 hlineto
+        -35 -187 rmoveto
         -1486 hlineto
         -12 -61 rlineto
+        1485 hlineto
         endchar
     </CharString>
     <Subrs/>

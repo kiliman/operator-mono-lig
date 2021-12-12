@@ -2,9 +2,8 @@
     <CharString>
         -10 71 hstem
         -411 76 132 73 149 76 132 73 vstem
-        523 350 rmoveto
-        -66 24 -30 -59 -30 -50 -30 -42 rlinecurve
-        -37 63 -22 63 -8 65 rrcurveto
+        457 374 rmoveto
+        -30 -59 -30 -50 -30 -42 -37 63 -22 63 -8 65 rrcurveto
         60 60 35 65 49 vvcurveto
         33 -22 19 -32 -51 -63 -97 -107 vhcurveto
         -7 vlineto

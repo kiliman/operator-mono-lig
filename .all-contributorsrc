@@ -57,6 +57,42 @@
       "contributions": [
         "design"
       ]
+    },
+    {
+      "login": "Jakob6174",
+      "name": "Jakob Pearson",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/40262817?v=4",
+      "profile": "https://github.com/Jakob6174",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "Kilua99",
+      "name": "kilua99",
+      "avatar_url": "https://avatars.githubusercontent.com/u/44760686?v=4",
+      "profile": "https://github.com/Kilua99",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "GlorifiedBicycle",
+      "name": "Reland Boyle",
+      "avatar_url": "https://avatars.githubusercontent.com/u/71753585?v=4",
+      "profile": "https://github.com/GlorifiedBicycle",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "killua99",
+      "name": "Luigi",
+      "avatar_url": "https://avatars.githubusercontent.com/u/457822?v=4",
+      "profile": "http://killua.me/",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7
