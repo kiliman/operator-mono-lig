@@ -1,6 +1,6 @@
 {
   "name": "operator-mono-lig",
-  "version": "2.4.1",
+  "version": "2.4.2",
   "description": "Patch Operator Mono font to include ligatures",
   "repository": "github:kiliman/operator-mono-lig",
   "main": "index.js",
@@ -13,20 +13,12 @@
   "license": "ISC",
   "dependencies": {
     "hash.js": "^1.1.7",
-    "xml-formatter": "^1.0.1",
-    "xmldom": "^0.5.0",
-    "xpath": "0.0.24"
+    "xml-formatter": "^2.6.1",
+    "xmldom": "^0.6.0",
+    "xpath": "^0.0.32"
   },
   "devDependencies": {
-    "all-contributors-cli": "^6.19.0",
-    "canvas": "^2.6.1",
-    "eslint": "^7.15.0",
-    "eslint-config-airbnb": "^18.2.1",
-    "eslint-config-prettier": "^7.0.0",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-react": "^7.21.5",
-    "eslint-plugin-react-hooks": "^4.2.0",
-    "prettier": "^2.2.1"
+    "all-contributors-cli": "^6.20.0",
+    "prettier": "^2.5.1"
   }
 }

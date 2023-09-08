@@ -56,12 +56,13 @@ Which font weight of Operator Mono do you use? Also note difference between Scre
 
 - The original _Operator Mono_ font... of course.
 - Python (v2.7+)
+  - **NOTE**: For Mac, the default system Python v2.7 doesn't work. Make sure you install Python 3.
 - Node.js
 - Install _fonttools_ from https://github.com/fonttools/fonttools
   - Windows/Linux: `pip install fonttools`
     - **NOTE**: For Windows you should use a console with administrative permissions if your Python sit under `C:\PythonX`
     - **NOTE**: For Linux in WSL/WSL2, ensure that _fonttools_ is added to PATH after install. Alternatively, consider installing via `sudo apt install fonttools`.
-  - Mac: `pip3 install fonttools`
+  - Mac: `pip3 install fonttools` (from Python 3)
 
 ## Installation
 
