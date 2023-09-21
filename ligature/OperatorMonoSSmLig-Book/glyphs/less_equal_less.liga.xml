@@ -1,39 +1,32 @@
 <Glyph name="less_equal_less.liga" lsb="-1148" width="625">
     <CharString>
         -24 693 -501 77 169 77 hstemhm
-        -1148 84 -84 1671 -421 84 hintmask 01001000
-        523 40 rmoveto
-        hintmask 01000100
-        -337 279 rlineto
-        11 vlineto
-        332 275 rlineto
-        hintmask 10000100
-        -50 64 rlineto
-        hintmask 01100100
+        -1148 84 532 438 196 84 hintmask 10011100
+        468 669 rmoveto
+        hintmask 01111100
         -213 -178 rlineto
         -1125 hlineto
         138 114 rlineto
-        hintmask 10000100
-        -50 64 rlineto
-        hintmask 10001000
-        -366 -306 rlineto
+        hintmask 10011100
+        -50 64 -366 -306 rlineto
         -77 vlineto
         369 -310 52 64 rlineto
-        hintmask 01001000
+        hintmask 01111100
         -155 128 rlineto
         1124 hlineto
-        hintmask 10001000
-        229 -192 rlineto
-        hintmask 10010100
-        -1535 343 rmoveto
+        hintmask 10011100
+        229 -192 52 64 -337 279 rlineto
         11 vlineto
-        hintmask 01110100
-        101 84 rlineto
-        1126 hlineto
+        332 275 rlineto
+        hintmask 01111100
+        -355 -191 rmoveto
         -61 -51 rlineto
         -77 vlineto
         49 -41 rlineto
         -1126 hlineto
+        -89 74 rlineto
+        11 vlineto
+        101 84 rlineto
         endchar
     </CharString>
     <Subrs/>

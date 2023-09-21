@@ -1,0 +1,23 @@
+<Glyph name="slash_equal.liga" lsb="-543" width="625">
+    <CharString>
+        -222 1044 -662 103 -103 104 141 103 hstemhm
+        -543 613 -56 451 hintmask 01010100
+        465 508 rmoveto
+        -530 hlineto
+        hintmask 10001000
+        135 264 -105 50 -508 -996 106 -48 rlineto
+        hintmask 01010100
+        195 382 rlineto
+        707 hlineto
+        hintmask 00110100
+        104 -451 vlineto
+        hintmask 01010100
+        -1 -204 vlineto
+        73 142 rlineto
+        131 hlineto
+        -1 451 vlineto
+        endchar
+    </CharString>
+    <Subrs/>
+    <GlobalSubrs/>
+</Glyph>

@@ -1,43 +1,31 @@
 <Glyph name="percent.alt" lsb="-14" width="625">
     <CharString>
         -143 91 -74 852 -644 90 255 91 134 90 hstemhm
-        -14 654 -608 95 315 92 hintmask 00010010
-        181 427 rmoveto
-        79 66 68 95 18 hvcurveto
-        hintmask 00001010
-        93 19 -33 59 -79 hhcurveto
-        -79 -66 -68 -95 -19 hvcurveto
-        hintmask 00010010
-        -94 -18 33 -58 79 hhcurveto
-        hintmask 01000011
-        352 299 rmoveto
-        hintmask 01000100
-        -547 -819 114 -33 539 811 rlineto
-        hintmask 00001100
-        -411 -33 rmoveto
-        26 7 -27 -45 -8 hvcurveto
-        hintmask 00010100
-        -39 -8 -16 -23 -25 hhcurveto
-        -26 -7 26 45 8 hvcurveto
-        hintmask 00001100
-        39 8 16 24 25 hhcurveto
-        hintmask 10000100
-        142 -795 rmoveto
-        hintmask 10000011
+        -14 654 -608 95 315 92 hintmask 10111011
+        277 9 rmoveto
+        -94 -19 33 -58 79 hhcurveto
         79 66 68 95 19 hvcurveto
-        hintmask 00100011
         93 18 -33 59 -79 hhcurveto
         -79 -66 -68 -95 -18 hvcurveto
-        hintmask 10000011
-        -94 -19 33 -58 79 hhcurveto
-        hintmask 00100011
-        47 225 rmoveto
-        26 7 -27 -45 -8 hvcurveto
-        hintmask 10000011
-        -39 -8 -15 -23 -25 hhcurveto
+        117 -61 rmoveto
         -26 -8 26 45 8 hvcurveto
-        hintmask 00100011
         39 8 16 24 25 hhcurveto
+        26 7 -27 -45 -8 hvcurveto
+        -39 -8 -15 -23 -25 hhcurveto
+        hintmask 01000100
+        -408 -41 rmoveto
+        114 -33 539 811 -106 41 rlineto
+        -446 -147 rmoveto
+        hintmask 10111011
+        -94 -18 33 -58 79 hhcurveto
+        79 66 68 95 18 hvcurveto
+        93 19 -33 59 -79 hhcurveto
+        -79 -66 -68 -95 -19 hvcurveto
+        117 -61 rmoveto
+        -26 -7 26 45 8 hvcurveto
+        39 8 16 24 25 hhcurveto
+        26 7 -27 -45 -8 hvcurveto
+        -39 -8 -16 -23 -25 hhcurveto
         endchar
     </CharString>
     <Subrs/>

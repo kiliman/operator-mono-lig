@@ -1,0 +1,33 @@
+<Glyph name="quotedbl_quotedbl_quotedbl.liga" lsb="-1024" width="625">
+    <CharString>
+        416 327 hstem
+        -1021 108 133 108 199 108 133 108 199 108 133 108 vstem
+        379 416 rmoveto
+        46 284 -3 43 rlineto
+        -109 hlineto
+        5 -327 rlineto
+        -179 hmoveto
+        46 284 -4 43 rlineto
+        -109 hlineto
+        6 -327 rlineto
+        -247 hmoveto
+        46 284 -3 43 rlineto
+        -109 hlineto
+        5 -327 rlineto
+        -179 hmoveto
+        46 284 -4 43 rlineto
+        -109 hlineto
+        6 -327 rlineto
+        -247 hmoveto
+        46 284 -3 43 rlineto
+        -109 hlineto
+        5 -327 rlineto
+        -179 hmoveto
+        46 284 -4 43 rlineto
+        -109 hlineto
+        6 -327 rlineto
+        endchar
+    </CharString>
+    <Subrs/>
+    <GlobalSubrs/>
+</Glyph>

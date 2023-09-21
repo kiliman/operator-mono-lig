@@ -21,8 +21,12 @@ build_font() {
     node index.js "$otf" "$flags"
 
     ttx -f "./build/$1.ttx"
-
-    fonttools feaLib -v -o "./build/$1.otf" ./features/default.fea "./build/$1.otf"
+    if [[ $lig == *"SSm"* ]]; then
+        fea="./features/defaultSSm.fea"
+    else
+        fea="./features/default.fea"
+    fi
+    fonttools feaLib -v -o "./build/$1.otf" $fea "./build/$1.otf"
 }
 
 flags=

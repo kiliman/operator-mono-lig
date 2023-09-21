@@ -1,0 +1,21 @@
+<Glyph name="quotesingle_quotesingle_quotesingle.liga" lsb="-902" width="625">
+    <CharString>
+        415 338 hstem
+        -902 239 294 239 318 239 vstem
+        303 415 rmoveto
+        118 285 6 53 rlineto
+        -183 hlineto
+        -56 -338 rlineto
+        -442 hmoveto
+        118 285 6 53 rlineto
+        -183 hlineto
+        -56 -338 rlineto
+        -418 hmoveto
+        118 285 6 53 rlineto
+        -183 hlineto
+        -56 -338 rlineto
+        endchar
+    </CharString>
+    <Subrs/>
+    <GlobalSubrs/>
+</Glyph>

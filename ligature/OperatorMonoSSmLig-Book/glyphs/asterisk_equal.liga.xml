@@ -1,0 +1,16 @@
+<Glyph name="asterisk_equal.liga" lsb="-498" width="625">
+    <CharString>
+        98 463 -393 77 169 77 hstemhm
+        -498 476 38 438 hintmask 01111000
+        454 491 rmoveto
+        -438 -77 437 hlineto
+        1 -169 rmoveto
+        -438 -77 437 hlineto
+        hintmask 10011000
+        -620 -70 rmoveto
+        51 31 -69 156 163 59 -14 57 -171 -17 -6 172 -61 5 -37 -169 -163 48 -24 -55 149 -87 -95 -140 45 -39 127 113 rlineto
+        endchar
+    </CharString>
+    <Subrs/>
+    <GlobalSubrs/>
+</Glyph>

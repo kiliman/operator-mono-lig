@@ -1,13 +1,19 @@
 <Glyph name="equal_equal_equal.liga" lsb="-1157" width="625">
     <CharString>
         45 77 169 77 169 77 hstem
-        -1157 1688 vstem
-        531 614 rmoveto
-        -1688 -77 1687 hlineto
-        1 -169 rmoveto
-        -1688 -77 1687 hlineto
-        1 -169 rmoveto
-        -1688 -77 1687 hlineto
+        cntrmask 11100000
+        -1157 537 rmoveto
+        1687 hlineto
+        1 77 rlineto
+        -1688 hlineto
+        -323 vmoveto
+        1687 hlineto
+        1 77 rlineto
+        -1688 hlineto
+        -323 vmoveto
+        1687 hlineto
+        1 77 rlineto
+        -1688 hlineto
         endchar
     </CharString>
     <Subrs/>

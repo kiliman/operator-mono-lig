@@ -1,0 +1,252 @@
+##############################
+# Languagesystem definitions #
+##############################
+languagesystem DFLT dflt; # Default default
+languagesystem latn dflt; # Latin default
+languagesystem latn CAT ; # Latin Catalan
+##########
+# Prefix #
+##########
+@HexDigit          = [a b c d e f A B C D E F];
+@Digit             = [zero one two three four five six seven eight nine];
+@DigitAll          = [zero one two three four five six seven eight nine zero.num one.num two.num three.num four.num five.num six.num seven.num eight.num nine.num zero.den one.den two.den three.den four.den five.den six.den seven.den eight.den nine.den];
+@DigitSmall        = [zero.small one.small two.small three.small four.small five.small six.small seven.small eight.small nine.small];
+@DigitNumerator    = [zero.num one.num two.num three four.num five.num six.num seven.num eight.num nine.num];
+@DigitDenominator  = [zero.den one.den two.den three.den four.den five.den six.den seven.den eight.den nine.den];
+@DigitSuperior     = [zero.sup one.sup two.sup three.sup four.sup five.sup six.sup seven.sup eight.sup nine.sup];
+@DigitInferior     = [zero.inf one.inf two.inf three.inf four.inf five.inf six.inf seven.inf eight.inf nine.inf];
+#######################
+# Feature definitions #
+#######################
+feature locl {
+# GSUB feature: Localized Forms
+    script latn;       # Latin
+        language CAT;  # Catalan
+        sub l' periodcentered' by ldot;
+        sub L' periodcentered' by Ldot;
+} locl;
+
+feature aalt useExtension {
+# GSUB feature: Access All Alternates
+    feature case;
+    feature dnom;
+    feature numr;
+    feature salt;
+    feature sinf;
+    feature ss01;
+    feature ss03;
+    feature ss04;
+    feature ss05;
+    feature ss07;
+    feature ss08;
+    feature ss09;
+    feature ss10;
+    feature ss11;
+    feature ss12;
+    feature subs;
+    feature sups;
+    feature smcp;
+    feature c2sc;
+} aalt;
+
+feature frac {
+# GSUB feature: Fractions
+    lookup frac0 {
+        sub @Digit slash' @Digit by fraction;
+    } frac0;
+   
+    lookup frac1 {
+        ignore sub @DigitAll @DigitAll fraction';
+        ignore sub fraction' @DigitAll @DigitAll;
+        sub @DigitAll fraction' @DigitAll by fraction.afrc;
+    } frac1;
+
+    lookup frac2 {
+        sub @Digit' fraction.afrc by @DigitNumerator;
+        sub fraction.afrc @Digit' by @DigitDenominator;
+    } frac2;
+
+    lookup frac3 {
+        sub one.num   fraction.afrc   two.den     by onehalf;
+        sub one.num   fraction.afrc   three.den   by onethird;
+        sub one.num   fraction.afrc   four.den    by onequarter;
+        sub one.num   fraction.afrc   five.den    by onefifth;
+        sub one.num   fraction.afrc   six.den     by onesixth;
+        sub one.num   fraction.afrc   eight.den   by oneeighth;
+        sub two.num   fraction.afrc   three.den   by twothirds;
+        sub two.num   fraction.afrc   five.den    by twofifths;
+        sub three.num fraction.afrc   four.den    by threequarters;
+        sub three.num fraction.afrc   five.den    by threefifths;
+        sub three.num fraction.afrc   eight.den   by threeeighths;
+        sub four.num  fraction.afrc   five.den    by fourfifths;
+        sub five.num  fraction.afrc   six.den     by fivesixths;
+        sub five.num  fraction.afrc   eight.den   by fiveeighths;
+        sub seven.num fraction.afrc   eight.den   by seveneighths;
+    } frac3;
+} frac;
+
+feature numr {
+# GSUB feature: Numerators
+    sub @Digit by @DigitNumerator;
+} numr;
+
+feature dnom {
+# GSUB feature: Denominators
+    sub @Digit by @DigitDenominator;
+} dnom;
+
+feature sups {
+# GSUB feature: Superscript
+    sub @Digit by @DigitSuperior;
+} sups;
+
+feature subs {
+# GSUB feature: Subscript
+    sub @Digit by @DigitInferior;
+} subs;
+
+feature sinf {
+# GSUB feature: Scientific Inferiors
+    sub @Digit by @DigitInferior;
+} sinf;
+
+feature ordn {
+# Ordinals
+    sub @Digit [A a]' by ordfeminine;
+    sub @Digit [O o]' by ordmasculine;
+    sub N o period by numero;
+} ordn;
+
+feature smcp {
+# Small Caps
+    sub @Digit by @DigitSmall;
+} smcp;
+
+feature c2sc {
+# Capitals to Small Caps
+    sub @Digit by @DigitSmall;
+} c2sc;
+
+feature case {
+# GSUB feature: Case-Sensitive Forms
+    sub guillemotleft  by guillemotleft.cap;
+    sub guillemotright by guillemotright.cap;
+    sub guilsinglleft  by guilsinglleft.cap;
+    sub guilsinglright by guilsinglright.cap;
+    sub parenleft      by parenleft.cap;
+    sub parenright     by parenright.cap;
+    sub bracketleft    by bracketleft.cap;
+    sub bracketright   by bracketright.cap;
+    sub braceleft      by braceleft.cap;
+    sub braceright     by braceright.cap;
+} case;
+
+
+
+include(calt.fea);
+
+
+
+feature salt {
+# GSUB feature: Stylistic Alternates
+    sub registered by registered.alt;
+    sub colon by colon.alt;
+    sub bullet by bullet.alt;
+    sub asterisk by asterisk.alt;
+    sub zero by zero.alt;
+    sub underscore by underscore.alt;
+    lookup salt {
+        # GSUB lookup 20, type 16 (Chaining Context)
+        sub @DigitAll slash' @DigitAll by fraction; 
+    } salt;
+} salt;
+
+feature ss01 {
+    featureNames {
+        name "Large Registered Symbol";
+    };
+    sub registered by registered.alt;
+} ss01;
+
+feature ss03 {
+    featureNames {
+        name "Raised Colon";
+    };
+    sub colon by colon.alt;
+} ss03;
+
+feature ss04 {
+    featureNames {
+        name "Square Bullet";
+    };
+    sub bullet by bullet.alt;
+} ss04;
+
+feature ss05 {
+    featureNames {
+        name "Six-Pointed Asterisk";
+    };
+    sub asterisk by asterisk.alt;
+} ss05;
+
+feature ss07 {
+    featureNames {
+        name "Unslashed Zero";
+    };
+    sub zero by zero.alt;
+} ss07;
+
+feature ss08 {
+    featureNames {
+        name "Connected Underscore";
+    };
+    sub underscore by underscore.alt;
+} ss08;
+
+feature ss09 {
+    featureNames {
+        name "Fraction Bar";
+    };
+    sub @DigitAll slash' @DigitAll by fraction; 
+} ss09;
+
+feature ss10 {
+    featureNames {
+        name "Hexidecimal Multiply Sign";
+    };
+    ### 0xFF
+    sub [zero zero.alt]   x' [@Digit @HexDigit] by multiply;
+    ### 800x600
+    sub [@Digit zero.alt] x' [@Digit zero.alt]  by multiply; 
+} ss10;
+
+feature ss11 {
+    featureNames {
+        name "Equality Spaces";
+    };
+    sub equal_equal.liga       by equal_equal.liga.ss11;
+    sub equal_equal_equal.liga by equal_equal_equal.liga.ss11;
+} ss11;
+
+feature ss12 {
+    featureNames {
+        name "Less-than/Greater-than Horizontal Bar";
+    };
+    sub less_equal.liga    by less_equal.liga.ss12;
+    sub greater_equal.liga by greater_equal.liga.ss12;
+} ss12;
+
+feature rupa {
+    sub R p by R_p;
+} rupa;
+
+feature kern {
+# GPOS feature: Kerning
+    lookup kern {
+        # GPOS lookup 1, type 2 (Pair adjustment)
+        pos fraction.afrc   @DigitDenominator -625;
+        pos @DigitNumerator fraction.afrc     -625;
+    } kern;
+} kern;
+
+

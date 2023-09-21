@@ -1,40 +1,36 @@
-<Glyph name="ampersand_ampersand.liga" lsb="-420" width="625">
+<Glyph name="ampersand_ampersand.liga" lsb="-506" width="625">
     <CharString>
-        -14 99 505 112 hstemhm
-        -420 117 -31 123 251 117 -31 123 hintmask 11101000
-        -420 148 rmoveto
+        -14 99 -79 -21 605 112 hstemhm
+        -506 117 -31 124 337 123 hintmask 11101100
+        -45 173 rmoveto
+        -5 6 -18 22 -4 5 34 62 35 84 23 86 -104 12 rcurveline
+        -12 -57 -18 -61 -20 -53 rrcurveto
+        -110 129 -52 56 46 vvcurveto
+        53 38 34 157 -7 vhcurveto
+        -8 112 rlineto
+        -237 5 -74 -102 -98 vvcurveto
+        -45 21 -43 40 -55 vhcurveto
+        hintmask 11110100
+        -96 -60 -51 -68 -88 vvcurveto
         -92 57 -70 113 70 70 34 77 55 vhcurveto
-        113 -142 237 -12 110 154 27 -34 28 -37 31 -41 100 76 rcurveline
+        57 -71 88 -39 87 -1 87 -2 87 36 55 77 27 -34 28 -37 31 -41 100 76 rcurveline
         -43 55 -39 48 -35 42 34 62 35 84 23 86 -104 12 rcurveline
         -12 -57 -18 -61 -20 -53 rrcurveto
-        hintmask 11100100
         -110 129 -53 56 46 vvcurveto
         53 39 34 157 -7 vhcurveto
         -8 112 rlineto
         -237 5 -74 -102 -98 vvcurveto
         -45 21 -43 40 -55 vhcurveto
-        hintmask 11101000
-        -87 -54 -50 -61 -9 -76 -27 33 rcurveline
-        34 62 35 84 23 86 -104 12 rcurveline
-        -12 -57 -18 -61 -20 -53 rrcurveto
-        hintmask 11011000
-        -110 129 -53 56 46 vvcurveto
-        53 39 34 157 -7 vhcurveto
-        -8 112 rlineto
-        -237 5 -74 -102 -98 vvcurveto
-        -45 21 -43 40 -55 vhcurveto
-        hintmask 11101000
-        -96 -60 -51 -68 -88 vvcurveto
-        117 26 rmoveto
+        -47 -29 -45 -36 -28 -48 -14 -24 -10 -26 -3 -28 rrcurveto
+        -152 -8 rmoveto
+        -54 -34 -38 -26 -40 hhcurveto
+        -53 -27 39 50 46 25 45 51 41 hvcurveto
+        32 -39 39 -46 45 -56 rrcurveto
+        461 hmoveto
+        -54 -34 -40 -26 -40 hhcurveto
+        -52 1 -26 38 50 vvcurveto
         46 25 45 51 41 vhcurveto
         32 -39 39 -46 45 -56 rrcurveto
-        -54 -34 -38 -26 -40 hhcurveto
-        -53 -27 39 50 hvcurveto
-        460 hmoveto
-        46 25 45 51 41 vhcurveto
-        32 -39 39 -46 45 -56 rrcurveto
-        -54 -34 -38 -26 -40 hhcurveto
-        -53 -27 39 50 hvcurveto
         endchar
     </CharString>
     <Subrs/>

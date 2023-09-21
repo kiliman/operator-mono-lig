@@ -1,14 +1,14 @@
 <Glyph name="equal_equal.liga" lsb="-564" width="625">
     <CharString>
         160 103 142 102 hstem
-        -564 1151 vstem
-        587 507 rmoveto
+        -564 526 99 526 vstem
+        -564 160 rmoveto
+        1083 hlineto
+        21 103 rlineto
+        -1083 hlineto
+        1130 244 rmoveto
         -1082 hlineto
         -21 -102 rlineto
-        1083 hlineto
-        -27 -142 rmoveto
-        -1083 hlineto
-        -21 -103 rlineto
         1083 hlineto
         endchar
     </CharString>

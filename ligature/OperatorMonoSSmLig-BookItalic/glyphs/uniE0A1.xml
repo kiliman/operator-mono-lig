@@ -1,0 +1,17 @@
+<Glyph name="uniE0A1" code="0xe0a1" lsb="124" width="625">
+    <CharString>
+        -79 -21 490 65 345 -20 hstem
+        124 70 -1 71 167 70 vstem
+        193 -100 rmoveto
+        71 287 hlineto
+        160 -287 rlineto
+        77 410 -70 -289 hlineto
+        -161 289 rlineto
+        -77 hlineto
+        -69 80 rmoveto
+        260 65 -190 345 -70 hlineto
+        endchar
+    </CharString>
+    <Subrs/>
+    <GlobalSubrs/>
+</Glyph>

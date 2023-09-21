@@ -1,11 +1,20 @@
 <Glyph name="equal_equal.liga" lsb="-538" width="625">
     <CharString>
-        160 104 140 104 hstem
-        -538 1076 vstem
-        538 508 rmoveto
-        -1076 -104 1076 hlineto
-        -140 vmoveto
-        -1076 -104 1076 hlineto
+        160 103 -103 104 140 104 -103 103 hstemhm
+        -538 451 174 451 hintmask 01011100
+        538 264 rmoveto
+        -451 hlineto
+        hintmask 10011100
+        -1 -174 vlineto
+        hintmask 01011100
+        1 -451 -104 1076 vlineto
+        348 vmoveto
+        -1076 hlineto
+        hintmask 10101100
+        -104 451 vlineto
+        hintmask 10011100
+        1 174 vlineto
+        -1 451 vlineto
         endchar
     </CharString>
     <Subrs/>

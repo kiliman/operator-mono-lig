@@ -1,0 +1,21 @@
+<Glyph name="greater_greater.liga" lsb="-413" width="625">
+    <CharString>
+        -23 685 hstem
+        -68 67 348 67 vstem
+        43 -23 rmoveto
+        371 314 rlineto
+        62 vlineto
+        -363 309 -42 -51 338 -284 rlineto
+        -10 vlineto
+        -345 -290 rlineto
+        -374 -50 rmoveto
+        371 314 rlineto
+        62 vlineto
+        -363 309 -42 -51 338 -284 rlineto
+        -10 vlineto
+        -345 -290 rlineto
+        endchar
+    </CharString>
+    <Subrs/>
+    <GlobalSubrs/>
+</Glyph>

@@ -1,10 +1,10 @@
-<Glyph name="hyphen_hyphen.liga" lsb="-415" width="625">
+<Glyph name="hyphen_hyphen.liga" lsb="-429" width="625">
     <CharString>
-        269 134 hstem
-        -415 361 108 361 vstem
-        -54 403 rmoveto
+        0 403 -134 134 hstem
+        -429 361 144 361 vstem
+        437 403 rmoveto
         -361 -134 347 hlineto
-        483 134 rmoveto
+        -491 134 rmoveto
         -361 -134 347 hlineto
         endchar
     </CharString>

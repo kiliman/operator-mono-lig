@@ -57,16 +57,14 @@ const buildFont = (profile, options) => {
     .map((name) => mapLigatures(name, profile.ligatures))
     .filter((entry) => filterGlyphsExists(entry));
 
-  const ligaturesWithLIG = ligatures;
-  //[...ligatures, { name: 'LIG', glyph: 'LIG' }];
 
   processPatch('names', patchNames, dom, ligatures, profile);
-  processPatch('charstrings', patchCharStrings, dom, ligaturesWithLIG);
-  processPatch('glyphs', patchGlyphs, dom, ligaturesWithLIG);
+  processPatch('charstrings', patchCharStrings, dom, ligatures);
+  processPatch('glyphs', patchGlyphs, dom, ligatures);
   processPatch('hmtx', patchHmtx, dom);
 
-  const feature = calt.gencalt(ligatures);
-  fs.writeFileSync('./features/calt.fea', feature);
+    const feature = calt.gencalt(ligatures);
+    fs.writeFileSync('./features/calt.fea', feature);
 
   console.log(`Writing ligature font file ${dstFileName}`);
   fs.writeFileSync(dstFileName, format(serialize(dom)));

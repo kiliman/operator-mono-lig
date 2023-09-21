@@ -1,24 +1,26 @@
-<Glyph name="question_question.liga" lsb="-464" width="625">
+<Glyph name="question_question.liga" lsb="-461" width="625">
     <CharString>
-        0 167 hstem
-        -386 191 17 171 102 191 16 171 vstem
-        -464 607 rmoveto
+        0 167 440 148 hstemhm
+        -385 195 -192 191 16 171 108 195 -192 191 16 171 hintmask 11011011
+        28 607 rmoveto
         246 -19 40 -24 -33 vvcurveto
         -54 -155 -42 -7 -163 vhcurveto
         113 -3 rlineto
         15 141 205 36 127 vvcurveto
         92 -96 75 -346 15 vhcurveto
-        465 -148 rmoveto
-        246 -19 40 -24 -33 vvcurveto
-        -54 -155 -42 -7 -163 vhcurveto
-        113 -3 rlineto
-        15 141 205 36 127 vvcurveto
-        92 -96 75 -346 15 vhcurveto
-        -228 -755 rmoveto
+        252 -755 rmoveto
+        hintmask 11011101
         4 167 rlineto
         -190 hlineto
         -5 -167 rlineto
-        671 hmoveto
+        -565 607 rmoveto
+        246 -19 40 -24 -33 vvcurveto
+        -54 -155 -42 -7 -163 vhcurveto
+        113 -3 rlineto
+        15 141 205 36 127 vvcurveto
+        92 -96 75 -346 15 vhcurveto
+        252 -755 rmoveto
+        hintmask 11101011
         4 167 rlineto
         -190 hlineto
         -5 -167 rlineto

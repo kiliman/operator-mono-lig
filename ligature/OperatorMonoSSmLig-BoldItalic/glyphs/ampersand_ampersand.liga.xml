@@ -1,31 +1,32 @@
 <Glyph name="ampersand_ampersand.liga" lsb="-513" width="625">
     <CharString>
-        -10 137 hstem
-        -513 149 381 149 vstem
-        -513 142 rmoveto
+        -13 140 -137 137 -129 -21 733 -20 hstemhm
+        -513 149 381 149 hintmask 01111100
+        -313 460 rmoveto
+        -99 -77 -101 -108 -133 vvcurveto
         -91 50 -61 97 69 73 31 66 76 vhcurveto
-        140 -156 296 46 94 110 25 -37 27 -36 30 -37 131 90 rcurveline
+        hintmask 10111100
+        65 -72 100 -29 96 1 89 1 120 29 60 70 25 -37 27 -36 30 -37 131 90 rcurveline
         -40 48 -34 45 -30 44 42 52 43 62 44 73 -123 44 rcurveline
         -24 -48 -24 -41 -22 -35 -23 45 -18 42 -11 40 rrcurveto
         72 67 40 69 51 vvcurveto
         52 -44 33 -62 -82 -86 -62 -134 -17 1 -18 3 -19 vhcurveto
         -152 -118 -48 -108 -92 vvcurveto
-        -1 vlineto
+        0 0 -1 0 vhcurveto
         -25 26 -21 23 -10 14 42 52 43 62 44 73 -123 44 rcurveline
         -24 -48 -24 -41 -22 -35 -23 45 -18 42 -11 40 rrcurveto
         72 67 40 69 51 vvcurveto
-        52 -44 33 -62 -82 -86 -62 -134 -17 1 -18 3 -19 vhcurveto
-        -152 -118 -48 -108 -92 vvcurveto
-        149 39 rmoveto
-        40 24 53 60 60 vhcurveto
-        18 -48 24 -51 30 -53 rrcurveto
+        52 -44 33 -62 -48 -50 -22 -45 -33 vhcurveto
+        -37 -52 -6 -70 10 -61 rrcurveto
+        105 -278 rmoveto
         -40 -44 -38 -15 -28 hhcurveto
-        -29 -17 16 38 hvcurveto
+        -27 -17 14 34 -2 hvcurveto
+        -3 59 48 61 39 39 18 -48 24 -51 30 -53 rrcurveto
         530 hmoveto
+        -29 -26 -45 -32 -41 3 rrcurveto
+        -26 2 -15 16 36 vvcurveto
         40 24 53 60 60 vhcurveto
         18 -48 24 -51 30 -53 rrcurveto
-        -40 -44 -38 -15 -28 hhcurveto
-        -29 -17 16 38 hvcurveto
         endchar
     </CharString>
     <Subrs/>

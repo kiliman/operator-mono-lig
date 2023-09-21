@@ -1,0 +1,21 @@
+<Glyph name="quotesingle_quotesingle_quotesingle.liga" lsb="-859" width="625">
+    <CharString>
+        428 312 hstem
+        -859 146 399 146 399 146 cntrmask 01110000
+        280 428 rmoveto
+        93 275 4 37 rlineto
+        -92 hlineto
+        -54 -312 rlineto
+        -496 hmoveto
+        93 275 4 37 rlineto
+        -92 hlineto
+        -54 -312 rlineto
+        -496 hmoveto
+        93 275 4 37 rlineto
+        -92 hlineto
+        -54 -312 rlineto
+        endchar
+    </CharString>
+    <Subrs/>
+    <GlobalSubrs/>
+</Glyph>

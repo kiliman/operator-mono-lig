@@ -1,19 +1,10 @@
-<Glyph name="ampersand_ampersand.liga" lsb="-387" width="625">
+<Glyph name="ampersand_ampersand.liga" lsb="-481" width="625">
     <CharString>
-        -13 60 586 67 hstem
-        -387 70 10 69 291 70 10 69 vstem
-        449 178 rmoveto
-        38 67 35 90 26 106 -63 7 rcurveline
+        -13 60 -41 -21 648 67 hstem
+        -481 70 10 69 371 69 vstem
+        -40 127 rmoveto
+        -4 4 -37 43 -4 4 38 67 35 90 26 106 -63 7 rcurveline
         -18 -86 -27 -79 -29 -62 rrcurveto
-        -144 163 -65 69 64 vvcurveto
-        65 51 60 194 -9 vhcurveto
-        -6 67 rlineto
-        -235 5 -73 -101 -93 vvcurveto
-        -49 23 -44 46 -60 vhcurveto
-        -100 -63 -49 -73 -81 vvcurveto
-        -5 0 -4 1 -5 vhcurveto
-        -45 51 38 67 35 90 26 106 rlinecurve
-        -63 7 -18 -86 -27 -79 -29 -62 rlinecurve
         -144 163 -65 69 64 vvcurveto
         65 51 60 194 -9 vhcurveto
         -6 67 rlineto
@@ -24,15 +15,23 @@
         -39 33 71 -90 134 hhcurveto
         70 72 40 89 60 hvcurveto
         33 -39 37 -43 39 -49 56 47 rcurveline
-        -47 55 -42 49 -37 42 rrcurveto
-        -667 -131 rmoveto
+        -47 55 -42 49 -37 42 38 67 35 90 26 106 -63 7 rcurveline
+        -18 -86 -27 -79 -29 -62 rrcurveto
+        -144 163 -65 69 64 vvcurveto
+        65 51 60 194 -9 vhcurveto
+        -6 67 rlineto
+        -235 5 -73 -101 -93 vvcurveto
+        -49 23 -44 46 -60 vhcurveto
+        -45 -28 -35 -31 -25 -32 -26 -35 -26 -60 9 -45 rrcurveto
+        -120 30 rmoveto
+        -74 -47 -54 -36 -51 hhcurveto
         -66 -33 46 63 56 35 59 73 51 hvcurveto
         37 -44 48 -53 58 -68 rrcurveto
-        -74 -47 -54 -36 -51 hhcurveto
         440 hmoveto
-        -66 -33 46 63 56 35 59 73 51 hvcurveto
+        -45 -71 -52 -36 -49 -3 rrcurveto
+        -69 -4 -36 48 65 vvcurveto
+        56 35 59 73 51 vhcurveto
         37 -44 48 -53 58 -68 rrcurveto
-        -74 -47 -54 -36 -51 hhcurveto
         endchar
     </CharString>
     <Subrs/>

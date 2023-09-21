@@ -1,23 +1,17 @@
-<Glyph name="percent.alt" lsb="25" width="625">
+<Glyph name="percent.alt" lsb="52" width="625">
     <CharString>
-        -65 73 -70 784 -545 72 162 73 169 72 hstemhm
-        25 78 -17 461 -336 78 54 78 108 78 hintmask 1011110111000000
-        152 411 rmoveto
-        83 54 66 96 94 -46 58 -81 -83 -54 -67 -95 -94 45 -58 82 hvcurveto
-        hintmask 0100010111000000
-        315 312 rmoveto
-        hintmask 0100001000000000
-        -381 -749 79 -36 381 747 rlineto
-        hintmask 1010101000000000
-        -390 -32 rmoveto
-        hintmask 1010110111000000
-        37 18 -33 -55 hvcurveto
-        hintmask 1011110111000000
-        -51 -17 -30 -36 -36 -19 32 56 51 16 30 37 vhcurveto
-        314 -718 rmoveto
-        83 54 66 96 94 -46 58 -81 -83 -54 -67 -95 -94 45 -58 82 hvcurveto
-        4 242 rmoveto
-        37 18 -33 -55 -51 -17 -30 -36 -36 -19 32 56 51 16 30 37 hvcurveto
+        5 -21 23 -21 716 -20 22 -20 hstem
+        52 214 93 214 vstem
+        460 51 rmoveto
+        -21 -15 28 49 55 21 35 27 21 15 -30 -49 -54 -21 -34 -27 hvcurveto
+        -65 vmoveto
+        63 50 59 94 90 -42 54 -59 -63 -50 -60 -95 -90 42 -52 59 hvcurveto
+        -404 47 rmoveto
+        77 -49 436 670 -77 48 rlineto
+        -339 -230 rmoveto
+        -21 -15 28 49 55 21 35 27 21 15 -30 -49 -54 -21 -34 -27 hvcurveto
+        -65 vmoveto
+        63 50 59 94 90 -42 54 -59 -63 -50 -60 -95 -90 42 -52 59 hvcurveto
         endchar
     </CharString>
     <Subrs/>

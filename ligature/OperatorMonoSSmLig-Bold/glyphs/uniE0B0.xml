@@ -1,9 +1,8 @@
 <Glyph name="uniE0B0" code="0xe0b0" lsb="-20" width="625">
     <CharString>
-        -205 1209 hstem
-        -20 692 vstem
-        -18 1004 rmoveto
-        -2 -1209 692 570 rlineto
+        -179 -21 1200 -20 hstem
+        -20 -200 rmoveto
+        665 600 -665 600 rlineto
         endchar
     </CharString>
     <Subrs/>

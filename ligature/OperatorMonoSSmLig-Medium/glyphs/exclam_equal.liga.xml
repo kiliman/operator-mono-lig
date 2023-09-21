@@ -1,26 +1,32 @@
 <Glyph name="exclam_equal.liga" lsb="-538" width="625">
     <CharString>
-        -222 1044 -662 104 140 104 hstemhm
-        -538 1076 -844 613 hintmask 00110000
+        -222 1044 -662 103 -103 104 140 104 -103 103 hstemhm
+        -538 451 -220 613 -219 451 hintmask 01001101
         538 508 rmoveto
         -366 hlineto
-        hintmask 00101000
-        135 264 rlineto
-        hintmask 10001000
-        -105 50 rlineto
-        hintmask 00101000
-        -160 -314 rlineto
-        -580 -104 527 hlineto
-        hintmask 01101000
-        -72 -140 rlineto
-        -455 -104 402 hlineto
-        -170 -334 rlineto
-        hintmask 10001000
-        106 -48 rlineto
-        hintmask 01101000
+        hintmask 10000010
+        135 264 -105 50 rlineto
+        hintmask 01001101
+        -161 -314 rlineto
+        -579 hlineto
+        hintmask 01010101
+        -104 451 vlineto
+        hintmask 01001101
+        1 76 vlineto
+        -73 -142 rlineto
+        -3 hlineto
+        hintmask 00101101
+        1 -451 -104 402 vlineto
+        hintmask 10000010
+        -171 -334 106 -48 rlineto
+        hintmask 01001101
         195 382 rlineto
-        543 104 -490 hlineto
-        71 140 rlineto
+        544 hlineto
+        hintmask 00101101
+        104 -451 vlineto
+        hintmask 01001101
+        -1 -40 vlineto
+        72 141 rlineto
         419 hlineto
         endchar
     </CharString>

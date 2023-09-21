@@ -1,33 +1,32 @@
-<Glyph name="less_exclam_hyphen_hyphen.liga" lsb="-1661" width="625">
+<Glyph name="less_exclam_hyphen_hyphen.liga" lsb="-1768" width="625">
     <CharString>
-        -23 685 -662 110 182 61 hstemhm
-        -1661 66 -15 349 264 108 -71 46 1054 349 hintmask 00101011
-        -914 252 rmoveto
-        3 124 20 244 6 130 rrcurveto
-        -91 hlineto
-        3 -130 13 -244 -124 vvcurveto
-        hintmask 10001011
-        -337 410 rmoveto
-        hintmask 00110101
-        -364 -309 rlineto
-        -62 vlineto
-        hintmask 10010101
-        369 -314 42 50 rlineto
-        hintmask 00110101
-        -315 265 rlineto
-        490 hlineto
-        4 61 rlineto
-        -493 hlineto
-        308 259 rlineto
-        456 -320 rmoveto
-        1285 hlineto
-        4 61 rlineto
-        -1289 hlineto
-        hintmask 01110101
-        -91 -353 rmoveto
+        -23 685 -662 110 -110 353 -61 61 hstemhm
+        -1768 66 709 108 -71 46 425 349 276 349 hintmask 0101110110000000
+        -887 hmoveto
         3 110 rlineto
         -108 hlineto
         -2 -110 rlineto
+        hintmask 1000110110000000
+        -410 662 rmoveto
+        hintmask 0101110110000000
+        -364 -309 rlineto
+        -62 vlineto
+        hintmask 1000110110000000
+        369 -314 42 50 rlineto
+        hintmask 0101110110000000
+        -315 265 rlineto
+        562 61 -561 hlineto
+        308 259 rlineto
+        hintmask 0010101110000000
+        453 -360 rmoveto
+        3 124 20 244 6 130 rrcurveto
+        -91 hlineto
+        3 -130 13 -244 -124 vvcurveto
+        1445 101 rmoveto
+        -1250 hlineto
+        hintmask 0010110110000000
+        -4 -61 rlineto
+        1250 hlineto
         endchar
     </CharString>
     <Subrs/>

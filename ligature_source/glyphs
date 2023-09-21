@@ -1,10 +1,16 @@
 # List of glyphs to extract
 # includes patterns
 
-*.liga  # all ligatures
+*.liga      # All ligatures
+*.liga.ss11 # Equals ligatures with spaces
+*.liga.ss12 # Less_equals/Greater_equals with horizontal bar
 *.spacer
 percent.alt # alternate % sign
 
 uniE0A0 # Powerline branch
-uniE0B0 # Powerline right triangle
-uniE0B2 # Powerline left triangle
+uniE0A1 # Powerline LN
+uniE0A2 # Powerline lock
+uniE0B0 # Powerline left hard divider
+uniE0B1 # Powerline left soft divider
+uniE0B2 # Powerline right hard divider
+uniE0B3 # Powerline right soft divider

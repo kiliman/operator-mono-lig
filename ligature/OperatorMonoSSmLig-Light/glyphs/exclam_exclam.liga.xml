@@ -1,0 +1,26 @@
+<Glyph name="exclam_exclam.liga" lsb="-289" width="625">
+    <CharString>
+        0 110 hstemhm
+        -288 108 -71 46 382 108 -71 46 hintmask 11001000
+        260 252 rmoveto
+        3 124 20 244 6 130 rrcurveto
+        -91 hlineto
+        3 -130 13 -244 -124 vvcurveto
+        69 -252 rmoveto
+        3 110 rlineto
+        -108 hlineto
+        -2 -110 rlineto
+        hintmask 10110000
+        -381 252 rmoveto
+        3 124 20 244 6 130 rrcurveto
+        -91 hlineto
+        3 -130 13 -244 -124 vvcurveto
+        69 -252 rmoveto
+        3 110 rlineto
+        -108 hlineto
+        -2 -110 rlineto
+        endchar
+    </CharString>
+    <Subrs/>
+    <GlobalSubrs/>
+</Glyph>

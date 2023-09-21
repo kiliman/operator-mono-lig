@@ -1,13 +1,13 @@
 <Glyph name="hyphen_hyphen_greater.liga" lsb="-1114" width="625">
     <CharString>
-        269 134 hstem
-        -1114 1655 vstem
-        89 579 rmoveto
-        228 -176 rlineto
-        -1431 -134 1442 hlineto
-        -240 -187 83 -112 370 298 rlineto
+        0 403 -134 134 176 -20 134 -20 hstem
+        -1114 361 264 361 528 141 vstem
+        171 -30 rmoveto
+        370 298 rlineto
         129 vlineto
-        -364 296 rlineto
+        -364 296 -88 -114 228 -176 rlineto
+        -1431 -134 1442 hlineto
+        -240 -187 rlineto
         endchar
     </CharString>
     <Subrs/>

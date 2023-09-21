@@ -1,0 +1,51 @@
+<Glyph name="w_w_w.liga" lsb="-1185" width="625">
+    <CharString>
+        21 -21 552 -20 hstem
+        -1185 120 1513 115 vstem
+        -1012 hmoveto
+        -1 -4 104 336 -1 -4 rrcurveto
+        4 118 -336 4 vvcurveto
+        59 hlineto
+        -4 106 335 -4 vvcurveto
+        -1 4 128 -335 -1 4 rrcurveto
+        63 hlineto
+        -4 113 333 -4 vvcurveto
+        -1 3 120 -331 -1 3 rrcurveto
+        60 hlineto
+        -4 126 334 -4 vvcurveto
+        1 4 105 -334 1 4 rrcurveto
+        61 hlineto
+        -1 -4 116 336 -1 -4 -1 4 128 -336 -1 4 rrcurveto
+        109 hlineto
+        12 81 42 242 13 229 rrcurveto
+        -115 hlineto
+        -5 -109 -12 -129 -10 -168 rrcurveto
+        -4 hlineto
+        -25 65 -71 169 -19 45 rrcurveto
+        -72 hlineto
+        -23 -68 -64 -163 -19 -49 rrcurveto
+        -5 hlineto
+        -14 38 -65 196 -18 47 rrcurveto
+        -72 hlineto
+        2 6 -110 -263 -9 -23 rrcurveto
+        -5 hlineto
+        -10 27 -79 196 -23 55 rrcurveto
+        -72 hlineto
+        -16 -44 -75 -191 -16 -44 rrcurveto
+        -5 hlineto
+        -12 30 -90 213 -18 40 rrcurveto
+        -70 hlineto
+        -10 -31 -88 -259 2 7 rrcurveto
+        -5 hlineto
+        -4 12 -82 209 -24 59 rrcurveto
+        -72 hlineto
+        -6 -19 -77 -232 -9 -29 rrcurveto
+        -5 hlineto
+        -9 146 -10 102 -8 159 rrcurveto
+        -120 hlineto
+        16 -220 34 -283 17 -49 rrcurveto
+        endchar
+    </CharString>
+    <Subrs/>
+    <GlobalSubrs/>
+</Glyph>

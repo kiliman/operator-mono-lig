@@ -1,0 +1,21 @@
+<Glyph name="percent.alt" lsb="61" width="625">
+    <CharString>
+        -13 55 -38 -21 256 56 101 55 196 57 -5 -20 hstemhm
+        61 58 95 58 81 57 96 57 hintmask 1111011111000000
+        353 135 rmoveto
+        -93 40 -55 61 61 48 61 98 93 -40 56 -60 -63 -47 -62 -98 vhcurveto
+        57 6 rmoveto
+        62 18 36 31 30 17 -35 -62 -63 -18 -37 -31 -30 -17 36 63 vhcurveto
+        -328 -129 rmoveto
+        51 -29 410 689 -50 27 rlineto
+        -330 -303 rmoveto
+        61 48 61 97 hvcurveto
+        hintmask 1111101111000000
+        94 -41 56 -60 -63 -47 -62 -98 -93 41 -55 61 vhcurveto
+        2 55 rmoveto
+        -29 -17 36 62 63 18 35 31 29 17 -34 -62 -64 -18 -36 -31 hvcurveto
+        endchar
+    </CharString>
+    <Subrs/>
+    <GlobalSubrs/>
+</Glyph>
