@@ -33,7 +33,6 @@ lookup 1_2_3_4 {
 ]
 
 const gencalt = ligatures => {
-  let liga = 'feature liga {\n'
   let calt = 'feature calt {\n'
   const ligs = {}
 
@@ -56,14 +55,11 @@ const gencalt = ligatures => {
           rule = rule
             .replace(/\d/g, m => c[parseInt(m) - 1])
             .replace(/glyph/g, g)
-          liga += '  sub ' + c.join(' ') + ' by ' + g + ';\n'
           calt += rule + '\n'
         })
     })
 
-  liga += '} liga;\n\n';
-  calt += '\n} calt;\n';
-  return liga + calt
+  return calt + '\n} calt;\n'
 }
 
 exports.gencalt = gencalt
