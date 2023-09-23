@@ -1,7 +1,7 @@
 <Glyph name="plus_equal.liga" lsb="-484" width="625">
     <CharString>
-        160 103 16 103 23 102 hstemhm
-        -484 511 -39 526 hintmask 11101000
+        160 103 16 103 23 102 hstem
+        -484 511 vstem
         514 507 rmoveto
         -457 hlineto
         -21 -102 rlineto
@@ -11,7 +11,6 @@
         -21 -103 rlineto
         458 hlineto
         -440 119 rmoveto
-        hintmask 11110000
         21 103 rlineto
         -190 hlineto
         38 197 rlineto

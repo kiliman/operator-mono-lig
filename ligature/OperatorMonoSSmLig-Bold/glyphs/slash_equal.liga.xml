@@ -1,15 +1,11 @@
 <Glyph name="slash_equal.liga" lsb="-558" width="625">
     <CharString>
-        -235 1073 -686 132 110 132 hstemhm
-        -558 636 -67 466 hintmask 10010000
+        -214 -21 387 132 110 132 292 -20 hstem
         -57 838 rmoveto
-        -501 -1009 136 -64 rlineto
-        hintmask 01101000
-        192 387 rlineto
+        -501 -1009 136 -64 192 387 rlineto
         707 132 -642 hlineto
         55 110 rlineto
         587 132 -522 hlineto
-        hintmask 10010000
         123 248 rlineto
         endchar
     </CharString>

@@ -1,26 +1,24 @@
 <Glyph name="colon_colon.liga" lsb="-254" width="625">
     <CharString>
         0 113 258 114 hstemhm
-        -254 123 -121 112 -103 112 262 123 -121 112 -103 112 hintmask 11010010
+        -250 112 -105 112 266 112 -105 112 hintmask 11010100
         252 371 rmoveto
-        hintmask 11010001
         2 114 rlineto
         -112 hlineto
         -1 -114 rlineto
         102 -371 rmoveto
+        hintmask 11011000
         4 113 rlineto
         -112 hlineto
-        hintmask 11010100
         -4 -113 rlineto
         -264 371 rmoveto
-        hintmask 11001010
         2 114 rlineto
         -112 hlineto
         -1 -114 rlineto
         102 -371 rmoveto
+        hintmask 11100100
         4 113 rlineto
         -112 hlineto
-        hintmask 11100010
         -4 -113 rlineto
         endchar
     </CharString>

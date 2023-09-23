@@ -1,17 +1,11 @@
 <Glyph name="less_equal_greater.liga" lsb="-1153" width="625">
     <CharString>
-        -24 703 -519 103 142 102 hstemhm
-        -1153 483 106 526 108 483 hintmask 10011100
+        -3 -21 184 103 142 102 152 -20 40 -20 hstem
+        -1153 120 1466 120 vstem
         120 -24 rmoveto
-        415 278 18 102 -311 323 -83 -81 rlineto
-        hintmask 01111100
-        91 -91 rlineto
+        415 278 18 102 -311 323 -83 -81 91 -91 rlineto
         -1037 hlineto
-        117 77 rlineto
-        hintmask 10011100
-        -51 95 -414 -278 -18 -102 311 -323 83 81 rlineto
-        hintmask 01111100
-        -103 103 rlineto
+        117 77 -51 95 -414 -278 -18 -102 311 -323 83 81 -103 103 rlineto
         1067 hlineto
         -135 -89 rlineto
         -1012 334 rmoveto

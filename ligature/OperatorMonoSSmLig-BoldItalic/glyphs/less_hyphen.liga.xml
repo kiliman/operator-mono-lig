@@ -1,7 +1,7 @@
 <Glyph name="less_hyphen.liga" lsb="-537" width="625">
     <CharString>
-        269 134 270 -20 hstem
-        -537 496 182 366 vstem
+        -7 -21 297 134 270 -20 hstem
+        -537 152 vstem
         507 403 rmoveto
         -817 hlineto
         269 168 -63 122 -410 -265 -23 -129 313 -327 107 103 -195 194 rlineto

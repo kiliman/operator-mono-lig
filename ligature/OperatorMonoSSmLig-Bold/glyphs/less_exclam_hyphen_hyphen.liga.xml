@@ -1,7 +1,7 @@
 <Glyph name="less_exclam_hyphen_hyphen.liga" lsb="-1787" width="625">
     <CharString>
-        0 169 -169 403 -134 134 159 -20 132 -20 hstem
-        -1787 141 606 193 358 361 264 361 vstem
+        -8 -21 29 169 100 134 271 -20 hstem
+        -1787 141 606 193 vstem
         -849 hmoveto
         4 169 rlineto
         -193 hlineto

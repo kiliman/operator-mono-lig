@@ -1,16 +1,12 @@
 <Glyph name="hyphen_equal.liga" lsb="-455" width="625">
     <CharString>
-        0 364 -196 77 42 77 50 77 hstemhm
-        -455 438 33 438 hintmask 01111100
+        168 77 42 77 50 77 hstem
         454 491 rmoveto
         -438 -77 437 hlineto
         1 -169 rmoveto
         -438 -77 437 hlineto
-        hintmask 10011100
         -470 196 rmoveto
-        -438 hlineto
-        hintmask 01111100
-        -77 437 vlineto
+        -438 -77 437 hlineto
         endchar
     </CharString>
     <Subrs/>

@@ -1,15 +1,11 @@
 <Glyph name="hyphen_greater.liga" lsb="-486" width="625">
     <CharString>
-        -25 694 -383 78 hstemhm
-        -486 352 574 84 hintmask 10110000
+        -4 -21 311 78 305 -20 hstem
+        440 84 vstem
         154 -25 rmoveto
-        hintmask 01110000
         370 311 rlineto
         77 vlineto
-        hintmask 10110000
-        -364 306 -52 -65 rlineto
-        hintmask 01110000
-        291 -240 rlineto
+        -364 306 -52 -65 291 -240 rlineto
         -885 -78 886 hlineto
         -297 -247 rlineto
         endchar

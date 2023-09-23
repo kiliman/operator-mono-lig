@@ -1,14 +1,10 @@
 <Glyph name="less_hyphen_hyphen.liga" lsb="-1141" width="625">
     <CharString>
-        -19 677 -366 61 hstemhm
-        -1141 465 195 340 285 340 hintmask 01111000
+        2 -21 311 61 285 -20 hstem
+        -1141 73 vstem
         484 353 rmoveto
         -1516 hlineto
-        356 251 rlineto
-        hintmask 10111000
-        -32 54 -422 -298 -11 -61 309 -318 48 48 rlineto
-        hintmask 01111000
-        -260 263 rlineto
+        356 251 -32 54 -422 -298 -11 -61 309 -318 48 48 -260 263 rlineto
         1516 hlineto
         endchar
     </CharString>

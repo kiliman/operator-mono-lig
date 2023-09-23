@@ -1,12 +1,10 @@
 <Glyph name="equal_equal.liga" lsb="-554" width="625">
     <CharString>
-        168 76 170 76 hstemhm
-        -554 507 -460 460 118 507 hintmask 11011000
+        168 76 170 76 hstem
         578 490 rmoveto
         -1070 hlineto
         -15 -76 rlineto
         1069 hlineto
-        hintmask 11101000
         -1116 -246 rmoveto
         1069 hlineto
         15 76 rlineto

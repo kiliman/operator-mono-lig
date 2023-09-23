@@ -1,11 +1,9 @@
 <Glyph name="plus_plus.liga" lsb="-482" width="625">
     <CharString>
-        279 103 hstemhm
-        -294 110 369 110 -109 110 hintmask 11010000
+        279 103 hstem
+        -294 110 369 110 vstem
         481 279 rmoveto
-        103 vlineto
-        hintmask 11100000
-        -186 197 -110 -197 -369 197 -110 -197 -188 -103 188 -198 110 198 369 -198 110 198 hlineto
+        103 -186 197 -110 -197 -369 197 -110 -197 -188 -103 188 -198 110 198 369 -198 110 198 vlineto
         endchar
     </CharString>
     <Subrs/>

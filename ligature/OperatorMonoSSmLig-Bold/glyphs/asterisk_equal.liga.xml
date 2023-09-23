@@ -1,7 +1,7 @@
 <Glyph name="asterisk_equal.liga" lsb="-559" width="625">
     <CharString>
-        152 132 86 -20 44 132 hstem
-        -559 550 20 466 vstem
+        152 132 110 132 hstem
+        -559 550 vstem
         477 526 rmoveto
         -466 -132 466 hlineto
         -110 vmoveto

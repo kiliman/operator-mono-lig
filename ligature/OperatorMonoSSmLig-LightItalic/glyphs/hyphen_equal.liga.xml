@@ -1,7 +1,6 @@
 <Glyph name="hyphen_equal.liga" lsb="-446" width="625">
     <CharString>
-        172 60 60 60 68 59 hstemhm
-        -446 448 -6 496 hintmask 11101000
+        172 60 60 60 68 59 hstem
         492 479 rmoveto
         -437 hlineto
         -11 -59 rlineto
@@ -10,7 +9,6 @@
         -436 hlineto
         -12 -60 rlineto
         436 hlineto
-        hintmask 11110000
         -430 180 rmoveto
         -436 hlineto
         -12 -60 rlineto

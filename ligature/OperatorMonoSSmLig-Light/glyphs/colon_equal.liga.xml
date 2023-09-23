@@ -1,7 +1,7 @@
 <Glyph name="colon_equal.liga" lsb="-374" width="625">
     <CharString>
         145 114 -87 61 160 114 -87 60 hstemhm
-        -372 112 hintmask 01011000
+        -371 109 hintmask 01011000
         -161 172 rmoveto
         528 hlineto
         1 61 rlineto

@@ -1,7 +1,6 @@
 <Glyph name="hyphen_hyphen.liga" lsb="-425" width="625">
     <CharString>
-        0 353 -61 61 hstem
-        -425 349 156 349 vstem
+        292 61 hstem
         429 353 rmoveto
         -349 -61 345 hlineto
         -501 61 rmoveto

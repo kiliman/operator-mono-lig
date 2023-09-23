@@ -1,6 +1,6 @@
 <Glyph name="greater_greater.liga" lsb="-417" width="625">
     <CharString>
-        -25 694 hstem
+        -4 -21 674 -20 hstem
         -80 84 331 84 vstem
         49 -25 rmoveto
         370 311 rlineto

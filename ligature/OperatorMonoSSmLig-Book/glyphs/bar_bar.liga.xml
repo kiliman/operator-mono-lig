@@ -1,7 +1,7 @@
 <Glyph name="bar_bar.liga" lsb="-234" width="625">
     <CharString>
         761 -20 hstem
-        -505 356 -85 85 29 356 -85 85 vstem
+        -234 85 300 85 vstem
         151 781 rmoveto
         -983 85 991 vlineto
         -470 -8 rmoveto

@@ -1,7 +1,6 @@
 <Glyph name="exclam_equal_equal.liga" lsb="-1197" width="625">
     <CharString>
-        -178 -21 248 60 188 59 189 59 hstem
-        -683 741 vstem
+        -178 -21 248 60 188 59 189 59 168 -20 hstem
         -1091 604 rmoveto
         -11 -59 rlineto
         930 hlineto

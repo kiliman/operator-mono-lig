@@ -1,13 +1,11 @@
 <Glyph name="slash_greater.liga" lsb="-366" width="625">
     <CharString>
-        -203 1000 -820 685 hstemhm
-        -366 579 239 67 hintmask 01110000
+        -182 -21 201 -21 685 -20 135 -20 hstem
+        452 67 vstem
         148 -23 rmoveto
         371 314 rlineto
         62 vlineto
-        -363 309 57 107 rlineto
-        hintmask 10110000
-        -60 28 -519 -977 63 -23 427 805 328 -275 rlineto
+        -363 309 57 107 -60 28 -519 -977 63 -23 427 805 328 -275 rlineto
         -10 vlineto
         -345 -290 rlineto
         endchar

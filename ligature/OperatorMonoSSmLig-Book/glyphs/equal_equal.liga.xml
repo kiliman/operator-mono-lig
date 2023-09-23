@@ -1,7 +1,6 @@
 <Glyph name="equal_equal.liga" lsb="-532" width="625">
     <CharString>
         168 77 169 77 hstem
-        -532 438 187 438 vstem
         531 245 rmoveto
         -1063 -77 1062 hlineto
         1 323 rmoveto
