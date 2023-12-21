@@ -1,0 +1,27 @@
+<Glyph name="semicolon_semicolon.liga" lsb="-361" width="625">
+    <CharString>
+        0 529 -183 183 hstemhm
+        -339 207 -181 179 284 207 -181 179 hintmask 10010100
+        354 346 rmoveto
+        hintmask 10011000
+        3 183 rlineto
+        -207 hlineto
+        hintmask 01010100
+        -3 -183 rlineto
+        -19 -497 rmoveto
+        84 -24 98 84 85 160 -59 124 rlinecurve
+        -195 -8 56 -111 -15 -151 -54 -74 rlinecurve
+        -263 497 rmoveto
+        hintmask 10100100
+        3 183 rlineto
+        -207 hlineto
+        hintmask 01010100
+        -3 -183 rlineto
+        -19 -497 rmoveto
+        84 -24 98 84 85 160 -59 124 rlinecurve
+        -195 -8 56 -111 -15 -151 -54 -74 rlinecurve
+        endchar
+    </CharString>
+    <Subrs/>
+    <GlobalSubrs/>
+</Glyph>

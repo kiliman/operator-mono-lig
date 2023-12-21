@@ -31,6 +31,13 @@ if not exist .\ligature\%lig%\glyphs\* exit /b
 ttx -f .\original\%otf%.otf
 node index.js %otf% %flags%
 ttx -f .\build\%lig%.ttx
-fonttools feaLib -v -o ".\build\%lig%.otf" .\features\default.fea ".\build\%lig%.otf"
+rem check if "SSm" is in name since the features are slightly different
+@echo.%lig% | findstr /C:"SSm" 1>nul
+if errorlevel 1 (
+	set fea=".\features\default.fea"
+) else (
+	set fea=".\features\defaultSSm.fea"
+)
+fonttools feaLib -v -o ".\build\%lig%.otf" %fea% ".\build\%lig%.otf"
 
 exit /b

@@ -1,27 +1,28 @@
-<Glyph name="plus_plus.liga" lsb="-479" width="625">
+<Glyph name="plus_plus.liga" lsb="-474" width="625">
     <CharString>
-        287 76 hstem
-        3 498 vstem
-        340 570 rmoveto
+        287 76 hstemhm
+        -474 498 -27 498 hintmask 10100000
+        479 287 rmoveto
+        16 76 rlineto
+        -201 hlineto
+        40 207 rlineto
         -81 hlineto
         -40 -207 rlineto
-        -401 hlineto
+        -390 hlineto
         40 207 rlineto
         -81 hlineto
         -40 -207 rlineto
         -201 hlineto
+        hintmask 11000000
         -15 -76 rlineto
         201 hlineto
         -40 -208 rlineto
         81 hlineto
         40 208 rlineto
-        401 hlineto
+        390 hlineto
         -40 -208 rlineto
         81 hlineto
         40 208 rlineto
-        200 hlineto
-        16 76 rlineto
-        -201 hlineto
         endchar
     </CharString>
     <Subrs/>

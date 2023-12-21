@@ -1,0 +1,12 @@
+<Glyph name="uniE0B3" code="0xe0b3" lsb="-20" width="625">
+    <CharString>
+        -179 -21 1180 -20 hstem
+        645 -92 rmoveto
+        -545 492 545 492 rlineto
+        108 vlineto
+        -665 -600 665 -600 rlineto
+        endchar
+    </CharString>
+    <Subrs/>
+    <GlobalSubrs/>
+</Glyph>

@@ -1,0 +1,23 @@
+<Glyph name="semicolon_semicolon.liga" lsb="-430" width="625">
+    <CharString>
+        346 187 hstem
+        -348 185 304 185 vstem
+        350 346 rmoveto
+        34 187 rlineto
+        -190 hlineto
+        -33 -187 rlineto
+        -102 -471 rmoveto
+        62 -33 129 107 71 105 5 134 rlinecurve
+        -185 -3 -2 -121 -15 -92 -65 -97 rlinecurve
+        -198 471 rmoveto
+        34 187 rlineto
+        -190 hlineto
+        -33 -187 rlineto
+        -102 -471 rmoveto
+        62 -33 129 107 71 105 5 134 rlinecurve
+        -185 -3 -2 -121 -15 -92 -65 -97 rlinecurve
+        endchar
+    </CharString>
+    <Subrs/>
+    <GlobalSubrs/>
+</Glyph>

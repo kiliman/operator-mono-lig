@@ -1,0 +1,22 @@
+<Glyph name="hyphen_equal.liga" lsb="-482" width="625">
+    <CharString>
+        152 132 -13 131 -7 131 hstemhm
+        hintmask 10100000
+        530 526 rmoveto
+        -472 hlineto
+        -27 -131 rlineto
+        473 hlineto
+        -21 -111 rmoveto
+        -473 hlineto
+        -27 -132 rlineto
+        473 hlineto
+        hintmask 01000000
+        -440 250 rmoveto
+        -473 hlineto
+        -25 -131 rlineto
+        471 hlineto
+        endchar
+    </CharString>
+    <Subrs/>
+    <GlobalSubrs/>
+</Glyph>

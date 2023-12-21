@@ -1,15 +1,14 @@
-<Glyph name="bar_greater.liga" lsb="-233" width="625">
+<Glyph name="bar_greater.liga" lsb="-325" width="625">
     <CharString>
-        -201 985 hstem
-        -233 572 vstem
-        -233 778 rmoveto
-        -979 66 vlineto
-        506 492 rlineto
-        62 vlineto
-        -506 431 rlineto
-        -895 vmoveto
-        809 vlineto
-        439 -371 rlineto
+        -180 -21 985 -20 hstem
+        -325 66 vstem
+        326 356 rmoveto
+        -585 422 -66 6 rlineto
+        -985 66 vlineto
+        585 495 rlineto
+        -585 -404 rmoveto
+        803 vlineto
+        519 -363 rlineto
         -10 vlineto
         endchar
     </CharString>

@@ -18,7 +18,7 @@
     "xpath": "^0.0.32"
   },
   "devDependencies": {
-    "all-contributors-cli": "^6.20.0",
-    "prettier": "^2.5.1"
+    "all-contributors-cli": "^6.26.1",
+    "prettier": "^2.8.8"
   }
 }

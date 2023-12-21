@@ -1,27 +1,25 @@
 <Glyph name="less_exclam_hyphen_hyphen.liga" lsb="-1787" width="625">
     <CharString>
-        0 169 100 134 hstem
-        -1787 141 656 193 vstem
-        -834 284 rmoveto
-        55 469 rlineto
-        -202 hlineto
-        41 -469 rlineto
-        -477 410 rmoveto
-        -370 -298 rlineto
-        -130 vlineto
-        364 -295 88 113 -239 185 rlineto
-        497 hlineto
-        14 134 rlineto
-        -501 hlineto
-        230 179 rlineto
-        620 -313 rmoveto
-        1197 hlineto
-        14 134 rlineto
-        -1211 hlineto
-        -85 -403 rmoveto
+        -8 -21 29 169 100 134 271 -20 hstem
+        -1787 141 606 193 vstem
+        -849 hmoveto
         4 169 rlineto
         -193 hlineto
         -4 -169 rlineto
+        -375 694 rmoveto
+        -370 -298 rlineto
+        -130 vlineto
+        364 -295 88 113 -239 185 rlineto
+        460 134 -450 hlineto
+        230 179 rlineto
+        450 -298 rmoveto
+        55 469 rlineto
+        -202 hlineto
+        41 -469 rlineto
+        1487 119 rmoveto
+        -1250 hlineto
+        -14 -134 rlineto
+        1250 hlineto
         endchar
     </CharString>
     <Subrs/>

@@ -1,9 +1,10 @@
 <Glyph name="bar_bar.liga" lsb="-224" width="625">
     <CharString>
+        758 -20 hstem
         -224 66 319 66 vstem
-        -224 778 rmoveto
+        161 778 rmoveto
         -979 66 985 vlineto
-        319 -6 rmoveto
+        -451 -6 rmoveto
         -979 66 985 vlineto
         endchar
     </CharString>

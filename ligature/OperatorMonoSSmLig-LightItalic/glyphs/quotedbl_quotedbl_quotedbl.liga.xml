@@ -1,0 +1,33 @@
+<Glyph name="quotedbl_quotedbl_quotedbl.liga" lsb="-978" width="625">
+    <CharString>
+        428 312 hstem
+        -978 379 166 379 166 379 cntrmask 01110000
+        397 428 rmoveto
+        91 275 3 37 rlineto
+        -89 hlineto
+        -54 -312 rlineto
+        -187 hmoveto
+        91 275 4 37 rlineto
+        -90 hlineto
+        -54 -312 rlineto
+        -260 hmoveto
+        91 275 3 37 rlineto
+        -89 hlineto
+        -54 -312 rlineto
+        -187 hmoveto
+        91 275 4 37 rlineto
+        -90 hlineto
+        -54 -312 rlineto
+        -260 hmoveto
+        91 275 3 37 rlineto
+        -89 hlineto
+        -54 -312 rlineto
+        -187 hmoveto
+        91 275 4 37 rlineto
+        -90 hlineto
+        -54 -312 rlineto
+        endchar
+    </CharString>
+    <Subrs/>
+    <GlobalSubrs/>
+</Glyph>

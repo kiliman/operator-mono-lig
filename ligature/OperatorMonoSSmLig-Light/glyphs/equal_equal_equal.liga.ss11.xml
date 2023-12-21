@@ -1,0 +1,32 @@
+<Glyph name="equal_equal_equal.liga.ss11" lsb="-1152" width="625">
+    <CharString>
+        172 61 187 60 hstem
+        -1152 172 rmoveto
+        504 hlineto
+        1 61 rlineto
+        -505 hlineto
+        581 -61 rmoveto
+        516 hlineto
+        1 61 rlineto
+        -517 hlineto
+        593 -61 rmoveto
+        504 hlineto
+        1 61 rlineto
+        -505 hlineto
+        -1174 187 rmoveto
+        504 hlineto
+        1 60 rlineto
+        -505 hlineto
+        581 -60 rmoveto
+        516 hlineto
+        1 60 rlineto
+        -517 hlineto
+        593 -60 rmoveto
+        504 hlineto
+        1 60 rlineto
+        -505 hlineto
+        endchar
+    </CharString>
+    <Subrs/>
+    <GlobalSubrs/>
+</Glyph>

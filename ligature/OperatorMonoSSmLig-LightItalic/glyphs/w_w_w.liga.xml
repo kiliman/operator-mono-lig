@@ -1,0 +1,48 @@
+<Glyph name="w_w_w.liga" lsb="-936" width="625">
+    <CharString>
+        21 -21 539 -20 hstem
+        -863 hmoveto
+        32 62 117 226 19 37 12 -81 23 -163 12 -81 rrcurveto
+        45 hlineto
+        164 320 44 -320 rlineto
+        46 hlineto
+        171 313 15 -137 13 -92 11 -84 rlinecurve
+        46 hlineto
+        45 87 122 233 0 vvcurveto
+        0 38 -296 3 -24 vhcurveto
+        46 hlineto
+        54 110 56 108 56 109 rrcurveto
+        0 39 -261 10 -66 vhcurveto
+        65 hlineto
+        71 188 56 179 43 172 rrcurveto
+        -74 hlineto
+        -32 -135 -43 -164 -43 -147 rrcurveto
+        -6 hlineto
+        -16 113 -11 113 -14 113 rrcurveto
+        -46 hlineto
+        -57 -112 -54 -113 -55 -113 rrcurveto
+        -3 hlineto
+        -11 111 -15 110 -11 111 rrcurveto
+        -46 hlineto
+        -44 -87 -125 -245 0 vvcurveto
+        -3 hlineto
+        -13 108 -11 109 -11 108 rrcurveto
+        -46 hlineto
+        0 -148 -283 -22 -42 vhcurveto
+        -3 hlineto
+        -5 37 -30 249 -6 46 rrcurveto
+        -46 hlineto
+        -28 -56 -95 -191 -42 -85 rrcurveto
+        -2 hlineto
+        0 -31 247 -11 91 vhcurveto
+        -47 hlineto
+        -35 -72 -83 -169 -47 -97 rrcurveto
+        -4 hlineto
+        15 149 20 148 19 148 rrcurveto
+        -70 hlineto
+        -23 -150 -17 -168 -16 -221 rrcurveto
+        endchar
+    </CharString>
+    <Subrs/>
+    <GlobalSubrs/>
+</Glyph>

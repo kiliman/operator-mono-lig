@@ -1,0 +1,18 @@
+<Glyph name="slash_equal.liga" lsb="-641" width="625">
+    <CharString>
+        -194 -21 367 132 111 131 270 -20 hstem
+        21 816 rmoveto
+        -662 -991 138 -40 244 367 rlineto
+        715 hlineto
+        27 132 rlineto
+        -654 hlineto
+        74 111 rlineto
+        601 hlineto
+        26 131 rlineto
+        -540 hlineto
+        160 240 rlineto
+        endchar
+    </CharString>
+    <Subrs/>
+    <GlobalSubrs/>
+</Glyph>

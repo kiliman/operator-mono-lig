@@ -1,18 +1,18 @@
 <Glyph name="less_equal_less.liga" lsb="-1162" width="625">
     <CharString>
-        152 132 111 131 hstem
-        -1162 1746 vstem
-        584 571 rmoveto
-        -63 122 -258 -167 rlineto
+        -7 -21 180 132 111 131 147 -20 40 -20 hstem
+        -1162 152 1098 152 vstem
+        521 693 rmoveto
+        -258 -167 rlineto
         -1001 hlineto
         72 45 -63 122 -410 -265 -23 -129 313 -327 107 103 -78 77 rlineto
         1049 hlineto
-        172 -180 107 103 -270 268 2 13 rlineto
-        -1252 -13 rmoveto
-        2 13 62 39 rlineto
-        1053 hlineto
-        -17 -96 14 -15 rlineto
+        172 -180 107 103 -270 268 2 13 344 215 rlineto
+        -482 -287 rmoveto
         -1055 hlineto
+        -59 59 2 13 62 39 rlineto
+        1053 hlineto
+        -17 -96 rlineto
         endchar
     </CharString>
     <Subrs/>

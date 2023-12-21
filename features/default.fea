@@ -1,212 +1,234 @@
-languagesystem DFLT dflt;
-languagesystem latn dflt;
-
-lookup lookup_0 {
-sub zero by zero.num;
-sub one by one.num;
-sub two by two.num;
-sub three by three.num;
-sub four by four.num;
-sub five by five.num;
-sub six by six.num;
-sub seven by seven.num;
-sub eight by eight.num;
-sub nine by nine.num;
-sub slash by fraction;
-sub fraction by fraction.afrc;
-} lookup_0;
-
-lookup lookup_1 {
-sub zero by zero.den;
-sub one by one.den;
-sub two by two.den;
-sub three by three.den;
-sub four by four.den;
-sub five by five.den;
-sub six by six.den;
-sub seven by seven.den;
-sub eight by eight.den;
-sub nine by nine.den;
-sub slash by fraction;
-} lookup_1;
-
-lookup lookup_2 {
-sub L periodcentered by Ldot;
-sub l periodcentered by ldot;
-} lookup_2;
-
-
-feature case {
-sub guillemotleft by guillemotleft.cap;
-sub guillemotright by guillemotright.cap;
-sub guilsinglleft by guilsinglleft.cap;
-sub guilsinglright by guilsinglright.cap;
-sub parenleft by parenleft.cap;
-sub parenright by parenright.cap;
-sub bracketleft by bracketleft.cap;
-sub bracketright by bracketright.cap;
-sub braceleft by braceleft.cap;
-sub braceright by braceright.cap;
-} case;
-
-feature dnom {
-sub zero by zero.den;
-sub one by one.den;
-sub two by two.den;
-sub three by three.den;
-sub four by four.den;
-sub five by five.den;
-sub six by six.den;
-sub seven by seven.den;
-sub eight by eight.den;
-sub nine by nine.den;
-} dnom;
-
-feature frac {
-lookup frac0 {
-	sub [zero one two three four five six seven eight nine] slash' lookup lookup_0 [zero one two three four five six seven eight nine] ;
-} frac0;
-lookup frac1 {
-	ignore sub [zero one two three four five six seven eight nine zero.num one.num two.num three.num four.num five.num six.num seven.num eight.num nine.num zero.den one.den two.den three.den four.den five.den six.den seven.den eight.den nine.den] [zero one two three four five six seven eight nine zero.num one.num two.num three.num four.num five.num six.num seven.num eight.num nine.num zero.den one.den two.den three.den four.den five.den six.den seven.den eight.den nine.den] fraction' ;
-	ignore sub fraction' [zero one two three four five six seven eight nine zero.num one.num two.num three.num four.num five.num six.num seven.num eight.num nine.num zero.den one.den two.den three.den four.den five.den six.den seven.den eight.den nine.den] [zero one two three four five six seven eight nine zero.num one.num two.num three.num four.num five.num six.num seven.num eight.num nine.num zero.den one.den two.den three.den four.den five.den six.den seven.den eight.den nine.den] ;
-	sub [zero one two three four five six seven eight nine zero.num one.num two.num three.num four.num five.num six.num seven.num eight.num nine.num zero.den one.den two.den three.den four.den five.den six.den seven.den eight.den nine.den] fraction' lookup lookup_0 [zero one two three four five six seven eight nine zero.num one.num two.num three.num four.num five.num six.num seven.num eight.num nine.num zero.den one.den two.den three.den four.den five.den six.den seven.den eight.den nine.den] ;
-} frac1;
-lookup frac2 {
-	sub [zero one two three four five six seven eight nine]' lookup lookup_0 fraction.afrc ;
-	sub fraction.afrc [zero one two three four five six seven eight nine]' lookup lookup_1 ;
-} frac2;
-lookup frac3 {
-	sub one.num fraction.afrc two.den by onehalf;
-	sub one.num fraction.afrc three.den by onethird;
-	sub one.num fraction.afrc four.den by onequarter;
-	sub one.num fraction.afrc five.den by onefifth;
-	sub one.num fraction.afrc six.den by onesixth;
-	sub one.num fraction.afrc eight.den by oneeighth;
-	sub two.num fraction.afrc three.den by twothirds;
-	sub two.num fraction.afrc five.den by twofifths;
-	sub three.num fraction.afrc four.den by threequarters;
-	sub three.num fraction.afrc five.den by threefifths;
-	sub three.num fraction.afrc eight.den by threeeighths;
-	sub four.num fraction.afrc five.den by fourfifths;
-	sub five.num fraction.afrc six.den by fivesixths;
-	sub five.num fraction.afrc eight.den by fiveeighths;
-	sub seven.num fraction.afrc eight.den by seveneighths;
-} frac3;
-} frac;
-
+##############################
+# Languagesystem definitions #
+##############################
+languagesystem DFLT dflt; # Default default
+languagesystem latn dflt; # Latin default
+languagesystem latn CAT ; # Latin Catalan
+##########
+# Prefix #
+##########
+@HexDigit          = [a b c d e f A B C D E F];
+@Digit             = [zero one two three four five six seven eight nine];
+@DigitAll          = [zero one two three four five six seven eight nine zero.num one.num two.num three.num four.num five.num six.num seven.num eight.num nine.num zero.den one.den two.den three.den four.den five.den six.den seven.den eight.den nine.den];
+@DigitSmall        = [zero.small one.small two.small three.small four.small five.small six.small seven.small eight.small nine.small];
+@DigitNumerator    = [zero.num one.num two.num three four.num five.num six.num seven.num eight.num nine.num];
+@DigitDenominator  = [zero.den one.den two.den three.den four.den five.den six.den seven.den eight.den nine.den];
+@DigitSuperior     = [zero.sup one.sup two.sup three.sup four.sup five.sup six.sup seven.sup eight.sup nine.sup];
+@DigitInferior     = [zero.inf one.inf two.inf three.inf four.inf five.inf six.inf seven.inf eight.inf nine.inf];
+#######################
+# Feature definitions #
+#######################
 feature locl {
-script latn;
-language CAT ;
-sub l' lookup lookup_2 periodcentered' lookup lookup_2 l ;
-sub L' lookup lookup_2 periodcentered' lookup lookup_2 L ;
+# GSUB feature: Localized Forms
+    script latn;       # Latin
+        language CAT;  # Catalan
+        sub l' periodcentered' by ldot;
+        sub L' periodcentered' by Ldot;
 } locl;
 
+feature aalt useExtension {
+# GSUB feature: Access All Alternates
+    feature case;
+    feature dnom;
+    feature numr;
+    feature salt;
+    feature sinf;
+    feature ss01;
+    feature ss03;
+    feature ss04;
+    feature ss05;
+    feature ss07;
+    feature ss08;
+    feature ss09;
+    feature ss10;
+    feature subs;
+    feature sups;
+    feature smcp;
+    feature c2sc;
+} aalt;
+
+feature frac {
+# GSUB feature: Fractions
+    lookup frac0 {
+        sub @Digit slash' @Digit by fraction;
+    } frac0;
+   
+    lookup frac1 {
+        ignore sub @DigitAll @DigitAll fraction';
+        ignore sub fraction' @DigitAll @DigitAll;
+        sub @DigitAll fraction' @DigitAll by fraction.afrc;
+    } frac1;
+
+    lookup frac2 {
+        sub @Digit' fraction.afrc by @DigitNumerator;
+        sub fraction.afrc @Digit' by @DigitDenominator;
+    } frac2;
+
+    lookup frac3 {
+        sub one.num   fraction.afrc   two.den     by onehalf;
+        sub one.num   fraction.afrc   three.den   by onethird;
+        sub one.num   fraction.afrc   four.den    by onequarter;
+        sub one.num   fraction.afrc   five.den    by onefifth;
+        sub one.num   fraction.afrc   six.den     by onesixth;
+        sub one.num   fraction.afrc   eight.den   by oneeighth;
+        sub two.num   fraction.afrc   three.den   by twothirds;
+        sub two.num   fraction.afrc   five.den    by twofifths;
+        sub three.num fraction.afrc   four.den    by threequarters;
+        sub three.num fraction.afrc   five.den    by threefifths;
+        sub three.num fraction.afrc   eight.den   by threeeighths;
+        sub four.num  fraction.afrc   five.den    by fourfifths;
+        sub five.num  fraction.afrc   six.den     by fivesixths;
+        sub five.num  fraction.afrc   eight.den   by fiveeighths;
+        sub seven.num fraction.afrc   eight.den   by seveneighths;
+    } frac3;
+} frac;
+
 feature numr {
-sub zero by zero.num;
-sub one by one.num;
-sub two by two.num;
-sub three by three.num;
-sub four by four.num;
-sub five by five.num;
-sub six by six.num;
-sub seven by seven.num;
-sub eight by eight.num;
-sub nine by nine.num;
+# GSUB feature: Numerators
+    sub @Digit by @DigitNumerator;
 } numr;
 
-feature rupa {
-sub R p by R_p;
-} rupa;
+feature dnom {
+# GSUB feature: Denominators
+    sub @Digit by @DigitDenominator;
+} dnom;
 
-feature ss01 {
-sub registered by registered.alt;
-} ss01;
+feature sups {
+# GSUB feature: Superscript
+    sub @Digit by @DigitSuperior;
+} sups;
 
-feature salt {
-lookup salt0 {
-	sub registered by registered.alt;
-} salt0;
-lookup salt1 {
-	sub colon by colon.alt;
-} salt1;
-lookup salt2 {
-	sub bullet by bullet.alt;
-} salt2;
-lookup salt3 {
-	sub asterisk by asterisk.alt;
-} salt3;
-lookup salt4 {
-	sub zero by zero.alt;
-} salt4;
-lookup salt5 {
-	sub underscore by underscore.alt;
-} salt5;
-lookup salt6 {
-	sub [zero one two three four five six seven eight nine zero.num one.num two.num three.num four.num five.num six.num seven.num eight.num nine.num zero.den one.den two.den three.den four.den five.den six.den seven.den eight.den nine.den] slash' lookup lookup_1 [zero one two three four five six seven eight nine zero.num one.num two.num three.num four.num five.num six.num seven.num eight.num nine.num zero.den one.den two.den three.den four.den five.den six.den seven.den eight.den nine.den] ;
-} salt6;
-} salt;
+feature subs {
+# GSUB feature: Subscript
+    sub @Digit by @DigitInferior;
+} subs;
 
 feature sinf {
-sub zero by zero.inf;
-sub one by one.inf;
-sub two by two.inf;
-sub three by three.inf;
-sub four by four.inf;
-sub five by five.inf;
-sub six by six.inf;
-sub seven by seven.inf;
-sub eight by eight.inf;
-sub nine by nine.inf;
+# GSUB feature: Scientific Inferiors
+    sub @Digit by @DigitInferior;
 } sinf;
 
+feature ordn {
+# Ordinals
+    sub @Digit [A a]' by ordfeminine;
+    sub @Digit [O o]' by ordmasculine;
+    sub N o period by numero;
+} ordn;
+
+feature smcp {
+# Small Caps
+    sub @Digit by @DigitSmall;
+} smcp;
+
+feature c2sc {
+# Capitals to Small Caps
+    sub @Digit by @DigitSmall;
+} c2sc;
+
+feature case {
+# GSUB feature: Case-Sensitive Forms
+    sub guillemotleft  by guillemotleft.cap;
+    sub guillemotright by guillemotright.cap;
+    sub guilsinglleft  by guilsinglleft.cap;
+    sub guilsinglright by guilsinglright.cap;
+    sub parenleft      by parenleft.cap;
+    sub parenright     by parenright.cap;
+    sub bracketleft    by bracketleft.cap;
+    sub bracketright   by bracketright.cap;
+    sub braceleft      by braceleft.cap;
+    sub braceright     by braceright.cap;
+} case;
+
+
+
+include(calt.fea);
+
+
+
+feature salt {
+# GSUB feature: Stylistic Alternates
+    sub registered by registered.alt;
+    sub colon by colon.alt;
+    sub bullet by bullet.alt;
+    sub asterisk by asterisk.alt;
+    sub zero by zero.alt;
+    sub underscore by underscore.alt;
+    lookup salt {
+        # GSUB lookup 20, type 16 (Chaining Context)
+        sub @DigitAll slash' @DigitAll by fraction; 
+    } salt;
+} salt;
+
+feature ss01 {
+    featureNames {
+        name "Large Registered Symbol";
+    };
+    sub registered by registered.alt;
+} ss01;
+
 feature ss03 {
-sub colon by colon.alt;
+    featureNames {
+        name "Raised Colon";
+    };
+    sub colon by colon.alt;
 } ss03;
 
 feature ss04 {
-sub bullet by bullet.alt;
+    featureNames {
+        name "Square Bullet";
+    };
+    sub bullet by bullet.alt;
 } ss04;
 
 feature ss05 {
-sub asterisk by asterisk.alt;
+    featureNames {
+        name "Six-Pointed Asterisk";
+    };
+    sub asterisk by asterisk.alt;
 } ss05;
 
 feature ss07 {
-sub zero by zero.alt;
+    featureNames {
+        name "Unslashed Zero";
+    };
+    sub zero by zero.alt;
 } ss07;
 
 feature ss08 {
-sub underscore by underscore.alt;
+    featureNames {
+        name "Connected Underscore";
+    };
+    sub underscore by underscore.alt;
 } ss08;
 
 feature ss09 {
-sub [zero one two three four five six seven eight nine zero.num one.num two.num three.num four.num five.num six.num seven.num eight.num nine.num zero.den one.den two.den three.den four.den five.den six.den seven.den eight.den nine.den] slash' lookup lookup_1 [zero one two three four five six seven eight nine zero.num one.num two.num three.num four.num five.num six.num seven.num eight.num nine.num zero.den one.den two.den three.den four.den five.den six.den seven.den eight.den nine.den] ;
+    featureNames {
+        name "Fraction Bar";
+    };
+    sub @DigitAll slash' @DigitAll by fraction; 
 } ss09;
 
-feature subs {
-sub zero by zero.inf;
-sub one by one.inf;
-sub two by two.inf;
-sub three by three.inf;
-sub four by four.inf;
-sub five by five.inf;
-sub six by six.inf;
-sub seven by seven.inf;
-sub eight by eight.inf;
-sub nine by nine.inf;
-} subs;
+feature ss10 {
+    featureNames {
+        name "Hexidecimal Multiply Sign";
+    };
+    ### 0xFF
+    sub [zero zero.alt]   x' [@Digit @HexDigit] by multiply;
+    ### 800x600
+    sub [@Digit zero.alt] x' [@Digit zero.alt]  by multiply; 
+} ss10;
 
-feature subs {
-sub zero by zero.sup;
-sub one by one.sup;
-sub two by two.sup;
-sub three by three.sup;
-sub four by four.sup;
-sub five by five.sup;
-sub six by six.sup;
-sub seven by seven.sup;
-sub eight by eight.sup;
-sub nine by nine.sup;
-} subs;
+feature rupa {
+    sub R p by R_p;
+} rupa;
 
-include(calt.fea);
+feature kern {
+# GPOS feature: Kerning
+    lookup kern {
+        # GPOS lookup 1, type 2 (Pair adjustment)
+        pos fraction.afrc   @DigitDenominator -550;
+        pos @DigitNumerator fraction.afrc     -550;
+    } kern;
+} kern;
+
+

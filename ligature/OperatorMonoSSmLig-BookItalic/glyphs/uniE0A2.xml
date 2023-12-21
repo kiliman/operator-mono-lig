@@ -1,0 +1,24 @@
+<Glyph name="uniE0A2" code="0xe0a2" lsb="24" width="625">
+    <CharString>
+        0 76 331 57 218 73 hstem
+        24 214 -105 87 165 215 -196 87 vstem
+        531 hmoveto
+        46 23 23 46 hvcurveto
+        395 -109 108 vlineto
+        116 -67 67 -112 -112 -67 -67 -116 vhcurveto
+        -108 -109 -395 vlineto
+        -46 23 -23 45 vhcurveto
+        146 76 rmoveto
+        40 192 rlineto
+        -27 13 -13 22 30 vvcurveto
+        41 34 33 40 39 34 -30 -44 -30 -13 -22 -27 -13 vhcurveto
+        40 -192 rlineto
+        -165 388 rmoveto
+        118 vlineto
+        63 35 37 57 57 35 -37 -63 vhcurveto
+        -118 vlineto
+        endchar
+    </CharString>
+    <Subrs/>
+    <GlobalSubrs/>
+</Glyph>

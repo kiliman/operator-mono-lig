@@ -1,0 +1,25 @@
+<Glyph name="exclam_exclam.liga" lsb="-348" width="625">
+    <CharString>
+        0 110 hstem
+        -348 254 211 254 vstem
+        247 253 rmoveto
+        27 122 66 246 31 129 rrcurveto
+        -92 hlineto
+        -22 -129 -32 -246 -24 -122 rrcurveto
+        20 -253 rmoveto
+        22 110 rlineto
+        -103 hlineto
+        -23 -110 rlineto
+        -335 253 rmoveto
+        27 122 66 246 31 129 rrcurveto
+        -92 hlineto
+        -22 -129 -32 -246 -24 -122 rrcurveto
+        20 -253 rmoveto
+        22 110 rlineto
+        -103 hlineto
+        -23 -110 rlineto
+        endchar
+    </CharString>
+    <Subrs/>
+    <GlobalSubrs/>
+</Glyph>

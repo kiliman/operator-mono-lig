@@ -1,19 +1,24 @@
-<Glyph name="colon_equal.liga" lsb="-401" width="625">
+<Glyph name="colon_equal.liga" lsb="-391" width="625">
     <CharString>
-        0 129 39 77 169 77 hstem
-        -553 134 512 438 vstem
-        -268 388 rmoveto
+        136 130 -98 77 143 130 -104 77 hstemhm
+        -388 131 hintmask 01011000
+        -147 168 rmoveto
+        537 hlineto
+        1 77 rlineto
+        -538 hlineto
+        169 vmoveto
+        537 hlineto
+        1 77 rlineto
+        -538 hlineto
+        hintmask 10101000
+        -110 -355 rmoveto
         2 130 rlineto
         -133 hlineto
-        -2 -130 rlineto
-        782 103 rmoveto
-        -538 -77 537 hlineto
-        -648 -278 rmoveto
+        -3 -130 rlineto
+        134 252 rmoveto
         2 130 rlineto
         -133 hlineto
-        -2 -130 rlineto
-        782 109 rmoveto
-        -538 -77 537 hlineto
+        -3 -130 rlineto
         endchar
     </CharString>
     <Subrs/>

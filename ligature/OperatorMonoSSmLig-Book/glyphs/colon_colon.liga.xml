@@ -1,0 +1,27 @@
+<Glyph name="colon_colon.liga" lsb="-265" width="625">
+    <CharString>
+        0 129 236 130 hstemhm
+        -260 134 -127 133 245 134 -127 133 hintmask 11010100
+        263 365 rmoveto
+        2 130 rlineto
+        -133 hlineto
+        -2 -130 rlineto
+        123 -365 rmoveto
+        hintmask 11011000
+        6 129 rlineto
+        -134 hlineto
+        -5 -129 rlineto
+        -242 365 rmoveto
+        2 130 rlineto
+        -133 hlineto
+        -2 -130 rlineto
+        123 -365 rmoveto
+        hintmask 11100100
+        6 129 rlineto
+        -134 hlineto
+        -5 -129 rlineto
+        endchar
+    </CharString>
+    <Subrs/>
+    <GlobalSubrs/>
+</Glyph>

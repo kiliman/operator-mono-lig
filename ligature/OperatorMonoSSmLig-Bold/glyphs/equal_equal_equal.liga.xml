@@ -1,13 +1,13 @@
-<Glyph name="equal_equal_equal.liga" lsb="-1091" width="625">
+<Glyph name="equal_equal_equal.liga" lsb="-1171" width="625">
     <CharString>
-        273 132 110 132 hstem
-        -1091 1636 vstem
-        545 647 rmoveto
-        -1636 -132 1636 hlineto
-        -110 vmoveto
-        -1636 -132 1636 hlineto
-        -110 vmoveto
-        -1636 -132 1636 hlineto
+        31 132 110 132 110 132 hstem
+        cntrmask 11100000
+        -1171 515 rmoveto
+        1716 132 -1716 hlineto
+        -374 vmoveto
+        1716 132 -1716 hlineto
+        -374 vmoveto
+        1716 132 -1716 hlineto
         endchar
     </CharString>
     <Subrs/>

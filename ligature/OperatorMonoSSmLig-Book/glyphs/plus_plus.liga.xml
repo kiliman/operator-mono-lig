@@ -1,11 +1,10 @@
-<Glyph name="plus_plus.liga" lsb="-475" width="625">
+<Glyph name="plus_plus.liga" lsb="-473" width="625">
     <CharString>
         287 77 hstem
-        -278 81 394 81 vstem
-        278 571 rmoveto
-        -81 -207 -394 207 -81 -207 -197 -77 197 -208 81 208 394 -208 81 208 196 hlineto
+        -276 81 390 81 vstem
+        472 287 rmoveto
         1 77 rlineto
-        -197 hlineto
+        -197 207 -81 -207 -390 207 -81 -207 -197 -77 197 -208 81 208 390 -208 81 208 hlineto
         endchar
     </CharString>
     <Subrs/>
