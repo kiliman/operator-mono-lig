@@ -39,3 +39,5 @@ const func = (a, b, c, d, e, f, s, n) => {
   }
 
   <!-- test -->
+
+  :: << >> *= /=

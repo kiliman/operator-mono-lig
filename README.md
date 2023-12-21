@@ -10,6 +10,10 @@ those found in the popular [Fira Code](https://github.com/tonsky/FiraCode) font.
 These ligatures were custom created using [Glyphs](https://glyphsapp.com/).
 There are even italic versions of the ligatures.
 
+## 🎉 What's New in Version 2.5
+
+<img src="./images/new-ligatures-2.5.png"/>
+
 ## 🎉 What's New in Version 2
 
 <img src="./images/new-ligatures.png"/>
