@@ -291,6 +291,9 @@ const patchHmtx = (dom) => {
   copyConfigAttribute(dom, configDom, '/ttFont/hhea/advanceWidthMax', 'value');
   copyConfigAttribute(dom, configDom, '/ttFont/hhea/xMaxExtent', 'value');
   copyConfigAttribute(dom, configDom, '/ttFont/CFF/CFFFont/FontBBox', 'value');
+  copyConfigAttribute(dom, configDom, '/ttFont/head/macStyle', 'value');
+  copyConfigAttribute(dom, configDom, '/ttFont/OS_2/fsSelection', 'value');
+  copyConfigAttribute(dom, configDom, '/ttFont/OS_2/usWeightClass', 'value');
   copyConfigAttribute(
     dom,
     configDom,

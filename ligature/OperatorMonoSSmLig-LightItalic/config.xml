@@ -118,4 +118,8 @@
             </Private>
         </CFFFont>
     </CFF>
+    <OS_2>
+        <fsSelection value="00000000 00000001"/>
+        <usWeightClass value="300"/>
+    </OS_2>
 </ttFont>
