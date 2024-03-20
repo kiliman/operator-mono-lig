@@ -160,18 +160,22 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
 <table>
-  <tr>
-    <td align="center"><a href="https://github.com/kiliman"><img src="https://avatars3.githubusercontent.com/u/47168?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Kiliman</b></sub></a><br /><a href="https://github.com/kiliman/operator-mono-lig/commits?author=kiliman" title="Code">💻</a> <a href="https://github.com/kiliman/operator-mono-lig/commits?author=kiliman" title="Documentation">📖</a> <a href="#design-kiliman" title="Design">🎨</a></td>
-    <td align="center"><a href="https://github.com/mskelton"><img src="https://avatars3.githubusercontent.com/u/25914066?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Mark Skelton</b></sub></a><br /><a href="#design-mskelton" title="Design">🎨</a></td>
-    <td align="center"><a href="https://github.com/drod3763"><img src="https://avatars2.githubusercontent.com/u/7785716?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Derick Rodriguez</b></sub></a><br /><a href="https://github.com/kiliman/operator-mono-lig/commits?author=drod3763" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://github.com/amitkparekh"><img src="https://avatars3.githubusercontent.com/u/7276308?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Amit Parekh</b></sub></a><br /><a href="https://github.com/kiliman/operator-mono-lig/commits?author=amitkparekh" title="Documentation">📖</a> <a href="#design-amitkparekh" title="Design">🎨</a></td>
-    <td align="center"><a href="https://github.com/CandySunPlus"><img src="https://avatars0.githubusercontent.com/u/502700?v=4?s=100" width="100px;" alt=""/><br /><sub><b>NikSun</b></sub></a><br /><a href="#design-CandySunPlus" title="Design">🎨</a></td>
-    <td align="center"><a href="https://github.com/Jakob6174"><img src="https://avatars3.githubusercontent.com/u/40262817?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Jakob Pearson</b></sub></a><br /><a href="https://github.com/kiliman/operator-mono-lig/commits?author=Jakob6174" title="Code">💻</a></td>
-    <td align="center"><a href="http://killua.me/"><img src="https://avatars.githubusercontent.com/u/457822?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Luigi</b></sub></a><br /><a href="https://github.com/kiliman/operator-mono-lig/commits?author=killua99" title="Documentation">📖</a></td>
-  </tr>
-  <tr>
-    <td align="center"><a href="https://github.com/GlorifiedBicycle"><img src="https://avatars.githubusercontent.com/u/71753585?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Reland Boyle</b></sub></a><br /><a href="https://github.com/kiliman/operator-mono-lig/commits?author=GlorifiedBicycle" title="Documentation">📖</a></td>
-  </tr>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/kiliman"><img src="https://avatars3.githubusercontent.com/u/47168?v=4?s=100" width="100px;" alt="Kiliman"/><br /><sub><b>Kiliman</b></sub></a><br /><a href="https://github.com/kiliman/operator-mono-lig/commits?author=kiliman" title="Code">💻</a> <a href="https://github.com/kiliman/operator-mono-lig/commits?author=kiliman" title="Documentation">📖</a> <a href="#design-kiliman" title="Design">🎨</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/mskelton"><img src="https://avatars3.githubusercontent.com/u/25914066?v=4?s=100" width="100px;" alt="Mark Skelton"/><br /><sub><b>Mark Skelton</b></sub></a><br /><a href="#design-mskelton" title="Design">🎨</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/drod3763"><img src="https://avatars2.githubusercontent.com/u/7785716?v=4?s=100" width="100px;" alt="Derick Rodriguez"/><br /><sub><b>Derick Rodriguez</b></sub></a><br /><a href="https://github.com/kiliman/operator-mono-lig/commits?author=drod3763" title="Documentation">📖</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/amitkparekh"><img src="https://avatars3.githubusercontent.com/u/7276308?v=4?s=100" width="100px;" alt="Amit Parekh"/><br /><sub><b>Amit Parekh</b></sub></a><br /><a href="https://github.com/kiliman/operator-mono-lig/commits?author=amitkparekh" title="Documentation">📖</a> <a href="#design-amitkparekh" title="Design">🎨</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/CandySunPlus"><img src="https://avatars0.githubusercontent.com/u/502700?v=4?s=100" width="100px;" alt="NikSun"/><br /><sub><b>NikSun</b></sub></a><br /><a href="#design-CandySunPlus" title="Design">🎨</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/Jakob6174"><img src="https://avatars3.githubusercontent.com/u/40262817?v=4?s=100" width="100px;" alt="Jakob Pearson"/><br /><sub><b>Jakob Pearson</b></sub></a><br /><a href="https://github.com/kiliman/operator-mono-lig/commits?author=Jakob6174" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/Kilua99"><img src="https://avatars.githubusercontent.com/u/44760686?v=4?s=100" width="100px;" alt="kilua99"/><br /><sub><b>kilua99</b></sub></a><br /><a href="https://github.com/kiliman/operator-mono-lig/commits?author=Kilua99" title="Documentation">📖</a></td>
+    </tr>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/GlorifiedBicycle"><img src="https://avatars.githubusercontent.com/u/71753585?v=4?s=100" width="100px;" alt="Reland Boyle"/><br /><sub><b>Reland Boyle</b></sub></a><br /><a href="https://github.com/kiliman/operator-mono-lig/commits?author=GlorifiedBicycle" title="Documentation">📖</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="http://killua.me/"><img src="https://avatars.githubusercontent.com/u/457822?v=4?s=100" width="100px;" alt="Luigi"/><br /><sub><b>Luigi</b></sub></a><br /><a href="https://github.com/kiliman/operator-mono-lig/commits?author=killua99" title="Documentation">📖</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/tweks"><img src="https://avatars.githubusercontent.com/u/564556?v=4?s=100" width="100px;" alt="Tomek Weksej"/><br /><sub><b>Tomek Weksej</b></sub></a><br /><a href="https://github.com/kiliman/operator-mono-lig/commits?author=tweks" title="Code">💻</a></td>
+    </tr>
+  </tbody>
 </table>
 
 <!-- markdownlint-restore -->
