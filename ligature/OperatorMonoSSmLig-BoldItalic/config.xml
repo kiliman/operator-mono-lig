@@ -35,7 +35,7 @@
         <yMax value="1271"/>
         
     
-        <macStyle value="00000000 00000010"/>
+        <macStyle value="00000000 00000011"/>
         
     
         <lowestRecPPEM value="3"/>
@@ -118,4 +118,8 @@
             </Private>
         </CFFFont>
     </CFF>
+    <OS_2>
+        <fsSelection value="00000000 00100001"/>
+        <usWeightClass value="700"/>
+    </OS_2>
 </ttFont>
